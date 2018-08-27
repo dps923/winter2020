@@ -1,36 +1,37 @@
-## DPS923 and MAP523 - Mobile App Development for iOS
+## Welcome to GitHub Pages
 
-This is the home page for the DPS923 and MAP523 course.
+You can use the [editor on GitHub](https://github.com/dps923/fall2018/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-> This is the third course in the web programming course sequence. Students learn to design and create moderately complex web applications and services that can be deployed at scale. The JavaScript language is used, with widely-used and powerful tools and frameworks. The major topic themes of this course include a study of the patterns for app and service development, using frameworks that enable rich and functional browser apps, working with robust and scalable data storage platforms, and deployment methodologies.
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-<br>
+### Markdown
 
-Coming into this course, we assume that you have knowledge of and experience in:
-* JavaScript
-* Creating Node.js (with Express and MongoDB) apps on a web server
-* Performing a number of tasks that support users on the web
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-In this BTI425 course, we build upon that knowledge. 
+```markdown
+Syntax highlighted code block
 
-First, you will learn the foundations of client-side browser-based programming. We explore a range of frameworks and libraries.
+# Header 1
+## Header 2
+### Header 3
 
-Then, you will learn the foundations of the Angular app development platform. 
+- Bulleted
+- List
 
-Finally, you will learn more about Angular, while building rich and functional client-side browser-based apps.
+1. Numbered
+2. List
 
-<br>
+**Bold** and _Italic_ and `Code` text
 
-The following table has links to course content:
+[Link](url) and ![Image](src)
+```
 
-| Link | Description |
-| ---- | ----------- |
-| [Course notes](/bti425/notes/) | Weekly and daily class notes, and related information |
-| [Learning resources](/bti425/resources) | A list of digital and physical resources that we’ll use during the course |
-| [Weekly schedule](/bti425/weekly-schedule) | Topics covered during the course, organized by week; includes test dates and assignment due dates |
-| [Graded work](/bti425/graded-work) | Information about graded work and values |
-| [Course policies](/bti425/policies) | Course policies |
-| [Course standards](/bti425/standards) | Standards that govern conduct and expectations in the course |
-| [Course outline](https://ict.senecacollege.ca/course/bti425) | Official course outline from the College course outline system |
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-<br>
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dps923/fall2018/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
