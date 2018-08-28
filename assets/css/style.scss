@@ -1,7 +1,9 @@
 ---
 ---
 
-@import 'jekyll-theme-minimal';
+/* @import 'jekyll-theme-minimal'; */
+
+@import "{{ site.theme }}";
 
 .wrapper {
   width:900px;
