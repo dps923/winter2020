@@ -39,7 +39,7 @@ The publisher has provided our students with a small discount. Contact your prof
 
 **A few thoughts about the required textbook**  
 
-This course has a required textbook. Our pathway through the course will closely track the textbook chapter sequence. Your professor will contribute little or no original conetnt. Don't want to buy the book? You probably won't pass the course. Want to steal the book (i.e. not pay the publisher)? Well, it's your life, and keep in mind that the authors are simply asking to be paid for their efforts. Do you ever want to get paid when you graduate and get into the workforce? Yup, you do, so think of this before you steal. Also, think about how often you must buy a textbook for a course - not too often, so this is not a hardship. 
+This course has a required textbook. Our pathway through the course will closely track the textbook chapter sequence. Your professor will contribute little or no original conetnt. Don't want to buy the book? You probably won't pass the course. Want to steal the book (i.e. not pay the publisher)? Well, it's your life, morals, and ethics, but keep in mind that the authors are simply asking to be paid for their efforts. Will you ever want to get paid when you graduate and get into the workforce? Yup, you will, so think of this before you steal. Also, think about how often you must buy a textbook for a course - not too often, so this is not a hardship. 
 
 <br>
 

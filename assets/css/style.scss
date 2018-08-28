@@ -33,12 +33,11 @@ footer {
   margin-right: 0.5rem;
 
   &:hover {
-    background-color: rgba(0, 0, 255, 0.1);
-  }
+    background-color: rgba(38, 124, 185, 0.2)
 }
 
 .active {
-  background-color: rgba(0, 0, 255, 0.2);
+  background-color: rgba(38, 124, 185, 0.4);
 }
 
 /* end of new items */
