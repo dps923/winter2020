@@ -23,6 +23,24 @@ footer {
 
 /* new items */
 
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
 .btn {
   display: inline-block;
   border: 1px solid lightblue;
@@ -60,7 +78,7 @@ footer {
       margin-left: 0;
     }
   }
-  
+
 }
 
 /* end of new items */
