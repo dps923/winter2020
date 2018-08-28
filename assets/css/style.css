@@ -2,3 +2,26 @@
 ---
 
 @import 'jekyll-theme-minimal';
+
+.wrapper {
+  width:900px;
+}
+
+header {
+  width:150px;
+}
+
+section {
+  width:700px;
+}
+
+footer {
+  width:150px;
+}
+
+@media print, screen and (max-width: 960px) {
+
+  header {
+    padding-right:160px;
+  }
+}
