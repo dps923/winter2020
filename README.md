@@ -6,18 +6,13 @@ This is the home page for the DPS923 and MAP523 course.
 
 <br>
 
-Coming into this course, we assume that you have knowledge of and experience in:
-* JavaScript
-* Creating Node.js (with Express and MongoDB) apps on a web server
-* Performing a number of tasks that support users on the web
+Welcome! What do you need to know to get started in this course?
 
-In this BTI425 course, we build upon that knowledge. 
+The course welcome page is [here](welcome). It has essential information you need before and during the course. 
 
-First, you will learn the foundations of client-side browser-based programming. We explore a range of frameworks and libraries.
+Links to other content are shown below. 
 
-Then, you will learn the foundations of the Angular app development platform. 
-
-Finally, you will learn more about Angular, while building rich and functional client-side browser-based apps.
+Notes for the weekly content are linked below, and [here too](/fall2018/notes/). 
 
 <br>
 
@@ -31,6 +26,7 @@ The following table has links to course content:
 | [Graded work](/fall2018/graded-work) | Information about graded work and values |
 | [Course policies](/fall2018/policies) | Course policies |
 | [Course standards](/fall2018/standards) | Standards that govern conduct and expectations in the course |
+| [Welcome info](welcome) | Welcome info to get started in the course |
 | [DPS923 course outline](https://ict.senecacollege.ca/course/dps923) | Official course outline from the College course outline system |
 | [MAP523 course outline](https://ict.senecacollege.ca/course/map523) | Official course outline from the College course outline system |
 
