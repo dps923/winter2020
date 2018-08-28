@@ -31,8 +31,8 @@
 
             {% assign current = page.url | downcase | split: '/' %}
 
-            <p>current - {% current[1] %}</p>
-            
+            <p>current - {{ current[1] }}</p>
+
             <!-- <a href="https://dps923.github.io/fall2018/" class="btn">Home</a> -->
             <a href="https://dps923.github.io/fall2018/notes/" {% if current[1] == 'notes' %}class='btn active'{% else %}class='btn'{% endif %}>Notes</a>
             <a href="https://dps923.github.io/fall2018/weekly-schedule" {% if current[1] == 'weekly-schedule' %}class='btn active'{% else %}class='btn'{% endif %}>Weekly</a>
