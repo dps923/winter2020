@@ -31,14 +31,14 @@
 
             {% assign current = page.url | downcase | split: '/' %}
 
-            <p>current - {{ current[1] }}</p>
+            <!-- <p>current - {{ current[1] }}</p> -->
 
             <!-- <a href="https://dps923.github.io/fall2018/" class="btn">Home</a> -->
             <a href="https://dps923.github.io/fall2018/notes/" {% if current[1] == 'notes' %}class='btn active'{% else %}class='btn'{% endif %}>Notes</a>
-            <a href="https://dps923.github.io/fall2018/weekly-schedule" {% if current[1] == 'weekly-schedule' %}class='btn active'{% else %}class='btn'{% endif %}>Weekly</a>
-            <a href="https://dps923.github.io/fall2018/resources" {% if current[1] == 'resources' %}class='btn active'{% else %}class='btn'{% endif %}>Resources</a>
-            <a href="https://dps923.github.io/fall2018/graded-work" {% if current[1] == 'graded-work' %}class='btn active'{% else %}class='btn'{% endif %}>Graded work</a>
-            <a href="https://dps923.github.io/fall2018/professor" {% if current[1] == 'professor' %}class='btn active'{% else %}class='btn'{% endif %}>Professor</a>
+            <a href="https://dps923.github.io/fall2018/weekly-schedule" {% if current[1] == 'weekly-schedule.html' %}class='btn active'{% else %}class='btn'{% endif %}>Weekly</a>
+            <a href="https://dps923.github.io/fall2018/resources" {% if current[1] == 'resources.html' %}class='btn active'{% else %}class='btn'{% endif %}>Resources</a>
+            <a href="https://dps923.github.io/fall2018/graded-work" {% if current[1] == 'graded-work.html' %}class='btn active'{% else %}class='btn'{% endif %}>Graded work</a>
+            <a href="https://dps923.github.io/fall2018/professor" {% if current[1] == 'professor.html' %}class='btn active'{% else %}class='btn'{% endif %}>Professor</a>
             <a href="{{ site.github.repository_url }}" class="btn" target="_blank">Code examples</a>
 
             
