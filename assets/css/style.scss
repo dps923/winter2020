@@ -33,36 +33,12 @@ footer {
   margin-right: 0.5rem;
 
   &:hover {
-    background-color: rgba(0, 102, 153, 0.2);
+    background-color: rgba(255, 255, 224, 0.2);
   }
+}
 
-  /*
-  + .btn {
-    margin-left: 1rem;
-  }
-
-  @include large {
-    padding: 0.75rem 1rem;
-  }
-
-  @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-
-  @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
-  }
-  */
-
+.active {
+  background-color: rgba(0, 102, 153, 0.2);
 }
 
 /* end of new items */
