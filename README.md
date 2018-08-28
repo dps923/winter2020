@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+## DPS923 - Mobile App Development for iOS
 
-You can use the [editor on GitHub](https://github.com/dps923/fall2018/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This is the home page for the DPS923 and MAP523 course.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> This course covers the foundations of programming applications for the Apple iOS operating system. Students will learn and become proficient with the development tool environment, and create graphical end-user iOS applications that follow the MVC design pattern. Students will write their programs in the Swift and Objective-C languages, using the object-oriented Cocoa framework. A wide range of iOS development topics, including user interface programming techniques, data management, and network access will be covered.
 
-### Markdown
+<br>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Coming into this course, we assume that you have knowledge of and experience in:
+* JavaScript
+* Creating Node.js (with Express and MongoDB) apps on a web server
+* Performing a number of tasks that support users on the web
 
-```markdown
-Syntax highlighted code block
+In this BTI425 course, we build upon that knowledge. 
 
-# Header 1
-## Header 2
-### Header 3
+First, you will learn the foundations of client-side browser-based programming. We explore a range of frameworks and libraries.
 
-- Bulleted
-- List
+Then, you will learn the foundations of the Angular app development platform. 
 
-1. Numbered
-2. List
+Finally, you will learn more about Angular, while building rich and functional client-side browser-based apps.
 
-**Bold** and _Italic_ and `Code` text
+<br>
 
-[Link](url) and ![Image](src)
-```
+The following table has links to course content:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+| Link | Description |
+| ---- | ----------- |
+| [Course notes](/fall2018/notes/) | Weekly and daily class notes, and related information |
+| [Learning resources](/fall2018/resources) | A list of digital and physical resources that we’ll use during the course |
+| [Weekly schedule](/fall2018/weekly-schedule) | Topics covered during the course, organized by week; includes test dates and assignment due dates |
+| [Graded work](/fall2018/graded-work) | Information about graded work and values |
+| [Course policies](/fall2018/policies) | Course policies |
+| [Course standards](/fall2018/standards) | Standards that govern conduct and expectations in the course |
+| [DPS923 course outline](https://ict.senecacollege.ca/course/dps923) | Official course outline from the College course outline system |
+| [MAP523 course outline](https://ict.senecacollege.ca/course/map523) | Official course outline from the College course outline system |
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dps923/fall2018/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<br>
