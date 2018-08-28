@@ -8,11 +8,11 @@ This is the home page for the DPS923 and MAP523 course.
 
 Welcome! What do you need to know to get started in this course?
 
-The course welcome page is [here](welcome). It has essential information you need before and during the course. 
+* The course welcome page is [here](welcome). It has essential information you need before and during the course. 
 
-Links to other content are shown below. 
+* Links to other content are shown below. 
 
-Notes for the weekly content are linked below, and [here too](/fall2018/notes/). 
+* Notes for the weekly content are linked below, and [here too](/fall2018/notes/). 
 
 <br>
 

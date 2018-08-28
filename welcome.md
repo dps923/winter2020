@@ -40,7 +40,7 @@ Course work is done on a Mac.
 
 If you are not prepared to use a Mac, then drop the course.
 
-The School of ICT has a new Mac computer-lab, in T3078. The room has reasonable availability during the week (especially on Tuesdays), so there’s plenty of time to do your weekly assignment work.
+The School of ICT has a Mac computer-lab, in T3078. The room has reasonable availability during the week (especially on Tuesdays), so there’s plenty of time to do your weekly assignment work.
 
 The College has hundreds of Macs elsewhere, located in computer-lab rooms, and in the library. However, not all of them will be equipped with the software we need to do course work. Nonetheless, you can use those Macs to improve your macOS and Unix skills.
 
