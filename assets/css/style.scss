@@ -41,6 +41,12 @@ footer {
 
 @media print, screen and (max-width: 960px) {
 
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+
   header {
     padding-right:160px;
   }
