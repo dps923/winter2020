@@ -1,8 +1,10 @@
+## Welcome
+
 Welcome to DPS923 and MAP523, a cross-listed course in the School of ICT. This post has information that helps you get started in the course.
 
-### Course introduction
+<br>
 
-Welcome to DPS923 and MAP523!
+### Course introduction
 
 In this course, you will learn to create native iOS applications with entry-level functionality, which can be deployed to devices that run iOS (including iPhone and iPad).
 
