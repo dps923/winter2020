@@ -21,12 +21,7 @@ footer {
   width:150px;
 }
 
-@media print, screen and (max-width: 960px) {
-
-  header {
-    padding-right:160px;
-  }
-}
+/* new items */
 
 .btn {
   display: inline-block;
@@ -35,4 +30,25 @@ footer {
   padding: 0.2rem;
   width: 100px;
   margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+
+  &:hover {
+    background-color: rgba(0, 102, 153, 0.2);
+  }
+}
+
+/* end of new items */
+
+@media print, screen and (max-width: 960px) {
+
+  header {
+    padding-right:160px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+
+  header {
+    padding: 0;
+  }
 }
