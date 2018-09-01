@@ -29,11 +29,13 @@ If you are not prepared to use a Mac, then drop the course.
 
 ### Required textbook
 
-[iOS Apprentice, version 6](https://store.raywenderlich.com/products/ios-apprentice) 
+[iOS Apprentice, Sixth Edition](https://store.raywenderlich.com/products/ios-apprentice) 
+
+![iOS Apprentice, Sixth Edition](media/ios-apprentice-sixth-edition-cover.jpg)
 
 Available as an ebook and a physical book. Direct from the publisher, or via Amazon.ca if you want a physical book. 
 
-The publisher has provided our students with a small discount. Contact your professor for details. 
+The publisher has provided our students with a *substantial* discount. Contact your professor for details. 
 
 <br>
 
