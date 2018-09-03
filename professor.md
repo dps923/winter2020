@@ -59,6 +59,6 @@ This may become important to you if you are facing a deadline for the assignment
 
 Here's an image of Prof. McIntyre's timetable, as published in September 2018:
 
-![Timetable](media/timetable-2018-fall-v1.png)
+![Timetable](media/mcintyre-timetable-v1.png)
 
 <br>
