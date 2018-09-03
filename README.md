@@ -16,4 +16,4 @@ Or, you can clone the repository to your own computer.
 
 **Course notes**
 
-Course notes are on the <a href='https://dps923.ca' target='_blank'>dps923.ca</a> web site.
+Course notes are on the <a href="https://dps923.ca" target="_blank">dps923.ca</a> web site.
