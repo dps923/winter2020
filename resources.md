@@ -19,7 +19,7 @@ You will need one or more devices. A College or personal desktop or laptop (Mac)
 
 <br>
 
-**Use macOS**
+#### Use macOS
 
 As noted in the [welcome note](welcome), course work is done on a Mac.
 
@@ -39,7 +39,7 @@ The publisher has provided our students with a *substantial* discount. Contact y
 
 <br>
 
-**A few thoughts about the required textbook**  
+#### A few thoughts about the required textbook
 
 This course has a required textbook. Our pathway through the course will closely track the textbook chapter sequence. Your professor will contribute little or no original conetnt. Don't want to buy the book? You probably won't pass the course. Want to steal the book (i.e. not pay the publisher)? Well, it's your life, morals, and ethics, but keep in mind that the authors are simply asking to be paid for their efforts. Will you ever want to get paid when you graduate and get into the workforce? Yup, you will, so think of this before you steal. Also, think about how often you must buy a textbook for a course - not too often, so this is not a hardship. 
 
@@ -49,22 +49,35 @@ This course has a required textbook. Our pathway through the course will closely
 
 There are several required online resources:
 
-* Apple Developer community - the web site is vast, with thousands of documents. It is a trusted and authoritative source for web developer information. 
+[Apple Developer community](https://developer.apple.com/develop/)  
+The web site is vast, with thousands of documents. It is a trusted and authoritative source for web developer information. 
+
+( more to come )
 
 <br>
 
-### Other resources
+### Swift language resources
 
-( to be posted )
+[Documentation](https://swift.org/documentation/)
+* A Swift Tour
+* Language Guide
+* Language Reference
 
 <br>
 
 ### Xcode tips and info
 
-( to be posted ) 
+Xcode Application Help (from Apple, in [HTML](https://help.apple.com/xcode/mac/9.0/) format)  
+(also available on the Xcode ‘Help’ menu)
 
-**Useful keyboard shortcuts**
+Xcode Gestures and Keyboard Shortcuts (Apple, [HTML](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/Introduction/Introduction.html))
 
-( to be posted )
+<br>
+
+#### Keyboard shortcuts quick reference sheet
+
+Learning some keyboard shortcuts will improve your productivity and your enjoyment of Xcode. Learn some - a dozen or so will make a big difference. 
+
+[Click this link](media/xcode-kb-shortcuts2018v1.pdf) to download a quick reference sheet of Xcode keyboard shortcuts. 
 
 <br>
