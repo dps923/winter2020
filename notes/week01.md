@@ -7,7 +7,13 @@ layout: default
 
 The theme for this week is to get comfortable with the iOS programming environemnt. 
 
-We have only one class/session this week, in the computer-lab, room DB3078. Therefore, the plan is to do the following:
+<br>
+
+### Wednesday plan
+
+We have only one class/session this week, on Wednesday, in the computer-lab, room DB3078. Therefore, the plan is to do the following:
+
+* Course introduction and preview 
 
 * Mac and macOS (re)introduction 
 
@@ -19,14 +25,8 @@ We have only one class/session this week, in the computer-lab, room DB3078. Ther
 
 <br>
 
-**Wednesday plan**
+### Learning resources
 
-( more to come )
-
-<br>
-
-**Learning resources**
-
-( more to come )
+Your professor will introduce you to some getting-started learning resources.
 
 <br>

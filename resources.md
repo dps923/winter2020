@@ -47,12 +47,15 @@ This course has a required textbook. Our pathway through the course will closely
 
 ### Required online resources
 
-There are several required online resources:
-
 [Apple Developer community](https://developer.apple.com/develop/)  
 The web site is vast, with thousands of documents. It is a trusted and authoritative source for web developer information. 
 
-( more to come )
+[Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)  
+The official source for designing iOS apps. Also includes excellent content to help you learn iOS user interface elements and usage. 
+
+Apple Developer Documentation  
+[Landing page](https://developer.apple.com/documentation) - links to all kits and frameworks for all platforms.  
+Your professor will demonstrate effective web search techniques.  
 
 <br>
 
@@ -70,7 +73,7 @@ The web site is vast, with thousands of documents. It is a trusted and authorita
 Xcode Application Help (from Apple, in [HTML](https://help.apple.com/xcode/mac/9.0/) format)  
 (also available on the Xcode ‘Help’ menu)
 
-Xcode Gestures and Keyboard Shortcuts (Apple, [HTML](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/Introduction/Introduction.html))
+Simulator Application Help (Apple, [HTML](https://help.apple.com/simulator/mac/9.0/))
 
 <br>
 
@@ -79,5 +82,7 @@ Xcode Gestures and Keyboard Shortcuts (Apple, [HTML](https://developer.apple.com
 Learning some keyboard shortcuts will improve your productivity and your enjoyment of Xcode. Learn some - a dozen or so will make a big difference. 
 
 [Click this link](media/xcode-kb-shortcuts2018v1.pdf) to download a quick reference sheet of Xcode keyboard shortcuts. 
+
+Xcode Gestures and Keyboard Shortcuts (Apple, [HTML](https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_help-command_shortcuts/Introduction/Introduction.html))
 
 <br>
