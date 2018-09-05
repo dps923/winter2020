@@ -12,7 +12,7 @@ Welcome! What do you need to know to get started in this course?
 
 * Links to other content are shown below. 
 
-* Notes for the weekly content are linked below, and [here too](/fall2018/notes/). 
+* Notes for the weekly content are linked below, and [here too](notes/). 
 
 <br>
 
@@ -20,12 +20,12 @@ The following table has links to course content:
 
 | Link | Description |
 | ---- | ----------- |
-| [Course notes](/fall2018/notes/) | Weekly and daily class notes, and related information |
-| [Learning resources](/fall2018/resources) | A list of digital and physical resources that we’ll use during the course |
-| [Weekly schedule](/fall2018/weekly-schedule) | Topics covered during the course, organized by week; includes test dates and assignment due dates |
-| [Graded work](/fall2018/graded-work) | Information about graded work and values |
-| [Course policies](/fall2018/policies) | Course policies |
-| [Course standards](/fall2018/standards) | Standards that govern conduct and expectations in the course |
+| [Course notes](notes/) | Weekly and daily class notes, and related information |
+| [Learning resources](resources) | A list of digital and physical resources that we’ll use during the course |
+| [Weekly schedule](weekly-schedule) | Topics covered during the course, organized by week; includes test dates and assignment due dates |
+| [Graded work](graded-work) | Information about graded work and values |
+| [Course policies](/policies) | Course policies |
+| [Course standards](standards) | Standards that govern conduct and expectations in the course |
 | [Welcome info](welcome) | Welcome info to get started in the course |
 | [DPS923 course outline](https://ict.senecacollege.ca/course/dps923) | Official course outline from the College course outline system |
 | [MAP523 course outline](https://ict.senecacollege.ca/course/map523) | Official course outline from the College course outline system |
