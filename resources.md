@@ -27,6 +27,16 @@ If you are not prepared to use a Mac, then drop the course.
 
 <br>
 
+#### Other Macs on campus
+
+The library (learning commons) has Macs. There are also three Mac labs, S2112, S2113, and S2046. 
+
+The versions of macOS, Xcode, and Swift are a bit newer in our School of ICT Mac lab in DB3078. Therefore, we *strongly recommend* that you configure your iOS projects to target iOS version 11.0 or 10.x. That way, you can work on your project on any of the campus Macs. 
+
+> Your professor will show you how to target an iOS version.
+
+<br>
+
 ### Required textbook
 
 [iOS Apprentice, Sixth Edition](https://store.raywenderlich.com/products/ios-apprentice) 
