@@ -29,7 +29,7 @@ Work on Assignment 1. The professor will help you get started, to ensure that yo
 
 **Learning resources**
 
-iOS Apprentice
+iOS Apprentice  
 Chapters 1, 2, 3
 
 <br>
