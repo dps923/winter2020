@@ -13,9 +13,28 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 4**<br>&bull; Mon Sep 24<br>&bull; Wed Sep 26 | Chapters 7, 8<br>Fit and finish | TBA | 
-**Week 3**<br>&bull; Mon Sep 17<br>&bull; Wed Sep 19 | Chapters 4, 5, 6<br>Outlet, UI update and enhance | TBA | 
+**Week 4**<br>&bull; Mon Sep 24<br>&bull; Wed Sep 26 | Chapters 7, 8<br>Fit and finish | Monday:<br>[Assign 1](/graded-work/assign1) due, 10% | 
+**Week 3**<br>&bull; Mon Sep 17<br>&bull; Wed Sep 19 | Chapters 4, 5, 6<br>Outlet, UI update and enhance | Monday:<br>Practice test, 0% | 
 **[Week 2](week02)**<br>[&bull; Mon Sep 10<br>&bull; Wed Sep 12](week02) | Chapters 1, 2, 3<br>Button, slider, label | |
 **[Week 1](week01)**<br>[&bull; Wed Sep 5](week01) | Hands-on with macOS<br>Dev environment setup<br>Intro to Swift and iOS apps | |
 
 <br>
+
+### Assignments
+
+All assignments are due at 11:00am ET. (That's the morning.) 
+
+Assign # | Released | Due date
+--- | --- | ---
+[Assign 1](/graded-work/assign1) | Monday, September 10 | Monday, September 24
+Assign 2 | Monday, September 24 | Monday, October 6*
+Assign 3 | Monday, October 6 | Monday, October 22**
+Assign 4 | Monday, October 22 | Friday, November 30 
+
+Make plans to demonstrate your Assignment 4 work to your professor sometime during the regularly-scheduled class times in the final week of the term, on Monday December 3, or Wednesday December 5. 
+
+~ ~ ~
+
+*Yes, I know that October 6 is the Monday Thanksgiving Day holiday. If you have a problem with that, then set your personal due date to the Friday before. 
+
+**Yes, I know that October 22 is the Monday in Study Week. If you have a problem with that, then set your personal due date to the Friday before. No, you cannot have the rest of study week to do Assignment 3.
