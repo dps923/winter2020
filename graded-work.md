@@ -38,12 +38,15 @@ The total value of all assignments will be 50%.
 Tests - about 4 - 50%  
 Assignments - about 4 - 50%  
 
+This course does NOT have a final exam. 
+
 If you do not agree with this graded work plan, then please drop the course.
 
 <br>
 
 ### Promotion Policy
 
+Here's what's needed to pass the course:
 * Achieve an average of 50% or better for all assignments
 *	Achieve an average of 50% or better for all tests
 *	Achieve a weighted average of 50% or better for all graded work in the course
@@ -72,17 +75,19 @@ Therefore, no make-up or replacement tests.
 
 **Due date extensions? No.**
 
-As noted above, during the term, one (1) *late* assignment will be accepted within three (3) days of its due date. 
+As noted above, during the term, one (1) *late* Assignment 1, or 2, or 3 will be accepted within three (3) days of its due date. 
 
 However, as a general rule, we don't do due date extensions for assignments, for a number of reasons, including the following:
 
-* They cause problems for other work that follows an assignment, because it leaves less time to complete the next piece of work.
+* A due date extension is not necessary in this course, because each assignment is designed so that it can comfortably and successfully completed before its due date and time.
 
-* They take your attention away from new topics in this course. You're less receptive, or will ignore, new topics that follow the ones that are practiced on the assignment.
+* It causes problems for other work that follows an assignment, because it leaves less time to complete the next piece of work.
 
-* A due date extension is disrespectful to other students in the course, because it tells them that the work they did to meet the due date doesn't have value.
+* It takes your attention away from new topics in this course. You’re less receptive, or will ignore, new topics that follow those that are practiced on the assignment.
 
-* Finally, a due date extension is disrespectful to other professors and their courses, because it takes your attention away from their coursework while you are working on late work.
+* A due date extension is disrespectful to other students in the course, because it tells them that the work they did to meet the due date doesn’t have value.
+
+* Finally, a due date extension is disrespectful to other professors and their courses, because it takes your attention away from their coursework while you are working on late work in another course.
 
 Therefore, no due date extensions.
 
