@@ -144,6 +144,12 @@ See the "badName" item? Delete it by clicking the "x" icon. Run your app again, 
 
 <br>
 
+### Wednesday plan
+
+Continue work on Assignment 1.
+
+<br>
+
 #### Gentle introduction to debugging
 
 (more to come)
@@ -153,12 +159,6 @@ See the "badName" item? Delete it by clicking the "x" icon. Run your app again, 
 #### This week's Swift focus
 
 (walk through updateResultText function)
-
-<br>
-
-### Wednesday plan
-
-Continue work on Assignment 1.
 
 <br>
 
