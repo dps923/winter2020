@@ -311,7 +311,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
 Then, add the following function:
 
 ```swift
-func textFieldShouldReturn(textField: UITextField) -> Bool {
+func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+    // add code to do things, if necessary
+
     return textField.resignFirstResponder()
 }
 ```
