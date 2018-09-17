@@ -11,11 +11,27 @@ The theme for this week is to (TBA).
 
 ### Monday plan
 
-The professor will guide you through the topics in the textbook. 
+A brief "practice test". 
+
+Then, the professor will guide you through the topics in the textbook. 
 
 Chapter 4: Outlets  
 Chapter 5: Rounds and Score  
 Chapter 6: Polish
+
+<br>
+
+#### Practice test
+
+We will have a brief "practice test" today.
+
+All tests in this course are hand-written. Pen or pencil. Answer styles will vary, but we're mostly looking for short- to medium-length answers, and/or diagrams, and so on.
+
+No references or resources are permitted – "closed book, open brain". More information is on the graded work page.
+
+The duration of each test depends upon the number of questions. Generally, about 3 to 4 minutes per question is allotted, which seems to work out OK. And, you will have choice – you will be able to answer any "x" of "y" questions.
+
+The tested topics are both forward-looking, and review-based. The forward-looking aspect encourages you to prepare for class, by reading and using the weekly content before the class. You will be tested on comprehension, understanding, and the application of new topics. The review-based aspect enables you to show that you have the foundational knowledge and understanding needed for current and future tasks.
 
 <br>
 
