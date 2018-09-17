@@ -24,7 +24,7 @@ Chapter 6: Polish
 During last week's computer-lab session, the professor briefly discussed a suggested *code organization* technique for use in a view controller class. 
 
 In a view controller, we suggest the following top-to-bottom organizational scheme:
-1. Local variables
+1. Instance variables
 2. Outlet declarations
 3. Lifecycle functions
 4. Action functions
@@ -34,7 +34,7 @@ When your controller code grows to hundreds of lines, this scheme will help.
 Here's how to implement this scheme: Add specially-formatted comments to separate each of the four groups/sections. Each comment begins with the string "MARK: - ". For example:
 
 ```swift
-// MARK: - Local variables
+// MARK: - Instance variables
 ```
 
 <br>
@@ -44,7 +44,7 @@ Here's a full example of a controller that implements this scheme:
 ```swift
 class ViewController: UIViewController {
 
-    // MARK: - Local variables
+    // MARK: - Instance variables
     
     var message = "Hello, world!"
     var currentValue = 12
