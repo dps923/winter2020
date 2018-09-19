@@ -160,6 +160,26 @@ See the "badName" item? Delete it by clicking the "x" icon. Run your app again, 
 
 <br>
 
+**Use the Search Navigator**
+
+If you do not remember which object had its outlet recreated - maybe you have dozens of objects, or made many changes over a longer period of time - then you can use the Search Navigator. 
+
+Open it, type the "badname" text (from above), and press enter. 
+
+![Xcode exception](/media/xcode-outlet-conn-problem-search-setup.png)
+
+<br>
+
+Then double-click the result in the storyboard. The Connections Inspector in the right-side utilities panel will open, and show it. 
+
+![Xcode exception](/media/xcode-outlet-conn-problem-search-result.png)
+
+<br>
+
+As you did above, click the "x" icon to delete it.
+
+<br>
+
 ### Wednesday plan
 
 Continue work on Assignment 1.
@@ -216,6 +236,18 @@ You can view the contents of variables. Your professor will demonstrate this tec
 Breakpoints can be added or removed in a source code file, or by using the breakpoints navigator. Your professor will demonstrate this technique. 
 
 > For more information, see the [Xcode Help document](https://help.apple.com/xcode/mac/9.3/index.html?localePath=en.lproj#/dev9a374afc9).
+
+<br>
+
+**Add a catch-all exception breakpoint**
+
+Some runtime errors are not so easy to find in the debug area, because they're caused by something deeper in the framework or foundation code. (That code is good-quality error-free code, but errors can happen when bad data and/or a problematic execution context exists.) 
+
+As a result, it's a good idea to add an "exception breakpoint" to your project. If an error happens, execution will stop just BEFORE the problem code is executed. Then, you can see what code is being run, and you can step through the statements. 
+
+[This section of the Xcode Help document](https://help.apple.com/xcode/mac/9.0/index.html#devfeaa874d0) shows how to add an exception breakpoint, but here is the brief how-to:
+1. In your project, in the Breakpoints Navigator, click the add icon (plus + sign) at the bottom. 
+2. Choose "Exception Breakpoint". Accept the defaults by clicking outside the popup (or by pressing the Esc key).
 
 <br>
 
