@@ -5,7 +5,7 @@ layout: default
 
 ## DPS923 MAP523 Week 3 Notes
 
-The theme for this week is to (TBA). 
+The theme for this week is to learn and practice the programming techniques that enable user interaction. 
 
 <br>
 
