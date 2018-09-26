@@ -27,6 +27,11 @@ We have planned approximately four (4) assignments during the term.
 
 The first three assignments have a two-week lifetime, and are worth 10% each. One of these three assignments can be up to three days late, without penalty. Each of the other assignments must be submitted by the due date and time, otherwise its grade is zero, and there will not be an opportunity to earn marks for another late submission.
 
+> The upload link for each assignment disappears after its due date and time.  
+> If you are submitting a late assignment:  
+> 1. Upload it to the link for the *next* assignment  
+> 2. Notify me by email that you have done this
+
 The final assignment has a six-week lifetime, and is worth 20%. It must be submitted by the due date and time, otherwise its grade is zero, and there will not be an opportunity to earn marks for a late submission.
 
 The total value of all assignments will be 50%.
