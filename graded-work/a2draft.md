@@ -5,7 +5,9 @@ layout: default
 
 ## DPS923 and MAP523 Assignment 2
 
-Assignment 2 (brief statement). 
+Assignment 2 enables you to create a multi-view navigation-style app, with two levels of navigation (list and detail). Also enables you to get hands-on experience with the iOS table view infrastructure, and introduces you to models, the "M" part of the MVC pattern. 
+
+<p style="font-color: red;"><span>This document is being edited.<br>This notice will be removed when the edits are complete.</span></p>
 
 Read/skim all of this document before you begin work.
 
@@ -15,8 +17,7 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Monday, October 8, 2018, at 11:00am ET
-
+Monday, October 8, 2018, at 11:00am ET  
 Grade value: 10% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
@@ -24,6 +25,21 @@ Grade value: 10% of your final course grade
 <br>
 
 ### Overview and purpose
+
+We need an app that will display performance information for quarterbacks in the current 2018 season in the National Football League.  
+
+The app’s first view will be a table view, showing a list of quarterback names. Two "detail" views will be available. One will show info about the player, while the other will show performance-related information. 
+
+<kbd>![List](images/a2-qb-stats-list.png)</kbd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>![Detail](images/a2-qb-stats-detail.png)</kbd>
+
+<br>
+<br>
+<br>
+**more to come**
+<br>
+<br>
+<br>
+
 
 Layout  
 Table view  

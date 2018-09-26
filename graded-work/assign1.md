@@ -15,8 +15,7 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Monday, September 24, 2018, at 11:00am ET
-
+Monday, September 24, 2018, at 11:00am ET  
 Grade value: 10% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
