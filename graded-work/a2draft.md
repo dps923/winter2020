@@ -30,7 +30,7 @@ We need an app that will display performance information for quarterbacks in the
 
 The app’s first view will be a table view, showing a list of quarterback names. Two "detail" views will be available. One will show info about the player, while the other will show performance-related information. 
 
-<kbd>![List](images/a2-qb-stats-list.png)</kbd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<kbd>![Detail](images/a2-qb-stats-detail.png)</kbd>
+![List](images/a2-qb-stats-list.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Detail](images/a2-qb-stats-detail.png)
 
 <br>
 <br>
