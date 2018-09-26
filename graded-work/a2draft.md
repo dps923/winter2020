@@ -7,7 +7,7 @@ layout: default
 
 Assignment 2 enables you to create a multi-view navigation-style app, with two levels of navigation (list and detail). Also enables you to get hands-on experience with the iOS table view infrastructure, and introduces you to models, the "M" part of the MVC pattern. 
 
-<p style="font-color: red;"><span>This document is being edited.<br>This notice will be removed when the edits are complete.</span></p>
+<p style="color: red;"><span>This document is being edited.<br>This notice will be removed when the edits are complete.</span></p>
 
 Read/skim all of this document before you begin work.
 
