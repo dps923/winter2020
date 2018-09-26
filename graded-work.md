@@ -84,7 +84,7 @@ As noted above, during the term, one (1) *late* Assignment 1, or 2, or 3 will be
 
 However, as a general rule, we don't do due date extensions for assignments, for a number of reasons, including the following:
 
-* A due date extension is not necessary in this course, because each assignment is designed so that it can comfortably and successfully completed before its due date and time.
+* A due date extension is not necessary in this course, because each assignment is designed so that it can comfortably and successfully completed - by *all* students - before its due date and time.
 
 * It causes problems for other work that follows an assignment, because it leaves less time to complete the next piece of work.
 
