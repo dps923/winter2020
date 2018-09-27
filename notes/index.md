@@ -13,7 +13,7 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 6**<br>&bull; Wed Oct 10 | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Monday:<br>Assign 2 due, 10% | 
+**Week 6**<br>&bull; Wed Oct 10 | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Monday:<br>[Assign 2](/graded-work/assign2) due, 10% | 
 **Week 5**<br>&bull; Mon Oct 1<br>&bull; Wed Oct 3 | Chapters 9, 10, 11, 12<br>Table view, data model, nav controller, add item | Monday:<br>Test 1, 12% | 
 **[Week 4](week04)**<br>&bull; [Mon Sep 24<br>&bull; Wed Sep 26](week04) | Chapters 7, 8<br>Fit and finish | Monday:<br>[Assign 1](/graded-work/assign1) due, 10% | 
 **[Week 3](week03)**<br>[&bull; Mon Sep 17<br>&bull; Wed Sep 19](week03) | Chapters 4, 5, 6<br>Outlet, UI update and enhance | Monday:<br>Practice test, 0% | 
@@ -29,7 +29,7 @@ All assignments are due at 11:00am ET. (That's the morning.)
 Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Monday, September 10 | Monday, September 24
-Assign 2 | Monday, September 24 | Monday, October 6*
+[Assign 2](/graded-work/assign2) | Monday, September 24 | Monday, October 6*
 Assign 3 | Monday, October 6 | Monday, October 22**
 Assign 4 | Monday, October 22 | Friday, November 30 
 
