@@ -10,7 +10,7 @@ Assumptions:
 
 We will add a new controller and scene, and a "detail" segue navigation.
 
-In the project navigator, focus on the yellow project folder icon, and create a new file (&#8984;+N).  
+In the project navigator, focus on the yellow project folder icon, and create a new file (<kbd>&#8984;</kbd>+<kbd>N</kbd>).  
 
 It will be a Cocoa Touch Class. Next, make it a subclass of UIViewController. 
 
@@ -50,7 +50,7 @@ First, make sure that the detail view controller has a property (instance variab
 > This technique is described in the document  
 > [How to: Controller with a data model reference]()
 
-Next, uncomment the [```prepare(for:sender:)```](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621490-prepare) method. 
+Next, uncomment the [`prepare(for:sender:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621490-prepare) method. 
 
 Write an ```if``` statement to match the segue identifier. 
 
@@ -60,7 +60,7 @@ if segue.identifier == "toFooDetail" {
 }
 ```
 
-Inside the ```if``` statement, set the segue destination to the appropriate controller type.
+Inside the `if` statement, set the segue destination to the appropriate controller type.
 
 ```swift
 let vc = segue.destination as! FooDetail
@@ -70,7 +70,7 @@ Now, we need to discover which row was tapped, so that we can go back to the dat
 
 > Remember, the table view itself is NOT the data source - it is simply displaying some content from the data source. 
 
-Add an ```if let``` statement that attempts to get the tapped row.
+Add an `if let` statement that attempts to get the tapped row.
 
 ```swift
 if let indexPath = tableView.indexPath(for: sender as! UITableViewCell) {
@@ -78,7 +78,7 @@ if let indexPath = tableView.indexPath(for: sender as! UITableViewCell) {
 }
 ```
 
-Inside the ```if let``` statement, 
+Inside the `if let` statement, 
 
 ```swift
 // use the index path to fetch what you want from the data model
