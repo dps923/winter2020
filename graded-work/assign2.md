@@ -32,7 +32,7 @@ The app’s first view will be a table view, showing a list of quarterback names
 
 The following shows the navigation path from the list to the "info" view. 
 
-![List](images/a2-list-v1.png)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Detail](images/a2-info-v1.png)
+<img class=border1 src=images/a2-list-v1.png alt=List><img class=border1 src=images/a2-info-v1.png alt=Detail>
 
 <br>
 

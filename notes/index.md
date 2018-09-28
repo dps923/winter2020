@@ -40,3 +40,5 @@ Make plans to demonstrate your Assignment 4 work to your professor sometime duri
 *Yes, I know that October 6 is the Monday Thanksgiving Day holiday. If you have a problem with that, then set your personal due date to the Friday before. 
 
 **Yes, I know that October 22 is the Monday in Study Week. If you have a problem with that, then set your personal due date to the Friday before. No, you cannot have the rest of study week to do Assignment 3.
+
+<br>
