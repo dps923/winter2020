@@ -4,25 +4,34 @@ Typographic character replacements
 
 
 Typographic single quote
-’ replace with '
+ï¿½ replace with '
 
 
 Typographic double quote
-66 - “ - "
-99 - ” - "
+66 - ï¿½ - "
+99 - ï¿½ - "
 
 
 Elipsis
-… - ...
+ï¿½ - ...
 
 
 Dash
-Em dash – replace with -
+Em dash ï¿½ replace with -
 
 
 In summary
-’ 
-“ 
-” 
-… 
-– 
+ï¿½ 
+ï¿½ 
+ï¿½ 
+ï¿½ 
+ï¿½ 
+
+~~~ 
+
+HTML entities...
+
+&#8984; - command 
+
+&#9432; - info button
+

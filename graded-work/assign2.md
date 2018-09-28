@@ -32,7 +32,7 @@ The app’s first view will be a table view, showing a list of quarterback names
 
 The following shows the navigation path from the list to the "info" view. 
 
-<img class="border1" src="images/a2-list-v1.png" alt="List"><img class=border1 src=images/a2-info-v1.png alt=Detail>
+<img class="border1" src="images/a2-list-v1.png" alt="List"><img class="border1" src="images/a2-info-v1.png" alt="Detail">
 
 <br>
 
@@ -58,7 +58,9 @@ On the target settings editor, we suggest that you un-check (clear) the "Landsca
 
 The template-provided view controller and scene cannot be used in this app. Therefore, in the project navigator, delete the ```ViewController.swift``` file. 
 
-Next, select the "Players" folder item near the top of the project navigator, and create a new file (Command-N). It will be a subclass of UITableViewController. In class, your professor suggested that the names of your controllers do not need the words "table" or "view". Here, we go further - there's no point in the word "controller" in the file or class name, so just keep it simple - we want to control a list of players, so let's just name it "PlayerList". 
+Next, select the "Players" folder item near the top of the project navigator, and create a new file (Command-N). It will be a Cocoa Touch Class. Next, make it a subclass of UITableViewController. 
+
+In our September 26 classroom session, your professor suggested that the names of your controllers do not need the words "table" or "view". Here, we go further - there's no point in the word "controller" in the file or class name, so just keep it simple - we want to control a list of players, so let's just name it "PlayerList". 
 
 ![Table view controller](images/a2-tvc-create.png)
 
@@ -70,11 +72,9 @@ From the library, add a new table view controller:
 * On its identity inspector, set its class to what we just created above (PlayerList)
 * Embed this controller in a navigation controller (use the Editor menu)
 
-Select the navigation controller:
-* On its attributes inspector, check (select/mark) the "Is Initial View Controller" checkbox
+Select the just-added navigation controller. On its attributes inspector, check (select/mark) the "Is Initial View Controller" checkbox.
 
-On the document outline, in the table view controller hierarchy, select the "Navigation Item":
-* On its attributes inspector, enter a value for the Title property (maybe "Players") 
+On the document outline, in the table view controller hierarchy, select the "Navigation Item". On its attributes inspector, enter a value for the Title property (maybe "Players").
 
 At this point, the app should successfully build, and show an empty list. 
 
@@ -88,8 +88,8 @@ Again, as noted above, read/skim the rest of this document before you begin work
 
 #### Data and model classes for the app
 
-Your professor has extracted player info and performance data of quarterbacks from the National Football League (NFL) public web site. There are two collections:
-1. Player info, including name, physical info, birthplace, and so on 
+Your professor has extracted player and performance data of quarterbacks from the National Football League (NFL) public web site. There are two collections:
+1. Player detail, including name, physical info, birthplace, and so on 
 2. Player performance data, including the statistics that are commonly used to assess performance
 
 Player photos and team logos have also been extracted. All content has been packaged in a zip file that you can get from the Blackboard/My.Seneca Assignment 2 upload link, or from here:
