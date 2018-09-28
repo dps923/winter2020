@@ -33,9 +33,10 @@ Select the segue object. On its attributes inspector, enter an appropriate value
 
 <br>
 
-**Test your progress**
+#### Test your progress
 
-mod code, section, row  
-and cell for row at index path  
+First, make sure that your table view shows one or more items. If not, [complete this task](how-to-new-app-tvc#test-your-progress).
+
+Then, build-and-run. Tapping (clicking) on the &#9432; (detail accessory) should navigate to your new detail view.
 
 <br>

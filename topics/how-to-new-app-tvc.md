@@ -28,10 +28,22 @@ On the document outline, in the table view controller hierarchy, select the "Nav
 
 Next, select its table view cell object. On its attributes inspector, enter an appropriate value for the Identifier property (something short like "cell"). 
 
-Open the just-added table view controller code in the editor. Locate the commented-out "[tableView(_:cellForRowAt:)](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview)" method. Then: 
+Open the just-added table view controller code in the editor. Locate the commented-out [```tableView(_:cellForRowAt:)```](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview) method. Then: 
 * Uncomment the method
 * Replace the "reuseIdentifier" text with the value you entered above for the Identifier property 
 
 At this point, the app should successfully build, and show an empty list. 
+
+<br>
+
+#### Test your progress
+
+If you want the list to show one or more items (just to prove that it works), do the following, and then build-and-run:
+
+1. In the ```numberOfSections(in:)``` method, return 1, instead of zero
+
+2. In the ```tableView(_:numberOfRowsInSection:)``` method, return 1 (or more if you wish), instead of zero
+
+3. In the ```tableView(_:cellForRowAt:)``` method, return a simple string (like "hello")
 
 <br>
