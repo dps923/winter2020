@@ -44,6 +44,7 @@ If you want the list to show one or more items (just to prove that it works), do
 
 2. In the ```tableView(_:numberOfRowsInSection:)``` method, return 1 (or more if you wish), instead of zero
 
-3. In the ```tableView(_:cellForRowAt:)``` method, return a simple string (like "hello")
+3. In the ```tableView(_:cellForRowAt:)``` method, add a line of code to configure the cell's textLabel property...  
+```cell.textLabel?.text = "Hello, world!"```
 
 <br>
