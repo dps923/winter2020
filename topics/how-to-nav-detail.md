@@ -10,7 +10,7 @@ Assumptions:
 
 We will add a new controller and scene, and a "detail" segue navigation.
 
-In the project navigator, focus on the yellow project folder icon, and create a new file (<kbd>&#8984;</kbd>+<kbd>N</kbd>).  
+In the project navigator, focus on the yellow project folder icon, and create a new file (&#8984;+N).  
 
 It will be a Cocoa Touch Class. Next, make it a subclass of UIViewController. 
 
