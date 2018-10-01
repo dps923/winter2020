@@ -11,9 +11,7 @@ The theme for this week is to get experience with table views in iOS apps.
 
 ### Monday plan
 
-Test 1 is today. 
-
-Then, the professor will guide you through the topic hightlights in the textbook. 
+The professor will guide you through the topic hightlights in the textbook. 
 
 Chapter 9: Table Views  
 Chapter 10: The Data Model  
@@ -22,21 +20,9 @@ Chapter 12: Add Item Screen
 
 <br>
 
-#### Test 1
-
-Test 1 is today, at the beginning of the timeslot.
-
-As discussed in class a few times, it will cover the [week 4 content](week04) and this week 5 content.
-
-Review the relevant info about tests on the [week 3 notes page](week03#practice-test) and on the graded work page.
-
-The test will begin at the start of the class timeslot, at 3:20pm, and its duration will be about 40 minutes. It is worth 12%, which means that you will answer any 12 questions, as each is worth one mark.
-
-After the test, we will cover the highlights of the week’s new topics.
-
-<br>
-
 ### Wednesday plan
+
+Test 1 is today. More info is below.
 
 Hands-on: Your professor will guide you in an interactive activity.
 
@@ -44,9 +30,25 @@ In the time remaining, work on Assignment 2.
 
 <br>
 
+#### Test 1
+
+Test 1 is today, at the beginning of the timeslot.
+
+As discussed in class a few times, it will cover past content (from the "outlets" Chapter 4 through to Chapter 8), and new content this week (mostly Chapters 9 and 10). 
+
+Review the relevant info about tests on the [week 3 notes page](week03#practice-test) and on the graded work page.
+
+The test will begin at the start of the class timeslot, at 3:20pm, and its duration will be about 40 minutes. It is worth 12%, which means that you will answer any 12 questions, as each is worth one mark.
+
+After the test, we will have an interactive activity, and there may be time to work on the current assignment.
+
+<br>
+
 #### This week's Swift focus
 
-TBA
+Model classes  
+Data manager object  
+Table view interactions, previewing delegate and protocol  
 
 <br>
 
