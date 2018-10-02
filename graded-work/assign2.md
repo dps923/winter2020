@@ -29,7 +29,7 @@ Grade value: 10% of your final course grade
 
 We need an app that will display performance information for quarterbacks in the current 2018 season in the National Football League.  
 
-The app’s first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show personal info about the player, while the other will show performance-related info. The app also allows the user to update performance data, by entering new values after a game finishes. 
+The app’s first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show *personal info* about the player, while the other will show *performance-related info*. The app also allows the user to update performance data, by entering new values after a game finishes. 
 
 The following shows the navigation path from the list to the first "personal info" view. 
 
@@ -70,7 +70,7 @@ In our September 26 classroom session, your professor suggested that the names o
 Show the storyboard. Delete the existing scene. 
 
 From the library, add a new table view controller:
-* On its identity inspector, set its class to what we just created above (PlayerList)
+* On its identity inspector, set its class to what we just created above (PlayerList)  
 * Embed this controller in a navigation controller (use the Editor menu)
 
 Select the just-added navigation controller. On its attributes inspector, check (select/mark) the "Is Initial View Controller" checkbox.
@@ -81,7 +81,7 @@ At this point, the app should successfully build, and show an empty list.
 
 <br>
 
-### Doing the work
+### Doing the work, table view
 
 Again, as noted above, read/skim the rest of this document before you begin work. That way you know what's coming. 
 
@@ -128,6 +128,67 @@ qbInfo = mInfo.allQBInfos()
 ```
 
 <br>
+
+#### Show data on the table view
+
+At this point in time, the following tasks have been done:
+* Table view controller code file was created
+* Table view scene was created on the storyboard
+* Data for the app was added to the project
+
+We're ready to show data on the table view. Follow the guidance (textbook, classroom) to enable this to happen. Here's a brief listing of the tasks to be done:
+
+* On the storyboard, configure the table view scene's prototype cell with a value for the reuse identifier, and then edit its controller code to match. 
+
+* The prototype cell style should be "Subtitle", so that we can show two lines of text. 
+
+* The table view will enable TWO kinds of navigation (disclosure, and detail), so configure its accessory as "Detail Disclosure". 
+
+* In the controller code, set the return value for the "number of sections" method to 1. 
+
+* Set the return value for the "number of rows" to the count of items in the array (data source). 
+
+* Configure the cell's text content. Use this guidance:
+
+```swift
+// Using the current row value, get a reference 
+// to the desired item in the array (data source)
+
+// Set the text of the cell's text label to the player's name
+// Set the detail text label to the team name
+```
+
+Before continuing, study the data. Notice the format of the player names. (For example, Ryan Fitzpatrick.) 
+
+Next, study the player photos. Notice the format of the photo file names. (For example, a2-ryan-fizpatrick. FYI, all begin with "a2-". And, all are "png" files.)
+
+It should be clear to you that they're logically-related. In the next task, you will configure the cell's image content, and you will need to specify an image name. You must transform the player name string into a string that matches the expected image name format. To do this, you will learn a few Swift string methods. Let's continue with the task list:
+
+* Configure the cell's image content. Use this guidance:
+
+```swift
+// Create a local string variable to hold the photo file name 
+
+// Append the player name to the string
+// https://developer.apple.com/documentation/swift/string/1641225-append
+
+// Replace the space with a dash
+// https://developer.apple.com/documentation/foundation/nsstring/1412937-replacingoccurrences
+
+// Transform the string to lower case
+// https://developer.apple.com/documentation/swift/string/1641392-lowercased
+
+// Append the filename's extension (.png)
+
+// Set the image property of the cell's image view 
+// by using the UIImage(named:) method, e.g. 
+// ... UIImage(named: playerPhotoName)
+
+
+
+```
+
+
 
 <br>
 <br>
