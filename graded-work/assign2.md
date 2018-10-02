@@ -29,7 +29,10 @@ Grade value: 10% of your final course grade
 
 We need an app that will display performance information for quarterbacks in the current 2018 season in the National Football League.  
 
-The app’s first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show *personal info* about the player, while the other will show *performance-related info*. The app also allows the user to update performance data, by entering new values after a game finishes. 
+The app’s first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show *personal info* about the player, while the other will show *performance-related info*. 
+
+<span style="color: blue">DPS923 students:<br>
+The app also allows the user to update performance data, by entering new statistical values.</span>
 
 The following shows the navigation path from the list to the first "personal info" view. 
 
@@ -39,7 +42,7 @@ The following shows the navigation path from the list to the first "personal inf
 
 The following shows the navigation path from the list to the "performance info" view. 
 
-> To be posted
+<img class="border1" src="images/a2-list-v1.png" alt="List"><img class="border1" src="images/a2-perf-v1.png" alt="Detail">
 
 <br>
 
@@ -95,7 +98,27 @@ Your professor has extracted player and performance data of quarterbacks from th
 
 Player photos and team logos have also been extracted. All content has been packaged in a zip file that you can get from the Blackboard/My.Seneca Assignment 2 upload link, or from here:
 
-[Click here to download the zip file](a2-assets.zip)
+[Click here to download the zip file](a2-assets-v2.zip)
+
+> Important note:  
+> If you downloaded the zip file before 5:00pm on  
+> Tuesday, October 2, then you must do so again.  
+> A data type problem was discovered, and corrected.  
+> In the QBPerf and QBPerfManager classes, the "Float"  
+> data types were changed to "Double".  
+> So, after you get the new version, replace the files  
+> QBPerf.swift and QBPerfManager.swift
+
+> Alternatively, edit your existing source code.  
+> Xcode has a nice "edit all in scope" feature,  
+> that will edit all matching strings in one task.  
+> If you're interested, here's how to do it:  
+> 1. Open the source code file (e.g. QBPerf.swift)  
+> 2. Click one of the "Float" words.  
+> 3. Press Control+Command+E, and you will notice all are highlighted  
+> 4. Replace "Float" with "Double"; press Enter when done 
+
+<br>
 
 After unzipping, copy the contents into your project. There are at least two ways to do this:  
 1. Drag-and-drop from Finder into the project navigator  
@@ -103,7 +126,7 @@ After unzipping, copy the contents into your project. There are at least two way
 
 For both ways, ensure that you choose the "copy files" setting. 
 
-The data is located in the "plist" files (QBInfo.plist and QBPerf.plist). 
+The data is located in the "plist" files (QBInfo.plist and QBPerf.plist). The unique identifier (or key) for each data file is the value in the `playerName` key-value pair.
 
 Source code files are included (QBInfo.swift and QBPerf.swift), and each describes the shape of the data. 
 
@@ -179,16 +202,19 @@ It should be clear to you that they're logically-related. In the next task, you 
 // https://developer.apple.com/documentation/swift/string/1641392-lowercased
 
 // Append the filename's extension (.png)
+// At this point, the string should be complete
+// For example, a2-ryan-fizpatrick.png
 
 // Set the image property of the cell's image view 
 // by using the UIImage(named:) method, e.g. 
 // ... UIImage(named: playerPhotoName)
-
-
-
 ```
 
+At this point in time, your app should display the data.
 
+<br>
+
+### Adding other controllers and scenes
 
 <br>
 <br>
@@ -196,13 +222,6 @@ It should be clear to you that they're logically-related. In the next task, you 
 **more to come**
 <br>
 <br>
-<br>
-
-
-Layout  
-Add item  
-Calculations (including [passer rating](https://en.wikipedia.org/wiki/Passer_rating))
-
 <br>
 
 <br>
