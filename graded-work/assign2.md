@@ -17,7 +17,8 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Monday, October 8, 2018, at 11:00am ET  
+Wednesday, October 10, 2018, at 11:00pm ET  
+<span style="background-color: yellow">This is a change from the original plan<br>You have until the end of Wednesday evening to complete the assignment</span>  
 Grade value: 10% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
@@ -28,15 +29,15 @@ Grade value: 10% of your final course grade
 
 We need an app that will display performance information for quarterbacks in the current 2018 season in the National Football League.  
 
-The app’s first view will be a table view, showing a list of quarterback names. Two "detail" views will be available. One will show info about the player, while the other will show performance-related information. The app also allows the user to update performance data, by entering new values after a game finishes. 
+The app’s first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show personal info about the player, while the other will show performance-related info. The app also allows the user to update performance data, by entering new values after a game finishes. 
 
-The following shows the navigation path from the list to the "info" view. 
+The following shows the navigation path from the list to the first "personal info" view. 
 
 <img class="border1" src="images/a2-list-v1.png" alt="List"><img class="border1" src="images/a2-info-v1.png" alt="Detail">
 
 <br>
 
-The following shows the navigation path from the list to the "performance" view. 
+The following shows the navigation path from the list to the "performance info" view. 
 
 > To be posted
 
@@ -46,7 +47,7 @@ The following shows the navigation path from the list to the "performance" view.
 
 Create a new iOS app, using the Single View Application template. The name of the app should be "**Players**".  
 
-On the project settings editor, choose "11.0" as the "iOS Deployment Target". That way you can edit your work on different College Macs. 
+On the project settings editor, choose "11.0" as the "iOS Deployment Target". That way you can edit your work on other College Macs. 
 
 On the target settings editor, we suggest that you un-check (clear) the "Landscape Left" and "Landscape Right" checkboxes. The app will work only for portrait mode. 
 
@@ -56,7 +57,7 @@ On the target settings editor, we suggest that you un-check (clear) the "Landsca
 
 #### Replace the view controller and scene
 
-The template-provided view controller and scene cannot be used in this app. Therefore, in the project navigator, delete the ```ViewController.swift``` file. 
+The template-provided view controller and scene cannot be used in this app. Therefore, in the project navigator, delete the `ViewController.swift` file. 
 
 Next, select the "Players" folder item near the top of the project navigator, and create a new file (Command-N). It will be a Cocoa Touch Class. Next, make it a subclass of UITableViewController. 
 
@@ -89,12 +90,42 @@ Again, as noted above, read/skim the rest of this document before you begin work
 #### Data and model classes for the app
 
 Your professor has extracted player and performance data of quarterbacks from the National Football League (NFL) public web site. There are two collections:
-1. Player detail, including name, physical info, birthplace, and so on 
-2. Player performance data, including the statistics that are commonly used to assess performance
+1. QBInfo - Personal data, including name, physical info, birthplace, and so on 
+2. QBPerf - Performance data, including the statistics that are commonly used to assess performance
 
 Player photos and team logos have also been extracted. All content has been packaged in a zip file that you can get from the Blackboard/My.Seneca Assignment 2 upload link, or from here:
 
 [Click here to download the zip file](a2-assets.zip)
+
+After unzipping, copy the contents into your project. There are at least two ways to do this:  
+1. Drag-and-drop from Finder into the project navigator  
+2. In project navigator, on the yellow folder, right-click and "Add files to..." 
+
+For both ways, ensure that you choose the "copy files" setting. 
+
+The data is located in the "plist" files (QBInfo.plist and QBPerf.plist). 
+
+Source code files are included (QBInfo.swift and QBPerf.swift), and each describes the shape of the data. 
+
+The other source code files (QBInfoManager.swift and QBPerfManager.swift) hold data *manager* classes. Each data manager has a public property (sharedManager) that can be used as a reference in any view controller. Each also has a public method (allQBInfos() or allQBPerfs()) that returns an array with the requested objects (i.e. an array of QBInfo objects, or an array of QBPerf objects). 
+
+To use the data in any view controller, follow this pattern:
+
+```swift
+// Create these instance variables...
+
+// Get a reference to the data manager
+let mInfo = QBInfoManager.sharedManager
+
+// Create a local collection to hold the data
+var qbInfo: [QBInfo] = []
+
+// Then, in viewDidLoad(), fetch the data 
+qbInfo = mInfo.allQBInfos()
+
+// At this point in time, the qbInfo array will have
+// all the player personal info, ready for display
+```
 
 <br>
 
