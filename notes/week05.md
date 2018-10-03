@@ -47,9 +47,6 @@ After the test, we will have an interactive activity, and there may be time to w
 #### This week's Swift focus
 
 Swift optionals, summarized in [this document](/topics/info-optionals)  
-Model classes  
-Data manager object  
-Table view interactions, previewing the delegate and protocol concepts
 
 <br>
 

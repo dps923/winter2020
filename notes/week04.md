@@ -36,7 +36,9 @@ If there's time remaining, work on Assignment 2.
 
 #### This week's Swift focus
 
-Arrays
+Arrays  
+Model classes  
+Data manager object  
 
 <br>
 
