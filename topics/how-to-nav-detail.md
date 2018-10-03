@@ -45,12 +45,26 @@ Then, build-and-run. Tapping (clicking) on the &#9432; (detail accessory) should
 
 Almost always, when a specific row is tapped, you will want to pass its data to the detail view. 
 
-First, make sure that the detail view controller has a property (instance variable) to hold the data. You can choose its data type to fulfill your use case. (Sometimes the data will be a simple value like a string. In other scenarios, an object or collection will be passed on.)
+First, make sure that the detail view controller has a property (instance variable) to hold the data. You can choose its data type to fulfill your use case. (Sometimes the data will be a simple value like a string. In other scenarios, an object or collection will be passed on.) For example:
+
+```swift
+// Simple string
+var nameThing: String!
+```
+
+...or...
+
+```swift
+// Product object
+var selectedProduct: Product!
+```
+
+<br>
 
 > This technique is described in the document  
 > [How to: Controller with a data model reference]()
 
-Next, uncomment the [`prepare(for:sender:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621490-prepare) method. 
+Next, in the table view controller, uncomment the [`prepare(for:sender:)`](https://developer.apple.com/documentation/uikit/uiviewcontroller/1621490-prepare) method. 
 
 Write an ```if``` statement to match the segue identifier. 
 
@@ -69,6 +83,8 @@ let vc = segue.destination as! FooDetail
 Now, we need to discover which row was tapped, so that we can go back to the data model (source) and fetch the data to be passed on. 
 
 > Remember, the table view itself is NOT the data source - it is simply displaying some content from the data source. 
+
+<br>
 
 Add an `if let` statement that attempts to get the tapped row.
 

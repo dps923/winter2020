@@ -40,11 +40,12 @@ var surveyAnswer: String?
 
 An "if let" block guards your code from nil values. (This is known as "optional binding".)
 
-In other languages, you do this:
+In other languages, you do something like this:
 
 ```csharp
 // C#
 var greeting = "";
+// Check for null value..
 if optionalName != null {
     greeting = $"Hello, {optionalName}";
 }
