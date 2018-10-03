@@ -29,16 +29,14 @@ All assignments are due at 11:00am ET. (That's the morning.)
 Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Monday, September 10 | Monday, September 24
-[Assign 2](/graded-work/assign2) | Monday, September 24 | Monday, October 6*
-Assign 3 | Monday, October 6 | Monday, October 22**
+[Assign 2](/graded-work/assign2) | Monday, September 24 | Wednesday, October 10
+Assign 3 | Monday, October 8 | Monday, October 22*
 Assign 4 | Monday, October 22 | Friday, November 30 
 
 Make plans to demonstrate your Assignment 4 work to your professor sometime during the regularly-scheduled class times in the final week of the term, on Monday December 3, or Wednesday December 5. 
 
 ~ ~ ~
 
-*Yes, I know that October 6 is the Monday Thanksgiving Day holiday. If you have a problem with that, then set your personal due date to the Friday before. 
-
-**Yes, I know that October 22 is the Monday in Study Week. If you have a problem with that, then set your personal due date to the Friday before. No, you cannot have the rest of study week to do Assignment 3.
+*Yes, I know that October 22 is the Monday in Study Week. If you have a problem with that, then set your personal due date to the Friday before. No, you cannot have the rest of study week to do Assignment 3.
 
 <br>
