@@ -24,11 +24,17 @@ From the object library, add a new table view controller. Then:
 
 Select the just-added navigation controller. On its attributes inspector, check (select/mark) the "Is Initial View Controller" checkbox.
 
-On the document outline, in the table view controller hierarchy, select the "Navigation Item". On its attributes inspector, enter an approprate value for the Title property.
+On the document outline, in the table view controller hierarchy, select the "Navigation Item". 
+
+<img class="border1" src="images/new-tvc-nav-item.png" alt="List">
+
+On its attributes inspector, enter an approprate value for the Title property.
+
+<img class="border1" src="images/new-tvc-nav-item-title.png" alt="List">
 
 Next, select its table view cell object. On its attributes inspector, enter an appropriate value for the Identifier property (something short like "cell"). 
 
-Open the just-added table view controller code in the editor. Locate the commented-out [```tableView(_:cellForRowAt:)```](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview) method. Then: 
+Open the just-added table view controller code in the editor. Locate the commented-out [`tableView(_:cellForRowAt:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview) method. Then: 
 * Uncomment the method
 * Replace the "reuseIdentifier" text with the value you entered above for the Identifier property 
 
@@ -40,11 +46,25 @@ At this point, the app should successfully build, and show an empty list.
 
 If you want the list to show one or more items (just to prove that it works), do the following, and then build-and-run:
 
-1. In the ```numberOfSections(in:)``` method, return 1, instead of zero
+1. In the `numberOfSections(in:)` method, return 1, instead of zero
 
-2. In the ```tableView(_:numberOfRowsInSection:)``` method, return 1 (or more if you wish), instead of zero
+2. In the `tableView(_:numberOfRowsInSection:)` method, return 1 (or more if you wish), instead of zero
 
-3. In the ```tableView(_:cellForRowAt:)``` method, add a line of code to configure the cell's textLabel property...  
-```cell.textLabel?.text = "Hello, world!"```
+3. In the `tableView(_:cellForRowAt:)` method, add a line of code to configure the cell's textLabel property...  
+`cell.textLabel?.text = "Hello, world!"`
+
+<br>
+
+### Show some real data
+
+<br>
+<br>
+<br>
+
+( more to come )
+
+<br>
+<br>
+<br>
 
 <br>

@@ -9,14 +9,14 @@ This page has links to various topics that supplement and/or summarize the [text
 
 How-to: Write entity model classes
 
-How-to: Write data model manager class 
+How-to: Write a data model manager class 
 
 How to: Controller with a data model reference
 
-[How-to: New app with table view controller](how-to-new-app-tvc)
+[How-to: New app with table view controller](how-to-new-app-tvc) (in progress)
 
-[How-to: Navigation from table view, drill-down disclosure &gt;](how-to-nav-disclosure)
+[How-to: Navigation from table view, drill-down disclosure &nbsp;&gt;](how-to-nav-disclosure)
 
-[How-to: Navigation from table view, detail &#9432;](how-to-nav-detail)
+[How-to: Navigation from table view, detail &nbsp;&#9432;](how-to-nav-detail)
 
 <br>
