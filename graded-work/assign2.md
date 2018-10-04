@@ -7,7 +7,7 @@ layout: default
 
 Assignment 2 enables you to create a multi-view navigation-style app, with many levels of navigation (list, detail, add item). Also enables you to get hands-on experience with the iOS table view infrastructure, and introduces you to models, the "M" part of the MVC pattern. 
 
-<p style="color: red;"><span>This document is being edited.<br>This notice will be removed when the edits are complete.</span></p>
+<p style="color: red;"><span>This document is being edited.<br>It is ready, except for the extra DPS923 task.<br>This notice will be removed when the edits are complete.</span></p>
 
 Read/skim all of this document before you begin work.
 
@@ -36,7 +36,7 @@ The app also allows the user to update performance data, by entering new statist
 
 The following shows the navigation path from the list to the first "personal info" view. 
 
-<img class="border1" src="images/a2-list-v1.png" alt="List"><img class="border1" src="images/a2-info-v1.png" alt="Detail">
+<img class="border1" src="images/a2-list-v1.png" alt="List"><img class="border1" src="images/a2-detail-v2.png" alt="Detail">
 
 <br>
 
@@ -128,7 +128,7 @@ For both ways, ensure that you choose the "copy files" setting.
 
 The data is located in the "plist" files (QBInfo.plist and QBPerf.plist). The unique identifier (or key) for each data file is the value in the `playerName` key-value pair.
 
-Source code files are included (QBInfo.swift and QBPerf.swift), and each describes the shape of the data. 
+Data model class source code files are included (QBInfo.swift and QBPerf.swift), and each describes the shape of each entity. 
 
 The other source code files (QBInfoManager.swift and QBPerfManager.swift) hold data *manager* classes. Each data manager has a public property (sharedManager) that can be used as a reference in any view controller. Each also has a public method (allQBInfos() or allQBPerfs()) that returns an array with the requested objects (i.e. an array of QBInfo objects, or an array of QBPerf objects). 
 
@@ -165,11 +165,11 @@ We're ready to show data on the table view. Follow the guidance (textbook, class
 
 * The prototype cell style should be "Subtitle", so that we can show two lines of text. 
 
-* The table view will enable TWO kinds of navigation (disclosure, and detail), so configure its accessory as "Detail Disclosure". 
+* The table view will allow TWO kinds of navigation (detail, and disclosure), so configure its accessory as "Detail Disclosure". 
 
 * In the controller code, set the return value for the "number of sections" method to 1. 
 
-* Set the return value for the "number of rows" to the count of items in the array (data source). 
+* Set the return value for the "number of rows" to the count of items in the array (which is the data source). 
 
 * Configure the cell's text content. Use this guidance:
 
@@ -183,9 +183,9 @@ We're ready to show data on the table view. Follow the guidance (textbook, class
 
 Before continuing, study the data. Notice the format of the player names. (For example, Ryan Fitzpatrick.) 
 
-Next, study the player photos. Notice the format of the photo file names. (For example, a2-ryan-fizpatrick. FYI, all begin with "a2-". And, all are "png" files.)
+Next, study the player photos (either in the asset catalog or in Finder). Notice the format of the photo file names. (For example, `a2-ryan-fizpatrick`. FYI, all begin with "a2-". And, all are "png" files.)
 
-It should be clear to you that they're logically-related. In the next task, you will configure the cell's image content, and you will need to specify an image name. You must transform the player name string into a string that matches the expected image name format. To do this, you will learn a few Swift string methods. Let's continue with the task list:
+It should be clear to you that the name of each photo uses the player's name. In the next task, you will configure the cell's image content, and you will need to specify an image name. You must transform the player name string into a string that matches the expected image name format. To do this, you will learn a few Swift string methods. Let's continue with the task list:
 
 * Configure the cell's image content. Use this guidance:
 
@@ -210,11 +210,58 @@ It should be clear to you that they're logically-related. In the next task, you 
 // ... UIImage(named: playerPhotoName)
 ```
 
-At this point in time, your app should display the data.
+<br> 
+
+At this point in time, your app should display the data as a list of players in the table view.
+
+<img class="border1" src="images/a2-list-v1.png" alt="List">
 
 <br>
 
 ### Adding other controllers and scenes
+
+Before continuing, ensure that your app will display the list of players. 
+
+<br>
+
+#### Detail controller and scene
+
+Add and configure a DETAIL controller and scene. 
+
+Reminder, this will appear only when a user taps the &#9432; detail accessory. 
+
+> Follow the guidance in [this document](/topics/how-to-nav-detail) to complete this task. 
+
+What should appear on the view? All data from the QBInfo object, except for the values in the "rank" and "teamCode" properties. As suggested by the sample screen capture, show the player's photo in a suitable size. Use the value of the "teamCode" property to show the team icon. 
+
+<img class="border1" src="images/a2-detail-v2-storyboard.png" alt="List"><img class="border1" src="images/a2-detail-v2.png" alt="Detail">
+
+<br>
+
+#### Disclosure controller and scene
+
+Add and configure a DISCLOSURE controller and scene.
+
+Reminder, this will appear when a user taps anywhere on a row (except on a detail accessory, if present). 
+
+> Follow the guidance in [this document](/topics/how-to-nav-disclosure) to complete this task. 
+
+What should appear in the view? All data from the QBInfo object, except for the values in the "rank" and "teamCode" properties. As suggested by the sample screen capture, show the player's photo in a suitable size. Use the value of the "teamCode" property to show the team icon. You must provide the string values for the rest of the data. (Tip: Use Swift string interpolation.)
+
+<img class="border1" src="images/a2-perf-v1-storyboard.png" alt="List"><img class="border1" src="images/a2-perf-v1.png" alt="Detail">
+
+<br>
+
+MAP523 students - you're done. 
+
+DPS923 students - continue with the next task.
+
+<br>
+
+<span style="color: blue">DPS923 students:<br>
+The app also allows the user to update performance data, by entering new statistical values.</span>
+
+### Update performance data
 
 <br>
 <br>
