@@ -18,7 +18,7 @@ Week 2<br>Sep 10, Sep 12 | Chapters 1, 2, 3<br>Button, slider, label | |
 Week 3<br>Sep 17, Sep 19 | Chapters 4, 5, 6<br>Outlet, UI update and enhance | Practice test<br>Sep 17 | 0%
 Week 4<br>Sep 24, Sep 26 | Chapters 7, 8<br>Fit and finish | Assign 1<br>due Sep 24 | 10%
 Week 5<br>Oct 1, Oct 3 | Chapters 9, 10, 11, 12<br>Table view, data model, nav controller, add item | Test 1 | 12%
-Week 6<br>Oct 10 | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Assign 2<br>due Oct 8 | 10%
+Week 6<br>Oct 10 | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Assign 2<br>due Oct 10 | 10%
 Week 7<br>Oct 15, Oct 17 | Chapters 16, 17, 18, 19, 20<br>Lists, varied data, notifications | Test 2  | 12%
 Study week<br>Oct 22 - 26 | | Assign 3<br>due Oct 22 | 10%
 Week 8<br>Oct 29, Oct 31 | Chapters 21, 22, 23, 24<br>Location introduction | | 
