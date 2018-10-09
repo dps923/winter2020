@@ -19,9 +19,9 @@ The theme for this week is to get more experience with table views in iOS apps.
 
 The professor will guide you through the topic hightlights in the textbook. 
 
-Chapter 13: Delegates and Protocols
-Chapter 14: Edit Items
-Chapter 15: Saving and Loading
+Chapter 13: Delegates and Protocols  
+Chapter 14: Edit Items  
+Chapter 15: Saving and Loading  
 
 In the time remaining, work on Assignment 2.
 
