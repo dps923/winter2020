@@ -7,8 +7,6 @@ layout: default
 
 Assignment 2 enables you to create a multi-view navigation-style app, with many levels of navigation (list, detail, add item). Also enables you to get hands-on experience with the iOS table view infrastructure, and introduces you to models, the "M" part of the MVC pattern. 
 
-<p style="color: red;"><span>This document is being edited.<br>It is ready, except for the extra DPS923 task.<br>This notice will be removed when the edits are complete.</span></p>
-
 Read/skim all of this document before you begin work.
 
 While you are doing the work, if a *specific task* is not clear, or it seems to require an unreasonable amount of time to complete, contact your professor. 
@@ -30,9 +28,6 @@ Grade value: 10% of your final course grade
 We need an app that will display performance information for quarterbacks in the current 2018 season in the National Football League.  
 
 The app’s first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show *personal info* about the player, while the other will show *performance-related info*. 
-
-<span style="color: blue">DPS923 students:<br>
-The app also allows the user to update performance data, by entering new statistical values.</span>
 
 The following shows the navigation path from the list to the first "personal info" view. 
 
@@ -249,27 +244,6 @@ Reminder, this will appear when a user taps anywhere on a row (except on a detai
 What should appear in the view? All data from the QBInfo object, except for the values in the "rank" and "teamCode" properties. As suggested by the sample screen capture, show the player's photo in a suitable size. Use the value of the "teamCode" property to show the team icon. You must provide the string values for the rest of the data. (Tip: Use Swift string interpolation.)
 
 <img class="border1" src="images/a2-perf-v1-storyboard.png" alt="List"><img class="border1" src="images/a2-perf-v1.png" alt="Detail">
-
-<br>
-
-MAP523 students - you're done. 
-
-DPS923 students - continue with the next task.
-
-<br>
-
-<span style="color: blue">DPS923 students:<br>
-The app also allows the user to update performance data, by entering new statistical values.</span>
-
-### Update performance data
-
-<br>
-<br>
-<br>
-**more to come**
-<br>
-<br>
-<br>
 
 <br>
 

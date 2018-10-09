@@ -100,3 +100,38 @@ Swift documentation
 [Guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
 
 <br>
+
+Declare it as an [implicitly unwrapped optional](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html#ID334). 
+
+
+= = = = = =  
+
+Cut from A2 at the last moment
+
+<span style="color: blue">DPS923 students:<br>
+The app also allows the user to update performance data, by entering new statistical values.</span>
+
+MAP523 students - you're done. 
+
+DPS923 students - continue with the next task.
+
+<br>
+
+<span style="color: blue">DPS923 students:<br>
+The app also allows the user to update performance data, by entering new statistical values.</span>
+
+### Update performance data
+
+<br>
+<br>
+<br>
+**more to come**
+<br>
+<br>
+<br>
+
+<br>
+
+
+
+<br>

@@ -13,10 +13,10 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 8**<br>&bull; Mon Oct 29<br>&bull;Wed Oct 31 &#127875; | Chapters 21, 22, 23, 24<br>Location topic introduction |  | 
-**Study week**<br>&bull; Mon Oct 22 to<br>&bull;Fri Oct 26 | (no classes) | Monday:<br>Assign 3 due, 10% | 
+**Week 8**<br>&bull; Mon Oct 29<br>&bull; Wed Oct 31 &#127875; | Chapters 21, 22, 23, 24<br>Location topic introduction |  | 
+**Study week**<br>&bull; Mon Oct 22 to<br>&bull; Fri Oct 26 | (no classes) | Monday:<br>Assign 3 due, 10% | 
 **Week 7**<br>&bull; Mon Oct 15<br>&bull; Wed Oct 15 | Chapters 16, 17, 18, 19, 20<br>Lists, varied data, notifications | Monday:<br>Test 2, 12% | 
-**Week 6**<br>&bull; Wed Oct 10 | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Wednesday:<br>[Assign 2](/graded-work/assign2) due, 10% | 
+**[Week 6](week06)**<br>[&bull; Wed Oct 10](week06) | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Wednesday:<br>[Assign 2](/graded-work/assign2) due, 10% | 
 **[Week 5](week05)**<br>[&bull; Mon Oct 1<br>&bull; Wed Oct 3](week05) | Chapters 9, 10, 11, 12<br>Table view, data model, nav controller, add item | Wednesday:<br>Test 1, 12% | 
 **[Week 4](week04)**<br>[&bull; Mon Sep 24<br>&bull; Wed Sep 26](week04) | Chapters 7, 8<br>Fit and finish | Monday:<br>[Assign 1](/graded-work/assign1) due, 10% | 
 **[Week 3](week03)**<br>[&bull; Mon Sep 17<br>&bull; Wed Sep 19](week03) | Chapters 4, 5, 6<br>Outlet, UI update and enhance | Monday:<br>Practice test, 0% | 

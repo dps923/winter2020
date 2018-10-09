@@ -13,7 +13,7 @@ How-to: Write a data model manager class
 
 How to: Controller with a data model reference
 
-[How-to: New app with table view controller](how-to-new-app-tvc) (in progress)
+[How-to: New app with table view controller](how-to-new-app-tvc)
 
 [How-to: Navigation from table view, drill-down disclosure &nbsp;&gt;](how-to-nav-disclosure)
 

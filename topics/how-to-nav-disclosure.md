@@ -118,7 +118,7 @@ Next, get the data, pass it on, and set/configure the next scene's title propert
 ```swift
 // use the index path to fetch what you want from the data model
 // assume that "arrayDataSource" is an array, and the data source
-let selectedData = arrayDataSource[indexPath.row]
+let selectedData = arrayDataSource[indexPath!.row]
 
 // pass it on (set the destination controller's data property)
 // assume that the destination controller has a "dataObject" property
