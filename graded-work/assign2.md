@@ -274,7 +274,9 @@ Follow these instructions to submit your work, before the due date and time:
 
 3. Copy these source code files to the "MyCode" folder:  
 **Main.storyboard**  
-( more to come )  
+**Your table view controller**
+**The "detail" view controller**
+**The "performance" view controller**
 For each of these files, change the file name extension to "txt".
 
 4. Right-click the folder, and choose **Compress “xxxxxxxx”**, which creates a zip file.  
