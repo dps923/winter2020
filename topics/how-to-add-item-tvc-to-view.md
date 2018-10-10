@@ -1,8 +1,8 @@
 ---
-title: How-to Configure data for a controller
+title: How-to Add item, table view with modal view
 layout: default
 ---
 
-## How-to: Configure data for a controller
+## How-to: Add item, table view with modal view
 
 <br>

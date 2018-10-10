@@ -23,6 +23,34 @@ Chapter 13: Delegates and Protocols
 Chapter 14: Edit Items  
 Chapter 15: Saving and Loading  
 
+<br>
+
+#### Highlights 
+
+The "add item" topic begins on page 253.  
+Done with a table view.  
+Table view not used as much as standard view.  
+
+Reminder, page 263, that a nav controller is "just" a wrapper around one or more view controllers that all participate in a navigation "chain" or sequence. 
+
+Delegate, have seen that before. Protocol too.  
+Delegate is a code module - typically a view controller - that includes methods that handle events that happen in the *delegator*.  
+Protocol is a code module - often provided by the framework / library / kit, but could be defined by you, the programmer - that *defines* the method-handling events.  
+
+Page 279 covers delegate content.  
+
+File diff is shown on page 283. Yay.  
+
+The delegate procedure, starts on page 287.  
+Sending data back-and-forth, page 308 onwards.  
+Refactor / rename, page 314. Nice.  
+
+Saving and loading, starts on page 322.  
+
+<br>
+
+#### Other
+
 In the time remaining, work on Assignment 2.
 
 <br>
