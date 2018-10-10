@@ -94,7 +94,7 @@ There are a few different ways to do this, and we show one typical way below. In
 let m = DataModelManager.sharedManager
 ```
 
-Next, the manager will have one or more properties and/or methods that enable data service operations (fetch, add, change, etc.). For example, it may have a member (e.g. a method) that delivers a collection of products:
+Next, the manager will have one or more properties and/or methods that enable data service operations (e.g. fetch, add, change, etc.). For example, it may have a member (e.g. a method) that delivers a collection of products:
 
 ```swift
 // In the viewDidLoad() method,

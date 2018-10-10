@@ -11,7 +11,7 @@ How-to: Write entity model classes
 
 How-to: Write a data model manager class 
 
-How to: Controller with a data model reference
+[How to: Controller with a data model reference](how-to-data-for-controller)
 
 [How-to: New app with table view controller](how-to-new-app-tvc)
 
