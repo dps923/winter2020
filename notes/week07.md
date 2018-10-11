@@ -15,7 +15,6 @@ After previewing some of the upcoming topics in the textbook, we will modify the
 
 The following chapters will *NOT* be covered by us in any depth in the next few weeks:
 * Chapter 16: Lists  
-* Chapter 17: Improved Data Model
 * Chapter 18: User Defaults
 * Chapter 19: UI Improvements
 * Chapter 20: Local Notifications  
