@@ -57,7 +57,7 @@ In the time remaining, work on Assignment 2.
 
 #### This week's Swift focus
 
-TBA
+(None this week, as we're busy with other topics.)
 
 <br>
 
