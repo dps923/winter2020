@@ -73,7 +73,7 @@ TBA
 ### Learning resources
 
 iOS Apprentice  
-Chapters 16, 17, 18, 19, 20
+Chapters 12, 13, 14, 15, 17
 
 Swift documentation  
 [Tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)  
