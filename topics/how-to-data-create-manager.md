@@ -1,8 +1,8 @@
 ---
-title: How-to Configure data for a controller
+title: How-to Create data model manager for the app
 layout: default
 ---
 
-## How-to: Configure data for a controller
+## How-to: Create data model manager for the app
 
 <br>

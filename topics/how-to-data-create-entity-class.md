@@ -1,8 +1,8 @@
 ---
-title: How-to Configure data for a controller
+title: How-to Create data model entity class
 layout: default
 ---
 
-## How-to: Configure data for a controller
+## How-to: Create data model entity class
 
 <br>

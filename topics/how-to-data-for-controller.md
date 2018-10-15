@@ -45,7 +45,7 @@ we need the data as a single object
 4. We need a reference to the manager, and  
 we need the data as a collection
 
-In the *instance variables* declaration area of the class, declare an *empty* array of the desired data type. Here's the code needed for each scenario:
+In the *instance variables* declaration area of the class, declare a *nil* object or an *empty* array of the desired data type. When necessary, declare a manager object too. Here's the code needed for each scenario:
 
 ```swift
 // Scenario 1 - no manager ref, single object
@@ -75,7 +75,7 @@ As noted above, the pattern we are using assumes that the controller comes to li
 
 You can also safely assume that the injector has the data - and/or a reference to the data model manager - needed by the new controller. 
 
-If your controller is the first one to load in an app, then the injector is the *app delegate* (and its source code is in the `AppDelegate.swift` file). Here's the algorithms:
+If your controller is the first one to load in an app, then the injector is the *app delegate* (and its source code is in the `AppDelegate.swift` file). Here's the typical algorithms for the app delegate code:
 
 ```swift
 // If your controller is a standard view...
@@ -101,7 +101,7 @@ Alternatively, if your controller loads as a result of some action or event, the
 ```swift
 // If triggered by an action method...
 // Create an instance of your controller
-// Locate the data that will be passed on (depending...)
+// Locate the data that will be passed on (if necessary...)
 // Pass on the manager reference to the controller, if needed
 // Pass on the data to the controller, if needed
 // (one of the two above will be needed)
@@ -109,7 +109,7 @@ Alternatively, if your controller loads as a result of some action or event, the
 // If triggered by a segue method...
 // In a matching-segue block of code...
 // Create an instance of your controller
-// Locate the data that will be passed on (depending...)
+// Locate the data that will be passed on (if necessary...)
 // Pass on the manager reference to the controller, if needed
 // Pass on the data to the controller, if needed
 // (one of the two above will be needed)
