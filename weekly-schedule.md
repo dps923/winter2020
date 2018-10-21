@@ -20,8 +20,8 @@ Week 4<br>Sep 24, Sep 26 | Chapters 7, 8<br>Fit and finish | Assign 1<br>due Sep
 Week 5<br>Oct 1, Oct 3 | Chapters 9, 10, 11<br>Table view, data model, nav controller | Test 1 | 12%
 Week 6<br>Oct 10 | Chapters 12, 13, 14<br>Add item, delegate, protocol, edit item | Assign 2<br>due Oct 10 | 10%
 Week 7<br>Oct 15, Oct 17 | Chapters 15, 17<br>Save/load, data model | Test 2  | 12%
-Study week<br>Oct 22 - 26 | | Assign 3<br>due Oct 22 | 10%
-Week 8<br>Oct 29, Oct 31 | Chapters 21, 22, 23, 24<br>Location introduction | | 
+Study week<br>Oct 22 - 26 | Recommended...<br> Chapter 21, Swift language review | | 
+Week 8<br>Oct 29, Oct 31 | Chapters 22, 23, 24, 25<br>Location introduction | Assign 3<br>due Nov 1 | 10%
 Week 9<br>Nov 5, Nov 7 | Chapters 25, 26, 27, 28<br>Location enhancements | Test 3| 13%
 Week 10<br>Nov 12, Nov 14 | Chapters 29, 30, 31<br>Maps | | 
 Week 11<br>Nov 19, Nov 21 | Chapters 32, 33 (and bits of others)<br>Search, more table view | Test 4 | 13%

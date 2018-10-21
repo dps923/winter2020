@@ -46,9 +46,9 @@ In class, we discuss the objects in an iOS app, with help from a diagram.
 
 The *app delegate*, drawn on the left of the diagram with black lines, is the first object that loads when an app starts. It typically has a property (instance variable) to hold the data model manager. It passes on a refererence to the manager to the first controller. It also has many lifecycle methods that are called by the iOS runtime. 
 
-The *data model manager* is drawn in the bottom-middle area of the diagram. It has properties (and often private instance variables) to hold the app's data. It also has methods that do tasks (fetch, add, change, etc.). 
+The *data model manager* is drawn in the bottom-middle area of the diagram. It has properties (and often private instance variables) to hold the app's data. It also has methods that do tasks (fetch, add, change, sort, filter, etc.). 
 
-The *entity classes* group is drawn in the middle-right area of the diagram. It has classes that describe the shape (i.e. properties) of the app's entity data. Classes in this group are visible and usable by all other objects. 
+The *entity classes* group is drawn in the middle-right area of the diagram. It has classes that describe the shape (i.e. properties) of the app's entity classes. The classes in this group are visible and usable by all other objects. 
 
 Familiar objects - *controllers* and *views* (scenes on the storyboard) - are in the upper-right area of the diagram, drawn with dark blue lines. Each controller may have properties to hold a reference to the data model manager and a copy of a data object item or collection. 
 

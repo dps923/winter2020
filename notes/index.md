@@ -13,8 +13,8 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 8**<br>&bull; Mon Oct 29<br>&bull; Wed Oct 31 &#127875; | Chapters 21, 22, 23, 24<br>Location topic introduction | Monday:<br>Assign 3 due, 10% | 
-**Study week**<br>&bull; Mon Oct 22 to<br>&bull; Fri Oct 26 | (no classes) | | 
+**Week 8**<br>&bull; Mon Oct 29<br>&bull; Wed Oct 31 &#127875; | Chapters 22, 23, 24, 25<br>Location topic introduction | Thursday:<br>Assign 3 due, 10% | 
+**Study week**<br>&bull; Mon Oct 22 to<br>&bull; Fri Oct 26 | (no classes but we recommend Chapter 21, Swift language review) | | 
 **[Week 7](week07)**<br>[&bull; Mon Oct 15<br>&bull; Wed Oct 17](week07) | Chapters 12, 13, 14, 15 (again), and 17<br>Patterns for add, edit, save, and data model | Wednesday:<br>Test 2, 12% | 
 **[Week 6](week06)**<br>[&bull; Wed Oct 10](week06) | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Wednesday:<br>[Assign 2](/graded-work/assign2) due, 10% | 
 **[Week 5](week05)**<br>[&bull; Mon Oct 1<br>&bull; Wed Oct 3](week05) | Chapters 9, 10, 11, 12<br>Table view, data model, nav controller, add item | Wednesday:<br>Test 1, 12% | 
@@ -33,7 +33,7 @@ Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Monday, September 10 | Monday, September 24
 [Assign 2](/graded-work/assign2) | Monday, September 24 | Wednesday, October 10
-Assign 3 | Monday, October 15 | Monday, October 29
+Assign 3 | Monday, October 22 | Thursday, November 1
 Assign 4 | Monday, October 29 | Friday, November 30 
 
 Make plans to demonstrate your Assignment 4 work to your professor sometime during the regularly-scheduled class times in the final week of the term, on Monday December 3, or Wednesday December 5. 
