@@ -15,7 +15,7 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Thursday, November 1, 2018, at 11:00pm ET  
+Wednesday, November 7, 2018, at 11:00pm ET  
 Grade value: 10% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
@@ -24,7 +24,33 @@ Grade value: 10% of your final course grade
 
 ### Overview and purpose
 
-We need an app that will (more to come... and edit the list of text file submissions)
+We need an app that will work with data about Canada's provinces and cities. 
+
+The app's first scene is a list of provinces. The data model manager's initializer code creates two provinces. 
+
+<img class="border1" src="images/a3-province-list-start.png" alt="List">
+
+<br>
+
+Tapping on the `+` "add" (upper-right) button will modally present an "Add Province" scene.
+
+<img class="border1" src="images/a3-province-add.png" alt="List">
+
+<br>
+
+Back on the province list, tapping a province's &#9432; detail accessory shows more detail.
+
+<img class="border1" src="images/a3-province-detail.png" alt="List">
+
+<br>
+
+Alternatively, tapping elsewhere on the row will show the next scene, which is a list of cities in the tapped/selected province.
+
+<img class="border1" src="images/a3-city-list-start.png" alt="List">
+
+<br>
+
+There is a similar workflow for cities (in a province). 
 
 <br>
 
