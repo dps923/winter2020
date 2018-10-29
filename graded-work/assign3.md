@@ -50,19 +50,133 @@ Alternatively, tapping elsewhere on the row will show the next scene, which is a
 
 <br>
 
-There is a similar workflow for cities (in a province). 
+There is a similar workflow for cities (in a province). We'll discuss that later. 
 
 <br>
 
 ### Getting started
 
-(more to come)
+Create a new single-view project named "Canada". Set the iOS version for deployment at 11.0, and the active scheme for the desired emulated device etc. 
+
+Building the project will probably be easier if you use the code assets in the template (version 1). The how-to instructions below will mostly assume that you are using the template. (If you don't use the template, you will just have to write more code and fill in the gaps a bit more.)
+
+Run the app to prove that it works, before doing any changes. Then, as you make changes, build frequently to ensure there are no errors. 
 
 <br>
 
-### Doing the work (...)
+### Doing the work, data model classes
 
 Again, as noted above, read/skim the rest of this document before you begin work. That way you know what's coming. 
+
+Let's create and configure the app's data. Add these source code files to the project:
+* DataModelClasses.swift
+* DataModelManager.swift
+
+Create two new data model classes. Follow the pattern of the existing "Product" class to code the properties and the initializer.
+
+Add at least the following properties to a new "Province" class:
+* identifier, integer
+* province name, string
+* name of the premier, string
+* area in square kilometres, integer
+
+Add at least the following properties to a new "City" class:
+* identifier, integer
+* city name, string
+* name of the mayor, string
+* population, integer
+
+Before continuing, write the initializers for each class. 
+
+How do we "link" the two classes together? In a way that's similar to other languages, and therefore should be familiar to you. A province can have a collection of cities. Looking the other way, a city belongs to a province. 
+
+Add an array property, of type City, to the Province class. Its initial value is an empty array. Later, when we add City objects, they will be contained within a Province object. 
+
+We should change the City class too. For safety and convenience, it is a good idea to know what province a city belongs to. We can do that by adding an integer property for the province identifier. Yes, we will have to maintain that actively and manually. (Later, when we use a persistence management system - such as a database - some of that work will be done by the system.) Update the City class initializer to require the province identifier. 
+
+Save, build, and run, before continuing. 
+
+<br>
+
+### Doing the work, data model manager
+
+The methods in the manager class assume the use of a "Product" class. In general, follow the pattern of the existing methods, and create new methods for the "Province" class. 
+
+<br>
+
+#### Initializer, load, and save methods
+
+In the initializer, write code to add data for two (2) provinces. Wikipedia is a good source of information. 
+
+> Tip - Comment out the existing code. Then, copy and paste it, and edit the pasted code.
+
+The save and load methods need editing too. Remember from above, our focus is on the province collection. City objects will be contained within each province object, so we do not need a separate data storage file for cities.  
+
+Later (soon), the appropriate code will be copied into the app delegate source code file. We'll do that after the first controller is configured. 
+
+<br>
+
+#### Data service operation tasks (fetch, add, etc.)
+
+Take the time now to write methods for the Province tasks. Maybe do this one method at a time, using a copy-paste and edit workflow. 
+
+> Later (soon), we will add more code to handle city-related tasks.
+
+Save, build, and run, before continuing. 
+
+<br>
+
+### Doing the work, provinces
+
+In the project navigator, delete the "ViewController.swift". On the storyboard, delete the scene. 
+
+Now, we can make the controller that shows a list of provinces. From the template, add the "ProductListBase.swift" source code file. 
+
+Each controller source code file that is added from the template must be edited, to customize it to the current app and its data. Here is a general suggestion about how to make most of the edits. 
+
+First, in the project navigator, rename the added file to better match the current app. For example, here, rename "ProductListBase.swift" to "ProvinceList.swift". 
+
+Next, open it for editing. We will do a *find-replace*. This feature is found on the "Find" menu (and it has a keyboard shortcut, Option+Command+F). 
+
+Turn on (activate) its case sensitivity option (the `Aa` control). It will be blue-colored when activated. 
+
+You will typically do four separate find-replace tasks. For each click the "All" button/control do do the work:
+1. Plurals, proper case - "Products" with "Provinces"
+2. Plurals, lower case - "products" with "provinces"
+3. Singulars, proper case - "Product" with "Province"
+4. Singulars, lower case - "product" with "product"
+
+![Find-replace in a controller](/graded-work/images/a3-find-replace-in-file.png)
+
+<br>
+
+#### Add a table view scene to the storyboard
+
+On the storyboard, add a table view controller. Set its class to the above "ProvinceList" class. Set the cell reuse identifier of the prototype table view cell (to match the value used in the ProvinceList class). Other properties can be set/configured now or later. 
+
+Embed this scene in a navigation controller. Set the navigation controller as the initial view controller. 
+
+Save, build, and run, before continuing. If all goes well, your app will show a list of two provinces.
+
+<img class="border1" src="images/a3-province-list-start.png" alt="List">
+
+<br>
+
+( more to come )
+
+<br>
+
+#### Add...
+
+<br>
+
+#### Detail...
+
+<br>
+
+### Doing the work, cities in a province
+
+TBA
 
 <br>
 

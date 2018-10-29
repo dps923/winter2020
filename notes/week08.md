@@ -20,6 +20,12 @@ Chapter 25: The Tag Location Screen
 
 <br>
 
+#### Project "template"
+
+Your professor has created a project template that will help you build a multi-scene app that uses data. 
+
+<br>
+
 ### Wednesday plan
 
 TBA
