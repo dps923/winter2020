@@ -12,7 +12,7 @@ Add these source code files for the data model code:
 * DataModelClasses.swift 
 * DataModelManager.swift
 
-Add the appropriate controller code files:
+Add the appropriate controller code files to meet your needs:
 * ProductListBase.swift
 * ProductSceneBase.swift
 * ProductDetail.swift
