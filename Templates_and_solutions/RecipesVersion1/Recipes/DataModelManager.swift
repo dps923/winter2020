@@ -41,7 +41,7 @@ class DataModelManager {
     
     // MARK: - Private methods
     
-    private func nextId() -> Int {
+    private func nextProductId() -> Int {
         
         // Look for the maximum "id" value, and return the next usable value
         return products.reduce(0, { max($0, $1.id) }) + 1
@@ -53,12 +53,12 @@ class DataModelManager {
         return products.firstIndex(where: {$0.id == id})
     }
     
-    private func productDataFilePath() -> URL {
+    private func appDataFilePath() -> URL {
         
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         // Optional (for learning, inspection, and troubleshooting)
         //print(paths[0])
-        return paths[0].appendingPathComponent("products.plist")
+        return paths[0].appendingPathComponent("appdata.plist")
     }
     
     // MARK: - Public methods
@@ -67,14 +67,14 @@ class DataModelManager {
         let encoder = PropertyListEncoder()
         do {
             let data = try encoder.encode(products)
-            try data.write(to: productDataFilePath(), options: Data.WritingOptions.atomic)
+            try data.write(to: appDataFilePath(), options: Data.WritingOptions.atomic)
         } catch {
             print("Error encoding item array")
         }
     }
     
     func loadPlist() {
-        if let data = try? Data(contentsOf: productDataFilePath()) {
+        if let data = try? Data(contentsOf: appDataFilePath()) {
             let decoder = PropertyListDecoder()
             do {
                 products = try decoder.decode([Product].self, from: data)
@@ -105,7 +105,7 @@ class DataModelManager {
         // Doing it here too is done for code/data safety
         if !newItem.name.isEmpty && !newItem.maker.isEmpty && newItem.cost > 0.0 {
             // Set the value of "id"
-            newItem.id = nextId()
+            newItem.id = nextProductId()
             // Save it to the collection
             products.append(newItem)
             return products.last
