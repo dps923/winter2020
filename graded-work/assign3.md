@@ -34,13 +34,13 @@ The app's first scene is a list of provinces. The data model manager's initializ
 
 Tapping on the `+` "add" (upper-right) button will modally present an "Add Province" scene.
 
-<img class="border1" src="images/a3-province-add.png" alt="List">
+<img class="border1" src="images/a3-province-add.png" alt="Add">
 
 <br>
 
 Back on the province list, tapping a province's &#9432; detail accessory shows more detail.
 
-<img class="border1" src="images/a3-province-detail.png" alt="List">
+<img class="border1" src="images/a3-province-detail.png" alt="Detail">
 
 <br>
 
@@ -230,13 +230,26 @@ Save, build, and run, before continuing. The app should now enable the user to v
 
 ### Doing the work, cities in a province
 
-TBA
+Province-related work (list, add, detail) is mostly done. Now, we will do the same for cities. 
+
+A descriptive overview of the next few sections is as follows: 
+* The app's first or root controller is a list of provinces 
+* Tapping on a province will segue to a LIST of cities WITHIN that tapped/selected province 
+* Similar to above, the list of cities will support an "add" scene and segue
+* It will also support a standard "next in workflow" scene and segue that will show info/content about the tapped/selected city (it will NOT support a "detail" scene)
+
+<img class="border1" src="images/a3-city-list-start.png" alt="List"><img class="border1" src="images/a3-city-add.png" alt="Add"><img class="border1" src="images/a3-city-scene.png" alt="Scene">
+
+<br>
+
+The work done to assemble this nav flow will be similar to what you just did with provinces. The difference is the data. When we are working with a list of cities, it is a collection of City objects from a specific Province object. We must ensure that the data model manager methods accommodate this difference. 
 
 <br>
 
 #### TBA
 
 (more to come)
+(the edits will be completed before class on Mon Oct 29)
 
 <br>
 
