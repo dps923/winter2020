@@ -1,7 +1,3 @@
-## Templates and solutions
-
-<br>
-
 ### Recipes version 1
 
 Has working data model and controller code that can be used in other projects. Assumes a very simple data storage model, persisted as a plist file in the app's Documents directory. 
