@@ -11,6 +11,8 @@ The app's data model is persisted in a plist file(s), in the app's Documents dir
 
 Students in Professor McIntyre's iOS programming course have permission to use, copy, and modify the code in this template. Yes, controllers etc. can be copied (added) to another project as-is and then modified to work in the other project. 
 
+Get it from the [course's code repository](https://github.com/dps923/fall2018). It is in the "Templates_and_solutions" folder. There is a convenient zip file for download use, and you can also use a browser to look at the code online.
+
 <br>
 
 ### Features

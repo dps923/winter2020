@@ -33,6 +33,8 @@ Your professor has created a project template that will help you build a multi-s
 
 We will demonstrate its use. It has [some documentation in this note](/topics/info-template-v1). 
 
+Get it from the [course's code repository](https://github.com/dps923/fall2018). It is in the "Templates_and_solutions" folder. There is a convenient zip file for download use, and you can also use a browser to look at the code online.
+
 <br>
 
 ### Wednesday plan

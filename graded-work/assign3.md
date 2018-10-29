@@ -230,7 +230,7 @@ Save, build, and run, before continuing. The app should now enable the user to v
 
 ### Doing the work, cities in a province
 
-Province-related work (list, add, detail) is mostly done. Now, we will do the same for cities. 
+Province-related work (list, add, detail) is mostly done. Now, we will do similar work for cities. 
 
 A descriptive overview of the next few sections is as follows: 
 * The app's first or root controller is a list of provinces 
@@ -242,11 +242,98 @@ A descriptive overview of the next few sections is as follows:
 
 <br>
 
-The work done to assemble this nav flow will be similar to what you just did with provinces. The difference is the data. When we are working with a list of cities, it is a collection of City objects from a specific Province object. We must ensure that the data model manager methods accommodate this difference. 
+The work done to assemble this nav flow will be similar to what you just did with provinces. The difference is the data. When we are working with a list of cities, it is a collection of City objects located in a specific Province object. We must ensure that the data model manager methods accommodate this difference. 
+
+> Tip - Draw a simple diagram that shows the containment or nesting of a small collection of city objects inside a province object. That will help you visualize the data storage scheme. And it will help you plan to write code. 
 
 <br>
 
-#### TBA
+#### Data model manager support for cities
+
+We do not change the existing initializer, load, and save methods. They are good as-is. 
+
+We do need data service methods to support these requests:
+1. Fetch all city objects (i.e. a collection) for a specific province 
+2. Sort all city objects by identifier for a specific province
+3. Sort all city objects by name for a specific province
+4. Fetch one city object for a specific province
+5. Add new city object for a specific province
+
+Notice that all of these requests are "for a specific province"? That means that *ALL* these methods *MUST* have another argument that accepts the province identifier. Then, in the method body, the identifier will typically be used to fetch the province object, before doing the main task (fetch city/cities, sort, add). 
+
+> Don't forget this - all the city-related methods need an argument that accepts the province identifier. 
+
+Here's some guidance for specific methods.
+
+**nextCityId**  
+Fetch the desired province object.  
+The return function does its work (reduce) on the cities collection of the province object. 
+
+**cityById**  
+Consider wrapping this logic in an `if-let` statement.  
+Fetch the desired province object.  
+The return function does its work (find where) on the cities collection of the province object. Here's some pseudocode:  
+```swift
+func cityById( arguments ) -> City? {
+  if let province = provinceById ( value ) {
+    // do stuff, and return the city object
+    return the result
+  }
+  // If the above statement fails, we return nil, which is appropriate
+  return nil
+}
+```
+
+**cityAdd**  
+Again, consider wrapping this logic in an `if-let` statement.  
+Fetch the desired province object.  
+Validate the incoming data.  
+If good, finish configuring the new city item object.  
+Save it to the provinces collection of cities.  
+Return the just-added city object.  
+
+**citiesSortedById** and **citiesSortedByName**  
+Again, `if-let`... (if it fails, return an empty array).  
+Fetch the desired province object.  
+The return function does its work (sorted) on the cities collection of the province object.  
+
+<br>
+
+### City list controller and scene
+
+Remember, this will appear when a province is tapped/selected. The ProvinceList controller will pass on the province object to a new CityList controller. The CityList controller will render/display the contents of the province object's *cities* property, which is an array of zero or more city objects.  
+
+From the template, add the "ProductListBase.swift" source code file. Rename it to CityList.swift. Then find-replace edit the contents. (Use proper English spelling - the plural of "city" is obviously "cities".)
+
+Change the other code (including the code in the `tableView(_:cellForRowAt:)` method) to work properly. 
+
+This city list controller will support two segues. One will be a next/workflow segue, and the other will be a detail segue. Add those segue handlers now too. 
+
+<br>
+
+#### City list scene configuration
+
+On the storyboard, add a table view controller/scene, and set its identity. Set its prototype cell to have a disclosure accessory, and set its reuse identifier. 
+
+Make a segue from the prototype cell in the province list scene to this new city list scene. It is a "Selection Segue", "Show". 
+
+Save, build, and run, before continuing. The app should now enable the user to tap/select a province, and navigate to an empty list of cities (for that province). 
+
+<br>
+
+### Add city controller and scene
+
+From the template, add the "ProductAdd.swift" source code file. Edit (product to city) as you did before. 
+
+Remember to adopt the "add city" protocol in the city list controller, and copy-paste the *example method implementations*.
+
+While you're still editing CityList, activate (uncomment) the code that handles the "toCityAdd" segue. 
+
+Now, do the storyboard work (same list of six tasks that you did above for "add province"). However, BEFORE you do, there is one more special thing that you must do - otherwise task 5 (adding a `+` "Add" bar button) will not work. 
+
+( more to come - finish off the above )
+
+<br>
 
 <span style="color: red">(more to come)<br>(the edits will be completed on Mon Oct 29)</span>
 
