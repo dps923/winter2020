@@ -13,8 +13,8 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 9**<br>&bull; Mon Nov 5<br>&bull; Wed Nov 7 | Chapters 25, 26, 27, 28<br>Location topic enhancements | Wednesday:<br>[Assign 3](/graded-work/assign3) due, 10% | 
-**[Week 8](week08)**<br>[&bull; Mon Oct 29<br>&bull; Wed Oct 31](week08) &#127875; | Chapters 22, 23, 24, 25<br>Location topic introduction | | 
+**Week 9**<br>&bull; Mon Nov 5<br>&bull; Wed Nov 7 | Chapters 23, 27<br>Location topic enhancements, Core Data introduction | Wednesday:<br>[Assign 3](/graded-work/assign3) due, 10% | 
+**[Week 8](week08)**<br>[&bull; Mon Oct 29<br>&bull; Wed Oct 31](week08) &#127875; | Chapter 22<br>Location topic introduction | | 
 **Study week**<br>&bull; Mon Oct 22 to<br>&bull; Fri Oct 26 | (no classes but we recommend... <br>Chapter 21, Swift language review) | | 
 **[Week 7](week07)**<br>[&bull; Mon Oct 15<br>&bull; Wed Oct 17](week07) | Chapters 12, 13, 14, 15 (again), and 17<br>Patterns for add, edit, save, and data model | Wednesday:<br>Test 2, 12% | 
 **[Week 6](week06)**<br>[&bull; Wed Oct 10](week06) | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Wednesday:<br>[Assign 2](/graded-work/assign2) due, 10% | 

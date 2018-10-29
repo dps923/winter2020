@@ -52,9 +52,20 @@ Each code module will need some edits to customize it to your project. Some refe
 
 For the app's data model, add data model classes to meet your project's needs. Add methods to do data service operations (fetch, add, change, etc.) in the manager class. 
 
-For all controllers, change the class name to match the purpose in your project. Remember that there is an easy-to-use procedure: 
-1. In the controller code, select the class name
-2. On the `Editor` menu, choose `Refactor > Rename...`
+For each controller, change the source code file name to match the purpose in your project. Also, change the class name. 
+
+Next, open it for editing. We will do a *find-replace*. This feature is found on the "Find" menu (and it has a keyboard shortcut, Option+Command+F). 
+
+Turn on (activate) its case sensitivity option (the `Aa` control). It will be blue-colored when activated. 
+
+You will typically do four separate find-replace tasks. For each click the "All" button/control do do the work:
+1. Plurals, proper case - "Products" with the plural name of the entity
+2. Plurals, lower case - "products" with the plural name of the entity
+3. Singulars, proper case - "Product" with the singular name of the entity
+4. Singulars, lower case - "product" with the singular name of the entity
+
+![Find-replace in a controller](/graded-work/images/a3-find-replace-in-file.png)
+
 
 Enjoy. 
 

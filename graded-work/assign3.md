@@ -248,8 +248,7 @@ The work done to assemble this nav flow will be similar to what you just did wit
 
 #### TBA
 
-(more to come)
-(the edits will be completed before class on Mon Oct 29)
+<span style="color: red">(more to come)<br>(the edits will be completed on Mon Oct 29)</span>
 
 <br>
 

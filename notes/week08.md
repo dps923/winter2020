@@ -11,18 +11,27 @@ The theme for this week is to get started with location related services in iOS 
 
 ### Monday plan
 
-The professor will guide you through the topic hightlights in the textbook. 
+Welcome back, after study week. 
+
+Your professor has previewed the remaining topics in the textbook, and matched them to topic coverage plans. The result is that we are going to *go slower* and *cover fewer chapters*. 
+
+Before any new content coverage, we will study and discuss a *project template* (version 1) that will ease the task of putting together a multi-scene app that uses data. 
+
+Next, we will discuss the released [Assignment 3](/graded-work/assign3), and get started with its coding. 
+
+Finally, the professor will guide you through the topic hightlights in the textbook. 
 
 Chapter 22: Get Location Data  
-Chapter 23: Use Location Data  
-Chapter 24: Objects vs. Classes  
-Chapter 25: The Tag Location Screen  
+
+Please visit the [weekly schedule](/weekly-schedule) for a revised textbook chapter and course topic coverage plan. 
 
 <br>
 
 #### Project "template"
 
 Your professor has created a project template that will help you build a multi-scene app that uses data. 
+
+We will demonstrate its use. It has [some documentation in this note](/topics/info-template-v1). 
 
 <br>
 
