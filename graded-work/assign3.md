@@ -144,13 +144,25 @@ You will typically do four separate find-replace tasks. For each click the "All"
 1. Plurals, proper case - "Products" with "Provinces"
 2. Plurals, lower case - "products" with "provinces"
 3. Singulars, proper case - "Product" with "Province"
-4. Singulars, lower case - "product" with "product"
+4. Singulars, lower case - "product" with "province"
 
-![Find-replace in a controller](/graded-work/images/a3-find-replace-in-file.png)
+![Find-replace in a controller](images/a3-find-replace-in-file.png)
 
 <br>
 
-#### Add a table view scene to the storyboard
+#### Data model manager and the app delegate
+
+Now that the first controller has been added and configured, we must go back and ensure that the data model manager is initialized when the app loads for the first time. 
+
+Located the commented-out code at the bottom of the DataModelManager.swift source code file. Select and copy the appropriate code. As its how-to instructions state, replace the existing stub method in the app delegate class with the copied code.
+
+You can decide whether to add the "save plist" statements to the appropriate methods now, or later. 
+
+> If you add the statements now, and load/save errors start to happen because of bad data or changes to the data structure, then you can delete the app from the simulator, and the app will re-create the data. 
+
+<br>
+
+#### Table view scene on the storyboard
 
 On the storyboard, add a table view controller. Set its class to the above "ProvinceList" class. Set the cell reuse identifier of the prototype table view cell (to match the value used in the ProvinceList class). Other properties can be set/configured now or later. 
 
@@ -162,15 +174,57 @@ Save, build, and run, before continuing. If all goes well, your app will show a 
 
 <br>
 
-( more to come )
+#### Add province 
+
+From the template, add the "ProductAdd.swift" source code file. Edit (product to province) as you did before. 
+
+The Province data model class is obviously different from the templated Product class. As a result, you must do more edits, to match the app's needs. Outlets, data validation, and calling the delegate method are the typical things that need edits. 
+
+Notice the *example method implementations* at the bottom of the source code file. Copy those to the presenting controller class (ProvinceList), and ensure that the ProvinceList class adopts the AddProvinceDelegate protocol. 
+
+While you're still editing ProvinceList, activate (uncomment) the code that handles the "toProvinceAdd" segue. 
+
+Now, do the storyboard work:
+1. Add a standard view controller scene, set its properties
+2. Embed it in a navigation controller
+3. On the view controller scene, add input controls (text fields etc.) that meet the needs of the controller, and connect them to outlets in the controller code
+4. Add "Cancel" and "Save" buttons, and connect them to the actions in the controller code
+5. On the table view controller scene (province list), add a bar button to the right side of the nav item area; set its System Item to "Add" 
+6. Connect this new bar button to the nav controller scene of the province add controller/scene. It will be an "Action Segue", set to "Present Modally"; the segue identifier will match the value in the segue method in the ProvinceList class (probably something like "toProvinceAdd")
+
+![Storyboard v2](images/a3-storyboard-v2.png)
 
 <br>
 
-#### Add...
+Save, build, and run, before continuing. The app should now enable the user to create new provinces. 
 
 <br>
 
-#### Detail...
+#### Province detail
+
+Let's code the ability to see full details about a province. 
+
+From the template, add the "ProductDetail.swift" source code file. Edit (product to province) as you did before. 
+
+Similar to before, some edits are needed. Outlets, viewDidLoad(), and calling the delegate method are the typical things that need edits. 
+
+Again, notice the *example method implementations* at the bottom of the source code file. Copy those to the presenting controller class (ProvinceList), and ensure that the ProvinceList class adopts the ShowProvinceDetailDelegate protocol. 
+
+While you're still editing ProvinceList, activate (uncomment) the code that handles the "toProvinceDetail" segue. 
+
+Now, do the storyboard work:
+1. Add a standard view controller scene, set its properties
+2. Embed it in a navigation controller
+3. On the view controller scene, add display controls (labels etc.) that meet the needs of the controller, and connect them to outlets in the controller code
+4. Add a "Done" button to the left side, and connect it to the action in the controller code
+5. On the table view controller scene (province list), configure the cell prototype accessory to "Detail Disclosure" 
+6. Connect the prototype cell to the nav controller scene of the province detail controller/scene. It will be an "Accessory Action", set to "Present Modally"; the segue identifier will match the value in the segue method in the ProvinceList class (probably something like "toProvinceDetail")
+
+![Storyboard v3](images/a3-storyboard-v3.png)
+
+<br>
+
+Save, build, and run, before continuing. The app should now enable the user to view province detail. 
 
 <br>
 
