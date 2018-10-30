@@ -319,6 +319,8 @@ Make a segue from the prototype cell in the province list scene to this new city
 
 Save, build, and run, before continuing. The app should now enable the user to tap/select a province, and navigate to an empty list of cities (for that province). 
 
+<img class="border1" src="images/a3-city-list-start.png" alt="List">
+
 <br>
 
 ### Add city controller and scene
@@ -329,21 +331,55 @@ Remember to adopt the "add city" protocol in the city list controller, and copy-
 
 While you're still editing CityList, activate (uncomment) the code that handles the "toCityAdd" segue. 
 
-Now, do the storyboard work (same list of six tasks that you did above for "add province"). However, BEFORE you do, there is one more special thing that you must do - otherwise task 5 (adding a `+` "Add" bar button) will not work. 
+Now, do the storyboard work (same list of six tasks that you did above for "add province"). However, BEFORE you do, there is one more special thing that you must do - otherwise task 5 (adding a `+` "Add" bar button) will not work. Do this:
+* On the storyboard, show the city list scene 
+* In the object browser, look for a "Navigation Item"
+* Drag it on top (anywhere) of the city list scene (as you do this, notice a symbol `<` appears near the cursor)
 
-( more to come - finish off the above )
+<img class="border1" src="images/a3-city-add.png" alt="Add">
 
 <br>
 
-<span style="color: red">(more to come)<br>(the edits will be completed on Mon Oct 29)</span>
+At this point, your storyboard may look something like the following. Notice the city list scene (in the middle) with the `+` bar button item. Notice also its segue to the "add city" scene in the lower-right area of the image. 
+
+![Storyboard after city add](images/a3-storyboard-v4.png)
+<br>
+
+Save, build, and run, before continuing. The app should now enable the user to add a new city (for a specific province).
+
+<br>
+
+### View city info controller and scene
+
+The last feature is to support a user tapping/selecting a row on the city list, and navigating to a standard view that shows the city's information. 
+
+From the template, add the "ProductSceneBase.swift" source code file. Edit (product to city) as you did before, and the other typical things (outlets etc.). 
+
+In CityList, activate (uncomment) the code that handles the "toCityScene" segue. 
+
+Now, do the storyboard work:
+1. Add a standard view controller scene, set its properties
+2. On the view controller scene, add display controls (labels etc.) that meet the needs of the controller, and connect them to outlets in the controller code
+
+<img class="border1" src="images/a3-city-scene.png" alt="Scene">
+
+<br>
+
+<br>
+
+At this point, your storyboard may look something like the following. Notice the new city info scene (in the middle-right area of the image). 
+
+![Storyboard after city add](images/a3-storyboard-v6.png)
+
+<br>
+
+Save, build, and run, before continuing. The app should now enable the user to view info about a city.
 
 <br>
 
 ### Testing your work
 
-Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. 
-
-Your professor plans to introduce you to the Xcode debugger soon, and that tool may help you troubleshoot problems. 
+Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. Use the debug tool when it's useful to do so.
 
 <br>
 
@@ -366,7 +402,10 @@ Follow these instructions to submit your work, before the due date and time:
 
 3. Copy these source code files to the "MyCode" folder:  
 **Main.storyboard**  
-**( more to come )**  
+**DataModelClasses.swift**  
+**DataModelManager.swift**  
+**ProvinceList.swift**  
+**CityList.swift**  
 For each of these files, change the file name extension to "txt".
 
 4. Right-click the folder, and choose **Compress “xxxxxxxx”**, which creates a zip file.  

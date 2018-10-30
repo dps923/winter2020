@@ -39,26 +39,20 @@ Get it from the [course's code repository](https://github.com/dps923/fall2018). 
 
 ### Wednesday plan
 
-TBA
-
-<br>
-
-#### Other
-
-In the time remaining, work on the next ssignment.
+All the time in the Wednesday class in the computer-lab room can be used to work on the current assignment.
 
 <br>
 
 #### This week's Swift focus
 
-TBA
+Chapters 21 and 23 have some good Swift coverage. Please study and practice. Study the code examples that come with the textbook. 
 
 <br>
 
 ### Learning resources
 
 iOS Apprentice  
-Chapters 21, 22, 23, 24
+Chapters 21, 22, 23
 
 Swift documentation  
 [Tour](https://docs.swift.org/swift-book/GuidedTour/GuidedTour.html)  

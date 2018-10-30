@@ -249,9 +249,7 @@ What should appear in the view? All data from the QBInfo object, except for the 
 
 ### Testing your work
 
-Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. 
-
-Your professor plans to introduce you to the Xcode debugger soon, and that tool may help you troubleshoot problems. 
+Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. Use the debug tool when it's useful to do so.
 
 <br>
 
