@@ -344,7 +344,8 @@ Now, do the storyboard work (same list of six tasks that you did above for "add 
 
 At this point, your storyboard may look something like the following. Notice the city list scene (in the middle) with the `+` bar button item. Notice also its segue to the "add city" scene in the lower-right area of the image. 
 
-![Storyboard after city add](images/a3-storyboard-v4.png)
+<a href="images/a3-storyboard-v4.png" target="_blank"><img src="images/a3-storyboard-v4.png" alt="After city add"></a>
+
 <br>
 
 Save, build, and run, before continuing. The app should now enable the user to add a new city (for a specific province).
