@@ -34,7 +34,7 @@ Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Monday, September 10 | Monday, September 24
 [Assign 2](/graded-work/assign2) | Monday, September 24 | Wednesday, October 10
-Assign 3 | Friday, October 26 | Wednesday, November 7
+[Assign 3](/graded-work/assign3) | Friday, October 26 | Wednesday, November 7
 Assign 4 | Monday, October 29 | Friday, November 30 
 
 Make plans to demonstrate your Assignment 4 work to your professor sometime during the regularly-scheduled class times in the final week of the term, on Monday December 3, or Wednesday December 5. 

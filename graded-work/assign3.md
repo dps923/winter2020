@@ -192,7 +192,9 @@ Now, do the storyboard work:
 5. On the table view controller scene (province list), add a bar button to the right side of the nav item area; set its System Item to "Add" 
 6. Connect this new bar button to the nav controller scene of the province add controller/scene. It will be an "Action Segue", set to "Present Modally"; the segue identifier will match the value in the segue method in the ProvinceList class (probably something like "toProvinceAdd")
 
-![Storyboard v2](images/a3-storyboard-v2.png)
+At this point, your storyboard may look something like the following. (Click the image, and any other storyboard image that follows, to open it full-size in a new tab/window.) Notice the add province scene in the upper-right area of the image. 
+
+<img src="images/a3-storyboard-v2.png" alt="After add province" target="_blank">
 
 <br>
 
@@ -220,7 +222,7 @@ Now, do the storyboard work:
 5. On the table view controller scene (province list), configure the cell prototype accessory to "Detail Disclosure" 
 6. Connect the prototype cell to the nav controller scene of the province detail controller/scene. It will be an "Accessory Action", set to "Present Modally"; the segue identifier will match the value in the segue method in the ProvinceList class (probably something like "toProvinceDetail")
 
-![Storyboard v3](images/a3-storyboard-v3.png)
+<img src="images/a3-storyboard-v3.png" alt="After province detail" target="_blank">
 
 <br>
 
@@ -365,11 +367,9 @@ Now, do the storyboard work:
 
 <br>
 
-<br>
-
 At this point, your storyboard may look something like the following. Notice the new city info scene (in the middle-right area of the image). 
 
-![Storyboard after city add](images/a3-storyboard-v6.png)
+<img src="images/a3-storyboard-v6.png" alt="After city info" target="_blank">
 
 <br>
 
