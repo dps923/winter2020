@@ -309,7 +309,7 @@ From the template, add the "ProductListBase.swift" source code file. Rename it t
 
 Change the other code (including the code in the `tableView(_:cellForRowAt:)` method) to work properly. 
 
-This city list controller will support two segues. One will be a next/workflow segue, and the other will be a detail segue. Add those segue handlers now too. 
+This city list controller will support two segues. One will be a next/workflow segue, and the other will be an add segue. Add those segue handlers now too. 
 
 <br>
 
@@ -397,7 +397,7 @@ When you are ready to submit your work, you will copy some of the code in your p
 
 Follow these instructions to submit your work, before the due date and time:  
 
-1. Locate your projectfolder in Finder (and we suggest that you make a copy of it for yourself).
+1. Locate your project folder in Finder (and we suggest that you make a copy of it for yourself).
 
 2. In that folder, add a new folder named "MyCode".
 
