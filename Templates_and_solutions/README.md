@@ -4,6 +4,8 @@
 
 ### Recipes version 1
 
+There are two versions. Select the one that matches your computer's Xcode version.
+
 Has working data model and controller code that can be used in other projects. Assumes a very simple data storage model, persisted as a plist file in the app's Documents directory. 
 
 Use the project's "Add files to [ProjectName]..." feature. 
