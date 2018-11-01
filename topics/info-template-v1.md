@@ -68,7 +68,34 @@ You will typically do four separate find-replace tasks. For each click the "All"
 
 ![Find-replace in a controller](/graded-work/images/a3-find-replace-in-file.png)
 
-
 Enjoy. 
+
+### New info - the template is different for Xcode 9 and Xcode 10
+
+In the Wednesday October 31 class, some students helped me locate a problem with the template. The problem is that it was created with Xcode version 10, which has a slightly different "iOS SDK" version. As a result, the base "Recipes" project will not compile correctly in Xcode 9. That version - Xcode 9 - is installed on all College Macs. 
+
+I have updated the code repository. There are now two versions, one for Xcode 9 and another for Xcode 10. Sorry for any problems it may have caused. 
+
+<br>
+
+#### Fixing the problem
+
+If you would prefer to fix the problem yourself, it can be done with a small number of find-replace actions:
+* Replace `UIApplication.LaunchOptionsKey` with `UIApplicationLaunchOptionsKey` (no dot)
+* Replace `UITableViewCell.EditingStyle` with `UITableViewCellEditingStyle` (no dot)
+* replace `product.firstIndex` with `product.index` 
+
+If you wish, you can use the "Find navigator". 
+
+> Note - this is a slightly different version than the one you used on the "Find" menu, because the "Find navigator" will do find, and find-replace, on *all* files in the project. Nice and convenient.  
+
+By default, it does "find". If you want to do "find-replace", there's a few extra steps involved. Here's an example:
+
+Task | Image
+--- | ---
+Open the "Find navigator". Find one of the strings. It should show some results. | ![Find 1](images/find-navigator-1.png)  
+On the "Find > Text > Containing" bar, click on "Find", and then choose "Replace". It will show another entry field. | ![Find 2](images/find-navigator-2.png)  
+Change the "Ignoring Case" setting to "Matching Case". Notice that the "Replace All" button is greyed out and cannot be selected yet. | ![Find 3](images/find-navigator-3.png)  
+Put the cursor back into the top entry field, and press Enter. The results appear, and this time the "Replace All" button is clickable. Do that. | ![Find 4](images/find-navigator-4.png)  
 
 <br>
