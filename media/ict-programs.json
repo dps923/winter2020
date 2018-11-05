@@ -1,0 +1,66 @@
+[
+ {
+   "Code": "BSD",
+   "Name": "Software Development",
+   "Description": "This unique and innovative degree program was created to address the need for knowledgeable software developers, skilled in both the technical and non-technical aspects of business information technology. A strong theoretical base is developed through extensive practical experience on a variety of computer platforms. The program also emphasizes development of English communications and business skills for today's knowledge-based economy, and includes features such as a paid co-op work term that prepares graduates who are fully functional upon employment.",
+   "IsCurrent": 1,
+   "Credential": "Degree",
+   "Semesters": 8
+ },
+ {
+   "Code": "CPA",
+   "Name": "Computer Programming and Analysis",
+   "Description": "The CPA program provides students with a rigorous theoretical background in object-oriented methodology particularly in program design and system analysis. Internet concepts are integrated into all courses across the curriculum and focus on the development of dynamic database-driven web applications on a variety of operating system platforms. Small class sizes, computerized classrooms and an expert faculty provide an enabling environment for students to master the craft of programming and analysis. Opportunities will be provided for students to develop individual and teamwork skills. Students with post secondary education or work experience may apply for credits or challenge exams in related subjects.",
+   "IsCurrent": 1,
+   "Credential": "Advanced Diploma",
+   "Semesters": 6
+ },
+ {
+   "Code": "CPD",
+   "Name": "Computer Programmer",
+   "Description": "The first three semesters emphasize the study of computer programming, operating systems, database and internet technology. The fourth semester of the CPD program exposes the students to data communication, security, advanced programming languages and the opportunity to select a professional option of their choice. Students with post-secondary education or work experience may apply for credits or challenge exams in related subjects. The CPD program provides students with the fundamental computer programming, Internet, and operating system skills required for programming related employment.",
+   "IsCurrent": 1,
+   "Credential": "Diploma",
+   "Semesters": 4
+ },
+ {
+   "Code": "DAD",
+   "Name": "Database Application Developer",
+   "Description": "The DAD program covers Database design, Internet programming, XML, Security, Linux/Unix, Oracle, MS SQL Server, Data warehousing, Project management, Testing (including test plans), Database interconnectivity and programming using Java and VB in the Windows .NET environment. The graduates of this program will have the skills to understand and create good database design using Rational Rose. They will be able to create GUI front end with Java or VB.Net, and be able to understand the connectivity issues related to creating web-enabled databases, that allow users to access and manipulate data through the web.",
+   "IsCurrent": 1,
+   "Credential": "Graduate Certificate",
+   "Semesters": 2
+ },
+ {
+   "Code": "IFS",
+   "Name": "Informatics and Security",
+   "Description": "The Bachelor of Technology (Informatics and Security) will provide graduates with the critical knowledge and practical skills required for successful careers in information security, and network technology. The program will integrate knowledge of informatics, security, and laws with practical applications and will directly address critical business and communication requirements deemed essential by employers. The curriculum reflects a progressively complex level of skill, knowledge, and interpretation associated with Informatics and Security. Initial courses focus on understanding and application of networks from the individual computer up to and including the world of connected computers. A more abstract application of these same principles is delivered in mid-curricula courses where emphasis shifts to developing analytical skills. In the final two years, courses will require students to synthesize information to solve real business problems and demonstrate their knowledge in a cooperative work term.",
+   "IsCurrent": 1,
+   "Credential": "Degree",
+   "Semesters": 8
+ },
+ {
+   "Code": "CTY",
+   "Name": "Computer Systems Technology",
+   "Description": "This program places the emphasis on practical subjects and \"hands-on\" training delivered in speciality labs. These dedicated labs are configured for various environments such as Linux, Microsoft Windows, networking, PC hardware, Internet, AS/400, and RS/6000. Through these labs students have access to standalone, clustered and networked PC's along with a host of LAN servers and mid-range computers. Subjects studied include PC hardware, operating systems, Internet, HTML, Linux/Unix and Microsoft Windows Server administration, data communications, Novell Netware, AS/400 connectivity, web server installation and maintenance, Voice over Internet Protocol and Security. In semesters four, five and six students may select from a broad offering of professional options and will integrate systems and technical skills in the planning and implementation of a 'real-life' computer project for a business client.",
+   "IsCurrent": 1,
+   "Credential": "Advanced Diploma",
+   "Semesters": 6
+ },
+ {
+   "Code": "CNS",
+   "Name": "Computer Networking and Technical Support",
+   "Description": "This program places emphasis on practical subjects and \"hands-on\" training delivered in specialty labs. These dedicated labs are configured for various environments such as Linux, Microsoft Windows, networking, OC hardware, Internet, AS/400, and RS/6000. Through these labs, students have access to stand-alone, clustered and networked PC's along with a host of LAN servers and mid-range computers.",
+   "IsCurrent": 1,
+   "Credential": "Diploma",
+   "Semesters": 4
+ },
+ {
+   "Code": "PMC",
+   "Name": "Project Management",
+   "Description": "Seneca College's School of Information and Communications Technology PMC (Project Management - Information Technology) 1 Year Post Graduate Certificate (8 months of study plus 4 months optional co-op) will prepare students with the project management skills needed for entry-level positions in a wide range of software development and IT administration projects. Project management methodologies and techniques have evolved from the traditional waterfall methodology through incremental and iterative development to agile methodologies.  What distinguishes the Project Management – IT graduate certificate is that it gives students grounding in all of these methodologies as they are currently being practiced in the IT industry and an understanding of when each is most appropriate to follow.",
+   "IsCurrent": 1,
+   "Credential": "Graduate Certificate",
+   "Semesters": 2
+ }
+]
