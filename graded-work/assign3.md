@@ -406,7 +406,9 @@ Follow these instructions to submit your work, before the due date and time:
 **DataModelClasses.swift**  
 **DataModelManager.swift**  
 **ProvinceList.swift**  
+**ProvinceAdd.swift**  
 **CityList.swift**  
+**CityAdd.swift**  
 For each of these files, change the file name extension to "txt".
 
 4. Right-click the folder, and choose **Compress “xxxxxxxx”**, which creates a zip file.  

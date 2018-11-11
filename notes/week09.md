@@ -13,7 +13,7 @@ The theme for this week is to learn about Core Data, an object design, managemen
 
 The professor will guide you through the topic hightlights in the textbook. 
 
-Chapter 23: Use Location Data
+Chapter 23: Use Location Data  
 Chapter 27: Saving Locations
 
 > Note - Test 3 is *next week*, on November 12 
