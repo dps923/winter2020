@@ -65,3 +65,82 @@ Can approach the "Count" problem (above) in different ways...
 3. Standard "get some" and just count the result size 
 
 <br>
+
+All task controllers - detail, add, etc. - will also get the manager passed in.
+
+<br>
+
+### Using the template
+
+Copy, rename, manage scheme.  
+Run to make sure it works. It should.  
+Clean your simulator.  
+
+Core Data model editor, add a new entity.  
+Duplicate file - ...Manager+Example, to "...Manager+XXXX...", where "XXXX" is the name of your new entity.  
+Find-replace in the file... (Option+Command+F)  
+Look for case sensitive replacements. "Example" and "example".  
+
+Clear existing storyboard items.  
+Delete existing ExampleList controller.  
+
+Duplicate file - ExampleListBaseCD, to "XXXXList", where "XXXX" is the name of your new entity. Put it in the "SourceCode" group.   
+Find-replace in the file... (Option+Command+F)  
+Look for case sensitive replacements. "Example" and "example".  
+Ensure that the class name is "XXXXList".  
+Edit the cell-for-row-at-index-path to set the cell's label(s) to the correct values.  
+Edit app delegate with the name of the new controller.  
+
+Open ExampleListBaseCD.storyboard. Copy to Main.storyboard.  
+On Main.storyboard, set the nav controller as the initial view controller (the entry point). Set its Storyboard ID too (to "XXXXList", where "XXXX" is the name of your new entity).  
+Select the table view controller. Set the class name to "XXXXList" (as above).  
+
+**Add notes...**  
+Edit the outlets  
+Edit the `save` method to logically work  
+Open ExampleAddCD.storyboard, copy paste  
+Work with Main.storyboard. Edit the Storyboard ID, class name, controls to match, make the outlet connections  
+Make a segue from the presenting controller  
+In the presenting controller source code file, adopt the "add" protocol, copy in the stub methods, code the segue, by passing the manager and setting the delegate.  
+
+**Detail notes...**  
+Duplicate the file, into the SourceCode group.  
+Find-replace in the file... (Option+Command+F)  
+Look for case sensitive replacements. "Example" and "example".  
+Ensure that the class name is "XXXXList".  
+Declare the needed outlets, and configure them in `viewDidLoad()`.  
+Copy the protocol method to the presenting controller, and make that controller adopt the protocol.  
+Open ExampleDetailCD.storyboard, copy, paste to Main.storyboard.  
+Work with Main.storyboard. Edit the Storyboard ID, class name, controls to match, make the outlet connections.  
+Make a segue (Accessory Action > Present Modally) from the presenting controller. Set its identifier.  
+In the presenting controller source code file, adopt the "add" protocol, copy in the stub methods, code the segue, by passing the manager and setting the delegate.  
+
+**City support**  
+Edit Core Data model carefully.  
+Duplicate the ...Manager+Province/Example code.  
+Find-replace.  
+Duplicate the ExampleListBaseCD code.  
+Find-replace.  
+Probably comment out the Edit button support for now.  
+Add a predicate to the frc, to refer back to the parent. Predicate string, then array of args.  
+Back to the presenting controller.  
+Add a segue, workflow.  
+Storyboard support, you have a choice:  
+1. New table view controller  
+2. Copy existing list controller  
+
+I chose copy-paste. Change class name.  
+From presenting controller, make a segue (Selection Segue > Show). Set its identifier.  
+
+
+<br>
+
+**Fixes...**  
+Manager+Example, find by name, ==[c] added  
+Look for "for example" and avoid using the word "example"  
+"Example method implementations" (protocol too)  
+"topViewController" vs. controllers[0]  
+Maybe fix the segue code comment samples, replace "Product" with "Example"  
+
+
+<br>

@@ -31,9 +31,34 @@ Your professor has created a template that can be used to create an app that use
 
 Test 3 is today, at the beginning of the timeslot.
 
-It will cover past content (to be detailed). 
+It will cover past content, with these themes:
+* Core Data technology 
+* New project template
+* Building an app with the new project template
+* A bit of location services
 
-The test will begin at the start of the class timeslot, at 3:20pm, and its duration will be about 40 minutes. It is worth 13%, which means that you will answer any questions worth a total of 13 marks. Most questions are worth one mark, and a few may be worth more.
+> Nothing on the maps and images topics will be tested.
+
+The test will begin at the start of the class timeslot, at 3:20pm, and its duration will be about 40 minutes. It is worth 13%, which means that you will answer any questions worth a total of 13 marks. Most questions are worth one mark, and some are worth more.
+
+<br>
+
+#### Preparing for the test 
+
+You can rely on your hand-written notes and in-person learning from the past two Monday classes (Monday November 12, and Monday November 5). In those, you learned much about the design and engineering of an iOS app, and how to use patterns and best practices to get results. 
+
+Next, get the new project template. In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2018/tree/master/Templates_and_solutions) folder, 
+you will see a project named **TemplateCDv1**. 
+
+The intention is for you to make a *copy* of that project, and then follow its "Readme.txt" instructions to rename it to match your project's needs. Study its design and operation, and do some additional programming yourself. 
+
+Next, get the code example that's in the Week 10 folder of the repository. Look for a project named **CanadaTest**. It is essentially a Core Data version of the "Canada" (provinces and cities) programming assignment. Study all parts of that app. Use it, add data, notice its features and functionality. 
+
+On the test, be prepared to answer questions about the design of an app as illustrated by the object diagram that was distributed in class on Monday November 12. 
+
+Be prepared to name and/or define, and then explain some of the individual or discrete programmed components in an app. You should be comfortable with both the template-provided parts as well as some framework-provided parts. 
+
+And, be prepared to explain or interpret some small-size code snippets. We may also ask for code or pseudocode (algorithm) additions to enhance or complete a task. 
 
 <br>
 

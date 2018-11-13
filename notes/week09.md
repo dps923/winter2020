@@ -29,19 +29,11 @@ As noted above, Core Data is an object design, management, and persistence frame
 * The framework has objects that enable the full range of data service operations (e.g. fetch, add, and so on), and work nicely with controllers 
 * And finally, it takes care of persisting (saving, storing) the app's data
 
-( more to come )
-
 <br>
 
 ### Wednesday plan
 
-TBA
-
-<br>
-
-#### Other
-
-In the time remaining, work on the next ssignment.
+Work period for the current assignment. 
 
 <br>
 
