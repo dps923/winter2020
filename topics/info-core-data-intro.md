@@ -43,10 +43,18 @@ you will see a project named **TemplateCDv1**.
 Make a copy of that, and you will have all you need to start working on a new project.
 
 > How do I make a copy?  
-> The Readme.txt file in the CodeDataModel project helps you do this.
+> The Readme.txt file in the project helps you do this.
 
 <br>
 
-### A tour through the 
+### Where do I go from here
+
+Next, get the code example that's in the Week 10 folder of the repository. Look for a project named **CanadaTest**. It is essentially a Core Data version of the "Canada" (provinces and cities) programming assignment. Study all parts of that app. Use it, add data, notice its features and functionality. 
+
+<br>
+
+### Apple reference info
+
+Apple publishes a [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html). While useful, essential, and authoritative, it does not include the advanced engineering that has been put into the template (above). As a result, when you're going through it, read critically, in the event that something it covers (e.g. "Initializing the Core Data Stack") sounds different that what you've learned recently. 
 
 <br>

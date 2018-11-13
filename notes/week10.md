@@ -35,11 +35,11 @@ It will cover past content, with these themes:
 * Core Data technology 
 * New project template
 * Building an app with the new project template
-* A bit of location services
+* Maybe a bit of location services (chapters 22 and 23)
 
 > Nothing on the maps and images topics will be tested.
 
-The test will begin at the start of the class timeslot, at 3:20pm, and its duration will be about 40 minutes. It is worth 13%, which means that you will answer any questions worth a total of 13 marks. Most questions are worth one mark, and some are worth more.
+At the beginning of the timeslot, we can use up to a half-hour to answer student questions and/or to review contet. The test will begin no later than 3:50pm, and its duration will be about 50 minutes. It is worth 13%, which means that you will answer any questions worth a total of 13 marks. Most questions are worth one mark, and some are worth more.
 
 <br>
 
@@ -47,8 +47,14 @@ The test will begin at the start of the class timeslot, at 3:20pm, and its durat
 
 You can rely on your hand-written notes and in-person learning from the past two Monday classes (Monday November 12, and Monday November 5). In those, you learned much about the design and engineering of an iOS app, and how to use patterns and best practices to get results. 
 
+Update your understanding of Core Data, using the relevant textbook chapters (27 and 28). Go through the [summary information](/topics/info-core-data-intro) to learn more and to review. 
+
 Next, get the new project template. In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2018/tree/master/Templates_and_solutions) folder, 
 you will see a project named **TemplateCDv1**. 
+
+The template's design and code is explained in this document:
+
+[Info: Project Template for Core Data projects](/topics/info-project-template-core-data)
 
 The intention is for you to make a *copy* of that project, and then follow its "Readme.txt" instructions to rename it to match your project's needs. Study its design and operation, and do some additional programming yourself. 
 
@@ -64,7 +70,7 @@ And, be prepared to explain or interpret some small-size code snippets. We may a
 
 #### Other
 
-In the time remaining, work on the next ssignment.
+In the time remaining, work on the next assignment.
 
 <br>
 
