@@ -2,6 +2,18 @@
 
 <br>
 
+### Template for Core Data version 1
+
+Built for Xcode 9.
+
+As is, the app has one simple entity named "Example". 
+
+Its one-and-only controller will display a list of "Example" objects. The app user can add new object by using the `+` (add) button. The list is editable, in that objects can be deleted. 
+
+The template includes controllers *and scenes* that enable the building of an app easier, faster, and with better quality. 
+
+<br>
+
 ### Recipes version 1
 
 There are two versions. Select the one that matches your computer's Xcode version.
