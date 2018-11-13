@@ -23,7 +23,11 @@ Chapter 28, 29, 30
 
 Your professor has created a template that can be used to create an app that uses Core Data. We will study and use it today.
 
-( more to come )
+In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2018/tree/master/Templates_and_solutions) folder, 
+you will see a project named **TemplateCDv1**. The template's design and code is explained in this document:
+
+[Info: Project Template for Core Data projects](/topics/info-project-template-core-data)
+
 
 <br>
 
@@ -39,7 +43,9 @@ It will cover past content, with these themes:
 
 > Nothing on the maps and images topics will be tested.
 
-At the beginning of the timeslot, we can use up to a half-hour to answer student questions and/or to review contet. The test will begin no later than 3:50pm, and its duration will be about 50 minutes. It is worth 13%, which means that you will answer any questions worth a total of 13 marks. Most questions are worth one mark, and some are worth more.
+At the beginning of the class timeslot, we can use up to a half-hour to answer student questions and/or to review contet. 
+
+The test will begin no later than 3:50pm, and its duration will be about 50 minutes. It is worth 13%, which means that you will answer any questions worth a total of 13 marks. Most questions are worth one mark, and some are worth more.
 
 <br>
 

@@ -128,6 +128,8 @@ if let newItem = m.example_CreateItem() {
 }
 ```
 
+<br>
+
 ### App workflow, user interface
 
 > Blue box, top-right area of the diagram. 
