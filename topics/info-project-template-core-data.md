@@ -23,6 +23,14 @@ Make a copy of that, and you will have all you need to start working on a new pr
 
 <br>
 
+### How to use the template
+
+This topic is documented in a separate noted titled: 
+
+[How-to: Template for Core Data](how-to-core-data-template)
+
+<br>
+
 ### What is the design of the template
 
 We have prepared a diagram that illustrates the design of the template. Click to open it full-size in its own tab/window:
