@@ -30,7 +30,7 @@ you will see a project named **TemplateCDv1**. The template's design and code is
 
 How-to-use information is in this document:
 
-[How-to: Template for Core Data apps](how-to-core-data-template)
+[How-to: Template for Core Data apps](/topics/how-to-core-data-template)
 
 <br>
 
@@ -69,7 +69,7 @@ The intention is for you to make a *copy* of that project, and then follow its "
 
 How-to-use information is in this document:
 
-[How-to: Template for Core Data apps](how-to-core-data-template)
+[How-to: Template for Core Data apps](/topics/how-to-core-data-template)
 
 Next, get the code example that's in the [Week 10 folder of the repository](https://github.com/dps923/fall2018/tree/master/Week10). Look for a project named **CanadaTest**. It is essentially a Core Data version of the "Canada" (provinces and cities) programming assignment. Study all parts of that app. Use it, add data, notice its features and functionality. 
 
