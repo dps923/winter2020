@@ -49,12 +49,12 @@ Storyboard includes a nav controller and a table view controller
 
 * ExampleSceneBaseCD controller and storyboard  
 Can be used as a standard "scene"  
-For drill-down and/or object show/view scenarios
+For drill-down and/or object show/view scenarios  
 Storyboard includes a standard view controller and a label  
 
 * ExampleAddCD controller and storyboard  
 Can be used to add a new entity object  
-Intended to be presented modally
+Intended to be presented modally  
 Includes a protocol, requires a delegate (the presenting controller)  
 Storyboard includes a nav controller and a standard view controller, cancel and save buttons, and input fields/controls to gather input from the app user  
 
@@ -63,7 +63,7 @@ Similar in theme and meaning to the "add" assets
 
 * ExampleDetailCD controller and storyboard  
 Can be used to show/view an existing entity object  
-Intended to be presented modally
+Intended to be presented modally  
 Includes a protocol, requires a delegate (the presenting controller)  
 Storyboard includes a standard view controller and a label
 
