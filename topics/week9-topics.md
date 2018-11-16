@@ -27,6 +27,18 @@ More complicated when a network is involved.
 
 ### Network access
 
+[Winter 2017 intro notes on the network](https://github.com/dps923/winter2017/blob/master/notes/week_08/monday.md)
+
+<br>
+
+### Location services, media, motion, split view controller
+
+[Winter 2017 Week 11 notes](https://github.com/dps923/winter2017/blob/master/notes/week_11/monday.md) on location services
+
+[Week 12 notes](https://github.com/dps923/winter2017/blob/master/notes/week_12/monday.md) on media and motion
+
+[Week 13 notes](https://github.com/dps923/winter2017/blob/master/notes/week_13/monday.md) on split view controller
+
 <br>
 
 ### Core Data
@@ -70,50 +82,16 @@ All task controllers - detail, add, etc. - will also get the manager passed in.
 
 <br>
 
-### Using the template
+#### Relationships
 
-Copy, rename, manage scheme.  
-Run to make sure it works. It should.  
-Clean your simulator.  
+[Good coverage here](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/HowManagedObjectsarerelated.html#//apple_ref/doc/uid/TP40001075-CH17-SW1)  
+Includes "delete rules", what should happen when related objects are deleted  
 
-Core Data model editor, add a new entity.  
-Duplicate file - ...Manager+Example, to "...Manager+XXXX...", where "XXXX" is the name of your new entity.  
-Find-replace in the file... (Option+Command+F)  
-Look for case sensitive replacements. "Example" and "example".  
+Nice, [object validation](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/ObjectValidation.html#//apple_ref/doc/uid/TP40001075-CH20-SW1)
 
-Clear existing storyboard items.  
-Delete existing ExampleList controller.  
+<br>
 
-Duplicate file - ExampleListBaseCD, to "XXXXList", where "XXXX" is the name of your new entity. Put it in the "SourceCode" group.   
-Find-replace in the file... (Option+Command+F)  
-Look for case sensitive replacements. "Example" and "example".  
-Ensure that the class name is "XXXXList".  
-Edit the cell-for-row-at-index-path to set the cell's label(s) to the correct values.  
-Edit app delegate with the name of the new controller.  
-
-Open ExampleListBaseCD.storyboard. Copy to Main.storyboard.  
-On Main.storyboard, set the nav controller as the initial view controller (the entry point). Set its Storyboard ID too (to "XXXXList", where "XXXX" is the name of your new entity).  
-Select the table view controller. Set the class name to "XXXXList" (as above).  
-
-**Add notes...**  
-Edit the outlets  
-Edit the `save` method to logically work  
-Open ExampleAddCD.storyboard, copy paste  
-Work with Main.storyboard. Edit the Storyboard ID, class name, controls to match, make the outlet connections  
-Make a segue from the presenting controller  
-In the presenting controller source code file, adopt the "add" protocol, copy in the stub methods, code the segue, by passing the manager and setting the delegate.  
-
-**Detail notes...**  
-Duplicate the file, into the SourceCode group.  
-Find-replace in the file... (Option+Command+F)  
-Look for case sensitive replacements. "Example" and "example".  
-Ensure that the class name is "XXXXList".  
-Declare the needed outlets, and configure them in `viewDidLoad()`.  
-Copy the protocol method to the presenting controller, and make that controller adopt the protocol.  
-Open ExampleDetailCD.storyboard, copy, paste to Main.storyboard.  
-Work with Main.storyboard. Edit the Storyboard ID, class name, controls to match, make the outlet connections.  
-Make a segue (Accessory Action > Present Modally) from the presenting controller. Set its identifier.  
-In the presenting controller source code file, adopt the "add" protocol, copy in the stub methods, code the segue, by passing the manager and setting the delegate.  
+### Working with the TemplateCDv1
 
 **City support**  
 Edit Core Data model carefully.  
@@ -132,15 +110,37 @@ Storyboard support, you have a choice:
 I chose copy-paste. Change class name.  
 From presenting controller, make a segue (Selection Segue > Show). Set its identifier.  
 
+<br>
+
+### Core Data and related entities
+
+[Winter 2017 Week 10 notes](https://github.com/dps923/winter2017/blob/master/notes/week_10/monday.md)
 
 <br>
 
-**Fixes...**  
-Manager+Example, find by name, ==[c] added  
-Look for "for example" and avoid using the word "example"  
-"Example method implementations" (protocol too)  
-"topViewController" vs. controllers[0]  
-Maybe fix the segue code comment samples, replace "Product" with "Example"  
+### Miscellaneous info and links
+
+[Property validation](  
+https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/ValidatingProperties.html)  
+Typically don't do it in Swift - instead, can use willSet and didSet property observers (huh?)
+
+[Winter 2017 Core Data intro notes](https://github.com/dps923/winter2017/blob/master/notes/week_06/monday.md)
+
+Guidance from the [Winter 2017](https://github.com/dps923/winter2017/blob/master/notes/week_09/monday.md#guidance) course about fetch request support. Publish an "execute" method in the manager, and use that. Hmmm.
+
+Good info that follows that about fetch requests and so on.
+
+[Comparing structures and classes](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html)  
+Structs have built-in auto-initializer, easy to use  
+"All structures have an automatically generated memberwise initializer"  
+Good for data only situations (no behaviour)  
+Value types, pass by value (i.e. a copy of the value)  
+Most of our custom data types will be structs and enums  
+
+[Excellent SO answer](https://stackoverflow.com/a/24232845)
+
+[Segue code using switch (with a default case)](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/CoreDataandStoryboards.html#//apple_ref/doc/uid/TP40001075-CH10-SW1) - safer
+
 
 
 <br>
