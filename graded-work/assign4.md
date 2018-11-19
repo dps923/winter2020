@@ -35,7 +35,7 @@ Grade value: 10% of your final course grade
 We need an app that will enable you to capture and store information about the food you eat during the day. 
 
 Important for everyone to have good nutrition  
-Easy for young people to ignore and dismiss as unimportant  
+Easy for people to ignore and dismiss as unimportant  
 Society and culture have increased interest in food and health  
 (etc.)
 
@@ -45,6 +45,28 @@ Features:
 * Your additional notes and text 
 * Location info (where, when, and so on) 
 * Optionally, a photo of the food/meal 
+
+Example images...
+
+First launch scene, empty list, and with some items:
+
+<img class="border1" src="images/a4-first-launch.png" alt="List, empty"><img class="border1" src="images/a4-item-list-3-items.png" alt="List, with items">
+
+Add item scenes:
+
+<img class="border1" src="images/a4-item-add-first-time-permission.png" alt="Location permission"><img class="border1" src="images/a4-item-add-scene.png" alt="Input fields">
+
+Add a photo:
+
+<img class="border1" src="images/a4-item-add-scene-photo.png" alt="Get/take photo"><img class="border1" src="images/a4-item-add-scene-before-save.png" alt="New item, ready to save">
+
+Search for an item, setup, and list of possibles:
+
+<img class="border1" src="images/a4-item-add-search-step1.png" alt="Enter search terms"><img class="border1" src="images/a4-item-add-search-step2-list.png" alt="List of possibilities">
+
+After selecting an item on the list, before saving, and then the result after configuring a photo:
+
+<img class="border1" src="images/a4-item-add-search-step3-before-save.png" alt="Before save"><img class="border1" src="images/a4-item-info-scene.png" alt="Item info scene">
 
 <mark>( more to come )</mark>
 

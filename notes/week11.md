@@ -25,6 +25,12 @@ TBA
 
 #### Using the network and internet
 
+Study the API  
+Use an interaction tool (e.g. Postman)  
+Study the response's data structure  
+Create a Swift `struct` to define each response  
+
+
 TBA
 
 <br>
