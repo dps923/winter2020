@@ -16,12 +16,27 @@ how will you know? check its definition; if it throws, then it must be called wi
 two try variations...  
 try! - we know with certainty that the function call will not fail  
 try? - if it fails, nil will be returned  
+
+[Swift docs topic on error handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html), was good/useful 
+
+[Hacking with Swift](https://www.hackingwithswift.com/example-code/language/how-to-use-try-catch-in-swift-to-handle-exceptions) article on the same topic, was good/useful
+
+[Try, Try!, Try?](https://medium.com/@JoyceMatos/error-handling-in-swift-3-try-try-and-try-f19705e32ff4) - good article 
+
 <br>
 
 ### JSON reading
 
 Easy from a file in the bundle.  
 More complicated when a network is involved.  
+
+[Decoding explained](https://medium.com/swiftly-swift/swift-4-decodable-beyond-the-basics-990cc48b7375). Check out [Basics](https://medium.com/swiftly-swift/swift-4-decodable-beyond-the-basics-990cc48b7375#d169) and [More Complex Structs](https://medium.com/swiftly-swift/swift-4-decodable-beyond-the-basics-990cc48b7375#ef2d).
+
+Apple [Working with JSON in Swift](https://developer.apple.com/swift/blog/?id=37) is from September 2016. Does not use the new Decoding. However, it is useful because it's similar to what we have done recently. 
+
+YouTube [Parsing JSON with Swift 4 in One Line!](https://www.youtube.com/watch?reload=9&v=WwT2EyAVLmI) - watched it a few times, worth seeing again. Uses Decoder. 
+
+Another good Decoding article - [Encoding and Decoding JSON with Swift 4](https://medium.com/@phillfarrugia/encoding-and-decoding-json-with-swift-4-3832bf21c9a8)
 
 <br>
 

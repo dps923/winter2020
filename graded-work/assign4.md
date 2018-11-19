@@ -66,6 +66,14 @@ Again, as noted above, read/skim the rest of this document before you begin work
 
 <br>
 
+### Add controller
+
+Reverse geocoding done after a location is found  
+`placemarks` is an array of CLPlacemark  
+
+
+<br>
+
 ### Testing your work
 
 Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. Use the debug tool when it's useful to do so.
