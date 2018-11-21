@@ -46,7 +46,7 @@ It will cover past content, with these themes:
 
 > Nothing on the maps and images topics will be tested.
 
-At the beginning of the class timeslot, we can use up to a half-hour to answer student questions and/or to review contet. 
+At the beginning of the class timeslot, we can use up to a half-hour to answer student questions and/or to review content. 
 
 The test will begin no later than 3:50pm, and its duration will be about 50 minutes. It is worth 13%, which means that you will answer any questions worth a total of 13 marks. Most questions are worth one mark, and some are worth more.
 

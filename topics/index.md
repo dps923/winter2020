@@ -19,4 +19,10 @@ How-to: Write a data model manager class
 
 [How-to: Navigation from table view, detail &nbsp;&#9432;](how-to-nav-detail)
 
+[Info: Project Template for Core Data projects](/topics/info-project-template-core-data)  
+The template's design and code is explained in this document. 
+
+[How-to: Template for Core Data apps](/topics/how-to-core-data-template)  
+How-to-use information is in this document.
+
 <br>

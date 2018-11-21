@@ -13,8 +13,8 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 13**<br>&bull; Mon Dec 3<br>&bull; Wed Dec 5 | Demonstrate your Assignment 4<br>to your professor | | 
-**Week 12**<br>&bull; Mon Nov 26<br>&bull; Wed Nov 28 | Chapters TBA<br>Topic integration | Friday [Assign 4](/graded-work/assign4) due 20%<br>~ ~ ~ ~ ~<br>Monday Test 4 13% | 
+**[Week 13](week13)**<br>[&bull; Mon Dec 3<br>&bull; Wed Dec 5](week13) | Finish work on your Assignment 4 | Wednesday:<br>[Assign 4](/graded-work/assign4) due 20% | 
+**[Week 12](week12)**<br>[&bull; Mon Nov 26<br>&bull; Wed Nov 28](week12) | Topic integration | Monday:<br>Test 4 13% | 
 **[Week 11](week11)**<br>[&bull; Mon Nov 19<br>&bull; Wed Nov 21](week11) | Chapters 34, 35, 36<br>Networking | | 
 **[Week 10](week10)**<br>[&bull; Mon Nov 12<br>&bull; Wed Nov 14](week10) | Chapters 28, 29, 30<br>Core Data more, maps, camera, images | Wednesday:<br>Test 3, 13%| 
 **[Week 9](week09)**<br>[&bull; Mon Nov 5<br>&bull; Wed Nov 7](week09) | Chapters 23, 27<br>Location topic enhancements, Core Data introduction | Wednesday:<br>[Assign 3](/graded-work/assign3) due, 10% | 

@@ -44,7 +44,7 @@ In general, the app features include:
 
 Here are some sample screen capture images...
 
-First launch scene, empty list, and with some items:
+The "first launch" scene; an empty list, and with some items:
 
 <img class="border1" src="images/a4-first-launch.png" alt="List, empty"><img class="border1" src="images/a4-item-list-3-items.png" alt="List, with items">
 
@@ -52,7 +52,7 @@ Add item scenes:
 
 <img class="border1" src="images/a4-item-add-first-time-permission.png" alt="Location permission"><img class="border1" src="images/a4-item-add-scene.png" alt="Input fields">
 
-Add a photo:
+Add a photo scenes:
 
 <img class="border1" src="images/a4-item-add-scene-photo.png" alt="Get/take photo"><img class="border1" src="images/a4-item-add-scene-before-save.png" alt="New item, ready to save">
 
@@ -64,21 +64,47 @@ After selecting an item on the list, before saving, and then the result after co
 
 <img class="border1" src="images/a4-item-add-search-step3-before-save.png" alt="Before save"><img class="border1" src="images/a4-item-info-scene.png" alt="Item info scene">
 
-<mark>( more to come )</mark>
-
 <br>
 
 ### Getting started
 
-Use the TemplateCDv1 as a base.  
-Copy-paste (duplicate Command+D in the file system).  
-Then rename project and scheme.  
+Use the TemplateCDv1 as a base - it's in the [course's code repository](https://github.com/dps923/fall2018), in the templates and solutions folder. Follow it's how-to instructions in the "read me" document. 
+
+At this point, the app will load and run correctly, and enable you to create and delete "example" entity objects. These objects are persisted in a Core Data store. All the base / infrastructure programming bits are provided in the template. 
+
+Reminders:
+
+The template's design and code is explained in this document:
+
+[Info: Project Template for Core Data projects](/topics/info-project-template-core-data)
+
+How-to-use information is in this document:
+
+[How-to: Template for Core Data apps](/topics/how-to-core-data-template)
 
 <br>
 
 ### Doing the work, data model classes
 
 Again, as noted above, read/skim the rest of this document before you begin work. That way you know what's coming. 
+
+<br>
+
+#### Design an entity
+
+Open the Core Data model editor. (In other words, click on the `AppData.xcdatamodeld` item in the project navigator.) 
+
+Add an entity (probably named FoodItem). Add some attributes. All are strings, unless noted otherwise:
+* name - for the food item's name
+* source - the source or maker of the food item
+* quantity - quantity consumed (in grams) (Integer 32 type)
+* notes - this can hold your notes or comments about the food item
+* timestamp - this holds the object's creation date-and-time (Date type)
+* lat - latitude (Double type)
+* lon - longitude (Double type)
+* location - holds the address result of the reverse geocode task
+* photo - holds the food item's photo (Binary Data type)
+* photoThumbnail - holds a smaller lower-resolution version of the photo (Binary Data type)
 
 <mark>( more to come )</mark>
 
