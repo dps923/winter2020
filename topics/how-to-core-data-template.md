@@ -169,7 +169,7 @@ Then, fix up any other code that causes build / compile or logic errors.
 
 Open the ExampleAddCD.storyboard. Lasso the existing two rectangles (the nav and standard view scenes). Copy. In Main.storyboard, click in the empty scene area, and Paste.  
 
-On Main.storyboard, set the nav controller's Storyboard ID (to "VehicleList"). From the presenting controller, make a segue (Accessory Action > Present Modally) to the nav controller, and set its identifier.
+On Main.storyboard, set the nav controller's Storyboard ID (to "VehicleList"). From the presenting controller, make a segue (Action Segue > Present Modally) to the nav controller, and set its identifier.
 
 Select the standard view controller. Set the class name to "VehicleList". Edit the user interaction controls to match your needs, and make the outlet connections to the VehicleList.swift source code. 
 
