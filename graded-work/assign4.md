@@ -17,16 +17,15 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Friday, November 30, 2018, at 11:00pm ET  
-Grade value: 10% of your final course grade
+Wednesday, December 5, 2018, at 11:00pm ET  
+Grade value: 20% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
 
 > It is *VERY IMPORTANT* to submit your work before the due date and time.  
 > This assignment *CANNOT* be late.  
 > If it is not submitted by the due date and time, your Assignment 4 grade will be zero.  
-> Grading will begin soon after the submission date and time, and will continue into the next week.  
-> The demonstration on December 3, 4, 5, or 6 is worth marks, and is part of the grading scheme.  
+> Grading will begin the morning after the submission date and time.  
 
 <br>
 
@@ -34,19 +33,16 @@ Grade value: 10% of your final course grade
 
 We need an app that will enable you to capture and store information about the food you eat during the day. 
 
-Important for everyone to have good nutrition  
-Easy for people to ignore and dismiss as unimportant  
-Society and culture have increased interest in food and health  
-(etc.)
+It is important for everyone to have good nutrition habits. Diet and nutrition issues are too easy for people to ignore and dismiss as unimportant, but good food brings health, both in body and in mind. Modern society and culture have increased interest in food and health, so an app like this could be useful.
 
-Features:
-* Capture info about food...
-* Name or identification provided by a public web service 
-* Your additional notes and text 
-* Location info (where, when, and so on) 
-* Optionally, a photo of the food/meal 
+In general, the app features include:
+* Can capture info about food items consumed
+* The food item name or identification can be entered by you, or provided by a public web service 
+* Your additional notes/text can be added 
+* The new item will have its location info stored (where, when, and so on) 
+* Optionally, a photo of the food/meal can be taken 
 
-Example images...
+Here are some sample screen capture images...
 
 First launch scene, empty list, and with some items:
 

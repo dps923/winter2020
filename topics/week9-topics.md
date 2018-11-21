@@ -44,6 +44,15 @@ Another good Decoding article - [Encoding and Decoding JSON with Swift 4](https:
 
 [Winter 2017 intro notes on the network](https://github.com/dps923/winter2017/blob/master/notes/week_08/monday.md)
 
+From the [dataTask](https://developer.apple.com/documentation/foundation/urlsession/1407613-datatask) docs...  
+If the request completes successfully, the `data` parameter of the completion handler block contains the resource data, and the `error` parameter is nil.  
+If the request fails, the `data` parameter is nil and the `error` parameter contain information about the failure.  
+If a response from the server is received, regardless of whether the request completes successfully or fails, the response parameter contains that information.
+
+Regarding [timeouts](https://developer.apple.com/documentation/foundation/urlrequest/2011509-timeoutinterval) (in an NSURLRequest object)...  
+If during a connection attempt the request remains idle for longer than the timeout interval, the request is considered to have timed out. The default timeout interval is 60 seconds.  
+As a general rule, you should not use short timeout intervals. Instead, you should provide an easy way for the user to cancel a long-running operation. For more information, read Designing for [Real-World Networks](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/WhyNetworkingIsHard/WhyNetworkingIsHard.html#//apple_ref/doc/uid/TP40010220-CH13) in [Networking Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010220).
+
 <br>
 
 ### Location services, media, motion, split view controller

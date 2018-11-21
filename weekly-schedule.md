@@ -21,11 +21,11 @@ Week 5<br>Oct 1, Oct 3 | Chapters 9, 10, 11<br>Table view, data model, nav contr
 Week 6<br>Oct 10 | Chapters 12, 13, 14<br>Add item, delegate, protocol, edit item | Assign 2<br>due Oct 10 | 10%
 Week 7<br>Oct 15, Oct 17 | Chapters 15, 17<br>Save/load, data model | Test 2  | 12%
 Study week<br>Oct 22 - 26 | Recommended...<br> Chapter 21, Swift language review | | 
-Week 8<br>Oct 29, Oct 31 | Chapter 22<br>Location introduction | | 10%
-Week 9<br>Nov 5, Nov 7 | Chapters 23, 27<br>Location more, Core Data intro | Assign 3 due Nov 7 | 13%
-Week 10<br>Nov 12, Nov 14 | Chapters 28, 29, 30<br>Core Data more, maps, camera, images | Test 3 on Nov 14 | 10%
-Week 11<br>Nov 19, Nov 21 | Chapters 34, 35, 36 <br>Networking | Test 4 | 13%
-Week 12<br>Nov 26, Nov 28 | Chapters TBA<br>Integrating these features | Test 4 on Nov 26<br>Assign 4<br>due Nov 30 | 10%<br>20%
-Week 13<br>Dec 3, Dec 5 | Final project one-on-one demonstrations | | 
+Week 8<br>Oct 29, Oct 31 | Chapter 22<br>Location introduction | | 
+Week 9<br>Nov 5, Nov 7 | Chapters 23, 27<br>Location more, Core Data intro | Assign 3 <br>due Nov 7 | 10%
+Week 10<br>Nov 12, Nov 14 | Chapters 28, 29, 30<br>Core Data more, maps, camera, images | Test 3 on Nov 14 | 13%
+Week 11<br>Nov 19, Nov 21 | Chapters 34, 35, 36 <br>Networking | | 
+Week 12<br>Nov 26, Nov 28 | Integrating these features | Test 4 on Nov 26 | 13% |
+Week 13<br>Dec 3, Dec 5 | Final assignment finish | Assign 4<br>due Dec 5 | 20% | 
 
 <br>
