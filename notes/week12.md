@@ -13,7 +13,7 @@ Nothing new this week. Test 4 is on Monday, in class. Then, your professor will 
 
 The professor may also guide you through the topic hightlights in the textbook. 
 
-Test 3 is today, sometime during the timeslot.
+Test 4 is today, sometime during the timeslot.
 
 It will cover recently-covered content, with these themes:
 * Core Data technology 
