@@ -175,7 +175,7 @@ Select the standard view controller. Set the class name to "VehicleAdd". Edit th
 
 #### Presenting controller
 
-In the presenting controller source code file, adopt the "add" protocol, copy in the stub methods (from the bottom of the VehicleAdd.swift source code file), code the segue (use the "task" segue code), by passing the manager, the data item being passed, and set the delegate.
+In the presenting controller source code file, adopt the "add" protocol, copy in the stub methods (from the bottom of the VehicleAdd.swift source code file), code the segue (use the "task" segue code), by passing the manager, and set the delegate.
 
 #### Other app building/assembling tasks 
 
