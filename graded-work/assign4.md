@@ -84,13 +84,13 @@ How-to-use information is in this document:
 
 <br>
 
-### Doing the work, data model classes
+### Doing the work, data model
 
 Again, as noted above, read/skim the rest of this document before you begin work. That way you know what's coming. 
 
 <br>
 
-#### Design an entity
+#### Design and define an entity
 
 Open the Core Data model editor. (In other words, click on the `AppData.xcdatamodeld` item in the project navigator.) 
 
@@ -106,15 +106,36 @@ Add an entity (probably named FoodItem). Add some attributes. All are strings, u
 * photo - holds the food item's photo (Binary Data type)
 * photoThumbnail - holds a smaller lower-resolution version of the photo (Binary Data type)
 
-<mark>( more to come )</mark>
+After you complete this work, Xcode will generate, and make available to your code, a class named FoodItem. 
 
 <br>
 
-### Add controller
+#### Create and configure a data manager
+
+As you know from the ["how to use" document](https://dps923.ca/topics/how-to-core-data-template), the next task is to create and configure a data manager. Follow the instructions to create a manager extension, probably named: 
+
+`DataModelManager+FoodItem.swift`
+
+<br>
+
+### Add "list" controller and scene
+
+If you have followed the "how to use" document, then the ExampleList controller and storyboard scenes were deleted. Therefore, we need a controller to show food items. 
+
+Follow the guidance to [create a controller and scene to view the food item data](https://dps923.ca/topics/how-to-core-data-template#create-controllers-and-scenes-to-view-the-apps-data). 
+
+<br>
+
+### Add controller and scene to add an item
+
+
+
+<br>
+
+<mark>( more to come )</mark>
 
 Reverse geocoding done after a location is found  
 `placemarks` is an array of CLPlacemark  
-
 
 <br>
 
