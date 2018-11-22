@@ -90,6 +90,8 @@ How-to-use information is in this document:
 
 [How-to: Template for Core Data apps](/topics/how-to-core-data-template)
 
+Build and run (and test) frequently. Do these tasks incrementally, so that you build upon success and do not leave problems behind. 
+
 <br>
 
 #### App building tasks, in sequence
@@ -142,7 +144,13 @@ Add an entity (probably named FoodItem). Add some attributes. All are strings, u
 * photo - holds the food item's photo (Binary Data type)
 * photoThumbnail - holds a smaller lower-resolution version of the photo (Binary Data type)
 
-After you complete this work, Xcode will generate, and make available to your code, a class named FoodItem. 
+The `photo` attribute should be configured as shown in the following image. The "allows external storage" feature that enables efficient storage of large binary data objects. For some combination of large-size objects and/or a large number of these objects will cause Core Data to use the file system if it improves performance. Just set it, and the Core Data engine will take care of the rest. 
+
+![](images/a4-data-model-photo-external-storage.png)
+
+<br>
+
+After you complete this Core Data model editor work, Xcode will generate, and make available to your code, a class named FoodItem. 
 
 <br>
 
@@ -182,7 +190,7 @@ Let's start with the basic functionality. Some data will be provided (entered) b
 * quantity
 * photo 
 
-The user interface controls for first three should be standard text fields. At your option, you can use a larger text view for the "notes" data.
+Add user interface controls for all except photo. The first three controls should be standard text fields. At your option, you can use a larger text view for the "notes" data.
 
 The "quantity" UI should be a segmented control, with button segments for these values:  
 25, 50, 100, 125, 250, 500
@@ -208,7 +216,7 @@ As you recently learned, *location services* is a device feature that needs the 
 
 The "add new" controller is an ideal place for the location services code. The scene's text fields will gather input from the app user, and it will take a small amount of time to do that. If we activate location services when the controller and scene becomes active, the location update events will be complete when the app user is ready to save the new item. 
 
-The `egLocation` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has all you need to understand and use location services. 
+The `egLocation` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use location services. 
 
 Add and/or write the code needed in the FoodItemAdd controller class. Make sure that the location data (latitude, longitude, and address) are saved with the new food item. 
 
@@ -222,9 +230,44 @@ As mentioned above, the *picker controller* is built in, so we do not have to wr
 
 Our initial goal is to get and display a photo. The user interface will include a button that presents the picker, and an image view that shows the photo. 
 
+Edit the scene. Add a button that will begin the photo take/pick action. Create an action connection to the controller code. Add an image view that can display a photo. Create an outlet connection to the controller code. 
 
+The `egCamera` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the camera and photo library. 
 
+Add and/or write the code needed in the FoodItemAdd controller class. Make sure that the photo data is saved with the new food item. How? 
 
+First, it is important to understand the following: 
+* A photo, from the camera or photo library, is an in-memory format of type `UIImage` 
+* The storage format of a photo, in Core Data, is "Binary Data", which is of type `Data` 
+* As a result, they're different types, in different formats
+* We must convert, back-and-forth
+
+Next, we must learn how to convert *FROM* a UIImage *TO* a Data:
+
+```swift
+// From UIImage to Data
+// Assume "photo" is a UIImage
+// Assume "item.photo" is the Data property of a Core Data item
+
+// Attempt to create a Data representation of the photo
+guard let imageData  = UIImageJPEGRepresentation(photo!, 1.0) else {
+    errorMessage.text = "Cannot save photo"
+    return
+}
+newItem.photo = imageData
+```
+
+Finally, we must learn how to convert *FROM* a Data *TO* a UIImage:
+
+```swift
+// From Data to UIImage
+// Assume "item.photo" is the Data property of a Core Data item
+// Assume "item.imageView" is an outlet to a UIImageView on a scene
+
+// Attempt to create a UIImage representation of the photo
+let photo = UIImage(data: item.photo!)
+foodItemPhoto.image = photo 
+```
 
 <br>
 
