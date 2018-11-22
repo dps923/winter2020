@@ -128,6 +128,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             // We're looking for a happy response, if so, continue
             if error == nil, let p = placemarks, !p.isEmpty {
                 
+                // "placemarks" is an array of CLPlacemark objects
+                // For most geocoding requests, the array has only one value,
+                // so we will use the last (most recent) value
                 // Format and save the text from the placemark into the class instance variable
                 self.placemarkText = self.makePlacemarkText(from: p.last!)
                 // Info to the programmer
