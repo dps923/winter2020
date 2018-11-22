@@ -170,9 +170,21 @@ If it helps, follow the guidance to [create a controller and scene to view the l
 
 <br>
 
-### Add a controller and scene to add an item
+### Add an "info/view" controller and scene
 
-This scene and controller enables the user to add a new food item to the list. Do the work in three parts: 
+This scene and controller enables the user to view the info about an existing food item. It is a "next" scene in a drill-down navigation flow from the list scene. On the list scene, the user taps one of the rows, and this info/view controller slides in from the right, to show the item's details in some combination of labels, images, or whatever's appropriate for the item's data. 
+
+In the template, the `ExampleSceneBaseCD.swift` source code file can be duplicated and edited to fulfill this task. On the storyboard, the segue will be a standard "show" segue, and in the controller, it will use the "workflow" segue code block. 
+
+The app does not yet have data, so it won't be possible to view this controller's scene until you complete the work in the next section. 
+
+<br>
+
+### Add a controller and scene to "add a food item"
+
+This scene and controller enables the user to add a new food item to the list. As you have done before, this feature is presented by the list controller, via an "Add" `+` button in the right-side area of the top-of-list nav item. 
+
+Do the work in three parts: 
 1. Basic functionality to handle text field etc. input 
 2. Add on the location services 
 3. Add on the camera and photo library handling
@@ -219,6 +231,8 @@ The "add new" controller is an ideal place for the location services code. The s
 The `egLocation` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use location services. 
 
 Add and/or write the code needed in the FoodItemAdd controller class. Make sure that the location data (latitude, longitude, and address) are saved with the new food item. 
+
+Remember to go back to the food item info/view controller and scene, and add in the location-related code. 
 
 <br>
 
@@ -269,13 +283,15 @@ let photo = UIImage(data: item.photo!)
 foodItemPhoto.image = photo 
 ```
 
+Remember to go back to the food item info/view controller and scene, and add in the photo-related code. 
+
 <br>
 
-~ ~ ~ 
+### Progress checkpoint
 
-<mark>( more to come )</mark>
+At this point in time, your app should be able to show a list of food items, enable the viewing of any one of them, and enable the creation of new fully-configured food items. 
 
-To be documented:  
+Here's the list of remaining tasks, from the original list above:
 <ol start="7">
 <li>Create and test an item-selection controller, protocol, and scene</li>
 <li>Get the web API templated code</li>
@@ -291,7 +307,49 @@ Fine-tuning and appearance improvement:
 * Number formatting
 * Date formatting
 
-~ ~ ~ 
+The suggested plan or strategy is to 1) create an item-selection controller and use in-memory data items to select among, and then 2) adapt it to use data items fetched from a web API. 
+
+<br>
+
+### Item-selection controller idea and creation
+
+tba
+
+<br>
+
+### Get the network involved
+
+Several tasks...
+
+#### Get the web API templated code
+
+tba
+
+#### Study and interact with the web API
+
+tba
+
+#### Design and define structs that match the shape of the data from the web API
+
+tba
+
+#### Create, configure, and test a data manager
+
+tba
+
+#### Edit the item-selection controller to use the data manager
+
+tba
+
+
+<mark>( more to come )</mark>
+
+Fine-tuning and appearance improvement:
+* Photo button 
+* Photo thumbnail
+* Number formatting
+* Date formatting
+
 
 <br>
 
