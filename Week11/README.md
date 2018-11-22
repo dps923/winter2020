@@ -11,3 +11,13 @@ The code is in the `ViewController.swift` source code file. It relies on a new s
 The app was built with the Single View App project template.
 
 <br>
+
+### egCamera
+
+An example of an app that uses the device camera and/or photo library. 
+
+The code is in the `ViewController.swift` and `ViewController+Photo.swift` source code files. The functionality relies on new settings in `Info.plist`. 
+
+The app was built with the Single View App project template.
+
+<br>
