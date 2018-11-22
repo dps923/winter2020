@@ -348,7 +348,7 @@ From the code repository.
 #### Study and interact with the web API
 
 Must request an "API key". Visit this page:  
-https://ndb.nal.usda.gov/ndb/api/doc  
+[https://ndb.nal.usda.gov/ndb/api/doc](https://ndb.nal.usda.gov/ndb/api/doc)  
 Near the middle of the page, there is a "Gaining Access" section. Follow its instructions. You can use a College or personal email address. 
 
 Base URL for searches:  
@@ -357,11 +357,11 @@ https://api.nal.usda.gov/ndb/search/?
 
 Example queries (which can be sent in a browser; replace "YOUR_API_KEY" with your API key):
 
-https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter
+[https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter](https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter)
 
-https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut
+[https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut](https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut)
 
-https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut%20natural
+[https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut%20natural](https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut%20natural)
 
 #### Design and define structs that match the shape of the data from the web API
 
