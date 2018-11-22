@@ -21,3 +21,13 @@ The code is in the `ViewController.swift` and `ViewController+Photo.swift` sourc
 The app was built with the Single View App project template.
 
 <br>
+
+### egSelect
+
+An example of an app that uses a table view controller and scene as an item-selection list. 
+
+The code is in many files (manager, starting view controller, and the table view controller.  
+
+The app was built with the Single View App project template.
+
+<br>
