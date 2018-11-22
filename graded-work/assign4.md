@@ -313,43 +313,82 @@ The suggested plan or strategy is to 1) create an item-selection controller and 
 
 ### Item-selection controller idea and creation
 
-tba
+In our app, we need a way to *select an item*. What item? Something *from a list* of search results. 
+
+This is a common task in apps. All students will be familar with the use of `select` and `option` elements in HTML, and how they are used to make a list of items. On a web page, we typically see this kind of feature as a "listbox" or a "dropdown list", as shown in the web page example below. 
+
+A similar example has been prepared for a list (table view controller) scene in an iOS app, as shown below.
+
+<img class="border1" src="images/a4-item-select-example-html.png" alt="Select, HTML"><img class="border1" src="images/a4-item-select-example-scene.png" alt="Select, iOS">
+
+<br>
+
+How can we do this for our app? There are several ideas involved. 
+1. First, we need a list (table view) controller and scene
+2. It will be a "task" scene, so it will slide up from the bottom (as other task scenes do), as a result of an action segue in the presenting controller 
+3. As a result, it will define a protocol, with methods similar to "cancel" and "save"
+4. It will need data, from somewhere (memory, data store, the network; typically by calling a manager method), and data items will render in table view rows
+5. Upon selection, it will call a delegate method, and pass back the data represented by the selected row to the presenting controller
+6. The presenting controller can do whatever it needs to with the passed-back data 
+
+<br>
+
+<mark>( more to come )</mark>
 
 <br>
 
 ### Get the network involved
 
-Several tasks...
+Several tasks... (major sections are below)
 
 #### Get the web API templated code
 
-tba
+From the code repository. 
 
 #### Study and interact with the web API
 
-tba
+Must request an "API key". Visit this page:  
+https://ndb.nal.usda.gov/ndb/api/doc  
+Near the middle of the page, there is a "Gaining Access" section. Follow its instructions. You can use a College or personal email address. 
+
+Base URL for searches:  
+
+https://api.nal.usda.gov/ndb/search/?
+
+Example queries (which can be sent in a browser; replace "YOUR_API_KEY" with your API key):
+
+https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter
+
+https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut
+
+https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut%20natural
 
 #### Design and define structs that match the shape of the data from the web API
 
-tba
+Study the responses.  
+Create one or more structs to match.  
 
 #### Create, configure, and test a data manager
 
-tba
+Create a new Swift file.  
+It will be an extension to DataModelManager.  
+It will have one (1) method, `foodItem_Search(searchTerms:)`  
+It will update an instance variable to hold a collection of items.  
+This collection can be used by an item-selection controller.  
 
 #### Edit the item-selection controller to use the data manager
 
-tba
+Adapt the previously-created item-selection controller to use the search results collection that's stored in the manager.  
 
+<br>
 
-<mark>( more to come )</mark>
-
-Fine-tuning and appearance improvement:
+### Fine-tuning and appearance improvement:
 * Photo button 
 * Photo thumbnail
 * Number formatting
 * Date formatting
 
+~ ~ ~ 
 
 <br>
 
