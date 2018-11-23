@@ -333,6 +333,8 @@ How can we do this for our app? There are several ideas involved.
 
 <br>
 
+The `egSelect` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use an item-selection list. 
+
 <mark>( more to come )</mark>
 
 <br>
@@ -340,6 +342,8 @@ How can we do this for our app? There are several ideas involved.
 ### Get the network involved
 
 Several tasks... (major sections are below)
+
+The `egWebApiGet` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the network.
 
 #### Get the web API templated code
 
