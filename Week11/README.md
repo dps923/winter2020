@@ -1,5 +1,7 @@
 ## Week 11 code examples
 
+Students in our iOS programming course have permission to use (copy) the code in these examples as-is, and to modify it in any way. Enjoy. 
+
 <br>
 
 ### egLocation
@@ -27,6 +29,16 @@ The app was built with the Single View App project template.
 An example of an app that uses a table view controller and scene as an item-selection list. 
 
 The code is in many files (manager, starting view controller, and the table view controller.  
+
+The app was built with the Single View App project template.
+
+<br>
+
+### egWebApiGet
+
+An example of an app that uses a web API. 
+
+The code is in many files (manager, starting view controller, and the table view controller. The super important parts are the `...+Chinook...` and `...+SICT...` extensions to the data model manager, and the new `WebApiRequest.swift` source code file that has a reusable class that does the web API interaction work. Enjoy.
 
 The app was built with the Single View App project template.
 
