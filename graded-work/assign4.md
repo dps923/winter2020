@@ -369,7 +369,7 @@ Your professor has created a class - `WebApiRequest` - that improves the process
 
 The [course's code repository's Week 11 folder](https://github.com/dps923/fall2018/tree/master/Week11) has the code needed. (It's also in the templates and solutions folder.)
 
-Add the `WebApiRequest.swift` source code file to your project. 
+Add the `WebApiRequest.swift` source code file to your project. Later, you will make a few minor edits to the code. 
 
 The other files can be used as guidance only, and/or copy-code sources. Do NOT replace your existing manager and data model classes source code files. 
 
@@ -423,10 +423,10 @@ Carefully study the responses to your queries. Your task in this section is to d
 The image below shows the response from the last query above (butter peanut natural). Notice its structure or packaging scheme: 
 * The outer package is an object, and has ONE key-value pair, "list". 
 * The value of "list" is an object. 
-* Some of the values are strings, and others are numbers. 
+* Some of the values of the "list" object are strings, and others are numbers. 
 * The "list" object has a key named "item", and its value is an array (collection). 
 * The contents of the array is a collection of objects. 
-* Each object has the data we need for our app, specifically the values of "name" and "manu". 
+* Each "item" object has the data we need for our app, specifically the values of "name" and "manu". 
 
 ![Web API response example](images/a4-web-api-query-response-structure-json.png)
 
@@ -439,17 +439,39 @@ As suggested above, three structs will be needed - an outer package, another for
 
 <br>
 
-<mark>( more to come )</mark>
-
-<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
-
 #### Create, configure, and test a data manager
 
-Create a new Swift file.  
-It will be an extension to DataModelManager.  
-It will have one (1) method, `foodItem_Search(searchTerms:)`  
-It will update an instance variable to hold a collection of items.  
-This collection can be used by an item-selection controller.  
+We're making progress. 
+
+The next task is to create a property (instance variable) in the manager class, to hold the response from the web API request. As you learned above and from inspecting the response, it is an object of type NdbSearchPackage (if you used the suggested struct names from above). Declare the object property as optional.
+
+> Note that in a different situation, if the response is an array/collection, then the property declaration must be declared as an empty array of the appropriate type. 
+
+Now, create a new Swift file, to be an extension to the manager. Therefore, its name will be something like:  
+`DataModelManager+USDA.swift`  
+or  
+`DataModelManager+NDB.swift` 
+
+It will have only one (1) method, something like:  
+`foodItem_Search(searchTerms:)`  
+
+The method's code will:
+1. Create (and configure if necessary) an instance of the WebApiRequest class 
+2. Call that object's `sendRequest(toUrlPath:completion:)` method 
+3. Provide a function (callback) that will execute when the response is received 
+
+The callback function essentially does two things: 
+1. Saves the response result to a property in the manager 
+2. Posts a "notification" so that observers (listeners) know when the response is received
+
+> Follow the guidance and suggested code patterns in the `egWebApiGet` code example. 
+
+> Wait - we want a *collection* of items, to show in an item-selection list, right?  
+> Why are we declaring and using an *object* property?  
+> Yes, we need a collection. It is inside the object. Assuming that the property name is something like "usdaSearchPackage", then the collection is here...  
+> `usdaSearchPackage.list.item` 
+
+<br>
 
 #### Edit the item-selection controller to use the data manager
 
@@ -458,6 +480,10 @@ Adapt the previously-created item-selection controller to use the search results
 Notification.  
 
 <br>
+
+<mark>( more to come )</mark>
+
+<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
 
 ### Fine-tuning and appearance improvement:
 * Photo button 
