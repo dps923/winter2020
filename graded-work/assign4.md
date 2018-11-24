@@ -207,6 +207,8 @@ Add user interface controls for all except photo. The first three controls shoul
 The "quantity" UI should be a segmented control, with button segments for these values:  
 25, 50, 100, 125, 250, 500
 
+![Quantity selector](images/a4-item-add-quantity.png)
+
 > Tips about the segmented control:  
 > The `selectedSegmentIndex` property has the tapped/touched segment.  
 > The `titleForSegment(at:)` method has the text title for a segment index.  
@@ -244,7 +246,15 @@ As mentioned above, the *picker controller* is built in, so we do not have to wr
 
 Our initial goal is to get and display a photo. The user interface will include a button that presents the picker, and an image view that shows the photo. 
 
-Edit the scene. Add a button that will begin the photo take/pick action. Create an action connection to the controller code. Add an image view that can display a photo. Create an outlet connection to the controller code. 
+Edit the scene. Add a button that will begin the photo take/pick action. 
+
+> If you wish to use an image for the button, then do this:  
+> Locate and import suitable icon/image to the asset catalog; maybe a web search can help with this task.  
+> On the button's attributes inspector, change the "Type" to "Custom".  
+> Then, in the "Image" dropdown list, select the icon/image that you imported.  
+> Size to fit.  
+
+From the button, create an action connection to the controller code. Add an image view that can display a photo. Create an outlet connection to the controller code. 
 
 The `egCamera` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the camera and photo library. 
 
@@ -347,13 +357,13 @@ At this point, your app should be able to enable the user to add a new food item
 
 ### Get the network involved
 
-<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
-
-Several tasks... (major sections are below)
+This will be a lengthy task, partly because you will be learning a number of techniques. We suggest that you read/skim the content below before doing the work, so that you will know what's coming. 
 
 The `egWebApiGet` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the network.
 
 <mark>( more to come )</mark>
+
+<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
 
 #### Get the web API templated code
 
