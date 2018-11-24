@@ -413,14 +413,35 @@ Make sure that you are comfortable with the interaction pattern. It is essential
 
 <br>
 
+#### Design and define structs that match the shape of the data from the web API
+
+Carefully study the responses to your queries. Your task in this section is to design and define structs that match the shape of the response data. 
+
+> There's no magic shortcut that makes this process easier.  
+> Take your time, be careful, and when you are able to test the request in your app, pay attention to any error messages that appear in the debug console area.  
+
+The image below shows the response from the last query above (butter peanut natural). Notice its structure or packaging scheme: 
+* The outer package is an object, and has ONE key-value pair, "list". 
+* The value of "list" is an object. 
+* Some of the values are strings, and others are numbers. 
+* The "list" object has a key named "item", and its value is an array (collection). 
+* The contents of the array is a collection of objects. 
+* Each object has the data we need for our app, specifically the values of "name" and "manu". 
+
+![Web API response example](images/a4-web-api-query-response-structure-json.png)
+
+<br>
+
+As suggested above, three structs will be needed - an outer package, another for the "list" value, and another for an "item" value. If you are looking for suggested struct names, you can use these:
+* NdbSearchPackage - for the outer container package 
+* NdbSearchList - for the "list" value 
+* NdbSearchListItem - for an "item" value 
+
+<br>
+
 <mark>( more to come )</mark>
 
 <p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
-
-#### Design and define structs that match the shape of the data from the web API
-
-Study the responses.  
-Create one or more structs to match.  
 
 #### Create, configure, and test a data manager
 
@@ -433,6 +454,8 @@ This collection can be used by an item-selection controller.
 #### Edit the item-selection controller to use the data manager
 
 Adapt the previously-created item-selection controller to use the search results collection that's stored in the manager.  
+
+Notification.  
 
 <br>
 
