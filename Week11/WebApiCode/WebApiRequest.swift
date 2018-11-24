@@ -18,7 +18,7 @@ class WebApiRequest {
     
     // Base URL, and then we add to the end
     // This is customized to match the behavior of the desired Web API
-    var urlBase = "https://dps923.ca/media"
+    var urlBase = "https://host.domain.com/apipath"
     
     // Settable properties of NSMutableURLRequest
     var httpMethod = "GET"
@@ -27,7 +27,7 @@ class WebApiRequest {
     var httpBody: Data?
     
     // MARK: - Public methods
-
+    
     func sendRequest<T:Decodable>(toUrlPath urlPath: String, completion: @escaping (T)->Void) {
         
         // Assemble the complete URL
@@ -81,7 +81,7 @@ class WebApiRequest {
                 // Maybe extract and return more information
                 completion(results!)
             }
-
+            
             // Happy case... the request was successful, and we have data
             if let data = data, (200...299).contains(r.statusCode) {
                 
@@ -122,7 +122,7 @@ class WebApiRequest {
                 // Maybe extract and return more information
                 completion(results!)
             }
-
+            
             // An error is in the request
             if (400...499).contains(r.statusCode) {
                 
@@ -130,7 +130,7 @@ class WebApiRequest {
                 // Maybe extract and return more information
                 completion(results!)
             }
-
+            
             // An error happened at the server
             if (500...599).contains(r.statusCode) {
                 
@@ -149,5 +149,5 @@ class WebApiRequest {
         // Reference the app's network activity indicator in the status bar
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
     }
-
+    
 }

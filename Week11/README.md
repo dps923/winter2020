@@ -4,6 +4,14 @@ Students in our iOS programming course have permission to use (copy) the code in
 
 <br>
 
+### WebApiCode
+
+This folder is NOT a full working project. 
+
+However, it has web API (network use) code that you can copy, paste, edit, and use in your own projects. 
+
+<br>
+
 ### egLocation
 
 An example of an app that uses location services. 
