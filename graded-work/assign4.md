@@ -477,13 +477,17 @@ The callback function essentially does two things:
 
 Adapt the previously-created item-selection controller to use the search results collection that's stored in the manager.  
 
-Notification.  
-
-<br>
-
 <mark>( more to come )</mark>
 
 <p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
+
+~ ~ ~ 
+
+Add new modification, `shouldPerformSegue`.  
+Notification and handler method.  
+`tableView(_:didSelectRowAt:)` modification.  
+
+<br>
 
 ### Fine-tuning and appearance improvement:
 * Photo button 
