@@ -23,7 +23,7 @@ THIS is the code that will:
 
 The callback function essentially does two things: 
 1. Saves the response result to a property in the manager 
-2. Posts a "notification" so that observers (listeners) know when the response is received
+2. Posts a "notification" so that observers (listeners) know when the response s received
 
 Create one or more methods to meet the needs of your app.
 

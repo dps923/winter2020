@@ -2,6 +2,14 @@
 
 <br>
 
+### WebApiCode
+
+This folder is NOT a full working project. 
+
+However, it has web API (network use) code that you can copy, paste, edit, and use in your own projects. 
+
+<br>
+
 ### Template for Core Data version 1
 
 Built for Xcode 9.
