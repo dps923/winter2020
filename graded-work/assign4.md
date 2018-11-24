@@ -361,31 +361,61 @@ This will be a lengthy task, partly because you will be learning a number of tec
 
 The `egWebApiGet` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the network.
 
-<mark>( more to come )</mark>
-
-<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
+<br>
 
 #### Get the web API templated code
 
-From the code repository. 
+Your professor has created a class - `WebApiRequest` - that improves the process of working with a web API. One of the problems in this topic area is the wide and variable number of so-called "best practice" approaches. The problem is that many of them are NOT scalable, and/or repeatable, and/or adaptable. 
+
+The [course's code repository's Week 11 folder](https://github.com/dps923/fall2018/tree/master/Week11) has the code needed. (It's also in the templates and solutions folder.)
+
+Add the `WebApiRequest.swift` source code file to your project. 
+
+The other files can be used as guidance only, and/or copy-code sources. Do NOT replace your existing manager and data model classes source code files. 
+
+<br>
 
 #### Study and interact with the web API
 
-Must request an "API key". Visit this page:  
-[https://ndb.nal.usda.gov/ndb/api/doc](https://ndb.nal.usda.gov/ndb/api/doc)  
-Near the middle of the page, there is a "Gaining Access" section. Follow its instructions. You can use a College or personal email address. 
+For this project, we will work with the United States Department of Agriculture Food Composition Databases web API. Yes, there are many other data sources, but this will meet the needs of this project very nicely. 
 
-Base URL for searches:  
+Visit this page to learn about its features:  
+[https://ndb.nal.usda.gov/ndb/api/doc](https://ndb.nal.usda.gov/ndb/api/doc)  
+
+To use the web API, you have an "API key". This is a string. It must be sent with every request to the web API. Visit this page to request an "API key":  
+[https://ndb.nal.usda.gov/ndb/api/doc](https://ndb.nal.usda.gov/ndb/api/doc)  
+Near the middle of the page, there is a "Gaining Access" section. Follow its instructions. You can use a College or personal email address. It will send the "API key" to your email address. 
+
+Now, interact with the web API. You can use a browser to compose requests, or you can use a tool like Postman. (The browser is enough for our needs.)
+
+Notice that the "base" or first part of the URL for all searches looks like the following:  
 
 https://api.nal.usda.gov/ndb/search/?
 
-Example queries (which can be sent in a browser; replace "YOUR_API_KEY" with your API key):
+Then, we append at least two more key-value pairs:
+1. Your "API key" 
+2. The desired search terms
 
+Other key-value pairs can be added, and they are documented on the page linked above. A commonly-used pair - `max=25` - will limit the number of returned results to the value provided (i.e. 25 items). 
+
+Here are some example queries (which can be sent in a browser; replace "YOUR_API_KEY" with your "API key"). Notice that multi-word search terms are encoded (in other words, the space has been encoded as `%20`) Multi-word search terms are treated as "and" situations, and will return results that include all words (or synonyms/equivalents).
+
+Search for "butter":  
 [https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter](https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter)
 
+Search for "butter peanut":  
 [https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut](https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut)
 
+Search for "butter peanut natural":  
 [https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut%20natural](https://api.nal.usda.gov/ndb/search/?max=25&api_key=YOUR_API_KEY&q=butter%20peanut%20natural)
+
+Make sure that you are comfortable with the interaction pattern. It is essential that you have some experience doing this BEFORE you begin coding it into an iOS app. 
+
+<br>
+
+<mark>( more to come )</mark>
+
+<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
 
 #### Design and define structs that match the shape of the data from the web API
 
