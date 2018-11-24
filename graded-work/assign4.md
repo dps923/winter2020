@@ -315,9 +315,9 @@ The suggested plan or strategy is to 1) create an item-selection controller and 
 
 In our app, we need a way to *select an item*. What item? Something *from a list* of search results. 
 
-This is a common task in apps. All students will be familar with the use of `select` and `option` elements in HTML, and how they are used to make a list of items. On a web page, we typically see this kind of feature as a "listbox" or a "dropdown list", as shown in the web page example below. 
+This is a common task in apps. All students will be familar with the use of `select` and `option` elements in HTML, and how they are used to make a list of items. On a web page, we typically see this kind of feature as a "list box" or a "dropdown list", as shown in the web page example, below left. 
 
-A similar example has been prepared for a list (table view controller) scene in an iOS app, as shown below.
+A similar example has been prepared for a list (table view controller) scene in an iOS app, as shown below right.
 
 <img class="border1" src="images/a4-item-select-example-html.png" alt="Select, HTML"><img class="border1" src="images/a4-item-select-example-scene.png" alt="Select, iOS">
 
@@ -326,24 +326,34 @@ A similar example has been prepared for a list (table view controller) scene in 
 How can we do this for our app? There are several ideas involved. 
 1. First, we need a list (table view) controller and scene
 2. It will be a "task" scene, so it will slide up from the bottom (as other task scenes do), as a result of an action segue in the presenting controller 
-3. As a result, it will define a protocol, with methods similar to "cancel" and "save"
+3. As a result, it will define a protocol, with a "cancel" method 
 4. It will need data, from somewhere (memory, data store, the network; typically by calling a manager method), and data items will render in table view rows
-5. Upon selection, it will call a delegate method, and pass back the data represented by the selected row to the presenting controller
+5. When a row is tapped/selected, a handler will call a delegate method, and pass back the data represented by the selected row to the presenting controller
 6. The presenting controller can do whatever it needs to with the passed-back data 
 
 <br>
 
 The `egSelect` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use an item-selection list. 
 
-<mark>( more to come )</mark>
+As noted above, we suggest that you first implement the item-selection controller with in-memory data items. (For example, create an array of strings in the controller's `viewDidLoad()` method.) 
+
+Earlier, on the "add new" scene, you probably configured your food item name text field to span the full width of the scene. We suggest that you reduce its size so that you can fit a "search" button to its right. The button will cause an action segue to show the item-selection controller. 
+
+![Food item name text field and search button](images/a4-item-add-scene-name-and-search-button.png)
+
+At this point, your app should be able to enable the user to add a new food item by entering its name in the text field, or by using the item-selection controller. 
 
 <br>
 
 ### Get the network involved
 
+<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
+
 Several tasks... (major sections are below)
 
 The `egWebApiGet` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the network.
+
+<mark>( more to come )</mark>
 
 #### Get the web API templated code
 
