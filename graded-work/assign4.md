@@ -111,7 +111,7 @@ Then, add the ability to work with a web API:
 <li>Study and interact with the web API</li>
 <li>Design and define structs that match the shape of the data from the web API</li>
 <li>Create, configure, and test a data manager</li>
-<li>Edit the item-selection controller to use the data manager</li>
+<li>Edit the item-selection process to use the data manager</li>
 </ol>
 
 Fine-tuning and appearance improvement:
@@ -345,11 +345,27 @@ How can we do this for our app? There are several ideas involved.
 
 The `egSelect` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use an item-selection list. 
 
-As noted above, we suggest that you first implement the item-selection controller with in-memory data items. (For example, create an array of strings in the controller's `viewDidLoad()` method.) 
+As noted above, we suggest that you first implement the item-selection controller with in-memory data items. (For example, create an array of strings in the controller's `viewDidLoad()` method.) When a user taps a row, pass the data back to the presenting controller (in the delegate method call).
+
+How do we handle #5 above (row tap)? We implement another table view delegate method, `tableView(_:didSelectRowAt:)`. You have probably seen this before in one of the course textbook code examples. Here is the logic for the method:
+
+```swift
+override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    // When the row is tapped, we have the index path value
+    // Use it to extract the data-item from the data source 
+    // (which is the in-memory array of items)
+    // Call the delegate's searchTask(_:didSelect:) method,
+    // passing the data-item as a parameter
+}
+```
+
+<br>
 
 Earlier, on the "add new" scene, you probably configured your food item name text field to span the full width of the scene. We suggest that you reduce its size so that you can fit a "search" button to its right. The button will cause an action segue to show the item-selection controller. 
 
 ![Food item name text field and search button](images/a4-item-add-scene-name-and-search-button.png)
+
+How do we handle #6 above (do something with the passed-back data)? Well, in the "add new" (presenting) controller, implement the `searchTask(_:didSelect:)` delegate method. The type of the passed-back data is a string. Set the food item name text field to show the passed-back data. 
 
 At this point, your app should be able to enable the user to add a new food item by entering its name in the text field, or by using the item-selection controller. 
 
@@ -473,9 +489,44 @@ The callback function essentially does two things:
 
 <br>
 
-#### Edit the item-selection controller to use the data manager
+#### Edit the item-selection process to use the data manager
 
-Adapt the previously-created item-selection controller to use the search results collection that's stored in the manager.  
+In this section, we will adapt the *add-item controller* and the *item-selection controller* to use the search results collection that's stored in the manager.  
+
+We will start with the *add-item controller*, and think about the segue that happens when the search button is tapped (from the "add new" scene to the "item-select list" scene). There are two related ideas here:
+1. We want to prevent a segue if the food item name text field is empty. 
+2. However, if it's not empty, we want to execute the search task. 
+
+The design of the `prepare(for:sender:)` segue method does not permit us to cancel it. In other words, when the method gets called, it will execute. However, we do have another method - `shouldPerformSegue(withIdentifier:sender:)` - that the iOS runtime calls just *before* `prepare(for:sender:)`. This is ideal, because we now have a way to prevent a segue. 
+
+The `shouldPerformSegue(withIdentifier:sender:)` method returns true or false. That is how we can control whether the iOS runtime calls `prepare(for:sender:)`. 
+
+Here is the suggested logic for handling this situation:
+
+```swift
+override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+    if identifier == "name-of-segue-identifier" {
+
+        // Validate the data from the user interface...
+        // If the food item name text field is empty,
+        //   then show an error message,
+        //   and return "false"
+        // However, if it is not empty,
+        //   call the manager's "foodItem_Search(searchTerms:)" method
+    }
+    return true
+}
+```
+
+<br>
+
+Here's what happens now when "Search" is tapped when the food item name text field is empty:
+
+![Empty search](images/a4-item-add-search-empty.png)
+
+<br>
+
+Before leaving the add-item controller, edit the `searchTask(_:didSelect:)` method. The data type of the passed-back value must be updated, and the logic to set/configure the values of the text fields must be updated. 
 
 <mark>( more to come )</mark>
 
@@ -486,6 +537,7 @@ Adapt the previously-created item-selection controller to use the search results
 Add new modification, `shouldPerformSegue`.  
 Notification and handler method.  
 `tableView(_:didSelectRowAt:)` modification.  
+
 
 <br>
 
