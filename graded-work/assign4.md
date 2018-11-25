@@ -375,7 +375,7 @@ At this point, your app should be able to enable the user to add a new food item
 
 This will be a lengthy task, partly because you will be learning a number of techniques. We suggest that you read/skim the content below before doing the work, so that you will know what's coming. 
 
-The `egWebApiGet` code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the network.
+The "egWebApiGet" code example in the [course's code repository](https://github.com/dps923/fall2018/tree/master/Week11) has the essential info needed to understand and use the network.
 
 <br>
 
@@ -480,7 +480,7 @@ The callback function essentially does two things:
 1. Saves the response result to a property in the manager 
 2. Posts a "notification" so that observers (listeners) know when the response is received
 
-> Follow the guidance and suggested code patterns in the `egWebApiGet` code example. 
+> Follow the guidance and suggested code patterns in the "egWebApiGet" code example. 
 
 > Wait - we want a *collection* of items, to show in an item-selection list, right?  
 > Why are we declaring and using an *object* property?  
@@ -526,22 +526,28 @@ Here's what happens now when "Search" is tapped when the food item name text fie
 
 <br>
 
-Before leaving the add-item controller, edit the `searchTask(_:didSelect:)` method. The data type of the passed-back value must be updated, and the logic to set/configure the values of the text fields must be updated. 
+Before leaving the add-item controller, edit the `searchTask(_:didSelect:)` method. The type of the passed-back data must be updated, and the logic to set/configure the values of the text fields must be updated. (The passed-back data includes the *name* and *manu* values we need in the user interface.)
+
+Now, move on to the item-selection controller. Its `viewDidLoad()` method needs the statement that will observe (listen for) the notification that the manager posts when the fetched web API data is ready. Use the pattern you see in either "list" controller in the "egWebApiGet" code example. 
+
+After adding the statement, it tells you that it needs the `reloadTableView()` method. Write (copy) that too (it simply reloads the table view). 
+
+The number of rows in the data source must be updated. The new data source is (obviously) the property in the manager that holds the web API response. 
+
+The cell content must be updated. We suggest that you change (on the storyboard) the table view cell style to "Subtitle" to show both the food item name and its source ("manu"). 
+
+The `tableView(_:didSelectRowAt:)` method must be updated. Extract the data-item from the data source, and pass that back to the delegate method. 
+
+At this point in time, the item-selection process should be working with the web API. 
+
+<br>
+
+### Fine-tuning and appearance improvement:
 
 <mark>( more to come )</mark>
 
 <p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
 
-~ ~ ~ 
-
-Add new modification, `shouldPerformSegue`.  
-Notification and handler method.  
-`tableView(_:didSelectRowAt:)` modification.  
-
-
-<br>
-
-### Fine-tuning and appearance improvement:
 * Photo button 
 * Photo thumbnail
 * Number formatting
