@@ -30,8 +30,11 @@ class WebApiRequest {
     
     func sendRequest<T:Decodable>(toUrlPath urlPath: String, completion: @escaping (T)->Void) {
         
+        // Safely encode the URL path fragment that was passed into this method
+        let encodedUrlPath = urlPath.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+
         // Assemble the complete URL
-        guard let url = URL(string: "\(urlBase)\(urlPath)") else {
+        guard let url = URL(string: "\(urlBase)\(encodedUrlPath!)") else {
             print("\nFailed to construct url with \(urlBase)\(urlPath)")
             return
         }
