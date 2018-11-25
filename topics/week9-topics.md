@@ -53,6 +53,16 @@ Regarding [timeouts](https://developer.apple.com/documentation/foundation/urlreq
 If during a connection attempt the request remains idle for longer than the timeout interval, the request is considered to have timed out. The default timeout interval is 60 seconds.  
 As a general rule, you should not use short timeout intervals. Instead, you should provide an easy way for the user to cancel a long-running operation. For more information, read Designing for [Real-World Networks](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/WhyNetworkingIsHard/WhyNetworkingIsHard.html#//apple_ref/doc/uid/TP40010220-CH13) in [Networking Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/Introduction/Introduction.html#//apple_ref/doc/uid/TP40010220).
 
+Good API with world country data  
+https://restcountries.eu/rest/v2/all
+
+My own JSON files (there are others)  
+https://dps923.ca/media/ict-programs.json  
+https://dps923.ca/media/getchinook-customers.json  
+https://dps923.ca/media/hrf-customers-bare.json  
+
+
+
 <br>
 
 ### Location services, media, motion, split view controller

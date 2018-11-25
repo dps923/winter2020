@@ -33,6 +33,8 @@ The test will begin no later than 3:50pm, and its duration will be about 50 minu
 
 You can rely on your hand-written notes and in-person learning from the past three Monday classes (November 19, November 12, and November 5). In those, you learned much about the design and engineering of an iOS app, and how to use patterns and best practices to get results. And, you learned much about some device/hardware features, and techniques to make apps useful. 
 
+Another *really good* way to prepare is to read and study [Assignment 4](/graded-work/assign4) and its linked documents and code examples in the [course repository](https://github.com/dps923/fall2018). It would also be useful to have made some progress on the assignment . 
+
 <br>
 
 ### Wednesday plan
