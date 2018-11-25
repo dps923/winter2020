@@ -12,7 +12,7 @@ However, it has web API (network use) code that you can copy, paste, edit, and u
 
 ### UIImage+Thumbnail.swift
 
-Extension to UIImage; includes a method that will generate a thumbnail. 
+Extension to UIImage; includes a method that will generate a thumbnail.
 
 <br>
 
