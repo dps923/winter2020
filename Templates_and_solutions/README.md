@@ -10,6 +10,12 @@ However, it has web API (network use) code that you can copy, paste, edit, and u
 
 <br>
 
+### UIImage+Thumbnail.swift
+
+Extension to UIImage; includes a method that will generate a thumbnail. 
+
+<br>
+
 ### Template for Core Data version 1
 
 Built for Xcode 9.
