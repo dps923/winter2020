@@ -11,8 +11,6 @@ Read/skim all of this document before you begin work.
 
 While you are doing the work, if a *specific task* is not clear, or it seems to require an unreasonable amount of time to complete, contact your professor. 
 
-<p style="color: red;">This document is being edited.<br>This notice will be removed when the edits are complete.</p>
-
 <br>
 
 ### Due Date
@@ -44,15 +42,7 @@ In general, the app features include:
 
 Here are some sample screen capture images...
 
-> Notice:  
-> Some of these images will be refreshed/replaced.  
-> They were accumulated during early iterative work on a sample solution by your professor.  
-> Some are showing fields or values that have since been changed.  
-> Follow the printed instructions below for authoritative info about what your scenes should look like.  
-
-<br>
-
-The "first launch" scene; an empty list, and with some items:
+The "first launch" scene; as an empty list, and with some items:
 
 <img class="border1" src="images/a4-first-launch.png" alt="List, empty"><img class="border1" src="images/a4-item-list-3-items.png" alt="List, with items">
 
@@ -116,9 +106,9 @@ Then, add the ability to work with a web API:
 
 Fine-tuning and appearance improvement:
 * Photo button
-* Photo thumbnail
 * Number formatting
 * Date formatting
+* Photo thumbnail
 
 <br>
 
@@ -497,7 +487,9 @@ We will start with the *add-item controller*, and think about the segue that hap
 1. We want to prevent a segue if the food item name text field is empty. 
 2. However, if it's not empty, we want to execute the search task. 
 
-The design of the `prepare(for:sender:)` segue method does not permit us to cancel it. In other words, when the method gets called, it will execute. However, we do have another method - `shouldPerformSegue(withIdentifier:sender:)` - that the iOS runtime calls just *before* `prepare(for:sender:)`. This is ideal, because we now have a way to prevent a segue. 
+The design of the `prepare(for:sender:)` segue method does not permit us to cancel it. In other words, when the method gets called, it will execute. 
+
+However, we do have another method - `shouldPerformSegue(withIdentifier:sender:)` - that the iOS runtime calls just *before* `prepare(for:sender:)`. This is ideal, because we now have a way to prevent a segue. 
 
 The `shouldPerformSegue(withIdentifier:sender:)` method returns true or false. That is how we can control whether the iOS runtime calls `prepare(for:sender:)`. 
 
@@ -544,16 +536,70 @@ At this point in time, the item-selection process should be working with the web
 
 ### Fine-tuning and appearance improvement:
 
-<mark>( more to come )</mark>
+If you have time, it would be nice to do a few things to improve the appearance of some parts of the app. 
 
-<p style="color: red;">The following is a preview of what we'll do. Updates are coming soon.</p>
+<br>
 
-* Photo button 
-* Photo thumbnail
-* Number formatting
-* Date formatting
+#### Take/pick photo button shows the photo
 
-~ ~ ~ 
+It would be useful, to the app user, to show the taken/picked photo on the button that's on the "add new" scene. This task is easy to do. 
+
+In the `imagePickerController(_:didFinishPickingMediaWithInfo:)` method, add another statement to set the image property of the button. 
+
+<br>
+
+#### Number formatting
+
+The latitude and longitude values typically show many decimal digits, maybe too many. It would be nice to limit the number of decimal digits, maybe to 4, to ensure user interface consistency when different food items are viewed. This task is easy to do, and is similar to C/C++-style formatters.
+
+```swift
+let formattedNumber = String(format: "%.4f", sourceNumber)
+```
+
+<br>
+
+#### Date formatting
+
+Date formatting in Swift can initially appear to be annoying, but it is actually pretty good in more complex scenarios and whenever you must consider internationalization of the app. 
+
+First, we create and configure a `DateFormatter` object:
+
+```swift
+let df = DateFormatter()
+df.dateStyle = .long
+df.timeStyle = .short
+```
+
+Then, we use the object's `string(from:)` method, and pass in the date. The method returns a string, which can be used in the user interface. 
+
+![Formatted number and date](images/a4-item-info-scene-formatted.png)
+
+<br>
+
+#### Generate photo thumbnail, and use it
+
+The in-memory or storage size of a photo can be huge, a few megabytes or more. It would be nice to have a ["thumbnail" image](https://en.wikipedia.org/wiki/Thumbnail), which could then be used as the image property in a list scene. 
+
+This task has a few parts:
+1. Thumbnail generator code, as an extension 
+2. Update "save photo" code 
+3. Update table view cell building code
+
+**Thumbnail generator code, as an extension**
+
+Get the "UIImage+Thumbnail.swift" source code file from the templates and solutions folder of the course's code repository. Add it to your project. 
+
+This extension has a method that can be called on any instance of UIImage. Read its source code comments for more details. 
+
+**Update "save photo" code**
+
+In the "add new" controller, add more code to the item-save block. There is existing code for photo handling. Add the new code under that. Create a new image thumbnail (suggested size is 25.0). 
+
+**Update table view cell building code**
+
+In the "list" controller, in the cell building method, add code that sets the cell's `imageView.image` property to the thumbnail (if it exists). 
+
+![List with thumbnail](images/a4-item-list-with-thumbnail.png)
 
 <br>
 
@@ -584,7 +630,13 @@ Follow these instructions to submit your work, before the due date and time:
 **Main.storyboard**  
 **DataModelClasses.swift**  
 **DataModelManager.swift**  
-<mark>( more to come )</mark>  
+**DataModelManager+???.swift** (your Core Data entity extension)  
+**DataModelManager+???.swift** (your web API extension)  
+Food item "list" controller **...List.swift**  
+Food item info/view controller **...Scene.swift**  
+Food item "add new" controller **...Add.swift**  
+Food item photo extension **...Add+Photo.swift**  
+Select item controller **...SelectList**  
 For each of these files, change the file name extension to "txt".
 
 4. Right-click the folder, and choose **Compress “xxxxxxxx”**, which creates a zip file.  
