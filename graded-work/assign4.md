@@ -136,7 +136,7 @@ Add an entity (probably named FoodItem). Add some attributes. All are strings, u
 
 The `photo` attribute should be configured as shown in the following image. The "allows external storage" feature that enables efficient storage of large binary data objects. For some combination of large-size objects and/or a large number of these objects will cause Core Data to use the file system if it improves performance. Just set it, and the Core Data engine will take care of the rest. 
 
-![](images/a4-data-model-photo-external-storage.png)
+![Core Data photo attribute configuration](images/a4-data-model-photo-external-storage.png)
 
 <br>
 
@@ -534,7 +534,7 @@ At this point in time, the item-selection process should be working with the web
 
 <br>
 
-### Fine-tuning and appearance improvement:
+### Fine-tuning and appearance improvement
 
 If you have time, it would be nice to do a few things to improve the appearance of some parts of the app. 
 
