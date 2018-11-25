@@ -550,7 +550,7 @@ In the `imagePickerController(_:didFinishPickingMediaWithInfo:)` method, add ano
 
 #### Number formatting
 
-The latitude and longitude values typically show many decimal digits, maybe too many. It would be nice to limit the number of decimal digits, maybe to 4, to ensure user interface consistency when different food items are viewed. This task is easy to do, and is similar to C/C++-style formatters.
+The latitude and longitude values typically show many decimal digits, maybe too many. It would be nice to limit the number of decimal digits, maybe 4, to ensure user interface consistency when different food items are viewed. This task is easy to do, and is similar to C/C++-style formatters.
 
 ```swift
 let formattedNumber = String(format: "%.4f", sourceNumber)
