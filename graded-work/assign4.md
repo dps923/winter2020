@@ -66,7 +66,7 @@ After selecting an item on the list, before saving, and then the result after co
 
 ### Getting started
 
-Use the TemplateCDv1 as a base - it's in the [course's code repository](https://github.com/dps923/fall2018), in the templates and solutions folder. Follow it's how-to instructions in the "read me" document. 
+Use the TemplateCDv1 as a base - it's in the [course's code repository](https://github.com/dps923/fall2018), in the templates and solutions folder. Follow its how-to instructions in the "read me" document. 
 
 At this point, the app will load and run correctly, and enable you to create and delete "example" entity objects. These objects are persisted in a Core Data store. All the base / infrastructure programming bits are provided in the template. 
 
@@ -639,7 +639,7 @@ Food item photo extension **...Add+Photo.swift**
 Select item controller **...SelectList**  
 For each of these files, change the file name extension to "txt".
 
-4. Right-click the folder, and choose **Compress “xxxxxxxx”**, which creates a zip file.  
+4. Right-click the project folder, and choose **Compress “xxxxxxxx”**, which creates a zip file.  
 
 5. Login to Blackboard/My.Seneca, and in this course's Assignments area, look for the upload link, and submit your work there.  
 
