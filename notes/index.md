@@ -5,7 +5,7 @@ layout: default
 
 ## Notes
 
-The table below has links to the daily class notes for the Fall 2018 term.  
+The table below has links to the daily class notes for the Fall 2019 term.  
 
 New notes are at the top.
 
@@ -13,34 +13,21 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**[Week 13](week13)**<br>[&bull; Mon Dec 3<br>&bull; Wed Dec 5](week13) | Finish work on your Assignment 4 | Wednesday:<br>[Assign 4](/graded-work/assign4) due 20% | 
-**[Week 12](week12)**<br>[&bull; Mon Nov 26<br>&bull; Wed Nov 28](week12) | Topic integration | Monday:<br>Test 4 13% | 
-**[Week 11](week11)**<br>[&bull; Mon Nov 19<br>&bull; Wed Nov 21](week11) | Chapters 34, 35, 36<br>Networking | | 
-**[Week 10](week10)**<br>[&bull; Mon Nov 12<br>&bull; Wed Nov 14](week10) | Chapters 28, 29, 30<br>Core Data more, maps, camera, images | Wednesday:<br>Test 3, 13%| 
-**[Week 9](week09)**<br>[&bull; Mon Nov 5<br>&bull; Wed Nov 7](week09) | Chapters 23, 27<br>Location topic enhancements, Core Data introduction | Wednesday:<br>[Assign 3](/graded-work/assign3) due, 10% | 
-**[Week 8](week08)**<br>[&bull; Mon Oct 29<br>&bull; Wed Oct 31](week08) &#127875; | Chapter 22<br>Location topic introduction | | 
-**Study week**<br>&bull; Mon Oct 22 to<br>&bull; Fri Oct 26 | (no classes but we recommend... <br>Chapter 21, Swift language review) | | 
-**[Week 7](week07)**<br>[&bull; Mon Oct 15<br>&bull; Wed Oct 17](week07) | Chapters 12, 13, 14, 15 (again), and 17<br>Patterns for add, edit, save, and data model | Wednesday:<br>Test 2, 12% | 
-**[Week 6](week06)**<br>[&bull; Wed Oct 10](week06) | Chapters 13, 14, 15<br>Delegate, protocol, edit item, save/load | Wednesday:<br>[Assign 2](/graded-work/assign2) due, 10% | 
-**[Week 5](week05)**<br>[&bull; Mon Oct 1<br>&bull; Wed Oct 3](week05) | Chapters 9, 10, 11, 12<br>Table view, data model, nav controller, add item | Wednesday:<br>Test 1, 12% | 
-**[Week 4](week04)**<br>[&bull; Mon Sep 24<br>&bull; Wed Sep 26](week04) | Chapters 7, 8<br>Fit and finish | Monday:<br>[Assign 1](/graded-work/assign1) due, 10% | 
-**[Week 3](week03)**<br>[&bull; Mon Sep 17<br>&bull; Wed Sep 19](week03) | Chapters 4, 5, 6<br>Outlet, UI update and enhance | Monday:<br>Practice test, 0% | 
-**[Week 2](week02)**<br>[&bull; Mon Sep 10<br>&bull; Wed Sep 12](week02) | Chapters 1, 2, 3<br>Button, slider, label | |
-**[Week 1](week01)**<br>[&bull; Wed Sep 5](week01) | Hands-on with macOS<br>Dev environment setup<br>Intro to Swift and iOS apps | |
+**Week 3**<br>&bull; Wed Sep 18<br>&bull; Fri Sep 20 | TBA | Assign 1, 8%| 
+**Week 2**<br>&bull; Wed Sep 11<br>&bull; Fri Sep 13 | TBA | |
+**[Week 1](week01)**<br>[&bull; Wed Sep 4<br>&bull; Fri Sep 6](week01) | Hands-on with macOS<br>Dev environment setup<br>Intro to Swift and iOS apps | |
 
 <br>
 
 ### Assignments
 
-All assignments are due at 11:00am ET. (That's the morning.) 
+All assignments are due at 11:00pm ET. (That's the evening.) 
 
 Assign # | Released | Due date
 --- | --- | ---
-[Assign 1](/graded-work/assign1) | Monday, September 10 | Monday, September 24
-[Assign 2](/graded-work/assign2) | Monday, September 24 | Wednesday, October 10
-[Assign 3](/graded-work/assign3) | Friday, October 26 | Wednesday, November 7
-Assign 4 | Monday, October 29 | Friday, November 30 
-
-Make plans to demonstrate your Assignment 4 work to your professor sometime during the regularly-scheduled class times in the final week of the term, on Monday December 3, or Wednesday December 5. 
+Assign 1 | Friday, September 6 | Friday, September 20
+Assign 2 | Friday, September 20 | Friday, October 4
+Assign 3 | Friday, October 11 | Friday, November 1
+Assign 4 | Friday, November 8 | Friday, December 6 
 
 <br>

@@ -15,12 +15,12 @@ The information below is the *course outline addendum* for the course.
 
 ### Faculty
 
-For the Fall 2018 term, Professor Peter McIntyre teaches the DPS923 and MAP523 course. 
+For the Fall 2019 term, Professor Peter McIntyre teaches the DPS923 and MAP523 course. 
 
 Info | Details
 --- | ---
 Email | peter.mcintyre -at- senecacollege.ca
-Office | DB2081 in the School of ICT office area<br>(Dahdaleh building, south end, second floor)
+Office | In the School of ICT office area<br>(A building, third floor)
 Web | [petermcintyre.ca](http://petermcintyre.ca)
 Phone, address | [Available at this link](https://petermcintyre.com/welcome/contact/)
 Timetable | [Available at this link](https://petermcintyre.com/welcome/timetable/)<br>(and shown below)
@@ -35,19 +35,19 @@ The planned scheule of topics, tests, and assignments is available on the [Weekl
 
 ### Other information
 
-Please ensure that you are familiar with these [course policies and standards](https://dps923.github.io/fall2018/policies).
+Please ensure that you are familiar with these [course policies and standards](/policies).
 
 <br>
 
 ### Get help with course work
 
-I am obviously available during our course time slots on Monday and Wednesday.
+I am obviously available during our course time slots on Wednesday and Friday.
 
-During the Monday class, I will have limited free time.
+During the Wednesday class, I will have limited free time.
 
-During the Wednesday class, I will have substantial free time. Wednesdays will be the best day to get one-on-one help from me.
+During the Friday class, I will have substantial free time. Fridays will be the best day to get one-on-one help from me.
 
-I plan to have drop-in help time on Mondays and Wednesdays from 2:30pm to 3:15pm, in my office (DB2081).
+I plan to have drop-in help time on Wednesdays and Fridays in the period just before our classes.
 
 While I will be somewhat available by email at other times, I will prefer to be available for help during the days and times discussed above. I will *not* commit to being available 24×7.
 
@@ -57,8 +57,8 @@ This may become important to you if you are facing a deadline for the assignment
 
 ### Professor timetable
 
-Here's an image of Prof. McIntyre's timetable, as published in September 2018:
+Here's an image of Prof. McIntyre's timetable, as published in September 2019:
 
-![Timetable](media/mcintyre-timetable-v1.png)
+![Timetable](/media/mcintyre-timetable-2019-fall-v1.png)
 
 <br>

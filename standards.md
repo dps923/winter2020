@@ -15,9 +15,9 @@ As a student in my course, you are responsible for conducting yourself in a mann
 
 <br>
 
-### Academic Honesty
+### Academic Integrity
 
-Each student is expected to practice *academic honesty*.
+Each student is expected to practice *academic integrity*.
 
 Do NOT cheat.
 

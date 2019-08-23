@@ -11,7 +11,7 @@ The theme for this week is to get comfortable with the iOS programming environem
 
 ### Wednesday plan
 
-We have only one class/session this week, on Wednesday, in the computer-lab, room DB3078. Therefore, the plan is to do the following:
+We plan is to do the following:
 
 * Course introduction and preview 
 
@@ -20,6 +20,8 @@ We have only one class/session this week, on Wednesday, in the computer-lab, roo
 * Xcode development environment tour 
 
 * Swift language introduction
+
+* Using the Swift Playground
 
 * Creating a simple one-screen iOS app
 
