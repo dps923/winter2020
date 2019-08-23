@@ -1,4 +1,4 @@
-### DPS923 and MAP523 for the Fall 2018 term
+### DPS923 and MAP523 for the Fall 2019 term
 
 <br>
 
