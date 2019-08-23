@@ -5,8 +5,11 @@ layout: default
 
 ## iOS Development Topics
 
-This page has links to various topics that supplement and/or summarize the [textbook](/resources#required-textbook) topics. 
+This page has links to various topics that supplement and/or summarize the topics discussed in class and presented in the notes. 
 
+( more to come )
+
+<!-- 
 How-to: Write entity model classes
 
 How-to: Write a data model manager class 
@@ -24,5 +27,7 @@ The template's design and code is explained in this document.
 
 [How-to: Template for Core Data apps](/topics/how-to-core-data-template)  
 How-to-use information is in this document.
+
+-->
 
 <br>
