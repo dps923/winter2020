@@ -17,6 +17,7 @@ Week number<br>and date | Topic theme and coverage | Graded work, mark value
 **Week 2**<br>&bull; Wed Sep 11<br>&bull; Fri Sep 13 | TBA | |
 **[Week 1](week01)**<br>[&bull; Wed Sep 4<br>&bull; Fri Sep 6](week01) | Hands-on with macOS<br>Dev environment setup<br>Intro to Swift and iOS apps | |
 **[Welcome](/welcome)** | Welcome to the course info | | 
+
 <br>
 
 ### Assignments
