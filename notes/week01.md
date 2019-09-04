@@ -24,6 +24,9 @@ We plan is to do the following:
 * Using the Swift Playground
 
 * Creating a simple one-screen iOS app
+  * Hello world, launch screen, and text label on storyboard
+  * Keyboard handle, textbox, button, label, delegate
+  * Slider and interaction, more delegate
 
 <br>
 
