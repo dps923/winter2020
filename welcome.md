@@ -42,7 +42,7 @@ If you are not prepared to use a Mac, then *drop the course*.
 
 The School of ICT has a Mac computer-lab, in A2534. The room availability during the week is constrained, and we will work out a protocol that will enable you to use the room during other classes.
 
-The College has Macs elsewhere, located in the library. However, their readiness and suitability for our course work is yet to be determined. Nonetheless, you can use those Macs to improve your macOS and Unix skills.
+The College has Macs elsewhere, located in the open lab. However, their readiness and suitability for our course work is delayed and yet to be determined. Nonetheless, at a minimum, you can use those Macs to improve your macOS and Unix skills.
 
 It will be helpful – but not required – for you to have your own iOS device (iPhone, iPad). The School of ICT has a number of iPhone and iPad devices as well, and you can borrow one of those, at no cost (as long as you return it empty and in good working condition), during the course’s lifetime.
 
@@ -52,7 +52,7 @@ It will be helpful – but not required – for you to have your own iOS device 
 
 If you want to do course work on your own personal computer, it <span style="text-decoration:underline;">must</span> be a Mac.
 
-It must run a modern and current version of macOS (High Sierra, version 10.13 or later). In addition, the Xcode developer tool must be installed. (Your professor will show you how to install and use a previous Xcode version.) If you have a Mac, both are available at no cost.
+It must run a modern and current version of macOS (High Sierra, version 10.13 or later). In addition, the Xcode developer tool must be installed. (The computer-lab Macs and your professor will be using Xcode version 10.) If you have a Mac, both are available at no cost.
 
 > Please be aware of the following:
 > 
@@ -62,11 +62,13 @@ It must run a modern and current version of macOS (High Sierra, version 10.13 or
 > 
 > If you have problems or difficulties using your own personal computer for course work, your professor will not be able to provide technical support. Maybe the student help desk (in the library) can help. In a problem scenario, you are still expected to complete your work on time. A problematic personal computer cannot be used as an excuse for delays in completing the course work.
 
+<br>
+
 **Work habits if you do not have a Mac**
 
 Can you succeed in this course if you do not have your own Mac?
 
-Yes. Just plan to do your weekly work on campus, during the time that the A2534 computer-lab room or the library (learning commons) is open/available.
+Yes. Just plan to do your weekly work on campus, during the time that the A2534 computer-lab room or the open lab is open/available.
 
 <br>
 

@@ -20,10 +20,11 @@ We plan is to do the following:
 * Xcode development environment tour 
 
 * Swift language introduction
+  * Using the Swift Playground
+  * Using the Swift language and programming docs  
+  [docs.swift.org](https://docs.swift.org)
 
-* Using the Swift Playground
-
-* Creating a simple one-screen iOS app
+* Creating simple one-screen iOS apps
   * Hello world, launch screen, and text label on storyboard
   * Keyboard handle, textbox, button, label, delegate
   * Slider and interaction, more delegate
