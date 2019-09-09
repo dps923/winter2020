@@ -39,6 +39,43 @@ And, how to use a search engine to locate authoritative reference information.
 
 <br>
 
+### Code examples
+
+The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it periodically. 
+
+This week, to help you get started in the course, some sequenced how-to info will be shown below. In class, you will learn some of the reasons behind the info, and have an opportunity to ask questions, and practice using Xcode. 
+
+<br>
+
+#### App 1, named W01a1Label 
+
+This app gets you started with a simple iOS app, and interaction. Then:
+
+Create a new app, as demonstrated in class  
+Run it in the simulator, Cmd+R  
+Then, switch back to Xcode, and stop it with Cmd+. (dot/period)  
+Select `LaunchScreen.storyboard` for editing  
+Show the user interface (UI) object library with Shift+Cmd+L  
+Select the label, then click-drag-drop to the storyboard scene  
+Edit the label (e.g. "App launch screen"), and edit its attributes if you wish  
+Run the app again, notice what happens, then switch back to Xcode and stop it  
+Select `Main.storyboard` for editing, add a suitable label  
+Run the app again, notice what happens, then switch back to Xcode and stop it  
+
+Next, let's programmatically set the label's content. We need to connect the label on the scene with the source code. In this app, the scene's code is in `ViewController.swift`. The connect task is both visual and tactile, so we must setup the right coding environment. For best results, do the following: 
+
+Select `Main.storyboard` for editing  
+Cmd+0 (zero) to hide the left-side navigators area  
+Option+Cmd+0 to hide the right-side inspectors area  
+On the scene's "dock" (just above the scene), click to select the yellow left-most "View Controller" icon (it will then be highlighted with a blue background)  
+Option+Cmd+return to show the Assistant Editor  
+
+
+![How to create an outlet](/media/outlet-demo-1.mov)
+
+
+<br>
+
 #### Dismiss the keyboard
 
 Today, you will learn that a text field's `resignFirstResponder()` function will dismiss the keyboard. You saw us use that in a button-handling function. We have another way to dismiss the keyboard.  
@@ -69,3 +106,5 @@ func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 }
 ```
 <br>
+
+
