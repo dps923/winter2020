@@ -60,6 +60,7 @@ Select the label, then click-drag-drop to the storyboard scene
 Edit the label (e.g. "App launch screen"), and edit its attributes if you wish  
 Run the app again, notice what happens, then switch back to Xcode and stop the app  
 Select `Main.storyboard` for editing, add a suitable label  
+Size the label so that it is the full width of the view, and center its content (by using the [attributes inspector](https://help.apple.com/xcode/mac/current/#/dev31645f17f))  
 Run the app again, notice what happens, then switch back to Xcode and stop the app  
 
 Next, let's programmatically set the label's content. We are going to do the following tasks:
