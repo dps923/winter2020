@@ -53,16 +53,21 @@ This app gets you started with a simple iOS app, and interaction. Then:
 
 Create a new app, as demonstrated in class  
 Run it in the simulator, Cmd+R  
-Then, switch back to Xcode, and stop it with Cmd+. (dot/period)  
+Then, switch back to Xcode, and stop the app with Cmd+. (dot/period)  
 Select `LaunchScreen.storyboard` for editing  
 Show the user interface (UI) object library with Shift+Cmd+L  
 Select the label, then click-drag-drop to the storyboard scene  
 Edit the label (e.g. "App launch screen"), and edit its attributes if you wish  
-Run the app again, notice what happens, then switch back to Xcode and stop it  
+Run the app again, notice what happens, then switch back to Xcode and stop the app  
 Select `Main.storyboard` for editing, add a suitable label  
-Run the app again, notice what happens, then switch back to Xcode and stop it  
+Run the app again, notice what happens, then switch back to Xcode and stop the app  
 
-Next, let's programmatically set the label's content. We need to connect the label on the scene with the source code. In this app, the scene's code is in `ViewController.swift`. The connect task is both visual and tactile, so we must setup the right coding environment. For best results, do the following: 
+Next, let's programmatically set the label's content. We are going to do the following tasks:
+1. Connect the UI object to an "outlet" variable in the source code of the scene's view controller class 
+2. Declare and initialize a class variable in the source code 
+3. In the `viewDidLoad()` event-handling function, update the UI object with the value from the class variable
+
+Task 1: We must connect the label on the scene with the source code. In this app, the scene's code is in `ViewController.swift`. The connect task is both visual and tactile, so we must setup the right coding environment. For the best results, do the following: 
 
 Select `Main.storyboard` for editing  
 Cmd+0 (zero) to hide the left-side navigators area  
@@ -70,9 +75,69 @@ Option+Cmd+0 to hide the right-side inspectors area
 On the scene's "dock" (just above the scene), click to select the yellow left-most "View Controller" icon (it will then be highlighted with a blue background)  
 Option+Cmd+return to show the Assistant Editor  
 
+At this point, the storyboard editor panel is on the left half of the display, and the code editor panel is on the right side. Then:
 
-![How to create an outlet](/media/outlet-demo-1.mov)
+Click to select the UI label  
+Press-and-hold the keyboard's "control" key  
+Click-drag-drop the UI label to the source code, then release the "control key" and the pointing device actions  
+A connection dialog will appear; configure it as follows...  
+The Connection is an Outlet  
+The Name is whatever you want (e.g. topLabel)  
+The Type is UILabel  
+Press return or click the Connect button, and notice the new source code statement  
 
+```swift
+@IBOutlet weak var topLabel: UILabel!
+```
+
+Here is a short video clip that shows this technique to create an outlet connection:
+
+![View the video clip in the Safari browser](/media/outlet-demo-1.mov)
+
+What is `@IBOutlet`?  
+It is a *type qualifier* for the variable. From the [Apple docs](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Outlets/Outlets.html):
+
+> The type qualifier IBOutlet is a tag applied to an property declaration so that the Interface Builder application can recognize the property as an outlet and synchronize the display and connection of it with Xcode.
+
+What is `weak`?  
+It is an option for the variable. From the [Apple docs](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Outlets/Outlets.html):
+
+> An outlet is declared as a weak reference (weak) to prevent strong reference cycles.
+
+More information about connecting UI objects to code is in the [Xcode docs](https://help.apple.com/xcode/mac/current/#/devc06f7ee11). 
+
+Task 2: Declare and initialize a class variable in the source code. For example:
+
+```swift
+// Variables
+var labelText = "App"
+```
+
+Task 3: In the `viewDidLoad()` event-handling function, update the UI object with the value from the class variable. For example:
+
+```swift
+topLabel.text = labelText
+```
+
+Remember our in-class discussion:  
+* Most text-oriented UI objects have a "text" property.  
+* Many number-oriented UI objects have a "value" property.  
+
+Bonus task: Write a function that does task 3. Why? Just to prove that you can add your own function to an existing view controller class. Then, edit the `viewDidLoad()` code to call the function. For example:
+
+```swift
+// New function
+func setLabelText(text: String) -> String {
+    return "This is \(text) \(labelText)"
+}
+```
+
+```swift
+// In viewDidLoad(), old code...
+//topLabel.text = labelText
+// New code...
+topLabel.text = setLabelText(text: "Peter's")
+```
 
 <br>
 
