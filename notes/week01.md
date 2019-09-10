@@ -11,7 +11,7 @@ The theme for this week is to get comfortable with the iOS programming environem
 
 ### Wednesday plan
 
-We plan is to do the following:
+We plan to do the following:
 
 * Course introduction and preview 
 
@@ -49,9 +49,11 @@ This week, to help you get started in the course, some sequenced how-to info wil
 
 #### App 1, named W01a1Label 
 
+<img src="/media/w01a1label.png" class="border1" alt="W01a1Label" />
+
 This app gets you started with a simple iOS app, and interaction. Then:
 
-Create a new app, as demonstrated in class  
+Create a new project, as demonstrated in class  
 Run it in the simulator, Cmd+R  
 Then, switch back to Xcode, and stop the app with Cmd+. (dot/period)  
 Select `LaunchScreen.storyboard` for editing  
@@ -91,7 +93,7 @@ Press return or click the Connect button, and notice the new source code stateme
 @IBOutlet weak var topLabel: UILabel!
 ```
 
-Here is a short video clip that shows this technique to create an outlet connection:
+Here is a short video clip (which you can view in the Safari browser) that shows this technique to create an outlet connection:
 
 ![View the video clip in the Safari browser](/media/outlet-demo-1.mov)
 
@@ -142,35 +144,91 @@ topLabel.text = setLabelText(text: "Peter's")
 
 <br>
 
-#### Dismiss the keyboard
+#### App 2, named W01a2BtnLabel
 
-Today, you will learn that a text field's `resignFirstResponder()` function will dismiss the keyboard. You saw us use that in a button-handling function. We have another way to dismiss the keyboard.  
+<img src="/media/w01a2btnlabel.png" class="border1" alt="W01a2BtnLabel" />
 
-We will now introduce you - gently - to delegation. We will add a function that will handle the on-screen keyboard's "return key" button tap. In effect, the text field is *delegating* the responsibility of handling that event, to some new code that we will write.  
+The goal is to get started with simple interaction, where a button will set the value of a label. 
 
-There are two steps to complete:  
-1. Set the text field 'delegate' property to the view controller  
-2. Write code to handle an event  
+Create a new project, as before  
+Configure a launch scene; this time, use the attributes inspector to change some settings (size, content, alignment, colour)  
 
-On the storyboard, select the text field. Then, make a connection (press and hold Control, then click-drag-drop) to the "View Controller" icon in the dock at the top of the scene. A connection popup will appear. In the Outlets area, select "delegate".
+On the main scene, add a label, and then a button  
+Edit the settings of both, to increase the font size, set the width to both margins, and center-align the content  
+Similar to the previous app, add a variable to hold the label text  
+Similar to the previous app, add a function to set the value of the label text  
 
-In the view controller code, edit the class declaration to look like this, by adding a "protocol declaration":  
+At this point, this app should work like the first app above. 
+
+Next, let's make the button do something. We want to create an "action". The task is similar to the outlet-creation task from above: 
+
+Select `Main.storyboard` for editing  
+Cmd+0 (zero) to hide the left-side navigators area  
+Option+Cmd+0 to hide the right-side inspectors area  
+On the scene's "dock" (just above the scene), click to select the yellow left-most "View Controller" icon (it will then be highlighted with a blue background)  
+Option+Cmd+return to show the Assistant Editor  
+
+At this point, the storyboard editor panel is on the left half of the display, and the code editor panel is on the right side. Then:
+
+Click to select the UI button  
+Press-and-hold the keyboard's "control" key  
+Click-drag-drop the UI button to the source code, then release the "control key" and the pointing device actions  
+A connection dialog will appear; configure it as follows...  
+The Connection is an Action  
+The Name is whatever you want (e.g. updateLabel)  
+The Type is UIButton  
+The Event is Touch Up Inside  
+The Arguments is Sender  
+Press return or click the Connect button, and notice the new source code statement  
 
 ```swift
-class ViewController: UIViewController, UITextFieldDelegate {
-```
-<br>
-
-Then, add the following function to the view controller:
-
-```swift
-func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
-    // add code to do things, if desired
-
-    return textField.resignFirstResponder()
+@IBAction func updateLabel(_ sender: UIButton) {
 }
 ```
+
+Here is a short video clip (which you can view in the Safari browser) that shows this technique to create an action connection:
+
+![View the video clip in the Safari browser](/media/action-demo-1.mov)
+
+Next:
+
+Update the `viewDidLoad()` function, by reverting to the original behaviour, to set the label text to the value in the local variable  
+Write code in the new button-handling function that appends text to the label; something like this:  
+
+```swift
+// Append text to the label
+topLabel.text = topLabel.text! + " app"
+```
+
+**Extra fun***
+
+As shown in class, let's modify the behaviour - if the label text gets too long, reset it to the original "App" text. And, show the number of times the button has been tapped. 
+
+The label text length check is easy. Add new code after the existing code in the `updateLabel(_:)` function: 
+
+```swift
+// Check label text length
+if topLabel.text!.count > 30 {
+    topLabel.text = "App"
+}
+```
+
+The other task needs a new class variable to keep track of the number of button taps; initialize it as zero. Then add code to the top of the `updateLabel(_:)` function to update the button title. Notice that the function argument includes "sender", which is a reference to the button. Therefore, we can just use that to update the button title:
+
+```swift
+// Update button title
+buttonTaps += 1
+sender.setTitle("Update (tapped \(buttonTaps)x)", for: .normal)
+```
+
+> Alternatively... we could create an *outlet* for the button, and use that variable name. 
+
 <br>
 
+#### App 3, named W01a3LblSlider
 
+<img src="/media/w01a3lblslider.png" class="border1" alt="W01a3LblSlider" />
+
+The goal is to learn interaction with a slider. 
+
+<br>
