@@ -40,10 +40,3 @@ App 3 - label, slider
 Shows another result from direct interaction with a UI object
 
 <br>
-
-### W01a4TxtBtnLbl
-
-App 4 - text field, button, label  
-Introduces the first challenging UI object, a text field
-
-<br>
