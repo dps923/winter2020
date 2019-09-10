@@ -229,6 +229,48 @@ sender.setTitle("Update (tapped \(buttonTaps)x)", for: .normal)
 
 <img src="/media/w01a3lblslider.png" class="border1" alt="W01a3LblSlider" />
 
-The goal is to learn interaction with a slider. 
+The goal is to learn how to interact with a slider. Here's how:
+
+Create a new project, as before  
+Add a label, size it full-width between the margin guides, center it, font size 30 or more  
+Add a slider, size it full-width between the margin guides  
+
+Configure the slider's values...  
+* Minimum 20
+* Maximum 160
+* Value 45
+
+Create an outlet for the label  
+Create an outlet for the slider too  
+Create an action for the slider (make sure you remember to configure the "Type")  
+In `viewDidLoad()`, set the label text to the value of the slider  
+
+> Bonus - configure the value to have two decimal places:  
+> ```swift  
+> sliderValue.text = String(format: "%1.2f", theSlider.value)  
+> ```  
+
+Run the app, to ensure that it does display the slider value. Next, configure the slider change action function: Write code that will update the label with the current value of the slider. 
+
+Notice the repeated code statement in two places. Refactor the code, by adding a function that has that code statement. Then call the function from each place. Yes, we know that it's just one statement, but you need practice writing Swift functions. 
+
+Next, we will programmatically set the background colour. And, the background colour will change as the slider value changes. 
+
+First, let's configure a starting background colour value. The "view" is the rectangle that we are interested in. How do we know this? Open the main storyboard in the editor. Notice the left-side area, which shows the hierarchy of UI objects. The "View" is the container for the label and slider. The view controller's `view` property is a reference to the view, and `view` has a `backgroundColor` property. 
+
+Write a function that sets the background colour. It will take one `Float` argument. Its code will look something like this:
+
+```swift
+// The UIColor initializer wants parameter values
+// between 0.0 and 1.0, so the calculation below
+// ensures that the values are in the range
+// The calculation was done by trial and error
+self.view.backgroundColor = UIColor(red: CGFloat(sliderValue * 1.5)/255.0, green: CGFloat(sliderValue * 0.2)/255.0, blue: CGFloat(sliderValue * 0.6)/255.0, alpha: 0.8)
+
+```
+
+Now, call this function from both `viewDidLoad()` and the slider changed function. 
+
+Remember to view the code examples, and try to re-create them yourself. 
 
 <br>
