@@ -94,6 +94,8 @@ At this point, run your app (Cmd+R), just to verify that you're making progress.
 
 <br>
 
+#### Upper area of the view
+
 In the middle area of the view, there will be five user interface objects:
 * two segmented controls - UISegmentedControl  
 * label - UILabel  
@@ -122,9 +124,10 @@ At this point, run your app (Cmd+R), just to verify that you're making progress.
 
 #### Making connections between the user interface and our source code
 
-Writing code for this Assignment 1 is a two-step procedure:
+Writing code for UI objects is a two-step procedure:
 1. Add outlets and actions to the view controller 
 2. Writing code in the view controller  
+
 <br>
 
 ##### Add outlets and actions
@@ -147,8 +150,6 @@ First, add connections, from the following five user interface objects, to the v
 * slider - suggested name gpaSelector  
 * text field - suggested name gpaInput  
 
-<br>
-
 What did we just do? We added references to our view controller, so that we can read or write (i.e. get or set) the values of the user interface objects.  
 
 Next, we want to add more connections. They will be <span style="color:#ff0000;"><em>actions</em></span>.
@@ -156,8 +157,6 @@ Next, we want to add more connections. They will be <span style="color:#ff0000;"
 * segmented control (second one) - suggested name levelChanged  
 * slider - suggested name gpaSelectorChanged  
 * text field - suggested name gpaInputChanged  
-
-<br>
 
 What did we just do? We added functions (the "action" in the target-action design/coding pattern) to our view controller (the "target"). These functions will be called when the app's user interacts with a user interface object.  
 
@@ -168,6 +167,7 @@ print("program changed")
 ```
 
 Run your app. Make sure there are no errors.  
+
 <br>
 
 #### Add a function to "update the text view"
