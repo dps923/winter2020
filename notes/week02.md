@@ -13,12 +13,12 @@ The theme for this week is to learn and experience a number of user interaction 
 
 Discussions, and demonstrations.  
 Three segments:
-5:10pm - topics
-5:40pm - 5-minute break 
-5:45pm - topics 
-6:15pm - 5-minute break
-6:20pm - topics
-6:50pm - done
+5:10pm - topics  
+5:40pm - 5-minute break  
+5:45pm - topics  
+6:15pm - 5-minute break  
+6:20pm - topics  
+6:50pm - done  
 
 During the breaks, please get up and move around. It's important for your health, and for mental performance. 
 
@@ -36,7 +36,7 @@ This week, to help you get started in the course, some sequenced how-to info wil
 
 ### Friday plan
 
-To start the session, we will briefly cover a few topics related to the first programming assignment. 
+To start the session, we will briefly cover a few topics related to the [first programming assignment](/graded-work/assign1). 
 
 Then, your professor will discuss the grading expectations for the programming assignment. 
 

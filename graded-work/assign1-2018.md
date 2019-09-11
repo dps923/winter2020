@@ -15,8 +15,8 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Friday, September 20, 2019, at 11:00pm ET  
-Grade value: 8% of your final course grade
+Monday, September 24, 2018, at 11:00am ET  
+Grade value: 10% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
 
@@ -24,23 +24,36 @@ Grade value: 8% of your final course grade
 
 ### Overview and purpose
 
-Two apps are needed:
-1. Info about you, the person 
-2. Info about your 2019 courses
+We need an iOS app that displays information about you.  
 
-The first app will display information about you. When launched, the app displays current up-to-date information about you, including your name, photo, program of study, current level of enrolment, and grade point average. The app will also enable you to change some of the displayed information.
+When launched, the app displays current up-to-date information about you, including your name, photo, program of study, current level of enrolment, and grade point average. The app will also enable you to change some of the displayed information.
 
-The second app will display a list of ten or more courses that you have had in 2019 (including this fall term). The data will come from a web API, and the app will support a small amount of user interaction. 
-
-From a programming perspective, working on the app enables you to use a number of user interface elements, work with the on-screen keyboard, and perform simple data round trips and type conversions, and implement the delegation pattern.
+From a programming perspective, working on the app enables you to use a number of user interface elements, work with the on-screen keyboard, and perform simple data round trips and type conversions.
 
 <br>
 
-### Getting started, first app
+### Getting started
 
 Create a new iOS app, using the Single View Application template. The name of the app should be "**AllAboutMe**".  
 
-Follow best practices about project creation. Ask if you are unsure. 
+If you need guidance on this task, here are the details:
+* File > New > Project
+* Single View App  
+
+On the "options" dialog...
+* Product Name is AllAboutMe
+* Organization Name is whatever (your name, Seneca, SICT, etc.)
+* Organization Identifier, we suggest "ca.ict"
+* Language is Swift
+* Un-check (clear) the three checkboxes
+
+On the file save dialog...
+* Un-check (clear) the "Create Git repository..." checkbox
+* Choose a location in which to save your project
+
+On the project settings editor, choose "11.0" as the "iOS Deployment Target". That way you can edit your work on different College Macs. 
+
+On the target settings editor, we suggest that you un-check (clear) the "Landscape Left" and "Landscape Right" checkboxes.
 
 <br>
 
@@ -52,7 +65,7 @@ Again, as noted above, read/skim the rest of this document before you begin work
 
 #### Photo (head shot)
 
-Before you begin adding objects to the user interface, get a head shot photo of yourself (aka a selfie). Crop and resize it so that it is 300 pixels wide, and 450 pixels tall. It must be a PNG. Use any Mac, Windows, or online program to get this done.  
+Before you begin adding objects to the user interface, get a head shot photo of yourself (aka a selfie). Crop and resize it so that it is 100 pixels wide, and 150 pixels tall. It must be a PNG. Use any Mac, Windows, or online program to get this done.  
 
 Then, add your photo to your project:  
 * In the project navigator, click/select the Assets.xassets blue-coloured folder
@@ -74,9 +87,23 @@ The label will display your name.
 
 The text area will display a string that is built from the settings in the user interface objects in the lower area of the view.  
 
-The image view will show your picture, and appears when you drag your photo from the *media* library to the design surface.  
+The image view will show your picture, and appears when you drag your photo from the media library to the design surface.  
 
-Size the objects to fit. Make the sizes look good. Carefully choose the font size (notice that 15 is *way too small*). 
+Here's how to do these tasks:
+
+In the project navigator, click/select the Main.storyboard item.
+
+In the editor area, at the bottom, select the "iPhone 8" size. This is fairly important, because we want all of our user interface elements to be visible even when the on-screen keyboard appears. 
+
+In addition to, and to match with the task above, on the upper-left area controls, click the "active scheme" and set it to "iPhone 8". 
+
+**Add a label:** From the object library area, drag a label to the view. Double-click it, and replace the selected text with your name. Alternatively, you can use the Attributes Inspector area of the right-side utility area to do this. Make the font bigger, maybe 24.   
+
+**Add your photo:** Select your photo from the media library area. Drag it to the upper-right area of the view. Use the blue-dashed guides to position your photo. On an iOS app, you almost NEVER position user interface objects on an edge - you should always leave a margin/border.  
+
+**Add a text view:** Drag a text view to the view. In the Attributes inspector, un-check (clear) the "Editable" behaviour. We want this text view to be read-only, because we will programmatically add its content, which will be something like "I am in the CPA program, in level 5, and my GPA is 3.21." Make the font bigger, 17, to match the default size of a label. 
+
+Size the objects to fit.
 
 > Tip: Want to see the "bounds rectangles" on a view?  
 > On the Editor menu, choose Canvas > Show Bounds Rectangles.  
@@ -90,7 +117,7 @@ Maybe your result will look something like the following:
 
 <br>
 
-At this point, run your app (Cmd+R), just to verify that you're making progress. 
+At this point, run your app (Command+R), just to verify that you're making progress. 
 
 <br>
 
@@ -116,7 +143,7 @@ Lay out the user interface objects so that everything looks nice and aligned. Pr
 
 <br>
 
-At this point, run your app (Cmd+R), just to verify that you're making progress. 
+At this point, run your app (Command+R), just to verify that you're making progress. 
 
 <br>
 
@@ -132,6 +159,19 @@ Writing code for this Assignment 1 is a two-step procedure:
 As you have learned, a storyboard is a resource file that holds the user interface objects, as configured by the Interface Builder editor.  
 
 To get programmatic access to the user interface objects, we <span style="color:#ff0000;"><em>connect</em></span> them to <span style="color:#ff0000;"><em>properties</em></span> and <span style="color:#ff0000;"><em>methods</em></span> in the view controller source code file.  
+
+Before doing this, arrange the Xcode windows and tool areas:
+- Select (to display) Main.storyboard.  
+- Select (click) the "View Controller" icon in the dock at the top of the scene.  
+- Open the Assistant Editor (toolbar icon, or Option+Command+return). Make sure the view controller source code file is displayed.  
+
+Then, depending upon the width or your screen, you may want to hide the Navigator area (Command+0 (zero)) and the Utility area (Option+Command+0 (zero)).  
+
+Finally, if the left-side storyboard editor is displaying the "document outline", you can also hide that. At bottom, click the "Hide Document Outline" button. 
+
+Here's the result:
+
+![Two editors](images/a1-two-editors.png)
 
 <br>
  
@@ -252,8 +292,31 @@ At this point in time, the app should work. However, we can make it work better.
 
 Recently, you learned that a text field's resignFirstResponder() function will dismiss the keyboard. You saw us use that in a button-handling function. Well, in this app, we do not have a button.  
 
-Instead, we will use the delegation pattern to handle the on-screen keyboard's "return" or "Done" button tap. In effect, the text field is *delegating*> the responsibility of handling that event, to some new code that we write.  
+We will now introduce you - gently - to delegation. We will add a function that will handle the on-screen keyboard's "Done" button tap. In effect, the text field is *delegating*> the responsibility of handling that event, to some new code that we write.  
 
+There are two steps to complete:  
+1. Set the text field 'delegate' property to the view controller  
+2. Write code to handle an event  
+
+On the storyboard, select the text field. Then, make a connection (press and hold Control, then click-drag-drop) to the "View Controller" icon in the dock at the top of the scene. A connection popup will appear. In the Outlets area, select "delegate".
+
+In the view controller code, edit the class declaration to look like this:  
+
+```swift
+class ViewController: UIViewController, UITextFieldDelegate {
+```
+<br>
+
+Then, add the following function:
+
+```swift
+func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+
+    // add code to do things, if necessary
+
+    return textField.resignFirstResponder()
+}
+```
 <br>
 
 #### Handle out-of-range or incorrect text field data
@@ -288,28 +351,6 @@ Simply write statements that set the initial values to your own personal situati
 
 <br>
 
-### Getting started, second app
-
-Create a new iOS app, using the Single View Application template. The name of the app should be "**MyCourses**".  
-
-Follow best practices about project creation. Ask if you are unsure. 
-
-<br>
-
-### Doing the work
-
-Again, as noted above, read/skim the rest of this document before you begin work. That way you know what's coming. 
-
-<br>
-<br>
-<br>
-<mark>&nbsp;The remaining specifications for the second app will be posted before class begins on Friday. Your professor wants to be assured that all students have made substantial progress on the first app.&nbsp;</mark>
-<br>
-<br>
-<br>
-
-<br>
-
 ### Testing your work
 
 Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. 
@@ -331,25 +372,16 @@ When you are ready to submit your work, you will copy some of the code in your p
 
 Follow these instructions to submit your work, before the due date and time:  
 
-1. Locate your project folders in Finder (and we suggest that you make a copies for yourself).
+1. Locate your **AllAboutMe** project folder in Finder (and we suggest that you make a copy of it for yourself).
 
-2. At the same level, create a new folder named "MyCode".
+2. In that folder, add a new folder named "MyCode".
 
-3. From AllAboutMe, copy these source code files to the "MyCode" folder:  
+3. Copy these source code files to the "MyCode" folder:  
 **ViewController.swift**  
 **Main.storyboard**  
-For each of these files, add a prefix "App1" to the name, and then change the file name extension to "txt".
+For each of these files, change the file name extension to "txt".
 
-4. From MyCourses, copy these source code files to the "MyCode" folder:  
-**CourseList.swift**  
-**Main.storyboard**  
-For each of these files, add a prefix "App2" to the name, and then change the file name extension to "txt".
-
-4. Select all three folders:  
-AllAboutMe  
-MyCourses  
-MyCode  
-Right-click, and choose **Compress 3 Items**, which creates a zip file (make sure the zip file is fairly small, around 500KB or less).  
+4. Right-click the folder, and choose **Compress “AllAboutMe”**, which creates a zip file (make sure the zip file is fairly small, around 500KB or less).  
 
 5. Login to Blackboard/My.Seneca, and in this course's Assignments area, look for the upload link, and submit your work there.  
 
