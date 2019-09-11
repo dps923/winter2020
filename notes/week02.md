@@ -5,14 +5,24 @@ layout: default
 
 ## DPS923 MAP523 Week 2 Notes
 
-The theme for this week is to learn and experience a number of user interaction capabilities and techniques.  
+The theme for this week is to learn and experience a number of user interaction capabilities and techniques. Along the way, you will work with more/new UI objects, and the lifecycle of an iOS app.  
 
 <br>
 
 ### Wednesday plan
 
-Demonstrations.  
-Three segments.  
+Discussions, and demonstrations.  
+Three segments:
+5:10pm - topics
+5:40pm - 5-minute break 
+5:45pm - topics 
+6:15pm - 5-minute break
+6:20pm - topics
+6:50pm - done
+
+During the breaks, please get up and move around. It's important for your health, and for mental performance. 
+
+Here's a link to the [interaction essentials notes](interaction-essentials).
 
 <br>
 
@@ -26,39 +36,10 @@ This week, to help you get started in the course, some sequenced how-to info wil
 
 ### Friday plan
 
-TBA
+To start the session, we will briefly cover a few topics related to the first programming assignment. 
+
+Then, your professor will discuss the grading expectations for the programming assignment. 
+
+There will be time available to work on the programming assignment, but probably not enough to complete it. 
 
 <br>
-
-#### Dismiss the keyboard
-
-Today, you will learn that a text field's `resignFirstResponder()` function will dismiss the keyboard. You saw us use that in a button-handling function. We have another way to dismiss the keyboard.  
-
-We will now introduce you - gently - to delegation. We will add a function that will handle the on-screen keyboard's "return key" button tap. In effect, the text field is *delegating* the responsibility of handling that event, to some new code that we will write.  
-
-There are two steps to complete:  
-1. Set the text field 'delegate' property to the view controller  
-2. Write code to handle an event  
-
-On the storyboard, select the text field. Then, make a connection (press and hold Control, then click-drag-drop) to the "View Controller" icon in the dock at the top of the scene. A connection popup will appear. In the Outlets area, select "delegate".
-
-In the view controller code, edit the class declaration to look like this, by adding a "protocol declaration":  
-
-```swift
-class ViewController: UIViewController, UITextFieldDelegate {
-```
-<br>
-
-Then, add the following function to the view controller:
-
-```swift
-func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
-    // add code to do things, if desired
-
-    return textField.resignFirstResponder()
-}
-```
-<br>
-
-
