@@ -91,6 +91,8 @@ Instead, we design the interaction pattern (*before* we write any code!), and th
 
 The iOS runtime is in control. 
 
+Another interesting difference, when compared to web apps, is that our app is *stateful* when loaded. As we create objects, they remain in memory, and continue to be available, until they are deliberately destroyed, or the app is terminated. 
+
 <br>
 
 #### Delegation discussion
