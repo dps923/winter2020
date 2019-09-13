@@ -312,11 +312,15 @@ In the interaction essentials document, we introduced the [UI object - table vie
 
 From above, this second app will display a list of ten or more courses that you have had in 2019 (including this fall term). The data will come from a web API, and the app will support a small amount of user interaction.
 
+<img src="/media/webapi-request-intro-sync-app-full.png" class="border1" alt="Web API request intro sync app" />
+
 To complete this part, you can do (or reproduce) the work we discussed during the Friday, September 13 class session. It was documented in the note titled [Web API request, introduction, synchronous](/notes/webapi-request-intro-sync). 
 
 > Create YOUR OWN data file  
 > In it, ensure that YOUR NAME is entered  
 > On the running app, make sure that your name is part of the table view's title 
+
+One of the features that we want for this app is a two-line table view cell. How do we get that? Well, edit the main storyboard. Select/click the "Prototype Cells" on the table view controller. On the attributes inspector, in the top Table View Cell area, the Style should be set to "Subtitle". Then, in code, the cell has a detail text label property that is the second line of the cell. 
 
 The "small amount of user interaction" will be really simple - if a user taps on a row, the iOS runtime will highlight the row (with a light grey background). Your task will be to detect that tap, and remove the highlight. 
 
