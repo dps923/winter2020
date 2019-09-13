@@ -49,3 +49,21 @@ Another UI object, more delegation and data source
 Gentle introduction to navigation controller
 
 <br>
+
+### doRequestFunction.swift
+
+You have permission to use this as-is (or modified) in your Assignment 1 (or elsewhere).  
+
+It is designed to be placed in a view controller. It has dependencies (see the code comments). 
+
+<br>
+
+### AppWithErrors
+
+This code example will be used during the gentle introduction to debugging.
+
+Includes an *outlet* problem. 
+
+And a runtime arithmetic problem.
+
+<br>
