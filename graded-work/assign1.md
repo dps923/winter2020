@@ -301,12 +301,24 @@ Follow best practices about project creation. Ask if you are unsure.
 Again, as noted above, read/skim the rest of this document before you begin work. That way you know what's coming. 
 
 <br>
+
+#### Table view controller
+
+In the interaction essentials document, we introduced the [UI object - table view](https://dps923.ca/notes/interaction-essentials#ui-object---table-view). Follow those instructions to configure and run an app that displays some data on a list. 
+
 <br>
-<br>
-<mark>&nbsp;The remaining specifications for the second app will be posted before class begins on Friday. Your professor wants to be assured that all students have made substantial progress on the first app.&nbsp;</mark>
-<br>
-<br>
-<br>
+
+#### List of courses
+
+From above, this second app will display a list of ten or more courses that you have had in 2019 (including this fall term). The data will come from a web API, and the app will support a small amount of user interaction.
+
+To complete this part, you can do (or reproduce) the work we discussed during the Friday, September 13 class session. It was documented in the note titled [Web API request, introduction, synchronous](/notes/webapi-request-intro-sync). 
+
+> Create YOUR OWN data file  
+> In it, ensure that YOUR NAME is entered  
+> On the running app, make sure that your name is part of the table view's title 
+
+The "small amount of user interaction" will be really simple - if a user taps on a row, the iOS runtime will highlight the row (with a light grey background). Your task will be to detect that tap, and remove the highlight. 
 
 <br>
 

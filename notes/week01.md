@@ -274,3 +274,27 @@ Now, call this function from both `viewDidLoad()` and the slider changed functio
 Remember to view the code examples, and try to re-create them yourself. 
 
 <br>
+
+### Summary
+
+Here's a list of topics that we learned something about this week:
+1. macOS file system and using Spotlight
+1. Xcode IDE essentials, start, use, quit
+1. Xcode Swift Playground for learning, quick tests, and prototyping
+1. Swift language essentials, types, variables, output, control flow
+1. Swift functions, simple, create then call
+1. Simple one-screen (view) iOS app
+1. Role of "storyboard", LaunchScreen and Main 
+1. Adding and configuring user interface (UI) objects on the storyboard, label, button
+1. Role of the "app delegate" 
+1. Role of a "view controller" 
+1. Xcode editing, assistant editor, show/hide the navigators and the inspectors
+1. Many Xcode keyboard shortcuts
+1. An "outlet", as a reference to a UI object; declaring and using
+1. An "action", as a handler for a user interaction with a UI object
+1. Role or purpose of base class functions (e.g. `viewDidLoad()`)
+1. More UI objects, slider
+1. Role of a "view" (which is managed by a view controller)
+1. The iOS object that represents a colour (UIColor)
+
+<br>

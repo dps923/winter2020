@@ -36,10 +36,24 @@ This week, to help you get started in the course, some sequenced how-to info wil
 
 ### Friday plan
 
-To start the session, we will briefly cover a few topics related to the [first programming assignment](/graded-work/assign1). 
+To start the session, we will briefly cover the leftover topic from Wednesday, [UI object table view](https://dps923.ca/notes/interaction-essentials#ui-object---table-view). 
+
+Then, we discuss a new topic in the [first programming assignment](/graded-work/assign1) - requesting data from a web API. The [topic notes are linked here](webapi-request-intro-sync). 
+
+We will also get a gentle [introduction to debugging](debug-intro). 
 
 Then, your professor will discuss the grading expectations for the programming assignment. 
 
 There will be time available to work on the programming assignment, but probably not enough to complete it. 
+
+<br>
+
+### Summary
+
+Here's a list of topics that we learned something about this week:
+1. Xcode code "re-indent" (select, then Ctrl+I)
+
+(more to be posted)  
+
 
 <br>
