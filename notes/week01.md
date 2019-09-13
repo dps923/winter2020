@@ -200,7 +200,7 @@ Write code in the new button-handling function that appends text to the label; s
 topLabel.text = topLabel.text! + " app"
 ```
 
-**Extra fun***
+**Extra fun**
 
 As shown in class, let's modify the behaviour - if the label text gets too long, reset it to the original "App" text. And, show the number of times the button has been tapped. 
 
