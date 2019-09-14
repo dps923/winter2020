@@ -142,6 +142,8 @@ How can you make this kind of app? Here are some instructions - try them. Soon, 
 7. On the identity inspector, set its class to the just-created CityList controller
 8. Embed it in a navigation controller
 9. Select the nav controller, attributes inspector, check/select/mark "Is Initial View Controller"
-10. Edit the controller code to materialize the data source, then configure the table view data source and delegate methods 
+10. Select the "Prototype Cells" rectangle on the table view controller; on the attributes inspector, enter "default" into the "Identifier" setting
+11. Edit the controller code; uncomment the `tableView(_:cellForRowAtIndexPath:)` method; and replace the "reuseIdentifier" string with "default" (the same string as in the previous step)
+12. Edit the controller code to materialize the data source, then configure the table view data source and delegate methods 
 
 <br>

@@ -89,7 +89,15 @@ Next, we must write [structs](https://docs.swift.org/swift-book/LanguageGuide/Cl
 
 Where do we add the structs? For this learning exercise (and for Assignment 1), add them to the bottom of the table view controller source code file. Below the existing class. 
 
-First, write a struct (maybe named "Course") that describes the shape of a *course* object. Its variable (i.e. "property") names *MUST* match the names used in the source JSON data. 
+Anything else to know? Yes. The struct must conform to the `Codable` protocol, to enable the JSON decoder to do its job. For example:
+
+```swift
+struct StructName: Codable {
+    // add struct members here
+}
+```
+
+Now, write a struct (maybe named "Course") that describes the shape of a *course* object. Its variable (i.e. "property") names *MUST* match the names used in the source JSON data. 
 
 Likely name | Data type | Purpose
 --- | --- | ---
@@ -141,7 +149,11 @@ To use it, you must have the following in your code:
 
 * A variable, maybe named "coursePackage", and its data type is an optional PackageCourses (assuming you followed the struct naming guidance above)
 
-* Another variable, maybe named "url", string data type, and its value is the URL to the JSON data file that's on your GitHub repo. 
+* Another variable, maybe named "url", URL data type, and its URL initializer string value is the URL to the JSON data file that's on your GitHub repo. For example: 
+
+```swift
+let url = URL(string: "https://host.example.com/path-to/my-data-file.json")
+```
 
 Then, in `viewDidLoad()`, call the function:
 
