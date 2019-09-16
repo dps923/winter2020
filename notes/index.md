@@ -13,7 +13,7 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 3**<br>&bull; Wed Sep 18<br>&bull; Fri Sep 20 | TBA | [Assign 1](/graded-work/assign1), 8%| 
+**[Week 3](week03)**<br>[&bull; Wed Sep 18<br>&bull; Fri Sep 20](week03) | Alert and Action Sheet<br>Camera and Photo Library intro<br>2D graphics and touch intro<br>Apple Developer and deploy to device | [Assign 1](/graded-work/assign1), 8%| 
 **[Week 2](week02)**<br>[&bull; Wed Sep 11<br>&bull; Fri Sep 13](week02) | Interaction essentials<br>Delegate and data source; table view | |
 **[Week 1](week01)**<br>[&bull; Wed Sep 4<br>&bull; Fri Sep 6](week01) | Hands-on with macOS<br>Dev environment setup<br>Intro to Swift and iOS apps | |
 **[Welcome](/welcome)** | Welcome to the course info | | 

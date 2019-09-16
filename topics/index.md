@@ -7,6 +7,20 @@ layout: default
 
 This page has links to various topics that supplement and/or summarize the topics discussed in class and presented in the notes. 
 
+### How to...
+
+[How to: Controller code organization](how-to-controller-code-organization)
+
+[How to: Debug outlet connection problem](how-to-debug-outlet-connection)
+
+### Info...
+
+[Info: Swift optionals](info-optionals)
+
+[Info: Function parameters](function-parameters)
+
+<br>
+
 ( more to come )
 
 <!-- 

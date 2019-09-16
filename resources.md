@@ -27,15 +27,15 @@ If you are not prepared to use a Mac, then *drop the course*.
 
 <br>
 
-#### Other Macs on campus
+#### Our Mac mini lab, room A2534
 
-The library (learning commons) has Macs. 
+The image below shows the room timetable. As you can see, the room has classes most of the week. However, it appears to be consistently available from 5:10pm onwards, and on the weekend. 
 
-> Your professor will visit the Newnham campus library early in the term, and determine the readiness and suitability of the Macs. 
+![Room timetable](media/timetable-a2534-v1.png)
 
 <br>
 
-### Required textbook
+### Course textbook
 
 For the Fall 2019 version of the course, no textbook is required. We will use online resources from Apple and elsewhere. Some of these resources may be fee-based, but the fee is typically low. 
 

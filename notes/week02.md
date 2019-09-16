@@ -28,9 +28,11 @@ Here's a link to the [interaction essentials notes](interaction-essentials).
 
 ### Code examples
 
-The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it periodically. 
-
-This week, to help you get started in the course, some sequenced how-to info will be shown below. In class, you will learn some of the reasons behind the info, and have an opportunity to ask questions, and practice using Xcode. 
+The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
+* Text field, button, label 
+* More text field interaction; delegation
+* Picker view, data source and delegate 
+* Table view
 
 <br>
 
