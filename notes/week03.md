@@ -28,13 +28,17 @@ Tentative plan for this week:
 * Two-dimensional graphics and touch intro 
 * Apple Developer and deploy app to device 
 
+Here is information about [alerts and action sheets](alert-action-sheet). 
+
 <br>
 
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* TBA
-* TBA
+* Alert and action sheet (modal)
+* Shapes (2D graphics and touch)
+* Camera and image 
+* UIKit Catalog
 
 <br>
 
