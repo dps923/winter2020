@@ -25,3 +25,13 @@ The code example naming scheme includes the week number and a little info about 
 Shows how to create, configure, and use an alert and an action sheet.  
 
 <br>
+
+###  W03a2Shapes1 - Shapes app 1
+
+The app enables the user to add and remove "shapes" to-from the view.  
+Each "shape" is a programmatically-created UIView object.  
+
+The template-provided view controller was renamed (via the refactor task) to "Shapes".  
+A new Cocoa Touch Class named "Shape" was added; it is based on UIView.  
+
+<br>
