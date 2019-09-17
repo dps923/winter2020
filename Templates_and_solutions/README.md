@@ -2,6 +2,14 @@
 
 <br>
 
-(coming soon)
+### Apple UIKit Catalog
+
+This is the 2018 version of the Apple UIKit Catalog, which is a sample app. It works with our course's Xcode version 10 and iOS SDK version 12. 
+
+> There is a more recent version of the sample app that is posted on Apple's web site, as of early September 2019.  
+> However, we cannot conveniently use that sample app, because it assumes Xcode 11+ and iOS SDK 13+.  
+> Therefore, we have posted the previous and compatible version here in the templates and solutions folder. 
+
+[Documentation for the sample app is here.](https://developer.apple.com/documentation/uikit/views_and_controls/uikit_catalog_creating_and_customizing_views_and_controls#//apple_ref/doc/uid/DTS40007710)
 
 <br>
