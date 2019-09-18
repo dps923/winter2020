@@ -24,8 +24,8 @@ During the breaks, please get up and move around. It's important for your health
 
 Tentative plan for this week:
 * Alert and Action Sheet 
-* Camera and Photo Library 
 * Two-dimensional graphics and touch intro 
+* Camera and Photo Library 
 * Apple Developer and deploy app to device 
 
 Here is information about [alerts and action sheets](alert-action-sheet). 
@@ -44,7 +44,7 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Friday plan
 
-TBA
+Deployment, to an iOS device.
 
 <br>
 
