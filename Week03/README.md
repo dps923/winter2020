@@ -35,3 +35,31 @@ The template-provided view controller was renamed (via the refactor task) to "Sh
 A new Cocoa Touch Class named "Shape" was added; it is based on UIView.  
 
 <br>
+
+###  W03a3Shapes2 - Shapes app 2
+
+Based on app 1.  
+The app adds the ability to drag shapes around the view.
+
+<br>
+
+###  W03a4Shapes3 - Shapes app 3
+
+Based on app 2.  
+
+The app adds the ability to work with single and double taps.  
+A single tap brings the shape to the foreground (the top of the view hierarchy).  
+A double tap (with one finger) grows the shape by 15%.  
+A two-finger tap shrinks the shape by 15%.
+
+<br>
+
+###  W03a5Shapes4 - Shapes app 4
+
+This is mostly based on app 3.
+
+The app uses images instead of drawn shapes.  
+(coming soon) Includes pinch and zoom.  
+(coming soon) Includes rotate.  
+
+<br>
