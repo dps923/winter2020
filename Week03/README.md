@@ -63,3 +63,12 @@ The app uses images instead of drawn shapes.
 (coming soon) Includes rotate.  
 
 <br>
+
+### W03a6Camera 
+
+Shows the ability to use the device's *camera* or *photo library*. 
+
+The code is in `ViewController.swift`.
+Read its comments.
+
+<br>
