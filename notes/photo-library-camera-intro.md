@@ -138,6 +138,6 @@ The value, a string, will be something that you want displayed in the alert. For
 
 Run the app on the device. This time, it asks for permission:
 
-<img src="/media/image-picker-camera-7.png" class="border1" alt="Image picker camera" />
+<img src="/media/image-picker-camera-6.png" class="border1" alt="Image picker camera" />
 
 <br>
