@@ -30,7 +30,7 @@ Tentative plan for this week:
 
 Here is information about [alerts and action sheets](alert-action-sheet). 
 
-Here is information about [two-dimensional graphics and touch](graphics-touch).
+Here is information about [two-dimensional graphics and touch](graphics-touch-intro).
 
 Here is information about [photo library and camera](photo-library-camera-intro). 
 <br>
