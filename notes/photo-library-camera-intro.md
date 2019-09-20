@@ -133,7 +133,7 @@ In an open area, right-click an open/unused area, and select "Add Row".
 The key name will be:  
 `Privacy - Camera Usage Description`  
 
-The value, a string, will be something that you want displayed in the alert. For example:
+The value, a string, will be something that you want displayed in the alert. For example:  
 `The app will save the photo, for your use and future enjoyment`
 
 Run the app on the device. This time, it asks for permission:
