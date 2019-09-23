@@ -5,18 +5,6 @@ layout: default
 
 ## Borrow an iOS device
 
-Explain
-
-<br>
-
-### Major section
-
-etc.
-
-<br>
-
-#### Minor sub-section
-
-etc.
+(more to come)
 
 <br>

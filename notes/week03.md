@@ -33,6 +33,7 @@ Here is information about [alerts and action sheets](alert-action-sheet).
 Here is information about [two-dimensional graphics and touch](graphics-touch-intro).
 
 Here is information about [photo library and camera](photo-library-camera-intro). 
+
 <br>
 
 ### Code examples
@@ -47,7 +48,9 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Friday plan
 
-Deployment, to an iOS device.
+Finish the photo library and camera topic we started on Wednesday. 
+
+Then, work on the programming assignment, and get help from a classmate or the professor if you need it. 
 
 <br>
 
@@ -56,6 +59,5 @@ Deployment, to an iOS device.
 Here's a list of topics that we learned something about this week:
 
 (more to be posted)  
-
 
 <br>

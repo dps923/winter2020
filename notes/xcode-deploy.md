@@ -46,7 +46,7 @@ Add your Apple ID. After this task, it will appear on the left-side list, and th
 
 It is assumed that you have an iOS device (e.g. an iPhone). And a cable with Lightning and standard USB Type A connectors. Attach it to the Mac. 
 
-> If you want to borrow an iOS device, and use it until the end of this DPS923/MAP523 course, contact your professor.  
+> If you want to [borrow an iOS device](borrow-ios-device), and use it until the end of this DPS923/MAP523 course, contact your professor.  
 > The College has a limited number of devices, and can loan one to you at no cost, assuming that it is returned at the end of the course in good working condition.  
 
 <br>
@@ -78,8 +78,7 @@ In Xcode, in upper-left area, set the active scheme to your device, which should
 
 Then build and run the app (Command+R). Within several seconds, the app will load on your device. 
 
-> The first time you use a device with Xcode, it will likely tell you that you must change a security-related setting.  
-> Yes, do that. 
+> The first time you use a device with Xcode, it will likely tell you that you must change a security-related setting. Yes, do that. 
 
 The app, when loaded with the "run" task (Command+R), is still connected to Xcode, for debugging purposes. If you wish to run the app without the debugging connection, then stop the app in Xcode (Command+dot/period), and then start the app directly on the device. 
 
