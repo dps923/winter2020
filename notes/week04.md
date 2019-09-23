@@ -25,6 +25,7 @@ Three segments:
 During the breaks, please get up and move around. It's important for your health, and for mental performance. 
 
 Tentative plan for this week:
+* Info about and prepare for the first written test
 * Apple Developer and deploy app to device 
 * Designing a substantial multi-view app 
 * The "navigation" style of app 
@@ -45,7 +46,9 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Friday plan
 
-Work on the programming assignment, and get help from a classmate or the professor if you need it. 
+In the first part of the timeslot, Test 1 will be written. 
+
+Then, in the remaining time, work on the programming assignment, and get help from a classmate or the professor if you need it. 
 
 <br>
 
