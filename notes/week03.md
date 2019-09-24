@@ -57,7 +57,15 @@ Then, work on the programming assignment, and get help from a classmate or the p
 ### Summary
 
 Here's a list of topics that we learned something about this week:
+1. Creating UI objects *in code* (instead of using the storyboard and object library)
+1. Get the attention of the user with an alert or action sheet 
+1. Introduction to a "modal view" and its meaning 
+1. Gentle introduction to the Apple Human Interface Guidelines, and how they help and guide us to make good design and coding decisions 
+1. Gentle introduction to *closures* in Swift, including their purpose and their generalized syntax 
+1. Difference in appearance and interaction between the alert and the action sheet 
+1. Similarities in the coding of both (i.e. the sequence of coding steps)
+1. Role and purpose of a `UIAlertAction` object, and the role and purpose of a `UIAlertController` object 
 
-(more to be posted)  
+( more to come )
 
 <br>
