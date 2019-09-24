@@ -1,37 +1,40 @@
-
 Typographic character replacements
 ==================================
 
-
 Typographic single quote
-� replace with '
+’ replace with '
 
 
 Typographic double quote
-66 - � - "
-99 - � - "
+66 - “ - "
+99 - ” - "
 
 
 Elipsis
-� - ...
+… - ...
 
 
 Dash
-Em dash � replace with -
+Em dash – replace with -
 
 
 In summary
-� 
-� 
-� 
-� 
-� 
+’ 
+“ 
+” 
+… 
+– 
 
 ~~~ 
 
 HTML entities...
-
 &#8984; - command 
-
 &#9432; - info button
 
+~~~ 
+
+Must surround double braces with raw/endraw...
+{% raw %}
+{% endraw %}
+{% raw %}{{
+}}{% endraw %}

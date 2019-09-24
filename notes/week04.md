@@ -31,7 +31,9 @@ Tentative plan for this week:
 * The "navigation" style of app 
 * Data model design and implementation 
 
-Linkks to more topics will be posted soon. 
+Links to more topics will be posted soon. 
+
+Here is information about [the upcoming test](test-success-info). 
 
 Here is information about [deployment](xcode-deploy). 
 
@@ -46,7 +48,7 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Friday plan
 
-In the first part of the timeslot, Test 1 will be written. 
+In the first part of the timeslot, Test 1 will be written. Here is information about [the upcoming test](test-success-info). 
 
 Then, in the remaining time, work on the programming assignment, and get help from a classmate or the professor if you need it. 
 

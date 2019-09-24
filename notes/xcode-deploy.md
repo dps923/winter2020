@@ -36,6 +36,16 @@ In Xcode, open Preferences, then focus on the Accounts panel (which should be mo
 
 Add your Apple ID. After this task, it will appear on the left-side list, and the right-side details panel will show your name, and associate with a "Personal Team". 
 
+As background info, there are three digital documents that Xcode needs in order to be able to deploy an app to a device:
+1. Development certificate  
+(identifies you as a developer)
+2. Distribution certificate  
+(for those in the paid Developer Program, enables App Store use)
+3. Provisioning profile  
+(identifies the specific app)
+
+Typically, this setup process (adding your Apple ID, and the "Configure an app..." section below) together will be fetched automatically by Xcode. However, you may have to help it along at times. 
+
 > Yes, this task can be done on the College Macs.  
 > Just make sure to delete the account info before you finish using the Mac.  
 > That can be done in Xcode Preferences, or by restarting the Mac.  
@@ -44,7 +54,7 @@ Add your Apple ID. After this task, it will appear on the left-side list, and th
 
 #### Attach your device to the Mac
 
-It is assumed that you have an iOS device (e.g. an iPhone). And a cable with Lightning and standard USB Type A connectors. Attach it to the Mac. 
+It is assumed that you have an iOS device (e.g. an iPhone). And a cable with Lightning and standard USB Type A connectors. Attach your iOS device to the Mac. (Yes, trust the computer, but don't bother with other setup, like USB networking or iTunes.)
 
 > If you want to [borrow an iOS device](borrow-ios-device), and use it until the end of this DPS923/MAP523 course, contact your professor.  
 > The College has a limited number of devices, and can loan one to you at no cost, assuming that it is returned at the end of the course in good working condition.  
@@ -56,7 +66,7 @@ It is assumed that you have an iOS device (e.g. an iPhone). And a cable with Lig
 In Xcode, open an app/project that will be deployed to the device. In the project navigator, select the project's settings file, which will display in the editor area. There, select the "TARGET" item. 
 
 Notice the typical settings, similar to those in the image below:
-* In the "Identity" area, the app has a valid bundle identifier, in the right format 
+* In the "Identity" area, the app has a valid and unique bundle identifier, in the right format 
 * In the "Signing" area, the "Team" item is currently set to "None" 
 * The "Status" item shows an error condition 
 
