@@ -26,7 +26,10 @@ another image
 
 ![Nav controller objects](https://docs-assets.developer.apple.com/published/83ef757907/nav_controllers_objects_a8447aef-d652-4ab9-85d1-1eb8e4876e12.jpg)
 
-another image
+<br>
+
+Combo!  
+Another image - tab bar base, nav on one of the tabs
 
 ![View hierarchy](https://docs-assets.developer.apple.com/published/83ef757907/NavigationViews_2x_e69e98a2-aaac-477e-9e33-92e633e29cc7.png)
 

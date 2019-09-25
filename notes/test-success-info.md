@@ -33,6 +33,8 @@ A few other points:
 
   * Look up and learn related topics that interest you and spark your curiosity. 
 
+  * Review the notes that you made while preparing for each class, and the notes that you made during our class time together.
+
   * Go back to review/refresh topics covered in previous courses. 
 
   * Write code, study the code examples, and reproduce tutorial and code examples. 

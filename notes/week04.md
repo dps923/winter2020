@@ -31,11 +31,11 @@ Tentative plan for this week:
 * The "navigation" style of app 
 * Data model design and implementation 
 
-Links to more topics will be posted soon. 
-
 Here is information about [the upcoming test](test-success-info). 
 
 Here is information about [deployment](xcode-deploy). 
+
+Links to more topics will be posted soon. 
 
 <br>
 
