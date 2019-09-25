@@ -65,7 +65,18 @@ Here's a list of topics that we learned something about this week:
 1. Difference in appearance and interaction between the alert and the action sheet 
 1. Similarities in the coding of both (i.e. the sequence of coding steps)
 1. Role and purpose of a `UIAlertAction` object, and the role and purpose of a `UIAlertController` object 
+1. The iOS SDK has five frameworks for graphics; we will introduce UIKit and Core Graphics topics 
+1. The concept of creating a view (`UIView` subclass) programmatically, as a container for graphics content
+1. A `UIView` subclass includes initializers and a `draw(_:)` method 
+1. The concept of layering, where the display hierarchy is composed of "layers", window, view, subviews 
+1. Create bitmap graphics with an in-memory *graphics context* 
+1. Coordinate system on iOS starts in upper-left, and is measured in points (not pixels)
+1. Rich touch support, known as gestures (tap, swipe, etc.) 
+1. `UIGestureRecognizer` base class is used to detect and act upon guestures
+1. Using the camera and photo library also requires a programmatically-created controller, `UIImagePickerController` 
+1. This controller also requires a delegate to respond to messages (pick/use photo, cancel) 
+1. Must have permission from the user; this is configured in `info.plist` settings 
+1. On the storyboard, a `UIImageView` UI object is used to display an image or photo 
 
-( more to come )
 
 <br>

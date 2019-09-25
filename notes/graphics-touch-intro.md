@@ -15,11 +15,11 @@ A series of four code examples has been published in this week's repo folder. Th
 
 ### Graphics in iOS apps
 
-iOS has five frameworks that can be used for graphics and animation:
+The iOS SDK has five frameworks that can be used for graphics and animation:
 
 **[UIKit](https://developer.apple.com/documentation/uikit)** provides basic 2D drawing, image handling, and ways to animate user interface objects.
 
-**[Core Graphics](https://developer.apple.com/documentation/coregraphics)** is a C-based API that supports vector graphics, bitmap images, and PDF content. [Core Graphics is also known as **Quartz 2D**.]
+**[Core Graphics](https://developer.apple.com/documentation/coregraphics)** is a C-based API that supports vector graphics, bitmap images, and PDF content. (Core Graphics is also known as **Quartz 2D**.)
 
 **[Core Animation](https://developer.apple.com/documentation/quartzcore)** is part of the iOS graphics engine that adds smooth motion and dynamic feedback to the user interface. UIKit provides a simple API to animate views, this is using Core Animation. 
  
@@ -46,6 +46,10 @@ The *window* object is the first and bottom layer. An iOS app has one window obj
 On top of the window object, a typical app adds another layer, which is a *view*. The size of the view typically matches the window size. In other words, full screen.
 
 On top of the active full-screen view, your app (storyboard scene, or programmatically) can add more view objects. These are placed in layers, "on top" of the view and window layers.
+
+From the Apple Developer documentation: 
+
+<img src="https://docs-assets.developer.apple.com/published/7f180a9ffc/c05af6a2-c616-482b-8f65-98013d40bb05.png" class="border1" alt="Web API request intro sync app" />
 
 <br>
 
@@ -112,11 +116,11 @@ Take some time to learn more about views from the [Human Interface Guidelines](h
 
 Also, skim the document [View and Window Architecture](https://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/WindowsandViews/WindowsandViews.html). It's a few years old, but is still good content. 
 
-Finally, the [UIView reference documentation](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/WindowsandViews/WindowsandViews.html) is a full treatment of what you should eventually know. 
+Finally, the [UIView reference documentation](https://developer.apple.com/documentation/uikit/uiview) is a full treatment of what you should eventually know. 
 
 A view has a property named [subviews](https://developer.apple.com/documentation/uikit/uiview/1622614-subviews). It holds a collection of views. (Remember the "layers" discussion from above.)
 
-You can use the ‘tag’ property to identify a view with an integer. The view has a method ‘viewWithTag()’ that enables you to get a reference to a subview using its integer identifier.
+You can use the "tag" property to identify a view with an integer. The view has a method "viewWithTag()" that enables you to get a reference to a subview using its integer identifier.
 
 There are a number of UIView methods that enable you to modify the view hierarchy (i.e. the layers), including:
 * bringSubviewToFront(_:)
