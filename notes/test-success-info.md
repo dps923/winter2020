@@ -23,7 +23,7 @@ The tested topics are mostly review-based, but will also include topics for the 
 
 A few other points:
 
-* This is NOT a memorization course. This IS a *learn and apply* course. Simply reading, memorizing, and regurgitating words is not enough to convince anyone that you're competent. 
+* This is NOT a memorization course. This is a *learn and apply* course. Simply reading, memorizing, and regurgitating words is not enough to convince anyone that you're competent. 
 
 * You must apply the learning - by writing software - to convince others. (You show that by doing the programming assignments.)
 
@@ -47,7 +47,7 @@ A few other points:
 
 We are part way through the course, and your professor hopes that you've enjoyed it so far. This section of the notes has advice on how to improve your performance in the course, get the most out of it, and earn the highest grade that you can.
 
-The following advice is for every student in the course. It will also work for other courses in our School of ICT software development programs. Here's the advice:
+The following advice is for every student in the course. It will also work for other courses in our School of ICT (now SDDS) software development programs. Here's the advice:
 
 <br>
 

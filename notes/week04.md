@@ -27,7 +27,7 @@ During the breaks, please get up and move around. It's important for your health
 Tentative plan for this week:
 * Info about and prepare for the first written test
 * Apple Developer and deploy app to device 
-* Designing a substantial multi-view app 
+* Designing a substantial multi-scene app 
 * The "navigation" style of app 
 * Data model design and implementation 
 
