@@ -9,6 +9,8 @@ Assignment 2 has many goals, which result in a useful app with many features.
 
 Read/skim all of this document before you begin work.
 
+<mark>This document is being edited.<br>This notice will be removed when the edits are complete</mark>
+
 While you are doing the work, if a *specific task* is not clear, or it seems to require an unreasonable amount of time to complete, contact your professor. 
 
 <br>
@@ -23,6 +25,8 @@ Grade value: 10% of your final course grade
 <br>
 
 ### Overview and purpose
+
+Here are the point-form specifications (which will be better-explained soon). 
 
 Multi-scene app
 * List of friends
@@ -41,7 +45,7 @@ Deployed to an iOS device
 
 <br>
 
-### Getting started, first app
+### Getting started
 
 Create a new iOS app, using the Single View Application template. The name of the app should be "**MyFriends**".  
 
@@ -56,6 +60,20 @@ Again, as noted above, read/skim the rest of this document before you begin work
 <br>
 
 #### Tasks...
+
+Follow best practices and recommended guidance. 
+
+These how-to instructions will be better explained soon. Here they are in point form. 
+
+Build and test a two-scene app that uses the navigation interface. 
+
+The first controller must be a table view controller subclass, and should be named something like "FriendList". 
+
+The second controller must be a standard view controller subclass, and should be named something like "FriendScene". 
+
+Create a data model class (maybe named "Friend"), with a few members to enable you to get started testing. Maybe family name, given name(s), age, city. (Later, we'll add more attributes.)
+
+Create a data model manager class, which will initialize and make available a collection of all "Friend" objects. For testing purposes, create three friends. 
 
 <mark>&nbsp;( more to come )&nbsp;</mark>
 
