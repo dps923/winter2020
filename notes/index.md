@@ -13,7 +13,7 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 5**<br>&bull; Wed Sep 18<br>&bull; Fri Sep 20 | TBA | Assign 2, 10%| 
+**Week 5**<br>&bull; Wed Sep 18<br>&bull; Fri Sep 20 | TBA | [Assign 2](/graded-work/assign2), 10%| 
 **[Week 4](week04)**<br>[&bull; Wed Oct 2<br>&bull; Fri Oct 4](week04) | Apple Developer and deploy to device<br>App design, data model, multi-view<br>Navigation-style app intro | Test 1, 10%<br> (Friday) | 
 **[Week 3](week03)**<br>[&bull; Wed Sep 18<br>&bull; Fri Sep 20](week03) | Alert and Action Sheet<br>Camera and Photo Library intro<br>2D graphics and touch intro | [Assign 1](/graded-work/assign1), 8%| 
 **[Week 2](week02)**<br>[&bull; Wed Sep 11<br>&bull; Fri Sep 13](week02) | Interaction essentials<br>Delegate and data source; table view | |
@@ -29,7 +29,7 @@ All assignments are due at 11:00pm ET. (That's the evening/nighttime.)
 Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Friday, September 6 | Friday, September 20
-Assign 2 | Wednesday, September 25 <br>(~~Friday, September 20~~) | Tuesday, October 8 <br>(~~Friday, October 4~~)
+[Assign 2](/graded-work/assign2) | Wednesday, September 25 <br>(~~Friday, September 20~~) | Tuesday, October 8 <br>(~~Friday, October 4~~)
 Assign 3 | Friday, October 11 | Friday, November 1
 Assign 4 | Friday, November 8 | Friday, December 6 
 

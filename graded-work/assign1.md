@@ -347,7 +347,7 @@ When you are ready to submit your work, you will copy some of the code in your p
 
 Follow these instructions to submit your work, before the due date and time:  
 
-1. Locate your project folders in Finder (and we suggest that you make a copies for yourself).
+1. Locate your project folders in Finder (and we suggest that you make copies for yourself).
 
 2. At the same level, create a new folder named "MyCode".
 
