@@ -86,7 +86,9 @@ Then, in the remaining time, work on the programming assignment, and get help fr
 ### Summary
 
 Here's a list of topics that we learned something about this week:
+1. 
+1. Apple's definition of a scene 
+1. Segues between scenes
 
-(more to be posted)  
 
 <br>
