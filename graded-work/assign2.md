@@ -73,7 +73,29 @@ The second controller must be a standard view controller subclass, and should be
 
 Create a data model class (maybe named "Friend"), with a few members to enable you to get started testing. Maybe family name, given name(s), age, city. (Later, we'll add more attributes.)
 
-Create a data model manager class, which will initialize and make available a collection of all "Friend" objects. For testing purposes, create three friends. 
+Create a data model manager class, which will initialize and make available a collection of all "Friend" objects. For testing purposes, create three friends objects. 
+
+Implement or use the data model, as you have learned. Then test the navigation interface by displaying some data on the friend list scene, and then passing on a selected friend object to the next friend scene. 
+
+<mark>&nbsp;( more to come )&nbsp;</mark>
+
+<br>
+
+#### More tasks beyond these
+
+Here are some other features that we'll add to the app. Yes, you will have to learn how to do these, and we'll cover that in the next in-class session. 
+
+The "add new item" workflow, which requires a modal controller, and a custom-written protocol. 
+
+Camera and photo library usage, and then store/save the photo in the app's data model. 
+
+Table view cell styles that support the display of an image (in addition to the text). 
+
+Using more or different UI objects in the interface, just for fun. 
+
+Storing/saving the data model, in general, in the app's persistent storage area (i.e. its area/part of the file system). 
+
+Swift language features (e.g. data formatting, sorting a collection of objects, etc.). 
 
 <mark>&nbsp;( more to come )&nbsp;</mark>
 
