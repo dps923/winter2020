@@ -37,7 +37,7 @@ Here is information about [deployment](xcode-deploy).
 
 Here is information that introduces a [navigation style app](navigation-controller-essentials). 
 
-Here is information that introduces a [data model design and implementation](#). 
+Here is information that introduces a [data model design and implementation](data-model-essentials). 
 
 <br>
 
