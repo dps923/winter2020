@@ -42,10 +42,12 @@ Often (most times), the nav controller is the app's entry point on a storyboard.
 > You can also see it listed in the left-side document outline / view hierarchy as "Storyboard Entry Point". 
 
 The nav controller is then connected to the first scene.  
-> In the image below, it is the arrow that connects the Navigation Controller to the "First" scene.  
+> In the image below, it is the arrow that connects the "Navigation Controller" to the "First" scene.  
 > You can also see it listed in the left-side outline as "Relationship "root view controller" to "First".  
 
-<mark>(image)</mark>
+<br>
+
+![Navigation initial status](/media/multi-scene-nav-to-root.png)
 
 <br>
 
