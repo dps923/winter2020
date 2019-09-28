@@ -13,7 +13,7 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 5**<br>&bull; Wed Oct 2<br>&bull; Fri Oct 4 | TBA | [Assign 2](/graded-work/assign2), 10%| 
+**Week 5**<br>&bull; Wed Oct 2<br>&bull; Fri Oct 4 | Table view patterns<br>TBA | [Assign 2](/graded-work/assign2), 10%| 
 **[Week 4](week04)**<br>[&bull; Wed Sep 25<br>&bull; Fri Sep 27](week04) | Apple Developer and deploy to device<br>App design, data model, multi-view<br>Navigation-style app intro | Test 1, 10%<br> (Friday) | 
 **[Week 3](week03)**<br>[&bull; Wed Sep 18<br>&bull; Fri Sep 20](week03) | Alert and Action Sheet<br>Camera and Photo Library intro<br>2D graphics and touch intro | [Assign 1](/graded-work/assign1), 8%| 
 **[Week 2](week02)**<br>[&bull; Wed Sep 11<br>&bull; Fri Sep 13](week02) | Interaction essentials<br>Delegate and data source; table view | |

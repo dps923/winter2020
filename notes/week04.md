@@ -71,7 +71,8 @@ As a result, BEFORE we begin coding, we must perform some tasks. After a few wee
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* (to be posted) 
+* Navigation intro
+* Data model intro 
 
 <br>
 
@@ -86,9 +87,24 @@ Then, in the remaining time, work on the programming assignment, and get help fr
 ### Summary
 
 Here's a list of topics that we learned something about this week:
-1. 
+1. App "design" refresher; modular code, separation of concerns
+1. The value of sketching (hand drawing) the scenes in an app 
+1. Navigation interface style of app intro and characteristics 
 1. Apple's definition of a scene 
 1. Segues between scenes
-
+1. Navigation controller introduction 
+1. Nav controller is a "container", and manages a sequence of view controllers, organized as a stack 
+1. Nav controller manages the navigation bar, with three standard areas (left, center, right) 
+1. Setting the title that appears in the nav bar center; the procedure for the first controller is a bit different from the others 
+1. Navigation interface segue kind/type is "Show"
+1. On the storyboard, the nav controller is the app's "entry point" 
+1. Segue must be triggered by a user interaction event (button, table view row selection)
+1. We must follow a "prepare pattern" before segueing (transitioning) to the next controller
+1. This preparation is done in the hosting/triggering controller, in the `prepare(for: sender:)` method 
+1. Developers build iOS apps by following the MVC pattern 
+1. Controllers can "mediate" (e.g. our view controller subclasses), "coordinate" (e.g. app delegate), or "model" (e.g. data model manager)
+1. Data model communicates with a controller 
+1. Data model is implemented in code with typically two source code files; one defines the data entity shapes, and the other manages the data service operations (setup, import/export, persist, CRUD, transform) 
+1. iOS app creates a single instance of a data model manager, and ensures that it is passed among controllers 
 
 <br>

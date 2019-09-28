@@ -46,7 +46,17 @@ And similar to other programming environments, the design enables an object-orie
 
 <br>
 
-#### What does this look like? 
+#### What does this look like as a conceptual diagram?
+
+Study this image from an [Apple document](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Model-View-Controller/Model-View-Controller.html): 
+
+![MVC](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Art/cocoa_mvc.gif)
+
+The controller (in the middle) represents the controller that is managing the currently-visible scene, which is represented by the view (on the left). The model (on the right) is linked to the controller, which *mediates* the flow of data back-and-forth to the data model. 
+
+<br>
+
+#### What does this look like in code? 
 
 Open and study the "data model intro" code example in the repo (W04a2DataModelIntro). 
 
