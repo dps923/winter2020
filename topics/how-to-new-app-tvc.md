@@ -9,7 +9,7 @@ Create a single view app.
 
 In the project navigator, delete ("Move to Trash") the ViewController.swift file.
 
-With the focus on the yellow project folder icon, create a new file (&#8984;+N).  
+With the focus on the yellow project folder icon, create a new file (&#8984;N).  
 
 It will be a Cocoa Touch Class. Next, make it a subclass of UITableViewController.  
 
@@ -62,7 +62,7 @@ Almost always, the source of data for a table view is an array.
 The contents of the array can be simple `Int`s or `String`s, but most often the array elements will be objects that are based on a custom class. 
 
 > For example,  
-> Assume that we have a custom class for a "Product". Its source code is elsewhere (maybe in a `DomainClasses.swift` source code file.)  
+> Assume that we have a custom class for a "Product". Its source code is elsewhere (maybe in a `DataModelClasses.swift` source code file.)  
 > It will have properties for identifier, name, price, and probably some others.  
 > A collection of Product objects - as an array - can be a data source for a table view.
 
@@ -85,6 +85,9 @@ There are two typical approaches to the use of a data model manager, from the pe
 2. Assume that it will be passed in (injected) into the view controller
 
 In this "example 1, singleton" section, we write code in the controller that *calls out* to a data model manager. The manager is typically a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) (which is a "service" object that is created only once and stays accessible in memory). 
+
+> Note:  
+> This is *NOT* the technique that we will use. 
 
 There are a few different ways to do this, and we show one typical way below. In this scenario, assume that we get a reference to the manager by reading/getting a property (which often includes the word "shared" in the property name):
 

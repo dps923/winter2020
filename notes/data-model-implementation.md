@@ -9,6 +9,8 @@ Explain
 
 <mark>Put some of the Winter 2017 Week 5 Monday content here</mark>
 
+"documents" directory for now 
+
 <br>
 
 ### Major section

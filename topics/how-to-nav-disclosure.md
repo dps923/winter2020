@@ -8,24 +8,25 @@ layout: default
 Assumption(s):
 * Table view scene and controller already exist
 
-We will add a new controller and scene, and a "disclosure" segue navigation.
+We will add a new controller and scene, and a "disclosure" hierarchical segue navigation.
 
-In the project navigator, focus on the yellow project folder icon, and create a new file (&#8984;+N).  
+In the project navigator, focus on the yellow project folder icon, and create a new file (&#8984;N). It will be a Cocoa Touch Class. Next, make it a subclass of UIViewController. 
 
-It will be a Cocoa Touch Class. Next, make it a subclass of UIViewController. 
-
-> Tip - Use the name "SomethingInfo" for the class name.  
+> Tip - Use the name "SomethingInfo" or "SomethingScene" for the class name.  
 > Avoid using the words "view" and "controller" in the name.
 
-Show the Main.storyboard in the editor. 
+Show the main storyboard in the editor. 
 
 From the library, add a new view controller. On its identity inspector, set its class to the just-created class from above. 
 
 Select the table view scene that will be the navigation source. Select its table view cell object (the white area just below the "Prototype Cells" label). 
 
-On its attributes inspector, set the accessory to either:
-* Detail, if we are supporting ONLY detail navigation 
-* Detail Disclosure, if we are supporting BOTH detail navigation, and (drill-down) disclosure navigation
+On its attributes inspector, the accessory offers settings for: 
+* Disclosure Indicator&nbsp;&gt;, if we are supporting ONLY hierarchical navigation  
+* Detail Disclosure&nbsp;&#9432;&nbsp;&gt;, if we are supporting BOTH detail navigation, and (drill-down) disclosure navigation
+* Detail&nbsp;&#9432;, if we are supporting ONLY detail navigation 
+
+Choose *Disclosure Indicator*. 
 
 Next, create a segue. (Make sure that the table view scene, and its table view cell object is still selected.) Control+click+drag from the table view cell object to the new destination scene. 
 
@@ -37,6 +38,8 @@ On the pop-up, choose Selection Segue > Show.
 
 ![Segue disclosure](images/segue-disclosure.png)
 
+> **Disclosure** navigation is matched to the **Show** segue.
+
 <br>
 
 Select the segue object. On its attributes inspector, enter an appropriate value for the Identifier property. We suggest that it begin with the word "to" (because we are navigating "to" this scene) and an appropriate name for the scene. For example, "toSomethingInfo". 
@@ -47,7 +50,7 @@ Select the segue object. On its attributes inspector, enter an appropriate value
 
 First, make sure that your table view shows one or more items. If it does not do that yet, then [complete this task](how-to-new-app-tvc#test-your-progress) before continuing.
 
-Then, build-and-run. Tapping (clicking) anywhere on the row (except on the detail accessory &#9432) should navigate to your new disclosure view.
+Then, build-and-run. Tapping (clicking) anywhere on the row (except on the detail accessory &#9432;) should navigate to your new disclosure view.
 
 <br>
 
@@ -108,7 +111,7 @@ let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
 > ...should be used, instead of the recommended method:  
 > `tableView.indexPath(for:)`  
 > Sorry, no. That property works ONLY for row selections (taps).   
-> The method works for BOTH disclosure and detail accessories.  
+> This `indexPath(for:)` method works for BOTH disclosure and detail accessories.  
 > Much better. 
 
 <br>

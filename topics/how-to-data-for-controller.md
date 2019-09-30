@@ -17,9 +17,9 @@ Further, we should follow the pattern that assumes that the controller comes to 
 
 Assume that the data model classes, and the data model manager, already exist. 
 
-For this note, assume also that we are working with a "Product" entity class. Its source code is elsewhere (maybe in a `DomainClasses.swift` source code file).  It will have properties for identifier, name, price, and probably some others.  
+For this note, assume also that we are working with a "Product" entity class. Its source code is elsewhere (maybe in a `DataModelClasses.swift` source code file).  It will have properties for identifier, name, price, and probably some others.  
 
-Finally, assume that we have a data model manager (maybe in a `Manager.swift` source code file). It will have members (properties and/or methods) that perform data service operations (e.g. fetch, add, change, etc.). 
+Finally, assume that we have a data model manager (maybe in a `DataModelManager.swift` source code file). It will have members (properties and/or methods) that perform data service operations (e.g. fetch, add, change, save, etc.). 
 
 A single Product object can be a data source for a standard view. Maybe the manager has a "fetch one product" method. 
 
@@ -57,11 +57,11 @@ var products: [Product] = []
 var products: [Product]!
 
 // Scenario 3 - manager ref, and single object
-var m: Manager!
+var m: DataModelManager!
 var product: Product!
 
 // Scenario 4 - manager ref, and collection
-var m: Manager!
+var m: DataModelManager!
 var products: [Product] = []
 // ...or...
 var products: [Product]!
