@@ -33,18 +33,13 @@ Tentative plan for this week:
 * Table view and cell configuration 
 * Interaction pattern - add new item 
 
-Here is information about [data model storage](data-model-storage). 
+Covered in class, and some of the same information about [data model storage](data-model-storage). 
 
-Here is information about 
+Covered in class:
+* Substantial app design 
+* Table view and cell configuration 
 
-~ ~ ~ ~ ~ 
-
-Data model
-* struct vs. class 
-* class often needs an initializer 
-
-Demonstrate hierarchical push disclosure nav vs. modal, visual, meaning, etc.  
-
+Covered in class, and much the same information about the [table view add item](table-view-add-item) pattern. 
 
 <br>
 

@@ -61,7 +61,7 @@ Otherwise, an assignment is due on its assigned due date, at a specific time. 
 
 ### Academic Integrity
 
-Please ensure that you follow Seneca College Academic Policy when you do your work. The following link, from the School of Information and Communications Technology website, has some helpful information: <a href="https://ict.senecacollege.ca/students/academic-honesty-policy" target="_blank" rel="noopener">School of ICT – Academic Integrity</a>
+Please ensure that you follow Seneca College Academic Policy when you do your work. The following link, from the School of Information and Communications Technology website, has some helpful information: <a href="https://ict.senecacollege.ca/students/academic-honesty-policy" target="_blank" rel="noopener">School of ICT - Academic Integrity</a>
 
 Submit your own work. 
 

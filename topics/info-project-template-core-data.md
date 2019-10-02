@@ -91,7 +91,7 @@ As noted above, the *Core Data stack* is the set of objects that implement Core 
 
 The CDStack object is a set-it and forget-it object, in that it gets created when the app is loaded, and we just end up using its *context*. 
 
-What is the context? Well, as explained in class and in the textbook, it represents a single “object space” or "temporary work area", or a "scratch pad" in an application. Its primary responsibility is to manage a collection of in-memory objects. When we are ready to save changes to persistent storage, we call the "save" method on the context. 
+What is the context? Well, as explained in class and in the textbook, it represents a single "object space" or "temporary work area", or a "scratch pad" in an application. Its primary responsibility is to manage a collection of in-memory objects. When we are ready to save changes to persistent storage, we call the "save" method on the context. 
 
 When we do a "fetch", the results are fetched from persistent storage, and are placed in memory in the context. Then, for example, we can display the results (on a list).  
 

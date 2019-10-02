@@ -386,7 +386,7 @@ Test your work by running it on the simulator. Do this frequently and incrementa
 
 ### Reminder about academic honesty
 
-When you are ready to submit your work, you will copy some of the code in your project to plain text files, so that the My.Seneca/Blackboard “SafeAssign” tool can do its job. The next section will tell you which files to copy.
+When you are ready to submit your work, you will copy some of the code in your project to plain text files, so that the My.Seneca/Blackboard "SafeAssign" tool can do its job. The next section will tell you which files to copy.
 
 > From the Blackboard web site:  
 > SafeAssign compares submitted assignments against a set of academic papers to identify areas of overlap between the submitted assignment and existing works.
@@ -411,7 +411,7 @@ Follow these instructions to submit your work, before the due date and time:
 **CityAdd.swift**  
 For each of these files, change the file name extension to "txt".
 
-4. Right-click the folder, and choose **Compress “xxxxxxxx”**, which creates a zip file.  
+4. Right-click the folder, and choose **Compress "xxxxxxxx"**, which creates a zip file.  
 
 5. Login to Blackboard/My.Seneca, and in this course's Assignments area, look for the upload link, and submit your work there.  
 

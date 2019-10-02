@@ -189,7 +189,7 @@ And, it's likely that the model object will also need an initializer. You will l
 
 #### More discussion
 
-Among other features, a model object provides the user/consumer with access to a “collection” of “items”. Typically, at least one of the model object's properties will deliver an array of results, so that it can be directly used in a table view (UITableView).
+Among other features, a model object provides the user/consumer with access to a "collection" of "items". Typically, at least one of the model object's properties will deliver an array of results, so that it can be directly used in a table view (UITableView).
 
 The functions will be designed to help with the data service operations, including:
 - Get all items (returns a collection)

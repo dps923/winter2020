@@ -6,7 +6,7 @@ Typographic single quote
 
 
 Typographic double quote
-66 - “ - "
+66 - " - "
 99 - ” - "
 
 
@@ -20,7 +20,7 @@ Em dash – replace with -
 
 In summary
 ' 
-“ 
+" 
 ” 
 … 
 – 

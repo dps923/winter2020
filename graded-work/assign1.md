@@ -336,7 +336,7 @@ Your professor plans to introduce you to the Xcode debugger soon, and that tool 
 
 ### Reminder about academic honesty
 
-When you are ready to submit your work, you will copy some of the code in your project to plain text files, so that the My.Seneca/Blackboard “SafeAssign” tool can do its job. The next section will tell you which files to copy.
+When you are ready to submit your work, you will copy some of the code in your project to plain text files, so that the My.Seneca/Blackboard "SafeAssign" tool can do its job. The next section will tell you which files to copy.
 
 > From the Blackboard web site:  
 > SafeAssign compares submitted assignments against a set of academic papers to identify areas of overlap between the submitted assignment and existing works.
