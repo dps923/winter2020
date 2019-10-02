@@ -32,7 +32,7 @@ On its attributes inspector, enter an approprate value for the Title property.
 
 <img class="border1" src="images/new-tvc-nav-item-title.png" alt="List">
 
-Next, select its table view cell object. On its attributes inspector, enter an appropriate value for the Identifier property (something short like "cell"). 
+Next, select its table view cell object. On its attributes inspector, enter an appropriate value for the Identifier property (something short and meaningful like "default"). 
 
 Open the just-added table view controller code in the editor. Locate the commented-out [`tableView(_:cellForRowAt:)`](https://developer.apple.com/documentation/uikit/uitableviewdatasource/1614861-tableview) method. Then: 
 * Uncomment the method
@@ -87,7 +87,7 @@ There are two typical approaches to the use of a data model manager, from the pe
 In this "example 1, singleton" section, we write code in the controller that *calls out* to a data model manager. The manager is typically a [singleton](https://en.wikipedia.org/wiki/Singleton_pattern) (which is a "service" object that is created only once and stays accessible in memory). 
 
 > Note:  
-> This is *NOT* the technique that we will use. 
+> This is <mark>*NOT*</mark> the technique that we will use. 
 
 There are a few different ways to do this, and we show one typical way below. In this scenario, assume that we get a reference to the manager by reading/getting a property (which often includes the word "shared" in the property name):
 

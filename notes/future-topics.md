@@ -49,6 +49,12 @@ Good brief description of storyboard from [here on Sep 27 2019](https://develope
 
 [File system](https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html) usage
 
+[if statement](https://docs.swift.org/swift-book/LanguageGuide/ControlFlow.html#ID127) with "if else" and so on:
+
+You can chain multiple if statements together to consider additional clauses.  
+Here, an additional if statement was added to respond to particularly warm temperatures. The final else clause remains, and it prints a response for any temperatures that are neither too warm nor too cold.  
+The final else clause is optional, however, and can be excluded if the set of conditions does not need to be complete.
+
 <br>
 
 ### Core Data

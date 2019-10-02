@@ -26,7 +26,7 @@ On its attributes inspector, the accessory offers settings for:
 * Detail Disclosure&nbsp;&#9432;&nbsp;&gt;, if we are supporting BOTH detail navigation, and (drill-down) disclosure navigation
 * Detail&nbsp;&#9432;, if we are supporting ONLY detail navigation 
 
-Choose *Detail*. 
+Choose *Detail* (for this scenario). 
 
 Next, create a segue. (Make sure that the table view scene, and its table view cell object is still selected.) Control+click+drag from the table view cell object to the new destination scene. 
 

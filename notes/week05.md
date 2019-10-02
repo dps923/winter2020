@@ -33,9 +33,13 @@ Tentative plan for this week:
 * Table view and cell configuration 
 * Interaction pattern - add new item 
 
-Here is information about TBA. 
+Here is information about [data model storage](data-model-storage). 
 
 ~ ~ ~ ~ ~ 
+
+Data model
+* struct vs. class 
+* class often needs an initializer 
 
 Demonstrate hierarchical push disclosure nav vs. modal, visual, meaning, etc.  
 

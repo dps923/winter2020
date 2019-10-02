@@ -12,7 +12,7 @@ We will add a new controller and scene, and a "disclosure" hierarchical segue na
 
 In the project navigator, focus on the yellow project folder icon, and create a new file (&#8984;N). It will be a Cocoa Touch Class. Next, make it a subclass of UIViewController. 
 
-> Tip - Use the name "SomethingInfo" or "SomethingScene" for the class name.  
+> Tip - Use the name "SomethingInfo" or "SomethingScene" or "SomethingDetail" for the class name.  
 > Avoid using the words "view" and "controller" in the name.
 
 Show the main storyboard in the editor. 
@@ -50,7 +50,7 @@ Select the segue object. On its attributes inspector, enter an appropriate value
 
 First, make sure that your table view shows one or more items. If it does not do that yet, then [complete this task](how-to-new-app-tvc#test-your-progress) before continuing.
 
-Then, build-and-run. Tapping (clicking) anywhere on the row (except on the detail accessory &#9432;) should navigate to your new disclosure view.
+Then, build-and-run. Tapping (clicking) anywhere on the row should navigate to your new disclosure view.
 
 <br>
 
@@ -58,7 +58,7 @@ Then, build-and-run. Tapping (clicking) anywhere on the row (except on the detai
 
 Almost always, when a specific row is tapped, you will want to pass its data to the disclosure view. 
 
-First, make sure that the disclosure view controller has a property (instance variable) to hold the data. You can choose its data type to fulfill your use case. (Sometimes the data will be a simple value like a string. In other scenarios, an object or collection will be passed on.) For example:
+First, make sure that the destination view controller has a property (instance variable) to hold the data. You can choose its data type to fulfill your use case. (Sometimes the data will be a simple value like a string. In other scenarios, an object or collection will be passed on.) For example:
 
 ```swift
 // Simple string
@@ -95,7 +95,8 @@ let vc = segue.destination as! SomethingInfo
 
 Now, we need to discover which row was tapped, so that we can go back to the data model (source) and fetch the data to be passed on. 
 
-> Remember, the table view itself is NOT the data source - it is simply displaying some content from the data source. 
+> Remember, the table view itself is NOT the data source -  
+> It is simply displaying some content from the data source. 
 
 <br>
 
