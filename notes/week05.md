@@ -27,10 +27,11 @@ Three segments:
 During the breaks, please get up and move around. It's important for your health, and for mental performance. 
 
 Tentative plan for this week:
-* TBA
-* More navigation 
-* More data model 
 * Storage (persistence) introduction
+* Data model design and implementation 
+* Substantial app design 
+* Table view and cell configuration 
+* Interaction pattern - add new item 
 
 Here is information about TBA. 
 
@@ -44,7 +45,9 @@ Demonstrate hierarchical push disclosure nav vs. modal, visual, meaning, etc.
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* TBA
+* File system storage, simple text file 
+* File system storage, JSON, load from app bundle
+* Multi-scene app, nav interface, table view, etc. 
 
 <br>
 
