@@ -21,7 +21,7 @@ class Product: /*NSObject,*/ Codable {
 
     // Default initializer
     init(id: Int, name: String, maker: String, cost: Double) {
-        // The id property will be set elsewhere (e.g. in the data model manager)
+        self.id = id
         self.name = name
         self.maker = maker
         self.cost = cost
