@@ -2,7 +2,7 @@ Typographic character replacements
 ==================================
 
 Typographic single quote
-’ replace with '
+' replace with '
 
 
 Typographic double quote
@@ -19,7 +19,7 @@ Em dash – replace with -
 
 
 In summary
-’ 
+' 
 “ 
 ” 
 … 

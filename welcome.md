@@ -44,7 +44,7 @@ The School of ICT has a Mac computer-lab, in A2534. The room availability during
 
 The College has Macs elsewhere, located in the open lab. However, their readiness and suitability for our course work is delayed and yet to be determined. Nonetheless, at a minimum, you can use those Macs to improve your macOS and Unix skills.
 
-It will be helpful – but not required – for you to have your own iOS device (iPhone, iPad). The School of ICT has a number of iPhone and iPad devices as well, and you can borrow one of those, at no cost (as long as you return it empty and in good working condition), during the course’s lifetime.
+It will be helpful – but not required – for you to have your own iOS device (iPhone, iPad). The School of ICT has a number of iPhone and iPad devices as well, and you can borrow one of those, at no cost (as long as you return it empty and in good working condition), during the course's lifetime.
 
 <br>
 
@@ -121,8 +121,8 @@ Also, during some Friday classes, there will be a test. The questions are based 
 
 #### Workload
 
-Regarding the workload, it will simply not be possible to confine this course’s learning experience to the scheduled four periods per week. We expect you to spend some of the in-class time working on the assignments, but you _must spend time out-of-class_ to complete the work.
+Regarding the workload, it will simply not be possible to confine this course's learning experience to the scheduled four periods per week. We expect you to spend some of the in-class time working on the assignments, but you _must spend time out-of-class_ to complete the work.
 
-That being said, you will encounter problems and delays. Please follow a general rule: If you cannot solve the problem within 20 to 30 minutes, then stop and set it aside. Seek help from your professor, or from a classmate who knows the solution to the problem. Do not thrash. Do not attempt to wrestle the problem to the ground. Others will not think any less of you when you ask for help. You’re here to learn, so take advantage of the course’s resources and delivery to help you learn.
+That being said, you will encounter problems and delays. Please follow a general rule: If you cannot solve the problem within 20 to 30 minutes, then stop and set it aside. Seek help from your professor, or from a classmate who knows the solution to the problem. Do not thrash. Do not attempt to wrestle the problem to the ground. Others will not think any less of you when you ask for help. You're here to learn, so take advantage of the course's resources and delivery to help you learn.
 
 <br>

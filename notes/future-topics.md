@@ -13,7 +13,7 @@ Various items to consider.
 
 Good brief description of storyboard from [here on Sep 27 2019](https://developer.apple.com/xcode/interface-builder/):
 
-> A complete iOS app is composed of multiple views through which the user navigates. The relationships between these views are defined by storyboards, which show a complete view of your app’s flow. Interface Builder’s storyboard designer makes it easy to create and design new views, and chain them together to create a complete user interface that’s ready for your custom code.  
+> A complete iOS app is composed of multiple views through which the user navigates. The relationships between these views are defined by storyboards, which show a complete view of your app's flow. Interface Builder's storyboard designer makes it easy to create and design new views, and chain them together to create a complete user interface that's ready for your custom code.  
 > Xcode includes storyboard controllers for:
 > * Table View Controller
 > * Collection View Controller

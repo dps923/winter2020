@@ -37,7 +37,7 @@ Our user interfaces have included views that are defined on the storyboard.
 
 Occasionally, we have added content views programmatically, but not often. 
 
-The important idea today is that we will be programmatically creating graphics objects, and placing them on the apps’s visible surface.
+The important idea today is that we will be programmatically creating graphics objects, and placing them on the apps's visible surface.
 
 For the explanation that follows, it will help if you think about the iOS device resting flat on a horizontal surface. We will then build a "view hierarchy" as "layers" that we place on top of the iOS device.
 
@@ -68,7 +68,7 @@ The type of the graphics context is [CGContext](https://developer.apple.com/docu
 
 > The CGContext type represents a Quartz 2D drawing destination. A graphics context contains drawing parameters and all device-specific information needed to render the paint on a page to the destination, whether the destination is a window in an application, a bitmap image, a PDF document, or a printer.
 
-Where do we use and code the graphics context? In a subclass of UIView. When you study today’s code examples, you will see a "Shape.swift" class, which is a subclass of UIView. This class is the graphical object that gets created programmatically.
+Where do we use and code the graphics context? In a subclass of UIView. When you study today's code examples, you will see a "Shape.swift" class, which is a subclass of UIView. This class is the graphical object that gets created programmatically.
 
 <br>
 
@@ -88,11 +88,11 @@ The Apple iOS Human Interface Guidelines document discusses [Gestures](https://d
 
 Single tap (select)
 
-Double tap (same finger) (often used to ‘zoom in’)
+Double tap (same finger) (often used to ‘zoom in')
 
 Tap + drag, one finger (move)
 
-Two-finger tap (often used to ‘zoom out’)
+Two-finger tap (often used to ‘zoom out')
 *  a view is configured for one-finger touch, so you must enable multi-touch
 *  on the simulator, must do this:
   1. Press and hold Option  

@@ -47,7 +47,7 @@ let result = example(name: "Apple", id: 123)
 
 ### Omitting parameter labels
 
-If you don’t want an argument label for a parameter, write an underscore (_) instead of an explicit argument label for that parameter. For example:
+If you don't want an argument label for a parameter, write an underscore (_) instead of an explicit argument label for that parameter. For example:
 
 ```swift
 // Functions with _ in the parameter names

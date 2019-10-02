@@ -27,7 +27,7 @@ Grade value: 10% of your final course grade
 
 We need an app that will display performance information for quarterbacks in the current 2018 season in the National Football League.  
 
-The app’s first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show *personal info* about the player, while the other will show *performance-related info*. 
+The app's first view will be a table view, showing a list of quarterback names. Two more views will be available. One view will show *personal info* about the player, while the other will show *performance-related info*. 
 
 The following shows the navigation path from the list to the first "personal info" view. 
 

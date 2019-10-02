@@ -15,7 +15,7 @@ We have planned approximately four (4) tests during the term.
 
 The duration of each test will be about 40 to 60 minutes, and will be worth between 10% and 14% of your final course grade. All tests will be hand-written, and will happen sometime during the Friday class timeslot. The total value of all tests will be 50%.
 
-Recognizing that it’s possible to have an "off day", the final grade calculation will examine the results of all four tests, and discount the value of the lowest-graded test to 50%.
+Recognizing that it's possible to have an "off day", the final grade calculation will examine the results of all four tests, and discount the value of the lowest-graded test to 50%.
 
 Alternatively, if you miss a test, there is no opportunity to do a replacement test. However, absence due to illness happens occasionally. As a result, there will be a policy and procedure which could possibly excuse the test.
 
@@ -96,9 +96,9 @@ However, as a general rule, we don't do due date extensions for assignments, for
 
 * It causes problems for other work that follows an assignment, because it leaves less time to complete the next piece of work.
 
-* It takes your attention away from new topics in this course. You’re less receptive, or will ignore, new topics that follow those that are practiced on the assignment.
+* It takes your attention away from new topics in this course. You're less receptive, or will ignore, new topics that follow those that are practiced on the assignment.
 
-* A due date extension is disrespectful to other students in the course, because it tells them that the work they did to meet the due date doesn’t have value.
+* A due date extension is disrespectful to other students in the course, because it tells them that the work they did to meet the due date doesn't have value.
 
 * Finally, a due date extension is disrespectful to other professors and their courses, because it takes your attention away from their coursework while you are working on late work in another course.
 

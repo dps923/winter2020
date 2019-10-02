@@ -67,7 +67,7 @@ Your professor will demonstrate effective web search techniques.
 ### Xcode tips and info
 
 Xcode Application Help (from Apple, in [HTML](https://help.apple.com/xcode/mac/9.0/) format)  
-(also available on the Xcode ‘Help’ menu)
+(also available on the Xcode ‘Help' menu)
 
 Simulator Application Help (Apple, [HTML](https://help.apple.com/simulator/mac/9.0/))
 
