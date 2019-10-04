@@ -13,9 +13,9 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 7**<br>&bull; Wed Oct 16<br>&bull; Fri Oct 18 | Web API interaction patterns | | 
-**Week 6**<br>&bull; Wed Oct 9<br>&bull; Fri Oct 11 | Using the network intro | Test 2, 12%<br>(Friday) | 
-**[Week 5](week05)**<br>[&bull; Wed Oct 2<br>&bull; Fri Oct 4](week05) | Storage introduction<br>Substantial app assembly<br>Table view patterns (add, detail) | [Assign 2](/graded-work/assign2), 10%<br>(Oct 8) | 
+**Week 7**<br>&bull; Wed Oct 16<br>&bull; Fri Oct 18 | Web API interaction patterns | Test 2, 12%<br>(Friday) | 
+**Week 6**<br>&bull; Wed Oct 9<br>&bull; Fri Oct 11 | Using the network intro |  [Assign 2](/graded-work/assign2), 10%<br>(Oct 11) | 
+**[Week 5](week05)**<br>[&bull; Wed Oct 2<br>&bull; Fri Oct 4](week05) | Storage introduction<br>Substantial app assembly<br>Table view patterns (add, detail) | | 
 **[Week 4](week04)**<br>[&bull; Wed Sep 25<br>&bull; Fri Sep 27](week04) | Apple Developer and deploy to device<br>App design, data model, multi-view<br>Navigation-style app intro | Test 1, 10%<br> (Friday) | 
 **[Week 3](week03)**<br>[&bull; Wed Sep 18<br>&bull; Fri Sep 20](week03) | Alert and Action Sheet<br>Camera and Photo Library intro<br>2D graphics and touch intro | [Assign 1](/graded-work/assign1), 8%| 
 **[Week 2](week02)**<br>[&bull; Wed Sep 11<br>&bull; Fri Sep 13](week02) | Interaction essentials<br>Delegate and data source; table view | |

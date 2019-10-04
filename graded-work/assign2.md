@@ -167,6 +167,8 @@ It should be apparent that you should modify your "friend info" scene by adding 
 
 Use the "Detail" cell style, so that it displays two lines of text. 
 
+Make the vertical size (height) of the cell larger (taller). This is done in `viewDidLoad()`. 
+
 Show a small ("thumbnail") version of the photo in the cell's image area. Remember that you have the data for a friend when the cell is being rendered, and that data includes the photo file name. Use it to get/read the image. 
 
 How to get a small image? You can use the code provided in the code example in the repository. 
