@@ -63,6 +63,6 @@ Mostly, time to work on the programming assignment, and get help from a classmat
 ### Summary
 
 Here's a list of topics that we learned something about this week:
-1. 
+1. (coming soon)
 
 <br>
