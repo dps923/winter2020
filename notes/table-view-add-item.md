@@ -70,9 +70,7 @@ In our scenarios, we will configure some of our controllers to require a protoco
 
 Typically, these controllers will manage a view that is presented modally (i.e. it slides up from the bottom). 
 
-The usual tasks for these scenarios include *add new item*, or *edit existing item*, or *show more detail*. 
-
-We also use this technique for presenting a table view or picker view, when used as an item-selection UI object. 
+The usual tasks for these scenarios include *add new item*, or *edit existing item*, or *show more detail*. We also can use this technique for presenting a table view or picker view, when used as an item-selection UI object. 
 
 We suggest that you write the protocol in the controller source code module, near the top, before the controller's `class` declaration. 
 
@@ -111,11 +109,12 @@ Finally, in action methods (typically), gather the user input, and call the appr
 Why do we need a protocol?  
 Can we just write the methods in the presented controller?  
 
-Well, while it's possible, it's not a good idea in a number of dimensions. It's just not done in real apps. So, get used to the pattern. Accept it.
+Well, while it's possible, it's not a good idea for a number of reasons.  
+It's just not done in real apps. So, get used to the pattern. Accept it.
 
 What do we do next?
 
-In the controller that will adopt and conform to the protocol, modify it's `class` declaration. For example: 
+In the hosting or presenting controller that will adopt and conform to the protocol, modify its `class` declaration. For example: 
 
 ```swift
 class ProductList: UITableViewController, ProductAddDelegate {
