@@ -31,7 +31,7 @@ All assignments are due at 11:00pm ET. (That's the evening/nighttime.)
 Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Friday, September 6 | Friday, September 20
-[Assign 2](/graded-work/assign2) | Wednesday, September 25 <br>(~~Friday, September 20~~) | Tuesday, October 8 <br>(~~Friday, October 4~~)
+[Assign 2](/graded-work/assign2) | Friday, September 27 | Friday, October 11
 Assign 3 | Friday, October 11 | Friday, November 1
 Assign 4 | Friday, November 8 | Friday, December 6 
 
