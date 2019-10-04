@@ -18,7 +18,7 @@ class Product: /*NSObject,*/ Codable {
     var cost: Double = 0.0
     
     // MARK: - Initializers
-
+    
     // Default initializer
     init(id: Int, name: String, maker: String, cost: Double) {
         self.id = id
@@ -31,7 +31,7 @@ class Product: /*NSObject,*/ Codable {
 class ProductPackage: Codable {
     
     // MARK: - Data properties
-
+    
     var timestamp: Date = Date()
     var version: String = "1.0.0"
     var count: Int = 0

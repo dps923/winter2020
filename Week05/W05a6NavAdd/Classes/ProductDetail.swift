@@ -12,16 +12,16 @@
 
 import UIKit
 
-protocol ShowProductDetailDelegate: class {
-
+protocol ProductShowDetailDelegate: AnyObject {
+    
     func showDetailDone(_ controller: UIViewController)
 }
 
 class ProductDetail: UIViewController {
-
+    
     // MARK: - Instance variables
     
-    weak var delegate: ShowProductDetailDelegate?
+    weak var delegate: ProductShowDetailDelegate?
     
     // Use if a collection is passed in, or fetched from data model manager
     //var items = [Product]()
@@ -34,16 +34,16 @@ class ProductDetail: UIViewController {
     // Use if a reference to the data model manager is passed in
     // If you don't like the variable name, change it
     //var m: DataModelManager!
-
+    
     // MARK: - Outlets (user interface)
     
     @IBOutlet weak var productName: UILabel!
     
     // MARK: - Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         productName.text = item.name
@@ -52,24 +52,24 @@ class ProductDetail: UIViewController {
     // MARK: - Actions (user interface)
     
     // This controller's scene has a nav bar button "Done"
-
+    
     @IBAction func done(_ sender: UIBarButtonItem) {
-
+        
         // Call into the delegate
         delegate?.showDetailDone(self)
     }
-
+    
 }
 
 // Example method implementations
 // Copy to the presenting controller's "Lifecycle" area
 
 /*
-// Storyboard scene needs a "Done" bar button on left side
-// Connect it to this method...
-func showDetailDone(_ controller: UIViewController) {
-    
-    // Dismiss the "show detail" controller and scene
-    dismiss(animated: true, completion: nil)
-}
-*/
+ // Storyboard scene needs a "Done" bar button on left side
+ // Connect it to this method...
+ func showDetailDone(_ controller: UIViewController) {
+ 
+ // Dismiss the "show detail" controller and scene
+ dismiss(animated: true, completion: nil)
+ }
+ */

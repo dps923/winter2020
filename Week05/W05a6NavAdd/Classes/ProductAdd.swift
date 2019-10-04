@@ -12,7 +12,7 @@
 
 import UIKit
 
-protocol AddProductDelegate: class {
+protocol ProductAddDelegate: AnyObject {
     
     func addTaskDidCancel(_ controller: UIViewController)
     
@@ -25,7 +25,7 @@ class ProductAdd: UIViewController {
     
     // MARK: - Instance variables
     
-    weak var delegate: AddProductDelegate?
+    weak var delegate: ProductAddDelegate?
     
     // MARK: - Outlets (user interface)
     
@@ -107,23 +107,23 @@ class ProductAdd: UIViewController {
 // Copy to the presenting controller's "Lifecycle" area
 
 /*
-// Storyboard scene needs a "Cancel" bar button on left side
-// Connect it to this method...
-func addTaskDidCancel(_ controller: UIViewController) {
-    
-    dismiss(animated: true, completion: nil)
-}
-
-// Storyboard scene needs a "Save" bar button on right side
-// Connect it to this method...
-func addTask(_ controller: UIViewController, didSave item: Product) {
-    // In general, the item type is suggested as Any, which you can cast, or...
-    // Recommendation - change the type to match the actual item type
-    
-    // Attempt to save the new product
-    if m.productAdd(item) != nil {
-        
-        dismiss(animated: true, completion: nil)
-    }
-}
-*/
+ // Storyboard scene needs a "Cancel" bar button on left side
+ // Connect it to this method...
+ func addTaskDidCancel(_ controller: UIViewController) {
+ 
+ dismiss(animated: true, completion: nil)
+ }
+ 
+ // Storyboard scene needs a "Save" bar button on right side
+ // Connect it to this method...
+ func addTask(_ controller: UIViewController, didSave item: Product) {
+ // In general, the item type is suggested as Any, which you can cast, or...
+ // Recommendation - change the type to match the actual item type
+ 
+ // Attempt to save the new product
+ if m.productAdd(item) != nil {
+ 
+ dismiss(animated: true, completion: nil)
+ }
+ }
+ */

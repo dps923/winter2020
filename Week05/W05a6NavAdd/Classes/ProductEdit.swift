@@ -12,7 +12,7 @@
 
 import UIKit
 
-protocol EditProductDelegate: class {
+protocol ProductEditDelegate: AnyObject {
     
     func editTaskDidCancel(_ controller: UIViewController)
     
@@ -25,7 +25,7 @@ class ProductEdit: UIViewController {
     
     // MARK: - Instance variables
     
-    weak var delegate: EditProductDelegate?
+    weak var delegate: ProductEditDelegate?
     
     var item: Product!
     
@@ -116,28 +116,28 @@ class ProductEdit: UIViewController {
 // Copy to the presenting controller's "Lifecycle" area
 
 /*
-// Storyboard scene needs a "Cancel" bar button on left side
-// Connect it to this method...
-func editTaskDidCancel(_ controller: UIViewController) {
-    
-    dismiss(animated: true, completion: nil)
-}
-
-// Storyboard scene needs a "Save" bar button on right side
-// Connect it to this method...
-func editTask(_ controller: UIViewController, didSave item: Product) {
-    // In general, the item type is suggested as Any, which you can cast, or...
-    // Recommendation - change the type to match the actual item type
-    
-    // Attempt to save the updated product
-    if m.productEdit(item) != nil {
-        
-        // Update the user interface
-        self.item = item
-        self.title = item.name
-        productName.text = item.name
-        
-        dismiss(animated: true, completion: nil)
-    }
-}
-*/
+ // Storyboard scene needs a "Cancel" bar button on left side
+ // Connect it to this method...
+ func editTaskDidCancel(_ controller: UIViewController) {
+ 
+ dismiss(animated: true, completion: nil)
+ }
+ 
+ // Storyboard scene needs a "Save" bar button on right side
+ // Connect it to this method...
+ func editTask(_ controller: UIViewController, didSave item: Product) {
+ // In general, the item type is suggested as Any, which you can cast, or...
+ // Recommendation - change the type to match the actual item type
+ 
+ // Attempt to save the updated product
+ if m.productEdit(item) != nil {
+ 
+ // Update the user interface
+ self.item = item
+ self.title = item.name
+ productName.text = item.name
+ 
+ dismiss(animated: true, completion: nil)
+ }
+ }
+ */

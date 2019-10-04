@@ -151,57 +151,57 @@ class ProductListBase: UITableViewController {
         
         // Example workflow segue code...
         /*
-        if segue.identifier == "toWorkflowScene" {
-            
-            // Your customized code goes here,
-            // but here is some sample/starter code...
-            
-            // Get a reference to the next controller
-            // Next controller is managed by the current nav controller
-            let vc = segue.destination as! ProductScene
-            // Alternative... next controller is a table view controller
-            //let vc = segue.destination as! ProductList
-            
-            // Fetch and prepare the data to be passed on
-            let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
-            let selectedData = items[indexPath!.row]
-            
-            // Set other properties
-            vc.item = selectedData
-            vc.title = selectedData.name
-            // Pass on the data model manager, if necessary
-            //vc.m = m
-            // Set the delegate, if configured
-            //vc.delegate = self
-        }
-        */
+         if segue.identifier == "toWorkflowScene" {
+         
+         // Your customized code goes here,
+         // but here is some sample/starter code...
+         
+         // Get a reference to the next controller
+         // Next controller is managed by the current nav controller
+         let vc = segue.destination as! ProductScene
+         // Alternative... next controller is a table view controller
+         //let vc = segue.destination as! ProductList
+         
+         // Fetch and prepare the data to be passed on
+         let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
+         let selectedData = items[indexPath!.row]
+         
+         // Set other properties
+         vc.item = selectedData
+         vc.title = selectedData.name
+         // Pass on the data model manager, if necessary
+         //vc.m = m
+         // Set the delegate, if configured
+         //vc.delegate = self
+         }
+         */
         
         // Example task segue code...
         /*
-        if segue.identifier == "toTaskScene" {
-            
-            // Your customized code goes here,
-            // but here is some sample/starter code...
-            
-            // Get a reference to the next controller
-            // Next controller is embedded in a new navigation controller
-            // so we must go through it
-            let nav = segue.destination as! UINavigationController
-            let vc = nav.viewControllers[0] as! ProductDetail
-            
-            // Fetch and prepare the data to be passed on
-            let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
-            let selectedData = items[indexPath!.row]
-            
-            // Set other properties
-            vc.item = selectedData
-            vc.title = selectedData.name
-            // Pass on the data model manager, if necessary
-            //vc.m = m
-            // Set the delegate, if configured
-            //vc.delegate = self
-        }
-        */
+         if segue.identifier == "toTaskScene" {
+         
+         // Your customized code goes here,
+         // but here is some sample/starter code...
+         
+         // Get a reference to the next controller
+         // Next controller is embedded in a new navigation controller
+         // so we must go through it
+         let nav = segue.destination as! UINavigationController
+         let vc = nav.viewControllers[0] as! ProductDetail
+         
+         // Fetch and prepare the data to be passed on
+         let indexPath = tableView.indexPath(for: sender as! UITableViewCell)
+         let selectedData = items[indexPath!.row]
+         
+         // Set other properties
+         vc.item = selectedData
+         vc.title = selectedData.name
+         // Pass on the data model manager, if necessary
+         //vc.m = m
+         // Set the delegate, if configured
+         //vc.delegate = self
+         }
+         */
         
     }
     

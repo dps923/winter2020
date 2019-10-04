@@ -21,7 +21,7 @@ class DataModelManager {
         
         // Load the data for the app
         loadData()
-
+        
         // First time loaded?
         if productPackage.data.count == 0 {
             
@@ -162,7 +162,7 @@ class DataModelManager {
         // We declare it with "let" here, which means that
         //   we can still mutate the local new item's values
         let localNewItem = newItem
-
+        
         // Attempt to add the new item, by verifying non-null data
         // Data should ALSO be validated in the user interface controller that gets the data from the user
         // Doing it here too is done for code/data safety

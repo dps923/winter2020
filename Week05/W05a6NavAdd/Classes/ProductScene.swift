@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductScene: UIViewController, EditProductDelegate {
+class ProductScene: UIViewController, ProductEditDelegate {
     
     // MARK: - Instance variables
     
@@ -145,7 +145,7 @@ class ProductScene: UIViewController, EditProductDelegate {
             // Set the delegate, if configured
             //vc.delegate = self
         }
-
+        
     }
     
 }

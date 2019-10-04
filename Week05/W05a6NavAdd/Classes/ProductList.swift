@@ -9,7 +9,7 @@ import UIKit
 
 // Adopt the protocols that are appropriate for this controller
 
-class ProductList: UITableViewController, ShowProductDetailDelegate, AddProductDelegate {
+class ProductList: UITableViewController, ProductShowDetailDelegate, ProductAddDelegate {
     
     // MARK: - Instance variables
     
@@ -198,7 +198,7 @@ class ProductList: UITableViewController, ShowProductDetailDelegate, AddProductD
         
         // Example task segue code...
         if segue.identifier == "toTaskScene" {
-
+            
             // Your customized code goes here,
             // but here is some sample/starter code...
             
