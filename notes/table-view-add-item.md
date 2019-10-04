@@ -37,9 +37,11 @@ Here is the design and coding approach:
 1. Create a controller for the modal view
 2. Add code that declares a *protocol* (with at least one method), and add a *delegate* property to the controller
 3. Add a new scene to the storyboard (and embed it in a nav controller)
-4. Alternate between the scene and controller code to build the user interface and handle events
-5. In the controller, add code (to validate and) package the user input, and call the delegate method
-6. In the presenting controller, adopt the protocol, code the segue, and implement the delegate method(s)
+4. On the storyboard, on the presenting "list" scene, add a bar button item, `+` (plus for "Add")
+5. Connect it to the new scene's nav controller; its segue will be something like "toProductAdd" 
+6. Alternate between the scene and controller code to build the user interface and handle events
+7. In the controller, add code (to validate and) package the user input, and call the delegate method
+8. In the presenting controller, adopt the protocol, code the segue, and implement the delegate method(s)
 
 <br>
 
@@ -71,6 +73,8 @@ In our scenarios, we will configure some of our controllers to require a protoco
 Typically, these controllers will manage a view that is presented modally (i.e. it slides up from the bottom). 
 
 The usual tasks for these scenarios include *add new item*, or *edit existing item*, or *show more detail*. We also can use this technique for presenting a table view or picker view, when used as an item-selection UI object. 
+
+On the storyboard, create a new scene, and embed it in a nav controller. Set its other typical properties. 
 
 We suggest that you write the protocol in the controller source code module, near the top, before the controller's `class` declaration. 
 
@@ -113,6 +117,8 @@ Well, while it's possible, it's not a good idea for a number of reasons.
 It's just not done in real apps. So, get used to the pattern. Accept it.
 
 What do we do next?
+
+On the storyboard, on the "list" (table view) scene, add a `+` (plus / "Add") bar button item. Connect it to the new scene's nav controller, make it a modal segue, and configure its other typical settings. 
 
 In the hosting or presenting controller that will adopt and conform to the protocol, modify its `class` declaration. For example: 
 
