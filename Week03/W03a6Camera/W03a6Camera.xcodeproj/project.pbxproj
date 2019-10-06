@@ -12,7 +12,6 @@
 		D0CA16CD21A6F8580052EB87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CA16CB21A6F8580052EB87 /* Main.storyboard */; };
 		D0CA16CF21A6F8590052EB87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0CA16CE21A6F8590052EB87 /* Assets.xcassets */; };
 		D0CA16D221A6F8590052EB87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0CA16D021A6F8590052EB87 /* LaunchScreen.storyboard */; };
-		D0CA16DB21A6F9CA0052EB87 /* ViewController+Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CA16DA21A6F9CA0052EB87 /* ViewController+Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +23,6 @@
 		D0CA16D121A6F8590052EB87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0CA16D321A6F8590052EB87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0CA16D921A6F8670052EB87 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D0CA16DA21A6F9CA0052EB87 /* ViewController+Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Photo.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +40,7 @@
 			isa = PBXGroup;
 			children = (
 				D0CA16D921A6F8670052EB87 /* README.md */,
-				D0CA16C621A6F8580052EB87 /* egCamera */,
+				D0CA16C621A6F8580052EB87 /* Classes */,
 				D0CA16C521A6F8580052EB87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,18 +53,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0CA16C621A6F8580052EB87 /* egCamera */ = {
+		D0CA16C621A6F8580052EB87 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				D0CA16C721A6F8580052EB87 /* AppDelegate.swift */,
 				D0CA16C921A6F8580052EB87 /* ViewController.swift */,
-				D0CA16DA21A6F9CA0052EB87 /* ViewController+Photo.swift */,
 				D0CA16CB21A6F8580052EB87 /* Main.storyboard */,
 				D0CA16CE21A6F8590052EB87 /* Assets.xcassets */,
 				D0CA16D021A6F8590052EB87 /* LaunchScreen.storyboard */,
 				D0CA16D321A6F8590052EB87 /* Info.plist */,
 			);
-			path = egCamera;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,6 +98,7 @@
 				TargetAttributes = {
 					D0CA16C321A6F8580052EB87 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1030;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -142,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0CA16CA21A6F8580052EB87 /* ViewController.swift in Sources */,
-				D0CA16DB21A6F9CA0052EB87 /* ViewController+Photo.swift in Sources */,
 				D0CA16C821A6F8580052EB87 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +284,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = egCamera/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Classes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.sict.egCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sict.W03a6Camera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,11 +300,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = egCamera/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Classes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.sict.egCamera;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.sict.W03a6Camera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
