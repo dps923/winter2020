@@ -27,6 +27,19 @@ Uses a "data model manager" class, that gets initialized in the app delegate.
 
 <br>
 
+### W05a4ImageSave
+
+Enables the user to save a photo to the app's file system. 
+
+The app has a two-level nav interface, from a table view to a standard view.  
+The app also features a data model manager, with functionality for images and the file system.  
+Study the code that generates a file name for the image.  
+
+One new thing is the generation of an image "thumbnail", to display in the table view cell.  
+Also note how we can adjust the cell height. 
+
+<br>
+
 ### W05a6NavAdd
 
 Multi-scene, navigation interface, table view, modal detail view, modal "add item" view, etc.
