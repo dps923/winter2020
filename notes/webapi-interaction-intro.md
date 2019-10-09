@@ -39,9 +39,9 @@ The key component in the URL Loading System is an instance of the [URLSession](h
 
 A group? For now, let's just focus on one - fetching data from a web API, and materializing it in an app as Swift objects. 
 
-For that, we will use a *data task*, which is an instance of [URLSessionDataTask](https://developer.apple.com/documentation/foundation/urlsessiondatatask), which "send[s] and receive[s] data using NSData objects. Data tasks are intended for short, often interactive requests to a server." It "returns downloaded data directly to the app in memory." 
+For that, we will use a *data task*, which is an instance of [URLSessionDataTask](https://developer.apple.com/documentation/foundation/urlsessiondatatask), which "send[s] and receive[s] data using [Data](https://developer.apple.com/documentation/foundation/data) objects. Data tasks are intended for short, often interactive requests to a server." It "returns downloaded data directly to the app in memory." 
 
-In our apps, for each interaction with a web API, we will create a task. The task lifetime is limited - a task gets created, it executes, then handles the response, then is disposed of. For example, if we have an app that needs a collection of "customers" to display in a list (table view), one task will do that. Then, after a navigation interface "drill down" action, if we need a specific "customer", a separate task will do that. 
+In our apps, for each interaction with a web API, we will create a task. The task lifetime is limited - a task gets created, it executes, handles the response, then is disposed of. For example, if we have an app that needs a collection of "customers" to display in a list (table view), one task will do that. Then, after a navigation interface "drill down" action, if we need a specific "customer", a separate task will do that. 
 
 In summary:
 
@@ -49,7 +49,7 @@ In summary:
 
 * In our app, we use an instance of `URLSession` as a container to coordinate tasks. 
 
-* For each request (to a web API), we create, configure, and use an instance of `URLSessionTask`, which executes the request and handles the response. 
+* For each request (to a web API), we create, configure, and use an instance of `URLSessionDataTask`, which executes the request and handles the response. 
 
 <br>
 
@@ -75,7 +75,7 @@ As you did in Assignment 1, store a JSON file on a publicly-accessible endpoint.
 let url = URL(string: "https://raw.githubusercontent.com/your-account/repo-name/master/path-to/data.json")!
 ```
 
-Obviously, we must also know what the resource's representation is. For most of our web API requests, we can assume JSON (which is "application/json"). 
+Obviously, we must also know what the resource's representation is. For most of our web API requests, we can assume JSON (which is content type "application/json"). 
 
 <br>
 
@@ -121,7 +121,7 @@ Continuing:
 
 <br>
 
-##### 1. Verify that the error parameter is nil
+**1. Verify that the error parameter is nil**
 
 ```swift
 if let error = error {
@@ -132,7 +132,7 @@ if let error = error {
 
 <br>
 
-##### 2. Check the response parameter
+**2. Check the response parameter**
 
 We're going to use a `guard let`:
 
@@ -153,7 +153,7 @@ It's also possible that you haven't seen *two* conditions in an `if let` (or now
 
 <br>
 
-##### 3. Use the data instance
+**3. Use the data instance**
 
 We're going to use an `if let` with *three* conditions, before we attempt to use the data instance:
 
@@ -181,7 +181,7 @@ self.items = result.data
 
 Finally, we often use the fetched data in the user interface. Here, we want the data to display in the table view. Can we just call `tableView.reloadData()`?
 
-Nope. Why? The data-fetching task, and its completion handler, execute on a background thread. The closure block must NOT attempt to call a method of a user interface object (i.e. the table view). 
+Nope. Why? The data-fetching task, and its completion handler, execute on a background thread. The closure block must NOT attempt to call a method of a user interface object (i.e. the table view), which runs on the main thread. 
 
 How to fix? Get a reference to the threading system, specifically the `main` thread, and call the method from that block. For example:
 
@@ -195,7 +195,7 @@ What does this mean?
 * We want to `reloadData()` on the `tableView` 
 * Where? On the `DispatchQueue.main` 
 * When? Now
-* Wait? No, because of the presence of the `async` call
+* Wait for it to finish before continung? No, because of the presence of the `async` call
 
 From [the docs](https://developer.apple.com/documentation/dispatch/dispatchqueue), `DispatchQueue` is an object that manaes the execution of tasks on your app's main thread or on a background thread.
 
