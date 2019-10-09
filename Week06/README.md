@@ -9,8 +9,16 @@ Each code example should run on your computer. After opening, "Clean Build Folde
 
 <br>
 
-###  W06a1...
+###  W06a1FetchIntro
 
-(more to come)
+A simple navigation interface app, with a table view and a standard view. 
+
+The data comes from a web API request. The request is done with `URLSession` and `URLSessionTask` techniques. 
+
+> Before you run this code example,  
+> update the URL string on line 31 of the CourseList controller 
+
+In this app, we send the request from the table view controller.  
+In future apps, we will use the data model manager. 
 
 <br>
