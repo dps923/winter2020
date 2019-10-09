@@ -195,7 +195,7 @@ What does this mean?
 * We want to `reloadData()` on the `tableView` 
 * Where? On the `DispatchQueue.main` 
 * When? Now
-* Wait for it to finish before continung? No, because of the presence of the `async` call
+* Wait for `reloadData()` to finish before continung? No, because of the presence of the `async` call
 
 From [the docs](https://developer.apple.com/documentation/dispatch/dispatchqueue), `DispatchQueue` is an object that manaes the execution of tasks on your app's main thread or on a background thread.
 
