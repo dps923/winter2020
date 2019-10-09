@@ -1,0 +1,12 @@
+{
+  "student": "Peter McIntyre",
+  "version": "1.0.0",
+  "timestamp": "2019-09-13T11:39:12+0000",
+  "count": 4,
+  "data": [
+    { "id": 23, "courseCode": "BTP400", "courseName": "Java Programming" },
+    { "id": 24, "courseCode": "BTN410", "courseName": "Network Programming" },
+    { "id": 25, "courseCode": "BTI425", "courseName": "Web Programming" },
+    { "id": 29, "courseCode": "BTS430", "courseName": "Software Systems 2" }
+  ]
+}
