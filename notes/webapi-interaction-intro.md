@@ -9,8 +9,6 @@ The iOS SDK has classes that enable an app to interact with a web API. This docu
 
 Another separate document will cover other interaction topics, including sending data to a web API. 
 
-<mark>Covers GET interaction</mark>
-
 <br>
 
 ### Introduction
