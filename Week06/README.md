@@ -9,7 +9,7 @@ Each code example should run on your computer. After opening, "Clean Build Folde
 
 <br>
 
-###  W06a1FetchIntro
+### W06a1FetchIntro
 
 A simple navigation interface app, with a table view and a standard view. 
 
@@ -20,5 +20,15 @@ The data comes from a web API request. The request is done with `URLSession` and
 
 In this app, we send the request from the table view controller.  
 In future apps, we will use the data model manager. 
+
+<br>
+
+### W06a2WebApiMore
+
+Based on app #1 above, its navigation interface app has one more standard view. 
+
+The new view has a data entry form, to make a new `TCPost` object. 
+
+Then, it is sent in an HTTP POST request to the free [JSONPlaceholder](https://jsonplaceholder.typicode.com) web API. 
 
 <br>
