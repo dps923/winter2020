@@ -27,13 +27,9 @@ Tentative plan for this week:
 * Learn the new / established way 
 * Both one-of and a collection 
 
-Depending on our progress, we may also do these:
-* Create a factory class 
-* Data model manager design and implementation 
-* Table view, and calling patterns 
-* Swift "extension" to modularize source code 
-
 Covered in class, and some of the same information about [the new / established way](webapi-interaction-intro) to interact with a web API.
+
+Covered in class, and some of the same information about [sending data to a web API](webapi-interaction-more). 
 
 <br>
 
@@ -41,11 +37,13 @@ Covered in class, and some of the same information about [the new / established 
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
 * W06a1FetchIntro 
-* (more to come)
+* W06a2WebApiMore
 
 <br>
 
 ### Friday plan
+
+A short time, at the beginning of class, to show-and-tell the "add new" pattern. 
 
 Mostly, time to work on the programming assignment, and get help from a classmate or the professor if you need it. 
 

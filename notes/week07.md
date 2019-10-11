@@ -23,7 +23,12 @@ Three segments:
 During the breaks, please get up and move around. It's important for your health, and for mental performance. 
 
 Tentative plan for this week:
-* TBA
+* Swift generics
+* iOS notifications
+* Create a request factory class 
+* Data model manager design and implementation 
+* Table view, and calling patterns 
+* Swift "extension" to modularize source code 
 
 Covered in class, and some of the same information about TBA. 
 
