@@ -9,9 +9,9 @@ This document introduces you to the essential knowledge and techniques for sendi
 
 <br>
 
-### Review web API interaction technique
+### Review the typical web API interaction technique
 
-Remember your web programming technique for interacting with a web API. Each request must define:
+Remember the typical web programming technique for interacting with a web API. Each request must define:
 * the HTTP method 
 * the resource URL
 * headers (accept and/or content type, etc.)
@@ -31,13 +31,13 @@ In the discussion about the essential and basic interaction with a web API, we u
 
 #### Request object
 
+Open the `W06a2WebApiMore` code example, and study it as you continue to read this document. It is an app that's based on the other code example, and it has one more standard scene in its navigation interface. Here's the storyboard (click/tap to open it in a new tab/window):
+
+<a href="/media/app2-storyboard.png" target="_blank"><img src="/media/app2-storyboard.png" alt="Storyboard" /></a>
+
 Now, we will work with an HTTP POST request. In addition to the two items above, it must have headers and a body. 
 
 Therefore, we use an instance of `URLRequest` to make a custom request, so that we can specify HTTP POST, the desired header(s), and the body. 
-
-Open the `W06a2WebApiMore` code example, and study it as you continue to read this document. It is an app that's based on the other code example, and it has one more standard scene in its navigation interface. Here's the storyboard:
-
-<a href="/media/app2-storyboard.png" target="_blank"><img src="/media/app2-storyboard.png" alt="Storyboard" /></a>
 
 First, set the HTTP method:
 
