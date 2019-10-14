@@ -28,7 +28,7 @@ class CourseList: UITableViewController {
     // Fetch data from the web API
     private func fetchData() {
         
-        let url = URL(string: "https://raw.githubusercontent.com/dps923/fall2018/master/Templates_and_solutions/mycourses.json")!
+        let url = URL(string: "https://raw.githubusercontent.com/your-account/repo-name/master/path-to/data.json")!
         
         // Create (define) a task; remember that we are just defining it
         // After the multi-line statement executes, "task" exists,
@@ -56,7 +56,10 @@ class CourseList: UITableViewController {
             guard let httpResponse = response as? HTTPURLResponse,
                 (200...299).contains(httpResponse.statusCode)
                 else {
-                    print(response?.url?.path ?? "Status code error")
+                    // Show the URL and response status code in the debug console
+                    if let httpResponse = response as? HTTPURLResponse {
+                        print("URL: \(httpResponse.url!.path )\nStatus code: \(httpResponse.statusCode)")
+                    }
                     return
             }
             

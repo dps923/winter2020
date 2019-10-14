@@ -39,7 +39,7 @@ class CourseList: UITableViewController {
         // and pass some arguments; all three are optional; see the docs...
         // https://developer.apple.com/documentation/foundation/urlsession/1410330-datatask
         
-        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             // Do two checks BEFORE attempting to extract the data from the response
             // 1. Check whether an "error" object was passed in
@@ -56,7 +56,10 @@ class CourseList: UITableViewController {
             guard let httpResponse = response as? HTTPURLResponse,
                 (200...299).contains(httpResponse.statusCode)
                 else {
-                    print(response?.url?.path ?? "Status code error")
+                    // Show the URL and response status code in the debug console
+                    if let httpResponse = response as? HTTPURLResponse {
+                        print("URL: \(httpResponse.url!.path )\nStatus code: \(httpResponse.statusCode)")
+                    }
                     return
             }
             
@@ -75,7 +78,7 @@ class CourseList: UITableViewController {
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 
-                // Attempt to decode the data into a "PackageCourses" object
+                // Attempt to decode the data into a "CoursePackage" object
                 do {
                     let result = try decoder.decode(CoursePackage.self, from: data)
                     

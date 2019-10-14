@@ -124,7 +124,10 @@ class TypicodePost: UIViewController {
             guard let httpResponse = response as? HTTPURLResponse,
                 (200...299).contains(httpResponse.statusCode)
                 else {
-                    print(response?.url?.path ?? "Status code error")
+                    // Show the URL and response status code in the debug console
+                    if let httpResponse = response as? HTTPURLResponse {
+                        print("URL: \(httpResponse.url!.path )\nStatus code: \(httpResponse.statusCode)")
+                    }
                     // NEW
                     DispatchQueue.main.async {
                         self.saveResult.text = "Error, invalid response"

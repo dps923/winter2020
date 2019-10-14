@@ -23,9 +23,21 @@ In future apps, we will use the data model manager.
 
 <br>
 
+### W06p1FetchCode
+
+A Swift Playground. 
+
+The simplest URLSession fetch example possible.  
+Clearly shows the closure syntax envelope that our web API code uses.  
+
+<br>
+
 ### W06a2WebApiMore
 
 Based on app #1 above, its navigation interface app has one more standard view. 
+
+> Before you run this code example,  
+> update the URL string on line 31 of the CourseList controller 
 
 The new view has a data entry form, to make a new `TCPost` object. 
 
