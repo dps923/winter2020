@@ -7,6 +7,8 @@ layout: default
 
 More networking 
 
+Test 2 is on Friday. 
+
 <br>
 
 ### Wednesday plan
@@ -24,11 +26,9 @@ During the breaks, please get up and move around. It's important for your health
 
 Tentative plan for this week:
 * Swift generics
-* iOS notifications
 * Create a request factory class 
+* iOS local (on-device) notifications
 * Data model manager design and implementation 
-* Table view, and calling patterns 
-* Swift "extension" to modularize source code 
 
 Covered in class, and some of the same information about TBA. 
 
@@ -40,13 +40,19 @@ Covered in class:
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* TBA
+* W07a1NewFetch
+* W07a2NewMore
+* W07a3FetchMany
 
 <br>
 
 ### Friday plan
 
-Mostly, time to work on the programming assignment, and get help from a classmate or the professor if you need it. 
+In the first part of the timeslot, Test 2 will be written. It is worth 12%. It covers all topics covered since the last test. 
+
+Here is more and general information about [the upcoming test](test-success-info). 
+
+Then, in the remaining time, work on the programming assignment, and get help from a classmate or the professor if you need it. 
 
 <br>
 

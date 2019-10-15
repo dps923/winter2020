@@ -19,7 +19,7 @@ Tests are done during the Friday sessions, in the computer-lab room, at the begi
 
 The duration of each test will vary, between 40 and 60 minutes. Generally, about 4 minutes per question is allotted, which seems to work out OK. And, you will have some choice - you will be able to answer any "x" of "y" questions.
 
-The tested topics are mostly review-based, but will also include topics for the current "week". 
+The tested topics are mostly review-based, covered since the previous test, but will also include topics for the current "week". 
 
 A few other points:
 
