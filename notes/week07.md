@@ -5,7 +5,7 @@ layout: default
 
 ## DPS923 MAP523 Week 7 Notes
 
-More networking 
+More networking (coming soon). 
 
 Test 2 is on Friday. 
 
