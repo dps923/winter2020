@@ -30,12 +30,7 @@ Plan for this week:
 * Data model manager design and implementation 
 * iOS local (on-device) notifications
 
-In the Wednesday class, be prepared to [take your own notes](/standards#taking-notes-in-class). 
-
-Covered in class, and some of the same information about TBA. 
-
-Covered in class:
-* TBA
+We will cover these - discuss, show-and-tell, diagram, etc. - in the Wednesday class. While some brief notes are included below, be prepared to [take your own notes](/standards#taking-notes-in-class). 
 
 <br>
 
@@ -45,7 +40,38 @@ This is a foundational topic, as a brief introduction, but not a lengthy discuss
 
 The [Swift generics](https://docs.swift.org/swift-book/LanguageGuide/Generics.html) topic is introduced in the Swift docs. After a brief read/skim, you will see that they're similar to the implementation of generics in other programming languages and frameworks. 
 
-For us, we will use generics to define the data shape (the class) that will be returned by the request. The professor will discuss this technique while covering a code example. 
+For us, we will use generics to define the data shape (the class) that will be returned by the request. This will be done in a function that does the web API request work. The professor will discuss this technique while covering a code example. 
+
+In the function, here's some essential coding techniques (mostly from the docs). First, the name of the function is followed by a placeholder type name in angle brackets, `<T>`. If we want the type to conform to a specific protocol (e.g. `Decodable`), then the form is `<T:Decodable>`. Bottom line, it's a type name in angle brackets. For example:
+
+```swift
+// It needs two parameters, a string path/segment, and a closure function
+func sendRequest<T:Decodable>(toUrlPath... //etc.
+```
+
+The angle brackets tell Swift that T is a placeholder type name within the function definition. Because T is a placeholder, Swift doesn’t look for an actual type called T. Here's the full declaration of the `sendRequest(...` method:
+
+```swift
+// It needs two parameters, a string path/segment, and a closure function
+func sendRequest<T:Decodable>(toUrlPath urlPath: String, completion: @escaping (T) -> Void) {
+```
+
+The last argument must be a closure function. The `(T)` indicates that the caller will pass in a object of the desired type. For example, this is from the caller code, and you will see that it has declared a function parameter named `result`, and its type is `CoursePackage`: 
+
+```swift
+request.sendRequest(toUrlPath: "/Templates_and_solutions/mycourses.json") { (result: CoursePackage) in
+  // More code here
+}
+```
+
+Back in the `sendRequest(...` function, when you are ready to use the incoming object, then it's done this way:
+
+```swift
+// Declare an object to hold the incoming data
+var results: T? = nil
+```
+
+Assuming that (as above) we specified `CoursePackage` as the type when we called the `sendRequest(...` method, this `results` object in this line of code will be a `CoursePackage`. 
 
 <br>
 
