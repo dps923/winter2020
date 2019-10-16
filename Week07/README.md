@@ -45,3 +45,10 @@ Shows the ability to use a web API to fetch data, using many requests.
 > It has minor differences - the newer code is a bit better, but the technique is similar.  
 
 <br>
+
+### Web API request factory class
+
+This code can be used in any project.  
+It represents an HTTP Request object (for interacting with a Web API). 
+
+<br>

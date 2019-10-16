@@ -13,24 +13,23 @@ class CourseList: UITableViewController {
     // MARK: - Variables
     
     var m: DataModelManager!
- 
+    
     // MARK: - Outlets
-
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Listen for a notification that new data is available for the list
-        NotificationCenter.default.addObserver(self, selector: #selector(reloadTableView), name: Notification.Name("WebApiDataIsReady"), object: nil)
-
+        NotificationCenter.default.addObserver(forName: Notification.Name("WebApiDataIsReady"), object: nil, queue: OperationQueue.main, using: { notification in
+            
+            // Code that runs when the notification happens
+            self.tableView.reloadData()
+        })
+        
         // Fetch the data
         m.courseGetAll()
-    }
-
-    // Method that runs when the notification happens
-    @objc func reloadTableView() {
-        tableView.reloadData()
     }
     
     // Build table
