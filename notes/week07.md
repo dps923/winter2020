@@ -83,7 +83,7 @@ Many iOS developers would immediately look elsewhere for a library or whatever t
 
 As noted, again, you don't have to look beyond the existing URL Loading System. Instead, take advantage of it. 
 
-Here, you will learn about and study a way to design, create, and use a "factory" that will make a web API request object. Apart from the factory class itself, this reduces the amount of code a request needs to about 10 lines of code. 
+Here, you will learn about and study a way to design, create, and use a "[factory](https://en.wikipedia.org/wiki/Factory_(object-oriented_programming))" that will make a web API request object. Apart from the factory class itself, this reduces the amount of code a request needs to about 10 lines of code. 
 
 The factory class essentially looks like a wrapper for the web API request method code. It has some configurable properties, and one method, `sendRequest(...`
 
@@ -172,9 +172,14 @@ NotificationCenter.default.post(name: Notification.Name("WebApiDataIsReady"), ob
 
 Why isn't this code asdded the factory class? Well, it's because it cannot anticipate every possible outcome. The factory class is meant to serve all kinds of requests. As a result, it's best (and only appropriate) to do this work in the data model manager class. 
 
-So, after acknowledging the asynchronous nature of the code bits, we must return to the original task, which is that a controller wants/needs data that will get satisfied by the result of a web API request. How does the original caller - the controller - know when the request has successfully completed? 
+So, after acknowledging the asynchronous nature of the code bits, we must return to the original task, which is that a controller wants/needs data that will get satisfied by the result of a web API request. 
 
-We use a messaging system or technique known as local notifications. 
+How does the original caller - the controller - know when the request has successfully completed? We use a messaging system or technique known as local notifications. 
+
+> It was different in last week's code examples. Why?  
+> The web API request code was *in the controller*.  
+> The controller was the original caller.  
+> Therefore, it was easy to get a reference to a controller variable <br>(e.g. `self.tableView.reloadData()`). 
 
 Oh, and one more question: How does the original caller - the controller - know when the request is in progress? By using the network activity indicator, which is an animated spinning wheel glyph, typically located in the device's status bar. 
 
@@ -262,6 +267,26 @@ Then, in the remaining time, work on the programming assignment, and get help fr
 ### Summary
 
 Here's a list of topics that we learned something about this week:
-1. (coming soon)
+1. Swift has generics, which enable code to handle objects that are based in different types 
+1. We will use generics to define the data shape that will be returned by a web API request factory class method 
+1. Swift generics use a familiar coding style seen in other languages, e.g. `<T>` and `T` as type placeholders (depending ousage context)
+1. The size of the code base in an app with a dozen or more web API requests can grow unless we use a factory, which is a code-saving technique 
+1. Our first factory is the `WebApiRequest` class, which does as its name suggests 
+1. It is used (created, configured, executed) by callers, which are methods (one or likely more) in the data model manager (in our recommended architecture) 
+1. The design of the factory is as generic and reusable as possible 
+1. Data model manager now takes over - from last week's simple web API request code examples - the job of communicating with the web API (and making response data available somehow)
+1. Manager properties are typically used to make the data model available 
+1. Manager methods are used to execute requests 
+1. Each request defines its own instance of the factory class, with custom configuration (e.g. path/segment, response data type expected)
+1. The configuration of a factory class instance for a POST request - when compared to what we must do for a GET request - requires more configuration (set the HTTP method, and prepare/encode the entity body data to be sent with the request)
+1. In this new design, URL Loading System requests are *still* asynchronous, which is challenging, and implemented with two design-and-coding actions
+1. In the factory class, the generic code simply calls a closure function (that gets passed in)
+1. In the data model manager class, the function call includes the closure function (completion handler code) 
+1. We still need a way to tell the caller when the web API request completes - we use a *notification* 
+1. Notifications are design patterns for broadcasting info and subscribing to broadcasts 
+1. There is one broadcaster, and zero or more subscribers 
+1. The "message" that's posted by a broadcaster can be custom and unique, when compared to other broadcasts 
+1. The broadcaster posts a notification after completing a piece of work 
+1. At the subscriber end, one of its startup tasks includes a statement that subscribes to a specific / custom / unique broadcast, and specifying a closure function to execute if/when the notification comes in 
 
 <br>
