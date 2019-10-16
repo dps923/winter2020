@@ -63,6 +63,38 @@ Here, you will learn about and study a way to design, create, and use a "factory
 
 ### Data model manager design and implementation 
 
+One of parts of the above-described factory class approach is that it changes how we think about our app design. 
+
+The *data model manager* should be the app's central point for interacting with the data model. As a result, we need to: 
+* Ensure that controllers do NOT contain any web API request code 
+* Write the data model manager in a way that includes data-oriented methods and properties (no surprise here)
+
+Methods and properties - both? Either? Well, probably both. A *property* will hold the data in-memory. Where does it get its data? From the result of the *method* that does the web API request. 
+
+<br>
+
+### Asynchronous nature of the web API request
+
+At this point, we have accepted that the URL Loading System components we use are asynchronous in nature. After a request is sent, we may get an response, or not. It may respond quickly, or not. 
+
+How do we handle this, in the new configuration? 
+
+First, in the factory class:
+* In the "happy case" code we continue to do the same task, which often is a decoding task 
+* Then, we run/execute a closure function 
+
+What? Where did the closure function come from? We provide it in the data model manager:
+* Often, we have one or more properties that hold the result of the web API request 
+* We then have a method (that users of the data model manager can call) that will create, configure, execute, and respond to the web API request 
+
+One of its arguments is a closure function, that describes what should be done. 
+
+Why isn't this done in the factory class? Well, it's because it cannot anticipate every possible outcome. It's best (and only appropriate) to do this work in the data model manager class. 
+
+So, after acknowledging the asynchronous nature of the code bits, we must return to the original task, which is that a controller wants/needs data that will get satisfied by the result of a web API request. How does the original caller - the controller - know when the request has successfully completed? 
+
+We use a messaging system or technique known as local notifications. 
+
 <br>
 
 ### iOS on-device local notifications 
