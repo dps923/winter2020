@@ -37,6 +37,8 @@ The planned scheule of topics, tests, and assignments is available on the [Weekl
 
 Please ensure that you are familiar with these [course policies and standards](/policies).
 
+In addition, please become familiar with these [course standards](/standards). 
+
 <br>
 
 ### Get help with course work

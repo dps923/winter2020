@@ -25,7 +25,7 @@ Submit YOUR OWN work.
 
 Academic dishonesty will NOT be tolerated.
 
-If you are faced with a choice between *cheating* and *losing marks*, the only correct choice is to lose marks.
+If you are faced with a choice between *cheating* and *losing marks*, the only correct choice is losing marks.
 
 <br>
 
@@ -41,7 +41,7 @@ Disruptive behaviour will not be tolerated. Every student expects the learning e
 
 ### Personal computer and devices
 
-Turn off devices that emit audible sounds.
+Silcense or turn off devices that emit audible sounds.
 
 **In first-year courses:**
 
@@ -55,7 +55,7 @@ Playing computer-based games, or engaging in other computer usage activity that 
 
 <br>
 
-### Taking notes in class (and before class, as you prepare)
+### Taking notes in class
 
 You *must* write your own class notes. You don't have to transcribe verbatim everything that's said in class. Instead, a page or two per period would likely be enough. What notes should you write?
 * Topics that you want or need *to learn* or research later
@@ -68,6 +68,8 @@ Do you think that you're too smart to take notes? Or that you'll just remember e
 Well, answer - *truthfully* - this question: What *exactly* did the professor say on October 7 at 1:42pm? 
 
 How can you reduce the amount of notes that you write during a class? Prepare beforehand. If you read the materials for the upcoming class, you will be aware of the topics. Then, during class, you can write good class notes, and spend the rest of the time getting the most out of the classroom experience.
+
+> Do this note-taking task before class, as you prepare, as well as during class. 
 
 As noted above, students in first-year courses cannot use a device in my course's lecture sessions, even to take notes. Instead, use paper and a pencil or pen.
 

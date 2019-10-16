@@ -22,7 +22,7 @@ Three segments:
 
 During the breaks, please get up and move around. It's important for your health, and for mental performance. 
 
-Tentative plan for this week:
+Plan for this week:
 * Alert and Action Sheet 
 * Two-dimensional graphics and touch intro 
 * Camera and Photo Library 

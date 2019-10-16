@@ -26,7 +26,7 @@ Three segments:
 
 During the breaks, please get up and move around. It's important for your health, and for mental performance. 
 
-Tentative plan for this week:
+Plan for this week:
 * Storage (persistence) introduction
 * Data model design and implementation 
 * Substantial app design 
