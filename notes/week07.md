@@ -59,6 +59,26 @@ As noted, again, you don't have to look beyond the existing URL Loading System. 
 
 Here, you will learn about and study a way to design, create, and use a "factory" that will make a web API request object. Apart from the factory class itself, this reduces the amount of code a request needs to about 10 lines of code. 
 
+The factory class essentially looks like a wrapper for the web API request method code. It has some configurable properties, and one method, `sendRequest(...`
+
+```swift
+class WebApiRequest {
+  // Define some configurable properties 
+
+  // Send request function
+  func sendRequest<T:Decodable>(toUrlPath urlPath: String, completion: @escaping (T) -> Void) {
+    // Essentially the code that we learned about
+    // for handling a web API request
+  }
+}
+```
+
+The user of the factory class (which is the data model manager, as you will learn) will create an instance of the factory class. Then, if necessary, its configurable properties are set. Finally, the `sendRequest(...` method is called. 
+
+The method takes two arguments:
+* A string, representing the path/segment that follows the *base URL* to the web API 
+* A closure function (explained below)
+
 <br>
 
 ### Data model manager design and implementation 
@@ -68,6 +88,24 @@ One of parts of the above-described factory class approach is that it changes ho
 The *data model manager* should be the app's central point for interacting with the data model. As a result, we need to: 
 * Ensure that controllers do NOT contain any web API request code 
 * Write the data model manager in a way that includes data-oriented methods and properties (no surprise here)
+
+```swift
+class DataModelManager {
+  // Define properties to hold the data model 
+
+  // Web API request method
+  func courseGetAll() {
+    let request = WebApiRequest()
+        
+    // Send the request, and write a completion method to pass to the request
+    request.sendRequest(toUrlPath: "/path-to/data.json") { (result: CoursePackage) in
+
+      // Perform some tasks
+      // Notify listeners that we're done
+    }
+  }
+}
+```
 
 Methods and properties - both? Either? Well, probably both. A *property* will hold the data in-memory. Where does it get its data? From the result of the *method* that does the web API request. 
 
@@ -83,21 +121,77 @@ First, in the factory class:
 * In the "happy case" code we continue to do the same task, which often is a decoding task 
 * Then, we run/execute a closure function 
 
+```swift
+// Handle the response data
+results = try decoder.decode(T.self, from: data)
+
+// Call the closure function (completion)
+completion(results!)
+```
+
 What? Where did the closure function come from? We provide it in the data model manager:
 * Often, we have one or more properties that hold the result of the web API request 
 * We then have a method (that users of the data model manager can call) that will create, configure, execute, and respond to the web API request 
 
 One of its arguments is a closure function, that describes what should be done. 
 
-Why isn't this done in the factory class? Well, it's because it cannot anticipate every possible outcome. It's best (and only appropriate) to do this work in the data model manager class. 
+```swift
+// Save the result in the manager property
+self.coursePackage = result
+self.courses = self.coursePackage!.data
+
+// Post a notification
+NotificationCenter.default.post(name: Notification.Name("WebApiDataIsReady"), object: nil)
+```
+
+Why isn't this code asdded the factory class? Well, it's because it cannot anticipate every possible outcome. The factory class is meant to serve all kinds of requests. As a result, it's best (and only appropriate) to do this work in the data model manager class. 
 
 So, after acknowledging the asynchronous nature of the code bits, we must return to the original task, which is that a controller wants/needs data that will get satisfied by the result of a web API request. How does the original caller - the controller - know when the request has successfully completed? 
 
 We use a messaging system or technique known as local notifications. 
 
+Oh, and one more question: How does the original caller - the controller - know when the request is in progress? By using the network activity indicator, which is an animated spinning wheel glyph, typically located in the device's status bar. 
+
+> Beyond the scope of this course is the use of a full-screen indicator.  
+> There are implications of and rules for this approach.  
+> For our work here, they're not relevant or useful.  
+
 <br>
 
 ### iOS on-device local notifications 
+
+We have used *delegation* before, as a way for an object to notify another object (by calling a method) in response to an event. Delegation requires a reference (whether weak or strong). 
+
+Is there another way? Yes, with *[notifications](https://developer.apple.com/documentation/foundation/notifications)*, which are "design patterns for broadcasting information and for subscribing to broadcasts.
+
+Essentially, notifications work like this:
+
+1. One object, the listener or subscriber (our controller), registers with an iOS runtime service, to listen for a specifically-named notification 
+
+```swift
+// Listen for a notification that new data is available for the list
+NotificationCenter.default.addObserver(forName: Notification.Name("WebApiDataIsReady"), object: nil, queue: OperationQueue.main, using: { notification in
+
+  // ...see below...    
+})
+
+```
+
+2. Another object, the sender or publisher (the data model manager), in response to whatever processing logic, posts a notification with a specific name 
+
+```swift
+// Post a notification
+NotificationCenter.default.post(name: Notification.Name("WebApiDataIsReady"), object: nil)
+```
+
+3. Upon receiving the notification, the listener or subscriber object performs one or more pre-configured tasks 
+
+```swift
+// Code that runs when the notification happens
+self.tableView.reloadData()
+```
+
+This is a "broadcast" or "subscribe and publish" model or pattern. One "broadcaster", and zero or more "subscribers". 
 
 <br>
 
