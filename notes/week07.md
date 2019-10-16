@@ -225,12 +225,18 @@ This is a "broadcast" or "subscribe and publish" model or pattern. One "broadcas
 
 The table below compares the *old way* (Week 6) with this week's *new way*: 
 
-O L D | | N E W | |
+O L D&nbsp;&nbsp;&nbsp;W A Y | | N E W&nbsp;&nbsp;&nbsp;W A Y | |
 ---|---|---|---|
 DataModelClasses | Data shape classes and structs | DataModelClasses | (same) |
-Controller<br>e.g. CourseList | Includes the web API request code | Controller | 1. Register for notification<br>(and define the completion handler)<br>2. Call the manager method |
- - | - | DataModelManager | Has property (properties) for the data<br>Has a method that does some work<br>1. Create an instance of the factory class<br>2. Configure it (if necessary)<br>3. Call its method (and define the completion handler)<br>4. Post a notification |
+Controller<br>e.g. CourseList | Includes the web API request code | Controller<br>e.g. CourseList | 1. Register for notification<br>(and define the completion handler)<br>2. Call the manager method |
+ - | - | DataModelManager | Has property (properties) for the data<br>Has method(s) that does (do) some work<br>1. Create an instance of the factory class<br>2. Configure it (if necessary)<br>3. Call its method (and define the completion handler)<br>4. Post a notification |
  - | - | WebApiRequest<br>(factory class) | Has the generic web API request-handling code 
+
+<br>
+
+Here's what the objects look like in memory. (In class, we will hand-draw the `WebApiRequest` class.)
+
+![iOS app in memory](/media/iOSAppObjectsSimple2019v2.png)
 
 <br>
 
