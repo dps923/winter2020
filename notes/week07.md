@@ -269,7 +269,7 @@ Then, in the remaining time, work on the programming assignment, and get help fr
 Here's a list of topics that we learned something about this week:
 1. Swift has generics, which enable code to handle objects that are based in different types 
 1. We will use generics to define the data shape that will be returned by a web API request factory class method 
-1. Swift generics use a familiar coding style seen in other languages, e.g. `<T>` and `T` as type placeholders (depending ousage context)
+1. Swift generics use a familiar coding style seen in other languages, e.g. `<T>` and `T` as type placeholders (depending on the usage context)
 1. The size of the code base in an app with a dozen or more web API requests can grow unless we use a factory, which is a code-saving technique 
 1. Our first factory is the `WebApiRequest` class, which does as its name suggests 
 1. It is used (created, configured, executed) by callers, which are methods (one or likely more) in the data model manager (in our recommended architecture) 
