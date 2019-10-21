@@ -166,11 +166,33 @@ Test your work incrementally. Do one small task, and then test it to ensure that
 
 <br>
 
+#### Web API request class
+
+Add it to the project.  
+Suggest Refactor Rename to add "App" to the end.  
+Update base URL (up to and including "path").  
+Add another header to the request, `x-apikey` and the API key for the database.  
+
+<br>
+
 #### Data model 
 
-Classes and manager. 
+Classes and manager.  
+Write a class that describes the shape of the cat entity.  
+In the manager, write a method that fetches all cats.  
+Decoder date formatting, has fractional seconds, needs special handling.  
 
-TBA
+<br>
+
+#### Controllers
+
+Cat list.  
+
+<img src="images/a3-cat-list.png" class="border1" alt="Cat list" />
+
+Cat scene.  
+
+<img src="images/a3-cat-scene.png" class="border1" alt="Cat scene" />
 
 <br>
 
