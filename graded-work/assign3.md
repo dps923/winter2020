@@ -142,7 +142,7 @@ DO NOT continue until you have successfully tested these typical responses. If t
 
 ### Getting started, iOS app
 
-Create a new iOS app, using the Single View Application template. The name of the app should be "**TBA**".  
+Create a new iOS app, using the Single View Application template. The name of the app should be "**ILoveCats**".  
 
 Follow best practices about project creation. Ask if you are unsure. 
 
@@ -158,20 +158,6 @@ Test your work incrementally. Do one small task, and then test it to ensure that
 
 <br>
 
-#### Sketch the app's scenes 
-
-Before completing this task, make sure that you read/skim the rest of this document - that way you will know what to include in the sketch. 
-
-As you learned in [Week 4](https://dps923.ca/notes/week04#designing-and-implementing-a-substantial-multi-scene-app), and as you have seen demonstrated by the professor in-class a number of times, create a sketch of the app's design. Include the scenes that you expect to have, both storyboard-based and code-created. Also include rectangles that aren't scenes, for example, the app delegate etc. 
-
-After sketching it out, save it (by scanning it or taking a photo of it). You will submit this sketch. Then, as you work on the assignment, you can modify or fix the sketch if you wish. 
-
-> Don't do this task at the end of your work on the assignment.  
-> The professor wants to see the sketch before you begin.  
-> It will help him understand your thought process, and your current level of understanding. 
-
-<br>
-
 #### Getting started
 
 <mark>More to come.</mark>
@@ -179,6 +165,8 @@ After sketching it out, save it (by scanning it or taking a photo of it). You wi
 <br>
 
 #### Data model 
+
+Classes and manager. 
 
 TBA
 
