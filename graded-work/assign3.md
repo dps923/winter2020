@@ -45,8 +45,95 @@ Also, the app:
 
 ### Getting started, web API
 
-(yes, you will create and deploy a web API)  
-(it will be used by your iOS app) 
+Your professor has discovered **[restdb.io](https://restdb.io)**:
+
+> restdb.io is probably the easiest online NoSQL database backend for web and serverless applications. Model your information quickly. The data management application, schema and REST API are instantly available.
+
+For small projects (like this one), it is free to use. 
+
+Each student will:
+1. Sign up for a restdb.io account 
+2. Generate data using mockaroo.com 
+3. Import the data into a new restdb.io database collection
+
+Your Assignment 3 app will use the result as its web API. 
+
+<br>
+
+#### Sign up for a restdb.io account
+
+Visit [restdb.io](https://restdb.io), and [sign up](https://restdb.io/signup) for an account. 
+
+It doesn't matter what option you choose (Google, Facebook, email), just pick one that will be convenient for you. 
+
+After login, it will probably show you a list of your databases, which will be empty. 
+
+<br>
+
+#### Generate data using mockaroo.com 
+
+The app needs some starter data. Visit [mockaroo.com](https://mockaroo.com). 
+
+We need a variety of data types. Configure the setup screen so that it is similar to the example shown below:
+
+![Mockaroo data gen](images/a3-mockaroo-data-v1.png)
+
+Here are a few comments about the data and its setup:
+
+The "breedId" is a string (text) value that holds a cat breed identifier. The possible values are specified by another web API, [TheCatAPI](https://thecatapi.com). Here they are - copy the string below into the Mockaroo "Custom List" text field:
+
+```text
+abys, aege, abob, acur, asho, awir, amau, amis, bali, bamb, beng, birm, bomb, bslo, bsho, bure, buri, cspa, ctif, char, chau, chee, csho, crex, cymr, cypr, drex, dons, lihu, emau, ebur, esho, hbro, hima, jbob, java, khao, kora, kuri, lape, mcoo, mala, manx, munc, nebe, norw, ocic, orie, pers, pixi, raga, ragd, rblu, sava, sfol, srex, siam, sibe, sing, snow, soma, sphy, tonk, toyg, tang, tvan, ycho
+```
+
+Notice that "weightKg" and "rating" are numbers, but the first one has decimal places. We want to work with this difference in our app. 
+
+The "photoUrl" field will get a placeholder (dummy) image URL, but our app will allow it to be updated by a URL to a real cat photo. 
+
+Generate and save between 100 and 150 rows of data. 
+
+<br>
+
+#### Import the data into a new restdb.io database collection
+
+Return to the restdb.io app. Create a new database. You can use this database for Assignment 3, and maybe Assignment 4. 
+
+We suggest that you choose a "Name" that combines your name initials and the course code. (The "Create New Database" task will then add a four-character suffix to the) For example, your professor's name initials are "PAM", so the database was named `pamdps923-de33`. 
+
+After creation, click its name on the left side of the list, and the database manager screen appears. Enable "Developer Mode", by clicking on the gear icon in the upper-right area of the screen.
+
+![restdb.io developer mode](images/a3-restdbio-developer-mode.png)
+
+A multi-panel screen appears. The "Resources" tab shows the list of collections in the database (and the collections on the list are internal system-level collections for use by the database manager itself). 
+
+Notice the "Import" button on the right side - click that. Then drag the Mockaroo-generated JSON file into the drop target area. Click the "Upload" button, and it will attempt to read the data. If successful, it will show the results. 
+
+![restdb.io create collection import](images/a3-restdbio-create-collection-import.png)
+
+Decide on and enter a collection name (e.g. a3cats). (The collection name will obviously appear in the URLs to the web API.) Complete the task, and it now appears at (or near) the top of the list on the "Resources" tab. 
+
+<br>
+
+#### Generate an "API key"
+
+Every request to the web API must include an "API key". Therefore, generate one, and be prepared to use it in your app (and in the Postman app during testing). 
+
+Click the "API keys" tab, then the "Manage API-keys" button. Add a new "Web page API keys (CORS)". In its dialog, enter a description that's meaningful to you. Then, choose to enable all of the "REST methods". Save, and it will generate a 24-character key. 
+
+Every request will must include a custom header named `x-apikey`, and the value will be the generated API key. 
+
+<br>
+
+#### Test the result, and study the URL patterns
+
+Use the Postman app. Test all of the typical requests:
+* Get all
+* Get one by its identifier
+* Add new
+* Edit existing
+* Delete item
+
+DO NOT continue until you have successfully tested these typical responses. If they don't work in Postman, they obviously won't work in your app. 
 
 <br>
 
