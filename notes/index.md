@@ -13,7 +13,8 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Study week**<br>&bull; Mon Oct 21 to<br>&bull; Fri Oct 25 | No classes this week | | 
+**Week 8**<br>&bull; Wed Oct 30<br>&bull; Fri Nov 1 | Core Data persistence, introduction | Assign 3, 14%<br>(Sun Nov 3) | 
+**Study week**<br>Mon Oct 21 to<br>Fri Oct 25 | No classes this week | | 
 **[Week 7](week07)**<br>[&bull; Wed Oct 16<br>&bull; Fri Oct 18](week07) | Web API interaction patterns | Test 2, 12%<br>(Friday) | 
 **[Week 6](week06)**<br>[&bull; Wed Oct 9<br>&bull; Fri Oct 11](week06) | Using the network intro |  [Assign 2](/graded-work/assign2), 10%<br>(Oct 11) | 
 **[Week 5](week05)**<br>[&bull; Wed Oct 2<br>&bull; Fri Oct 4](week05) | Storage introduction<br>Substantial app assembly<br>Table view patterns (add, detail) | | 
