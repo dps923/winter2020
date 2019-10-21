@@ -7,8 +7,6 @@ layout: default
 
 Assignment 3 enables you to show how to use the network in an iOS app. 
 
-<mark>It's likely that DPS923 students will do one of the tasks a bit differently, and will have one more task to complete. To be finalized.</mark>
-
 Read/skim all of this document before you begin work.
 
 While you are doing the work, if a *specific task* is not clear, or it seems to require an unreasonable amount of time to complete, contact your professor. 
@@ -22,7 +20,6 @@ Grade value: 14% of your final course grade
 
 > Notice the due date change, from Friday to Sunday.  
 > This is intended to be helpful by taking a bit of pressure off the Friday experience.  
-> If you don't need the weekend, you can still submit early.  
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
 
@@ -30,23 +27,31 @@ Grade value: 14% of your final course grade
 
 ### Overview and purpose
 
+The app will let the user maintain information about lovable cats &#128049; &#128008; that are owned by you, your family, and friends. The app's data is stored on a web API that you will create. 
+
 Here are the point-form specifications (which will be expanded on in the sections that follow). 
 
 It's a multi-scene app:
-* TBA (more to come)
+* List of cats 
+* Cat info scene (disclosure accessory)
+* Detail scene (detail accessory)
+* Add a new cat
+* Edit an existing cat
 
 Also, the app: 
 * Has a navigation interface
 * And a data model, implemented using best practices 
-  * On-device storage of the data 
 * And is deployed to an iOS device 
+
+> DPS923 students will have a few additional specifications. 
 
 <br>
 
 ### Getting started, web API
 
-Your professor has discovered **[restdb.io](https://restdb.io)**:
+Your professor has discovered a very nice and useful service: **[restdb.io](https://restdb.io)**
 
+> From its web site...  
 > restdb.io is probably the easiest online NoSQL database backend for web and serverless applications. Model your information quickly. The data management application, schema and REST API are instantly available.
 
 For small projects (like this one), it is free to use. 
@@ -62,9 +67,7 @@ Your Assignment 3 app will use the result as its web API.
 
 #### Sign up for a restdb.io account
 
-Visit [restdb.io](https://restdb.io), and [sign up](https://restdb.io/signup) for an account. 
-
-It doesn't matter what option you choose (Google, Facebook, email), just pick one that will be convenient for you. 
+Visit [restdb.io](https://restdb.io), and [sign up](https://restdb.io/signup) for an account. It doesn't matter what option you choose (Google, Facebook, email), just pick one that will be convenient for you. 
 
 After login, it will probably show you a list of your databases, which will be empty. 
 
@@ -74,9 +77,9 @@ After login, it will probably show you a list of your databases, which will be e
 
 The app needs some starter data. Visit [mockaroo.com](https://mockaroo.com). 
 
-We need a variety of data types. Configure the setup screen so that it is similar to the example shown below:
+We need a variety of data types. Configure the setup screen so that it is similar to the example shown below. (Click/tap to open it full-size in a new tab/window.)
 
-![Mockaroo data gen](images/a3-mockaroo-data-v1.png)
+<a href="images/a3-mockaroo-data-v1.png" target="_blank"><img src="images/a3-mockaroo-data-v1.png" alt="Mockaroo data gen" /></a>
 
 Here are a few comments about the data and its setup:
 
@@ -106,9 +109,9 @@ After creation, click its name on the left side of the list, and the database ma
 
 A multi-panel screen appears. The "Resources" tab shows the list of collections in the database (and the collections on the list are internal system-level collections for use by the database manager itself). 
 
-Notice the "Import" button on the right side - click that. Then drag the Mockaroo-generated JSON file into the drop target area. Click the "Upload" button, and it will attempt to read the data. If successful, it will show the results. 
+Notice the "Import" button on the right side - click that. Then drag the Mockaroo-generated JSON file into the drop target area. Click the "Upload" button, and it will attempt to read the data. If successful, it will show the results. (Click/tap to open it full-size in a new tab/window.)
 
-![restdb.io create collection import](images/a3-restdbio-create-collection-import.png)
+<a href="images/a3-restdbio-create-collection-import.png" target="_blank"><img src="images/a3-restdbio-create-collection-import.png" alt="restdb.io create collection import" /></a>
 
 Decide on and enter a collection name (e.g. a3cats). (The collection name will obviously appear in the URLs to the web API.) Complete the task, and it now appears at (or near) the top of the list on the "Resources" tab. 
 
