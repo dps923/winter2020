@@ -156,6 +156,8 @@ Follow best practices and recommended guidance in all parts of your work.
 
 Test your work incrementally. Do one small task, and then test it to ensure that it works, before continuing. 
 
+> DPS923 students will have a few additional specifications. 
+
 <br>
 
 #### Getting started
@@ -169,6 +171,13 @@ Test your work incrementally. Do one small task, and then test it to ensure that
 Classes and manager. 
 
 TBA
+
+<br>
+
+#### DPS923 additional tasks 
+
+Handling images from the web, the right way.  
+Using two web APIs.  
 
 <br>
 
