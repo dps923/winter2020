@@ -23,6 +23,8 @@ This page has links to various topics that supplement and/or summarize the topic
 
 [How-to: Navigation from table view, detail &nbsp;&#9432;](how-to-nav-detail)
 
+[How-to: Substring](how-to-substring)
+
 ### Info...
 
 [Info: Swift optionals](info-optionals)

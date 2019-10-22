@@ -223,6 +223,8 @@ Now, update the app to enable the user to add a new cat to the list. The "add it
 
 Here is a short video clip (which you can view in the Safari browser) that shows this technique to create a segue:
 
+<mark>smaller</mark>
+
 ![View this in the Safari browser](images/a3-cat-add-get-started.mov)
 
 <br>
