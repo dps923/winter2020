@@ -131,6 +131,6 @@ let hasJump = fox.contains("jumped over")
 
 The [Swift Substring structure](https://developer.apple.com/documentation/swift/substring) has much functionality. Look at the reference documentation for more. 
 
-And remember the [Swift Documentation section on strings](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html). 
+And remember to look at the [Swift Documentation section on strings](https://docs.swift.org/swift-book/LanguageGuide/StringsAndCharacters.html). 
 
 <br>

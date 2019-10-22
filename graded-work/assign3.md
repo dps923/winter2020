@@ -229,6 +229,58 @@ Here is a short video clip (which you can view in the Safari browser) that shows
 
 <br>
 
+#### View and controller tips
+
+The view must gather some data from the user. Make sure it does so safely. 
+
+The values for the two text fields must be gathered from the keyboard, as there is no alternative. 
+
+The value for the "weightKg" is a floating-point number, within a range. Add a user interface (UI) control that enables that value to be entered safely. 
+
+The value for the "rating" is an integer, within a range. Add a UI control that enables that value to be entered safely. 
+
+The value for the "breedId" is a short string. Above, you used some supplied text to generate the Mockaroo data. Here, we want a bit more helpful information for each breed identifier - we want its name too. 
+
+The text below is a string with each breed identifier and name, comma-separated. 
+
+```text
+abys - Abyssinian, aege - Aegean, abob - American Bobtail, acur - American Curl, asho - American Shorthair, awir - American Wirehair, amau - Arabian Mau, amis - Australian Mist, bali - Balinese, bamb - Bambino, beng - Bengal, birm - Birman, bomb - Bombay, bslo - British Longhair, bsho - British Shorthair, bure - Burmese, buri - Burmilla, cspa - California Spangled, ctif - Chantilly-Tiffany, char - Chartreux, chau - Chausie, chee - Cheetoh, csho - Colorpoint Shorthair, crex - Cornish Rex, cymr - Cymric, cypr - Cyprus, drex - Devon Rex, dons - Donskoy, lihu - Dragon Li, emau - Egyptian Mau, ebur - European Burmese, esho - Exotic Shorthair, hbro - Havana Brown, hima - Himalayan, jbob - Japanese Bobtail, java - Javanese, khao - Khao Manee, kora - Korat, kuri - Kurilian, lape - LaPerm, mcoo - Maine Coon, mala - Malayan, manx - Manx, munc - Munchkin, nebe - Nebelung, norw - Norwegian Forest Cat, ocic - Ocicat, orie - Oriental, pers - Persian, pixi - Pixie-bob, raga - Ragamuffin, ragd - Ragdoll, rblu - Russian Blue, sava - Savannah, sfol - Scottish Fold, srex - Selkirk Rex, siam - Siamese, sibe - Siberian, sing - Singapura, snow - Snowshoe, soma - Somali, sphy - Sphynx, tonk - Tonkinese, toyg - Toyger, tang - Turkish Angora, tvan - Turkish Van, ycho - York Chocolate
+```
+
+The string should be used to create an array of strings. 
+
+```swift
+var breeds = breedString.components(separatedBy: ", ")
+```
+
+The "name" part of the string will be displayed in a user interface control that enables the user to select one of a number of items. You'll need to use [Swift substring functionality](/topics/how-to-substring) to get that done. 
+
+After the user selects an item, the "identifier" part of the string will be saved or stored with the new cat data. Again, substring functionality will be used. 
+
+The value for the birth date will be within a range. Choose a UI control that enables the user to do that task safely. 
+
+<br>
+
+### Data modification task - edit existing
+
+This functionality will be initiated by the drill-down (workflow) scene. Similar to the "add new" task above, we'll need a new scene and controller to handle the edit task. 
+
+> Have you seen this before?  
+> Maybe yes, if you studied the code examples.  
+> The week 5 ["nav add" code example](https://github.com/dps923/fall2019/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductEdit controller](https://github.com/dps923/fall2019/blob/master/Week05/W05a6NavAdd/Classes/ProductEdit.swift)).  
+
+Follow the same general procedure that was done for the "add new" task. What data will we allow to be edited? How about these items: 
+* Owner name 
+* Rating
+
+<br>
+
+#### View and controller tips
+
+( more to come )
+
+<br>
+
 ### DPS923 additional tasks 
 
 Handling images from the web, the right way.  
