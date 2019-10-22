@@ -207,17 +207,27 @@ To support the app's first controller - the list - the data model manager class 
 
 <br>
 
-#### Controllers
+#### Controllers, list and scene
 
 You may have done these tasks during the "Getting started" section above, but if not, here are a few comments and reminders. 
 
-Cat list.  
+Use the techniques you learned in weeks 6 and 7 (seen in the [W07a1NewFetch code example](https://github.com/dps923/fall2019/tree/master/Week07/W07a1NewFetch) among others) to configure the cat list controller.  
 
-Cat scene.  
+Pass on the selected object to the drill-down (workflow) cat scene. In other words, it is not necessary to make then call a "get one" method in the data model manager. 
 
 <br>
 
-#### DPS923 additional tasks 
+### Data modification - add new
+
+Now, update the app to enable the user to add a new cat to the list. The "add item" pattern will be used, and you first learned about that [in a week 5 document](/notes/table-view-add-item). 
+
+Here is a short video clip (which you can view in the Safari browser) that shows this technique to create a segue:
+
+![View this in the Safari browser](images/a3-cat-add-get-started.mov)
+
+<br>
+
+### DPS923 additional tasks 
 
 Handling images from the web, the right way.  
 Using two web APIs.  
