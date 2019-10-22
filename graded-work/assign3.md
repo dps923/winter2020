@@ -162,37 +162,58 @@ Test your work incrementally. Do one small task, and then test it to ensure that
 
 #### Getting started
 
-<mark>More to come.</mark>
+Get started by assembling a two-scene app with a navigation interface. The first scene will be a list, and the second will be a drill-down (workflow) scene that shows info about the selected list item. 
+
+You'll need the usual bits:
+* Scenes and controllers in a navigation interface 
+* The `WebApiRequest` class source code 
+* Data model class(es) to describe the data shape 
+* Data model manager 
+
+You have seen all this before, during week 6 and 7 coverage, and in its code examples. 
+
+At the end of this section, you should have a working two-scene app. 
+
+<img src="images/a3-cat-list.png" class="border1" alt="Cat list" />&nbsp;&nbsp;<img src="images/a3-cat-scene.png" class="border1" alt="Cat scene" />
 
 <br>
 
 #### Web API request class
 
-Add it to the project.  
-Suggest Refactor Rename to add "App" to the end.  
-Update base URL (up to and including "path").  
-Add another header to the request, `x-apikey` and the API key for the database.  
+You may have done these tasks during the "Getting started" section above, but if not, here are a few comments and reminders. 
+
+Update the base URL with the path to your own database. Remember that each specific request will append its own path/segment to the collection (and item) that it needs. 
+
+Add another header to the request, `x-apikey` and the API key that you generated for your database.  
+
+> Please note that this technique is not a best practice.  
+> Later in the course, you will learn a better way. 
 
 <br>
 
 #### Data model 
 
-Classes and manager.  
-Write a class that describes the shape of the cat entity.  
-In the manager, write a method that fetches all cats.  
-Decoder date formatting, has fractional seconds, needs special handling.  
+You may have done these tasks during the "Getting started" section above, but if not, here are a few comments and reminders. 
+
+In the data model classes source code, write a class that describes the shape of the cat entity. The (MongoDB) object identifier (`_id`) must be optional. 
+
+When storing the Mockaroo-generated date-and-time value as a string, the database saves fractional seconds. As a result, the default built-in Swift `.iso8601` date decoding strategy will not work. 
+
+The solution is to add - to the data model classes source code file - the "extension" to the DateFormatter class. You have seen this before, [in a Week 5 code example](https://github.com/dps923/fall2019/blob/master/Week05/W05a3StoreData/W05a3StoreData/DataModelClasses.swift#L62). 
+
+You have also seen how to use the extension before, [in the same code example](https://github.com/dps923/fall2019/blob/master/Week05/W05a3StoreData/W05a3StoreData/DataModelManager.swift#L88), in the request-handling closure function. 
+
+To support the app's first controller - the list - the data model manager class will need a method that fetches all cats. 
 
 <br>
 
 #### Controllers
 
+You may have done these tasks during the "Getting started" section above, but if not, here are a few comments and reminders. 
+
 Cat list.  
 
-<img src="images/a3-cat-list.png" class="border1" alt="Cat list" />
-
 Cat scene.  
-
-<img src="images/a3-cat-scene.png" class="border1" alt="Cat scene" />
 
 <br>
 
