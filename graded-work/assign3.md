@@ -29,6 +29,10 @@ Grade value: 14% of your final course grade
 
 The app will let the user maintain information about lovable cats &#128049; &#128008; that are owned by you, your family, and friends. The app's data is stored on a web API that you will create. 
 
+> Cats?  
+> Yes, cats. Long before the web devolved into a space filled with like-seeking 'gram-ers and surly commenters, it's primary role was as a cat photo and delivery platform.  
+> Ha ha, just kidding. 
+
 Here are the point-form specifications (which will be expanded on in the sections that follow). 
 
 It's a multi-scene app:
@@ -195,7 +199,12 @@ Add another header to the request, `x-apikey` and the API key that you generated
 
 You may have done these tasks during the "Getting started" section above, but if not, here are a few comments and reminders. 
 
-In the data model classes source code, write a class that describes the shape of the cat entity. The (MongoDB) object identifier (`_id`) must be optional. 
+In the data model classes source code, write a class that describes the shape of the cat entity. The (MongoDB) object identifier (`_id`) *must be optional*. 
+
+> FYI...  
+> The class can be used for both GET and POST requests.  
+> When sending an entity body with a POST request, don't send/include the `_id` property. The web API will assign that during its processing.  
+> That's why it's important that `_id` be configured as optional. 
 
 When storing the Mockaroo-generated date-and-time value as a string, the database saves fractional seconds. As a result, the default built-in Swift `.iso8601` date decoding strategy will not work. 
 
@@ -257,14 +266,24 @@ After the user selects an item, the "identifier" part of the string will be save
 
 The value for the birth date will be within a range. Choose a UI control that enables the user to do that task safely. 
 
+In the controller code, we suggest hard-coding a string (for now) for the `photoUrl`. There's a service out there named [PlaceKitten] that will deliver a random cat image from this URL pattern:
+
+```text
+https://placekitten.com/300/200
+```
+
+The first segment after the host name is the width in pixels, and the second segment is the height. 
+
+> Later, in the "edit existing" task, you will enable the user to update (i.e. choose) the photo.
+
 <br>
 
 ### Data modification task - edit existing
 
 This functionality will be initiated by the drill-down (workflow) scene. Similar to the "add new" task above, we'll need a new scene and controller to handle the edit task. 
 
-> Have you seen this before?  
-> Maybe yes, if you studied the code examples.  
+> Have you seen this "edit" technique before?  
+> Maybe yes, if you *studied and reproduced* the code examples.  
 > The week 5 ["nav add" code example](https://github.com/dps923/fall2019/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductEdit controller](https://github.com/dps923/fall2019/blob/master/Week05/W05a6NavAdd/Classes/ProductEdit.swift)).  
 
 We must follow a similar general procedure [that was done for the "add new" task](/notes/table-view-add-item#design-and-coding-task-overview). 
@@ -273,6 +292,10 @@ One difference is task #4 from that procedure: We will add an "edit" button to t
 
 Before doing that, we must drag a "Navigation Item" to the view; it will snap to the top. Notice that the title disappears when you do that. To fix that, we must do a task that was similar to the one we did to set the title of the "cat list" scene - select the navigation item, and then set its title. 
 
+![Nav item with edit button](images/a3-cat-scene-nav-item.png)
+
+<br>
+
 What data will we allow to be edited? At a minimum, how about these properties: 
 * Owner name 
 * Rating
@@ -280,9 +303,14 @@ What data will we allow to be edited? At a minimum, how about these properties:
 
 If you want to add other editable properties (e.g. cat name, weight), go ahead and do so. 
 
-Now, in the data model classes source code, write another class that includes the editable properties, AND the `_id` property (which is a `String`). (When we send a PUT request to a web API, we *must* send the identifier in the body of the request.)
+Now, in the data model classes source code, write another class that includes ony the editable properties, AND the `_id` property (which is a `String`). (When we send a PUT request to a web API, we *must* send the identifier in the body of the request.)
 
-At this point, write the essential code. During your work, test frequently and incrementally, by ensuring the data to-and-from the UI is what you expect. In the "save" method, you can just `print` or `dump` the contents to check your progress. Add the web API request handling after you test the essentials. 
+> It is completely normal to write a custom class for each kind of interaction with a web API.  
+> Therefore, do not hesitate to write custom classes. 
+
+On the scene, add UI controls that enable editing. (Tip - you can copy-paste some from the "add item" scene.) Also, add an Image View to display the existing photo, and a button that (soon) will enable the selection of a new photo.
+
+At this point, write the essential code. During your work, test frequently and incrementally, by ensuring the data to-and-from the UI is what you expect. In the "save" method, you can just `print` or `dump` the contents to check your progress. Add the photo fetch and web API request handling after you test the essentials. 
 
 Here is a short video clip (which you can view in the Safari browser) that shows this progress:
 
@@ -290,26 +318,100 @@ Here is a short video clip (which you can view in the Safari browser) that shows
 
 <br>
 
-#### Update the photo
+#### Display the existing photo
 
 If your Mockaroo-generated data included a photo URL, you will probably notice that it starts with the non-secure scheme `http://`. As a result, the *URL Loading System* will not - by default - load from a non-secure scheme. That's OK - we do *not* want to change this behaviour.
 
-( more to come )
+When you used your "add new" functionality, a `photoUrl` value was hard-coded (likely with something from PlaceKitten.com). 
 
+For either situation, we must fetch the photo from the `photoUrl` value, and display it in the scene's image view. 
 
+Recently, you learned to use the `DispatchQueue` to update the UI from an async task. We'll use that tactic here, because we will fetch the photo asynchronously (so that it doesn't block the UI). Here's how. You can use this code as-is (in your `viewDidLoad()` method) or adapt to your situation. 
+
+```swift
+// Assume the following:
+// "newCatPhoto" is a string variable in the controller 
+// "catPhoto" is an outlet to the Image View on the scene
+
+// Get the image
+guard let imageURL = URL(string: newCatPhoto) else { return }
+
+// We recently learned about DispatchQueue
+// We can use it here to fetch an image asynchronously
+DispatchQueue.global().async {
+    guard let imageData = try? Data(contentsOf: imageURL) else { return }
+    let image = UIImage(data: imageData)
+    DispatchQueue.main.async {
+        self.catPhoto.image = image
+    }
+}
+```
 
 <br>
 
-#### View and controller tips
+#### Update the photo
 
-( more to come )
+The "update" button handling code will use the current cat's breed identifier to go fetch a random image (of that breed) from *another* web API named [The Cat API](https://thecatapi.com). 
+
+Before writing any code, select any one of the four-character breed identifiers from above. Then, open a browser, and send a request to this URL (substituting the breed identifier for "xxxx"):
+
+```text
+https://api.thecatapi.com/v1/images/search?breed_ids=xxxx
+```
+
+It will return an array with one object. (Request it again, and it will return a different object.) Notice that the object has a property named `url`. We will use its value as the updated cat photo. 
+
+> Note that the response is *an array with one object*.  
+> You want *the object*. The array packaging is unimportant.  
+
+In your data model classes source code, add *another* custom class that describes the shape of the object inside the array. Don't worry about including all properties - we just need `id` and `url`. The others can be ignored. 
+
+> How does this work?  
+> On a GET request, all of the data comes in.  
+> Then, during JSON decoding, it makes a new Swift object that includes the properties in the destination data shape class, and *ignores* all the other data.  
+
+In the button-handling method, follow this general task sequence:
+1. Create a web API request
+2. Change (set) its base URL to The Cat API service
+3. Send the request 
+4. In the closure function, extract the photo URL value, and save it in a controller variable
+5. Then (using the technique in the previous section) update the scene's image view 
 
 <br>
 
-### DPS923 additional tasks 
+#### Saving the edited values
 
-Handling images from the web, the right way.  
-Using two web APIs.  
+Remember the general sequence:
+1. In the "edit" controller, validate and prepare the data to be saved, and then... 
+2. Call the "save" method in the delegate, then...
+3. In the delegate (the hosting/presenting controller), save the data
+
+The work done in the "edit" controller should be well-understood, as it's similar to the work done in an "add" controller. 
+
+The work done in the hosting/presenting controller (our "cat scene" controller) will also be similar:
+1. Create a web API request 
+2. Change (set) its HTTP method to "PUT" 
+3. Encode the data to be sent and attach it to the request's entity body 
+4. Send the request
+
+> Remember to use `print` and/or `dump` and/or the debugger to ensure that you are working with the data that you expect.  
+> Also, ensure that your web API request works with the Postman app BEFORE you try to make it work in your iOS app.  
+> (If it won't work in Postman, it certainly won't work in your app.)
+
+The closure function should probably do the following, to enable a good user experience:
+1. Fetch all cats again (because one was edited) 
+2. Update the controller's cat variable values 
+3. Update the UI (by using the `DispatchQueue` technique)
+
+<br>
+
+### DPS923 additional functionality
+
+DPS923 students must implement the following additional functionality:
+* Handle images from the web, the right way.  
+* Add a "detail" scene (using the "detail" accessory).  
+
+<mark>(specs coming soon)</mark>
 
 <br>
 
@@ -317,8 +419,11 @@ Using two web APIs.
 
 Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. And, use the Xcode debugger to help. 
 
-When the app is complete, create three screen captures. Here's what each scene will show:
-1. TBA
+When the app is complete, create screen captures. Here's what each scene will show:
+1. List of cats
+2. Drill-down (flow) info about a selected cat
+3. Edit an existing cat
+4. Add a new cat
 
 <br>
 
@@ -333,30 +438,30 @@ When you are ready to submit your work, you will copy some of the code in your p
 
 ### Submitting your work
 
-<mark>To be finalized</mark>
-
 Follow these instructions to submit your work, before the due date and time:  
 
 1. Locate your project folder in Finder (and we suggest that you make a copy for yourself).
 
 2. At the same level, create a new folder named "MyCode".
 
-3. From the TBA folder(s), copy these source code files to the "MyCode" folder:  
-**TBA.swift**  
+3. From the project folder(s), copy these source code files to the "MyCode" folder:  
+**CatList.swift**  
+**CatScene.swift**  
+**CatAdd.swift**  
+**CatEdit.swift**  
+**CatDetail.swift** (DPS923 students only)  
 **DataModelClasses.swift**  
 **DataModelManager.swift**  
 **Main.storyboard**  
 For each of these files, change the file name extension to "txt".
 
-4. From wherever, copy the sketch you made of the app's scenes into the MyCode folder. Its name can be something like "SketchAppUI". 
+4. From wherever, copy the screen captures into the MyCode folder. Rename them to "catlist" (jpg or png, whatever), "catscene", "catedit", and "catadd" (or something similar). 
 
-5. From wherever, copy the three screen captures into the MyCode folder. Rename them to "TBA" (jpg or png, whatever), "TBA", and "TBA". 
-
-6. Select the top-level folders:  
-TBA  
+5. Select the top-level folders:  
+(project)  
 MyCode  
 Right-click, and choose **Compress 2 Items**, which creates a zip file (make sure the zip file is fairly small, around 2MB or less).  
 
-7. Login to Blackboard/My.Seneca, and in this course's Assignments area, look for the upload link, and submit your work there.  
+6. Login to Blackboard/My.Seneca, and in this course's Assignments area, look for the upload link, and submit your work there.  
 
 <br>
