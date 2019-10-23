@@ -221,11 +221,13 @@ Pass on the selected object to the drill-down (workflow) cat scene. In other wor
 
 Now, update the app to enable the user to add a new cat to the list. The "add item" pattern will be used, and you first learned about that [in a week 5 document](/notes/table-view-add-item). 
 
-Here is a short video clip (which you can view in the Safari browser) that shows this technique to create a segue:
+Here is a short video clip (which you can view in the Safari browser) that shows this technique:
 
 <mark>smaller</mark>
 
-![View this in the Safari browser](images/a3-cat-add-get-started.mov)
+<!-- ![View this in the Safari browser](images/a3-cat-add-get-started.mov) -->
+
+<img src="images/a3-cat-add-get-started.mov" class="border1 width250" alt="View this in the Safari browser" />
 
 <br>
 
@@ -247,7 +249,7 @@ The text below is a string with each breed identifier and name, comma-separated.
 abys - Abyssinian, aege - Aegean, abob - American Bobtail, acur - American Curl, asho - American Shorthair, awir - American Wirehair, amau - Arabian Mau, amis - Australian Mist, bali - Balinese, bamb - Bambino, beng - Bengal, birm - Birman, bomb - Bombay, bslo - British Longhair, bsho - British Shorthair, bure - Burmese, buri - Burmilla, cspa - California Spangled, ctif - Chantilly-Tiffany, char - Chartreux, chau - Chausie, chee - Cheetoh, csho - Colorpoint Shorthair, crex - Cornish Rex, cymr - Cymric, cypr - Cyprus, drex - Devon Rex, dons - Donskoy, lihu - Dragon Li, emau - Egyptian Mau, ebur - European Burmese, esho - Exotic Shorthair, hbro - Havana Brown, hima - Himalayan, jbob - Japanese Bobtail, java - Javanese, khao - Khao Manee, kora - Korat, kuri - Kurilian, lape - LaPerm, mcoo - Maine Coon, mala - Malayan, manx - Manx, munc - Munchkin, nebe - Nebelung, norw - Norwegian Forest Cat, ocic - Ocicat, orie - Oriental, pers - Persian, pixi - Pixie-bob, raga - Ragamuffin, ragd - Ragdoll, rblu - Russian Blue, sava - Savannah, sfol - Scottish Fold, srex - Selkirk Rex, siam - Siamese, sibe - Siberian, sing - Singapura, snow - Snowshoe, soma - Somali, sphy - Sphynx, tonk - Tonkinese, toyg - Toyger, tang - Turkish Angora, tvan - Turkish Van, ycho - York Chocolate
 ```
 
-The string should be used to create an array of strings. 
+The string should be used to [create an array of strings](https://www.hackingwithswift.com/example-code/strings/how-to-split-a-string-into-an-array-componentsseparatedby): 
 
 ```swift
 var breeds = breedString.components(separatedBy: ", ")
@@ -269,9 +271,28 @@ This functionality will be initiated by the drill-down (workflow) scene. Similar
 > Maybe yes, if you studied the code examples.  
 > The week 5 ["nav add" code example](https://github.com/dps923/fall2019/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductEdit controller](https://github.com/dps923/fall2019/blob/master/Week05/W05a6NavAdd/Classes/ProductEdit.swift)).  
 
-Follow the same general procedure that was done for the "add new" task. What data will we allow to be edited? How about these items: 
+We must follow a similar general procedure [that was done for the "add new" task](/notes/table-view-add-item#design-and-coding-task-overview). 
+
+One difference is task #4 from that procedure: We will add an "edit" button to the nav bar. 
+
+Before doing that, we must drag a "Navigation Item" to the view; it will snap to the top. Notice that the title disappears when you do that. To fix that, we must do a task that was similar to the one we did to set the title of the "cat list" scene - select the navigation item, and then set its title. 
+
+
+What data will we allow to be edited? How about these items: 
 * Owner name 
 * Rating
+* Photo
+
+The photo...
+
+Here is a short video clip (which you can view in the Safari browser) that shows this technique:
+
+<mark>smaller</mark>
+
+<!-- ![View this in the Safari browser](images/a3-cat-add-get-started.mov) -->
+
+<img src="images/a3-cat-edit-get-started.mov" class="border1 width250" alt="View this in the Safari browser" />
+
 
 <br>
 

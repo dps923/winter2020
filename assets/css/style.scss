@@ -1,5 +1,5 @@
----
----
+/* ---
+--- */
 
 /* @import 'jekyll-theme-minimal'; */
 
@@ -46,6 +46,11 @@ footer {
   border-radius: 3px;
   padding: 0.5rem;
   margin-right: 2.0rem;
+}
+
+/* Limits the width of iPhone portrait images */
+.width250 {
+  max-width: 250px;
 }
 
 /* end of new items */
