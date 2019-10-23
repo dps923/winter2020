@@ -223,11 +223,7 @@ Now, update the app to enable the user to add a new cat to the list. The "add it
 
 Here is a short video clip (which you can view in the Safari browser) that shows this technique:
 
-<mark>smaller</mark>
-
-<!-- ![View this in the Safari browser](images/a3-cat-add-get-started.mov) -->
-
-<img src="images/a3-cat-add-get-started.mov" class="border1 width250" alt="View this in the Safari browser" />
+<img src="images/a3-cat-add-get-started.mov" class="width250" alt="View this in the Safari browser" />
 
 <br>
 
@@ -277,21 +273,29 @@ One difference is task #4 from that procedure: We will add an "edit" button to t
 
 Before doing that, we must drag a "Navigation Item" to the view; it will snap to the top. Notice that the title disappears when you do that. To fix that, we must do a task that was similar to the one we did to set the title of the "cat list" scene - select the navigation item, and then set its title. 
 
-
-What data will we allow to be edited? How about these items: 
+What data will we allow to be edited? At a minimum, how about these properties: 
 * Owner name 
 * Rating
 * Photo
 
-The photo...
+If you want to add other editable properties (e.g. cat name, weight), go ahead and do so. 
 
-Here is a short video clip (which you can view in the Safari browser) that shows this technique:
+Now, in the data model classes source code, write another class that includes the editable properties, AND the `_id` property (which is a `String`). (When we send a PUT request to a web API, we *must* send the identifier in the body of the request.)
 
-<mark>smaller</mark>
+At this point, write the essential code. During your work, test frequently and incrementally, by ensuring the data to-and-from the UI is what you expect. In the "save" method, you can just `print` or `dump` the contents to check your progress. Add the web API request handling after you test the essentials. 
 
-<!-- ![View this in the Safari browser](images/a3-cat-add-get-started.mov) -->
+Here is a short video clip (which you can view in the Safari browser) that shows this progress:
 
-<img src="images/a3-cat-edit-get-started.mov" class="border1 width250" alt="View this in the Safari browser" />
+<img src="images/a3-cat-edit-get-started.mov" class="width250" alt="View this in the Safari browser" />
+
+<br>
+
+#### Update the photo
+
+If your Mockaroo-generated data included a photo URL, you will probably notice that it starts with the non-secure scheme `http://`. As a result, the *URL Loading System* will not - by default - load from a non-secure scheme. That's OK - we do *not* want to change this behaviour.
+
+( more to come )
+
 
 
 <br>
