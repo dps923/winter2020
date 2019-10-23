@@ -30,7 +30,7 @@ Grade value: 14% of your final course grade
 The app will let the user maintain information about lovable cats &#128049; &#128008; that are owned by you, your family, and friends. The app's data is stored on a web API that you will create. 
 
 > Cats?  
-> Yes, cats. Long before the web devolved into a space filled with like-seeking 'gram-ers and surly commenters, it's primary role was as a cat photo and delivery platform.  
+> Yes, cats. Long before the web devolved into a space filled with like-seeking 'gram-ers and surly commenters, its primary role was as a cat photo and delivery platform.  
 > Ha ha, just kidding. 
 
 Here are the point-form specifications (which will be expanded on in the sections that follow). 
@@ -97,7 +97,7 @@ Notice that "weightKg" and "rating" are numbers, but the first one has decimal p
 
 The "photoUrl" field will get a placeholder (dummy) image URL, but our app will allow it to be updated by a URL to a real cat photo. 
 
-Generate and save between 100 and 150 rows of data. 
+Generate and save between 50 and 100 rows of data. 
 
 <br>
 
@@ -236,11 +236,15 @@ Here is a short video clip (which you can view in the Safari browser) that shows
 
 <br>
 
-#### View and controller tips
+#### Scene and controller tips
 
-The view must gather some data from the user. Make sure it does so safely. 
+The scene must gather some data from the user. Make sure it does so safely. 
 
 The values for the two text fields must be gathered from the keyboard, as there is no alternative. 
+
+> We suggest that you make the controller the delegate for the text fields, and then implement the `textFieldShouldReturn()` method to dismiss the keyboard.  
+> Then, the user will tap the "return" (or equivalent) keyboard key to get rid of the keyboard.  
+> Yes, you have seen and done that technique before. 
 
 The value for the "weightKg" is a floating-point number, within a range. Add a user interface (UI) control that enables that value to be entered safely. 
 
