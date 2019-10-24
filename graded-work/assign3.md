@@ -412,8 +412,54 @@ The closure function should probably do the following, to enable a good user exp
 ### DPS923 additional functionality
 
 DPS923 students must implement the following additional functionality:
-* Handle images from the web, the right way.  
-* Add a "detail" scene (using the "detail" accessory).  
+* Table view images from the web, the right way.  
+* Add a "detail" scene (and use the "detail" accessory).  
+
+<br>
+
+#### Table view images 
+
+Loading images, from the web, into table view cells is a challenging scenario. Why? 
+* The table view controller maintains a collection of reusable cells; the size of the collection is a bit larger than the number of visible cells, but often smaller than the number of items in the data source. 
+* We want smooth scrolling with no delays. In other words, the task of fetching data from the web *must not block* the user interaction. 
+
+Here is a short video clip (which you can view in the Safari browser) that shows this user interaction:
+
+<img src="images/a3-cat-list-with-photos.mov" class="width250" alt="View this in the Safari browser" />
+
+<br>
+
+In this section, you will learn a good way to handle this scenario. We will need to declare a variable (in the controller) that will hold image data, and use that as a "photo cache". Then, for each table cell, we do the following:
+1. First, display a placeholder image, loaded from the asset catalog. 
+2. Then, look for the image data in the photo cache. If it's there, display that as the image. 
+3. However, if it isn't in the cache, then attempt to fetch the image from the web. If found, then display it, and save its image data to the photo cache. 
+
+Let's get started. 
+
+First, get a *small* image (from the web) that will be used as a placeholder. Its size should be between 100 and 200 pixels wide and tall. Save it in the asset catalog. 
+
+Next, test your work - in the table view cell building code, set the cell's image to the placeholder image, and then run the app (on the simulator or on a device). 
+
+Next, prepare the photo cache. Swift has a `Dictionary` type that is ideally suited for this purpose. 
+* Learn about it in the [language guide](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113)
+* Read/skim the [reference documentation](https://developer.apple.com/documentation/swift/dictionary)
+
+> Incidentally, we cannot use an array, because array items are accessed by their position or index in the array. We must use another way. 
+
+
+
+
+
+<br>
+
+#### Detail scene implementation
+
+
+get an image, size small (100 to 200 px wide and tall)  
+drag it to the asset catalog  
+step 1, load it as a placeholder  
+
+
 
 <mark>(specs coming soon)</mark>
 
