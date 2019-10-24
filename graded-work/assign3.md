@@ -436,9 +436,15 @@ In this section, you will learn a good way to handle this scenario. We will need
 
 Let's get started. 
 
+##### Placeholder
+
 First, get a *small* image (from the web) that will be used as a placeholder. Its size should be between 100 and 200 pixels wide and tall. Save it in the asset catalog. 
 
-Next, test your work - in the table view cell building code, set the cell's image to the placeholder image, and then run the app (on the simulator or on a device). 
+The purpose of the placeholder is to display something, and quickly. 
+
+Next, test your work - in the table view cell building code, set the cell's image to the placeholder image, and then run the app (on the simulator or on a device). (Also, for best visual results, set the image view's content mode to aspect fill.)
+
+##### Photo cache 
 
 Next, prepare the photo cache. Swift has a `Dictionary` type that is ideally suited for this purpose. 
 * Learn about it in the [language guide](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113)
@@ -446,20 +452,66 @@ Next, prepare the photo cache. Swift has a `Dictionary` type that is ideally sui
 
 > Incidentally, we cannot use an array, because array items are accessed by their position or index in the array. We must use another way. 
 
+Before continuing, go through some of the content. 
 
+Why do we need a photo cache? To avoid additional fetches to the web. The idea is that after we successfully fetch an image from the web, then we save (cache) it locally. Then if that image is needed again later, it can be delivered by the photo cache. 
 
+Swift dictionaries are collections that have key-value pairs. We access an item by its key, which is usually a string. The data type of the value can be anything. For us, let's use `Data`, because it's what comes in after a fetch to the web, and it is easily convertible - to and from - a `UIImage`. 
 
+Declare a controller-level variable as the photo cache:
+
+```swift
+// Photo cache
+private var catPhotos = [String: Data]()
+```
+
+What value should we use as a string key? That's up to you. If you require uniqueness, then choose a unique value (like `_id` in a `Cat` object). Otherwise, choose another identifier (like `photoUrl` in a `Cat` object). 
+
+Next, test your work - in the table view cell building code, set the cell's image to the placeholder image, and then run the app (on the simulator or on a device). The code can look something like this:
+
+```swift
+// Attempt to load from the local photo cache
+if let image = catPhotos[cat.photoUrl] {
+```
+
+##### Fetch image from the web
+
+If the image is not in the photo cache, we must attempt to fetch it from the web. We will create a [data task](https://developer.apple.com/documentation/foundation/urlsessiondatatask), configure it, and then execute it. 
+
+First, create the data task.
+
+```swift
+let photoFetch = URLSession.shared.dataTask(with: URL(string: cat.photoUrl)!, completionHandler: { (data, response, error) in
+```
+
+In the closure function, continue only if "data" has been returned. Then, display the image, and save the image data to the photo cache. 
+
+```swift
+        // Remember, we're inside a closure function
+        // So we must access the main thread to update the UI
+        DispatchQueue.main.async {
+            cell.imageView?.image = UIImage(data: imageData)
+            
+            // Wait - we're not done - add to photo cache
+            self.catPhotos[cat.photoUrl] = data
+```
+
+You should improve the quality of this code by adding one more check *before* attempting to process the data. We should check and ensure that the `Content-Type` header begins with the characters `image/` (which would cover JPG, PNG, etc.). 
+
+```swift
+    // Continue only if the response is an image
+    guard let mimeType = response?.mimeType, mimeType.starts(with: "image/") else { return }
+```
+
+Test your work - add some diagnostic `print()` statements, and/or use the debugger, to see what happens with each cell that gets created in the table view cell building code, when you run the app (on the simulator or on a device).
 
 <br>
 
 #### Detail scene implementation
 
-
-get an image, size small (100 to 200 px wide and tall)  
-drag it to the asset catalog  
-step 1, load it as a placeholder  
-
-
+Will use a "detail" accessory.  
+This needs a new non-editable scene.  
+Its content comes from The Cat API, and will include interesting things (e.g. description etc.) about the cat breed. 
 
 <mark>(specs coming soon)</mark>
 
