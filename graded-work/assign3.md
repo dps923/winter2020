@@ -436,7 +436,7 @@ In this section, you will learn a good way to handle this scenario. We will need
 
 Let's get started. 
 
-##### Placeholder
+**Placeholder**
 
 First, get a *small* image (from the web) that will be used as a placeholder. Its size should be between 100 and 200 pixels wide and tall. Save it in the asset catalog. 
 
@@ -444,7 +444,7 @@ The purpose of the placeholder is to display something, and quickly.
 
 Next, test your work - in the table view cell building code, set the cell's image to the placeholder image, and then run the app (on the simulator or on a device). (Also, for best visual results, set the image view's content mode to aspect fill.)
 
-##### Photo cache 
+**Photo cache**
 
 Next, prepare the photo cache. Swift has a `Dictionary` type that is ideally suited for this purpose. 
 * Learn about it in the [language guide](https://docs.swift.org/swift-book/LanguageGuide/CollectionTypes.html#ID113)
@@ -474,7 +474,7 @@ Next, test your work - in the table view cell building code, set the cell's imag
 if let image = catPhotos[cat.photoUrl] {
 ```
 
-##### Fetch image from the web
+**Fetch image from the web**
 
 If the image is not in the photo cache, we must attempt to fetch it from the web. We will create a [data task](https://developer.apple.com/documentation/foundation/urlsessiondatatask), configure it, and then execute it. 
 
@@ -509,11 +509,58 @@ Test your work - add some diagnostic `print()` statements, and/or use the debugg
 
 #### Detail scene implementation
 
-Will use a "detail" accessory.  
-This needs a new non-editable scene.  
-Its content comes from The Cat API, and will include interesting things (e.g. description etc.) about the cat breed. 
+From the [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/controls/buttons/#detail-disclosure-buttons):
 
-<mark>(specs coming soon)</mark>
+> A Detail Disclosure button opens a view—typically, a modal view—containing additional information or functionality related to a specific item onscreen. Although you can use them in any type of view, Detail Disclosure buttons are commonly used in tables to access information about specific rows.
+
+The detail accessory's appearance is &#9432;, and looks like the following when used on a table view:
+
+![Detail accessory](images/a3-detail-accessory.png)
+
+As you have previously learned, if a user taps on the detail accessory, a  "detail" scene appears modally. Alternatively, if the user taps anywhere else on the row, the row's action happens (which is typically a disclosure drill-down or work flow segue). 
+
+In this section, you will implement a "detail" scene. Similar to an "add new" scene, and an "edit existing" scene, it will be presented modally. That means that its scene will be embedded in a nav controller. And, its controller will use a protocol. 
+
+> Have you seen this "detail" technique before?  
+> Maybe yes, if you *studied and reproduced* the code examples.  
+> The week 5 ["nav add" code example](https://github.com/dps923/fall2019/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductDetail controller](https://github.com/dps923/fall2019/blob/master/Week05/W05a6NavAdd/Classes/ProductDetail.swift)).  
+
+Here is a short video clip (which you can view in the Safari browser) that shows this user interaction:
+
+<img src="images/a3-cat-detail.mov" class="width250" alt="View this in the Safari browser" />
+
+**General technique**
+
+Here's a brief point-form list of tasks that must be done to implement the detail scene: 
+
+* Create a new Swift view controller class (maybe CatDetail)
+* Its code can be based on the ideas in the published code example from week 5 
+* On the storyboard, add a new view controller scene 
+* Embed it in a nav controller 
+* Add a "Done" button to the right side of the nav bar 
+* Make an action connection from the button to the appropriate method in the controller code 
+* Still in the storyboard, edit the list scene, and its prototype cell
+* Change the accessory to "Detail Disclosure" (so that both will appear)
+* Make a segue connection to the new detail scene's nav controller; choose "Accessory Action" > "Present Modally"  
+* Configure a segue name
+* Edit the hosting/presenting controller (the list controller) 
+* Adopt the detail delegate protocol 
+* Code the segue
+
+Then test. It should behave in a way that's similar to the short video clip above. 
+
+**Content (detail) to display**
+
+But wait - there's more. 
+
+In the detail controller, send a request to The Cat API for information about the breed. (You did this above, when you coded the "update photo" task.)
+
+You probably noticed a rich collection of data in the top-level `breeds` array of the returned object. You didn't care about that data before, but now you do. On this detail scene, display at least these data item values:
+* Breed "name" 
+* Breed "description" (probably in a multi-line, non-editable text view)
+* Breed "temperment" 
+
+To implement this, you will write a new class to represent the breed information (at least a few of its properties). Then, modify the existing class that defines a response from this request to The Cat API. 
 
 <br>
 
