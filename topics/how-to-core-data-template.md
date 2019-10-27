@@ -1,23 +1,23 @@
 ---
-title: How-to Template for Core Data Apps
+title: How-to Project Template for Core Data Apps
 layout: default
 ---
 
-## How-to: Template for Core Data apps
+## How-to: Project Template for Core Data apps
 
-This document describes how to use the template to build an app that uses Core Data for persistence. 
+This document describes how to use the project template to build an app that uses Core Data for persistence. 
 
 <br>
 
 ### Reminder - get the template
 
-In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2018/tree/master/Templates_and_solutions) folder, 
+In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2019/tree/master/Templates_and_solutions) folder, 
 you will see a project named **TemplateCDv1**.
 
 Make a copy of that, and you will have all you need to start working on a new project.
 
 > How do I make a copy?  
-> The Readme.txt file in the project helps you do this.
+> The "readme" file in the project helps you do this.
 
 <br>
 
