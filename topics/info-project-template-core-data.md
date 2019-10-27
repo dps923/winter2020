@@ -5,7 +5,7 @@ layout: default
 
 ## Info: Project Template for Core Data projects
 
-This document briefly introduces you to the new project template for projects that use the Core Data storage technology. It complements the in-class coverage from Monday November 12. 
+This document briefly introduces you to the new project template for projects that use the Core Data storage technology. It complements the in-class introductory coverage of Core Data. 
 
 The purpose of this document is to provide you with information. A separate "how to" document will show you how to use it for a new project. 
 
@@ -13,13 +13,13 @@ The purpose of this document is to provide you with information. A separate "how
 
 ### Get the template
 
-In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2018/tree/master/Templates_and_solutions) folder, 
+In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2019/tree/master/Templates_and_solutions) folder, 
 you will see a project named **TemplateCDv1**.
 
 Make a copy of that, and you will have all you need to start working on a new project.
 
 > How do I make a copy?  
-> The Readme.txt file in the project helps you do this.
+> The "readme" file in the project helps you do this.
 
 <br>
 
@@ -39,15 +39,15 @@ We have prepared a diagram that illustrates the design of the template. Click to
 
 <br>
 
-In the past month, we have been familiar with a simpler version of the diagram. This diagram includes the Core Data technology bits. The following explains the diagram and the code assets in the project template. Make sure you have both open when reviewing the following sections. 
+In the recent past, we have been familiar with a simpler version of the diagram. As you can see, this new diagram includes the web API request and Core Data technology bits. The following explains the diagram and the code assets in the project template. Make sure you have both open when reviewing the following sections. 
 
 <br>
 
 ### App delegate
 
-> Black box, left-middle area of the diagram. 
+> <span style="color: black;">Black box</span>, left-middle area of the diagram. 
 
-As you know, the app delegate class is the app's entry/start point. It also has methods that handle system-wide events (e.g. an incoming voice phone call). 
+As you know, the app delegate class is the app's entry or start point. It also has methods that handle system-wide events (e.g. an incoming voice phone call interruption). 
 
 As you have learned, it is the ideal place to initialize and prepare data for the app. That's what is happening here. 
 
@@ -57,7 +57,7 @@ It creates an instance of the data model manager class, and passes it along to t
 
 ### Data model manager 
 
-> Red box, lower-middle area of the diagram. 
+> <span style="color: red;">Red box</span>, lower-middle area of the diagram. 
 
 For many weeks, you have known that the role of the manager class is to centralize methods that do data service operations (fetch, add, change, etc.). That role remains the same. 
 
@@ -77,7 +77,7 @@ Notice that each extension begins with:
 extension DataModelManager {
 ```
 
-The extension includes methods that span the range of typical data service operations. A controller would get a reference to the manager when it initializes. Then, a controller would have access to ALL methods defined in the base "class" source code file, as well as in all the "extension" source code files. 
+The extension includes methods that span the range of typical data service operations *for a specific entity*. A controller would get a reference to the manager when it initializes. Then, a controller would have access to ALL methods defined in the base "class" source code file, as well as in all the "extension" source code files. 
 
 Study the methods in an extension. They should be understandable. (If not, ask.)
 
@@ -85,7 +85,7 @@ Study the methods in an extension. They should be understandable. (If not, ask.)
 
 ### WebApiRequest factory
 
-> Green box, middle-right area of the diagram. 
+> <span style="color: green;">Green box</span>, middle-right area of the diagram. 
 
 The *WebApiRequest object* is used to make a request to a web API resource. It is created from a factory class, and it can be used by the data model manager and/or controllers. 
 
@@ -93,7 +93,7 @@ The *WebApiRequest object* is used to make a request to a web API resource. It i
 
 ### Core Data stack
 
-> Green box, lower-right area of the diagram. 
+> <span style="color: green;">Green box</span>, lower-right area of the diagram. 
 
 As noted above, the *Core Data stack* is the set of objects that implement Core Data for an app. 
 
@@ -111,6 +111,8 @@ Similarly, we can make changes to an object that is current fetched to the conte
 
 ### Store initializer
 
+> <span style="color: purple;">Purple box</span>, lower-left area of the diagram. 
+
 If we want an app to get to a user WITH some starter data, we can do that. One way is to programmatically create starter data in a class like the *store initializer*. 
 
 Later in the course, we will learn other ways to create sizeable amounts of starter data, by importing data from a JSON file (for example), or fetching it from a web service. 
@@ -119,7 +121,7 @@ Later in the course, we will learn other ways to create sizeable amounts of star
 
 ### Model classes, and Core Data model classes
 
-> Red boxes, upper-middle-right area of the diagram. 
+> <span style="color: red;">Red boxes</span>, upper-middle-right area of the diagram. 
 
 These classes describe the shape of data. For entities that are NOT part of the Core Data storage scheme, we create simple structs and/or classes to describe their shape. 
 
@@ -148,7 +150,7 @@ if let newItem = m.example_CreateItem() {
 
 ### App workflow, user interface
 
-> Blue box, top-right area of the diagram. 
+> <span style="color: blue;">Blue box</span>, top-right area of the diagram. 
 
 Familiar controllers and storyboard scenes are in this area. 
 
