@@ -7,6 +7,8 @@ layout: default
 
 This page has links to various topics that supplement and/or summarize the topics discussed in class and presented in the notes. 
 
+<br>
+
 ### How to...
 
 [How to: Controller code organization](how-to-controller-code-organization)
@@ -25,11 +27,17 @@ This page has links to various topics that supplement and/or summarize the topic
 
 [How-to: Substring](how-to-substring)
 
+[How-to: Project Template for Core Data apps](/topics/how-to-core-data-template)  
+
+<br>
+
 ### Info...
 
 [Info: Swift optionals](info-optionals)
 
 [Info: Function parameters](function-parameters)
+
+[Info: Project Template for Core Data projects](/topics/info-project-template-core-data)  
 
 <br>
 
@@ -39,13 +47,6 @@ This page has links to various topics that supplement and/or summarize the topic
 How-to: Write entity model classes
 
 How-to: Write a data model manager class 
-
-[Info: Project Template for Core Data projects](/topics/info-project-template-core-data)  
-The template's design and code is explained in this document. 
-
-[How-to: Template for Core Data apps](/topics/how-to-core-data-template)  
-How-to-use information is in this document.
-
 -->
 
 <br>

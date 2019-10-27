@@ -35,7 +35,7 @@ This topic is documented in a separate noted titled:
 
 We have prepared a diagram that illustrates the design of the template. Click to open it full-size in its own tab/window:
 
-<a href="/media/iOSAppObjectsWithCoreData2018v1.png" target="_blank"><img src="/media/iOSAppObjectsWithCoreData2018v1.png" alt="Template design, Core Data"></a>
+<a href="/media/iOSAppObjectsWithCoreData2019v2.png" target="_blank"><img src="/media/iOSAppObjectsWithCoreData2019v2.png" alt="Template design, Core Data"></a>
 
 <br>
 
@@ -80,6 +80,14 @@ extension DataModelManager {
 The extension includes methods that span the range of typical data service operations. A controller would get a reference to the manager when it initializes. Then, a controller would have access to ALL methods defined in the base "class" source code file, as well as in all the "extension" source code files. 
 
 Study the methods in an extension. They should be understandable. (If not, ask.)
+
+<br>
+
+### WebApiRequest factory
+
+> Green box, middle-right area of the diagram. 
+
+The *WebApiRequest object* is used to make a request to a web API resource. It is created from a factory class, and it can be used by the data model manager and/or controllers. 
 
 <br>
 
@@ -146,7 +154,7 @@ Familiar controllers and storyboard scenes are in this area.
 
 The app delegate passes on a "manager" reference to the first active controller. Then, this reference *must* get passed on to *all other* controllers. 
 
-"List" controllers (typically of type `UITableViewController`) use a *fetched results controller*, for which we use the initialism "frc". 
+"List" controllers (typically of type `UITableViewController`) that get their data from the Core Data technologies will use a *fetched results controller*, for which we use the initialism "frc". 
 
 An frc is a wonderful and awesome object. [Among other features](https://developer.apple.com/documentation/coredata/nsfetchedresultscontroller), it efficently manages the results from a fetch request (see below for info about that), and organizes the results in a way that easily binds to the table view cells. It also automatically updates the list (table view cells) if/when data changes. 
 
@@ -164,5 +172,7 @@ For a result set with more than one object, you can choose to sort/sequence befo
 
 > This kind of criterion is known as a *sort descriptor*.  
 > To us, a sort descriptor is the name of an attribute, and a boolean value that determines ascending/descending delivery.  
+
+Alternatively, or in addition, a controller can also use a web API request object to get its data. 
 
 <br>
