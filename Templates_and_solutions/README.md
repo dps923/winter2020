@@ -17,7 +17,7 @@ This is the 2018 version of the Apple UIKit Catalog, which is a sample app. It w
 ### TemplateCDv1 - Core Data project template
 
 Use this project template for an app that will use Core Data technologies.  
-Instructions on how to use this as a template is in its [readme](TemplateCDv1/readme) document.  
+Instructions on how to use this as a template is in its [readme](TemplateCDv1/README.md) document.  
 Information about its contents is in [this info document](https://dps923.ca/topics/info-project-template-core-data). 
 
 Later versions of the template will add more features (e.g. working with a web API). 
