@@ -53,6 +53,11 @@ footer {
   max-width: 250px;
 }
 
+/* Limits the size of small thumbnail images */
+.width50percent {
+  max-width: 50%;
+}
+
 /* end of new items */
 
 @media print, screen and (max-width: 960px) {
