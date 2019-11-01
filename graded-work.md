@@ -114,19 +114,20 @@ Not all annotations will be found on your test paper.
 
 Annotation | Explanation
 --- | ---
-tba | One mark<br>(multi-mark questions may have more than one of these)
-tba | Almost one mark<br>Multiple "minus" annotations may result in a 1/2-mark decrease
-tba | One-half mark
-tba | Almost one-half mark<br>(same comment as above)
-tba | A bit more than one-half mark<br>Multiple "plus" annotations may result in a 1/2-mark increase
-tba | Zero mark
-tba | Your answer is accepted, although it may not match the expected answer
-tba | Your answer is not accepted, as it is wrong or answers a different question
-tba | The answer must be clarified for any number of reasons 
-tba | Cannot determine what the meaning is
-tba | Somewhat agree with the answer (or part thereof), but it isn't fully correct
-tba | Cannot read your writing/printing
-tba<br>-or-<br>tba | More explanation is needed to earn full marks for the question
-tba | Concept or implementation mix-up with another topic that is close / related / similar 
-tba | Word choice problem - use another word / term / phrase 
-tba | Good quality answer
+![Annotation](media/ta-one-mark.png) | One mark<br>(multi-mark questions may have more than one of these)
+![Annotation](media/ta-one-mark-almost.png) | Almost one mark<br>Multiple "minus" annotations may result in a 1/2-mark decrease
+![Annotation](media/ta-one-half-mark.png) | One-half mark
+![Annotation](media/ta-one-half-mark-minus.png) | Almost one-half mark<br>(same comment as above)
+![Annotation](media/ta-one-half-mark-plus.png) | A bit more than one-half mark<br>Multiple "plus" annotations may result in a 1/2-mark increase
+![Annotation](media/ta-zero-mark.png) | Zero mark
+![Annotation](media/ta-answer-ignored.png) | This answer was ignored
+![Annotation](media/ta-ok-accepted.png) | Your answer is accepted, although it may not match the expected answer
+![Annotation](media/ta-not-accepted.png) | Your answer is not accepted, as it is wrong or answers a different question
+![Annotation](media/ta-clarify.png) | The answer must be clarified for any number of reasons 
+![Annotation](media/ta-unknown-meaning.png) | Cannot determine what the meaning is
+![Annotation](media/ta-agree-somewhat.png) | Somewhat agree with the answer (or part thereof), but it isn't fully correct
+![Annotation](media/ta-cannot-read.png) | Cannot read your writing/printing
+![Annotation](media/ta-more-needed.png)<br>-or-<br>![Annotation](media/ta-not-enough.png) | More explanation is needed to earn full marks for the question
+![Annotation](media/ta-concept-mixup.png) | Concept or implementation mix-up with another topic that is close / related / similar 
+![Annotation](media/ta-word-choice.png) | Word choice problem - use another word / term / phrase 
+![Annotation](media/ta-good-answer.png) | Good quality answer
