@@ -105,3 +105,28 @@ However, as a general rule, we don't do due date extensions for assignments, for
 Therefore, no due date extensions.
 
 <br>
+
+### Test grading annotations
+
+The following is an explanation of the annotations made on your written test papers. 
+
+Not all annotations will be found on your test paper.
+
+Annotation | Explanation
+--- | ---
+tba | One mark<br>(multi-mark questions may have more than one of these)
+tba | Almost one mark<br>Multiple "minus" annotations may result in a 1/2-mark decrease
+tba | One-half mark
+tba | Almost one-half mark<br>(same comment as above)
+tba | A bit more than one-half mark<br>Multiple "plus" annotations may result in a 1/2-mark increase
+tba | Zero mark
+tba | Your answer is accepted, although it may not match the expected answer
+tba | Your answer is not accepted, as it is wrong or answers a different question
+tba | The answer must be clarified for any number of reasons 
+tba | Cannot determine what the meaning is
+tba | Somewhat agree with the answer (or part thereof), but it isn't fully correct
+tba | Cannot read your writing/printing
+tba<br>-or-<br>tba | More explanation is needed to earn full marks for the question
+tba | Concept or implementation mix-up with another topic that is close / related / similar 
+tba | Word choice problem - use another word / term / phrase 
+tba | Good quality answer
