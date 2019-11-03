@@ -59,6 +59,8 @@ The final else clause is optional, however, and can be excluded if the set of co
 
 ### Core Data
 
+Multipart series on [Mastering In Core Data](https://medium.com/@aliakhtar_16369/mastering-in-core-data-part-0-5a529c6c5a93) (Medium, Ali Akhtar) 
+
 [CD and Swift for beginners](https://medium.com/xcblog/core-data-with-swift-4-for-beginners-1fc067cca707)
 
 [CD cheat sheet and snippets](https://www.andrewcbancroft.com/2015/02/18/core-data-cheat-sheet-for-swift-ios-developers/)
