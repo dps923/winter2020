@@ -1,5 +1,5 @@
 ---
-title: DPS923 MAP523 Week 7
+title: DPS923 MAP523 Week 8
 layout: default
 ---
 
