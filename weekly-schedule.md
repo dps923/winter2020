@@ -25,7 +25,7 @@ Week 8<br>Oct 30, Nov 1 | Core Data introduction | Assign 3 | 14%
 Week 9<br>Nov 6, Nov 8 | Data service operations (fetch etc.) | | 
 Week 10<br>Nov 13, Nov 15 | Multi-entity data model<br>Location services introduction | Test 3 | 14%
 Week 11<br>Nov 20, Nov 22 | Mapping services introduction | | 
-Week 12<br>Nov 27, Nov 29 | App building topics<br>(L)ikely layout and constraints) | Test 4 | 14%
+Week 12<br>Nov 27, Nov 29 | App building topics<br>(Likely layout and constraints) | Test 4 | 14%
 Week 13<br>Dec 4, Dec 6 | App building topics | Assign 4 | 18% | 
 
 <br>
