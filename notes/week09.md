@@ -39,6 +39,8 @@ A [version 2](https://github.com/dps923/fall2019/tree/master/Templates_and_solut
 
 [Core Data essentials](core-data-essentials). 
 
+[Syntax comparisons among data store technologies](core-data-syntax-compare).
+
 (more to come)
 
 <br>
