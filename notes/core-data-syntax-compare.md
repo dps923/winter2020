@@ -39,7 +39,37 @@ select * from people
 
 ### Select / fetch / get from the store, filtered, sorted
 
-( more to come )
+Core Data  
+```swift
+let fetchRequest: NSFetchRequest<Person> = Person.fetchRequest()
+
+// Filter the results
+fetchRequest.predicate = NSPredicate(format: "age < 25", argumentArray: nil)
+
+// Sort the results
+fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
+
+do {
+    let results = try m.ds_context.fetch(fetchRequest)
+    // Handle the results
+} catch let error {
+    print(error.localizedDescription)
+}
+```
+
+MongoDB  
+```js
+let results = db.people.find(
+  { age: { $lt: 25 } }
+).sort(
+  { name: 1 }
+)
+```
+
+SQL  
+```sql
+select * from people where age < 25 order by name asc
+```
 
 <br>
 
