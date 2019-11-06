@@ -37,9 +37,13 @@ Learn via the code examples.
 
 A [version 2](https://github.com/dps923/fall2019/tree/master/Templates_and_solutions) of the project template. 
 
-[Core Data essentials](core-data-essentials). 
+[Fetch request essentials](core-data-fetchrequest-essentials).
+
+(coming soon...) Fetched results controller essentials. 
 
 [Syntax comparisons among data store technologies](core-data-syntax-compare).
+
+[Core Data essentials summary](core-data-essentials). 
 
 (more to come)
 
