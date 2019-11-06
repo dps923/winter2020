@@ -30,7 +30,7 @@ class Person {
 }
 ```
 
-Similarly, the *Core Data model editor* enables us to design an entity named "Person", and it would have two property attributes named "firstName" and "lastName", both of type String. 
+Similarly, the *[Core Data model editor](https://help.apple.com/xcode/mac/10.2/#/devd12d8e252)* enables us to design an entity named "Person", and it would have two property attributes named "firstName" and "lastName", both of type String. 
 
 Here's the editor in table view:
 
