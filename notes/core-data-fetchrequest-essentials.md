@@ -5,7 +5,7 @@ layout: default
 
 ## Core Data fetch request essentials
 
-This document introduces you to the essential knowledge needed to understand and use a Core Data *fetch request*. 
+This document introduces you to the essential knowledge needed to understand and use a Core Data *fetch request*. We use a fetch request to get all, some, or one object, from the peristent store, into memory. 
 
 <br>
 
@@ -32,14 +32,14 @@ There are also other aspects of a fetch request that can be configured.
 As with other database-like storage technologies, the use cases are varied, and include:
 * fetch all 
 * fetch some, filtered 
-* fetch one
+* fetch one, to match a unique value 
 * and perhaps ordered/sequenced in some way
 
 <br>
 
 #### Return type
 
-An array of results. Zero or more. (It's unlikely that the return value will be `nil`. If it is `nil`, then there is a serious problem with the app's data storage, rather than a fetch request problem.)
+A fetch request will return *an array* of results. In the array, there will be zero or more objects. (It's unlikely that the return value will be `nil`. If it is `nil`, then there is a serious problem with the app's data storage, rather than a fetch request problem.)
 
 <br>
 
@@ -64,9 +64,9 @@ The `results` variable is an array with zero or more `Person` objects.
 
 ### Predicates
 
-(more to come)
+From above, a predicate specifies which properties to filter by and the constraints on selection. The predicate is an object that includes a *predicate string* and typically some *arguments*. 
 
-The predicate can be simple:
+The predicate can be simple; for example:
 * age less than 25
 * age less than the current value of a variable 
 * company equals the current value of a variable 
@@ -87,6 +87,10 @@ fetchRequest.predicate = NSPredicate(format: "age < %@", argumentArray: [age])
 ```
 
 <br>
+
+Our experience (in this course) is that there is no single authoritative comprehensive source that will explain and show examples of all possible predicate strings. 
+
+(more to come)
 
 Links that we'll refer to in class:
 

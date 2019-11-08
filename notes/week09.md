@@ -59,7 +59,21 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Friday plan
 
-Work on the programming assignment, and get help from a classmate or the professor if you need it. 
+Your goal today is to create an app that uses a Core Data store. It will display data based on something that Mockaroo can easily generate. Here's what to do:
+
+1. Use `TemplateCDv2` to create an app. Do the "rename" tasks to a project name that makes sense. 
+
+2. Visit [mockaroo.com](https://mockaroo.com). Generate 150 rows of JSON data. Configure the fields so that you have at least one field that gets values that repeat somewhat (e.g. states, provinces, car makes, etc. - look around; don't be lazy). 
+
+3. Add that JSON file to your project.  
+
+4. Use the code example to learn how to load the JSON data into a Core Data store. 
+
+5. Change the "list" table view controller to display the data. 
+
+In #5 above, we suggest that you use a simpler *fetch request* object first, to fetch the data. 
+
+Then, adapt the code, changing it to use a *fetched results controller* object. Obviously, the cell rendering code will have to change a bit. 
 
 <br>
 
