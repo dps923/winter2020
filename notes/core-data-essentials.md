@@ -58,7 +58,7 @@ m.ds_save()
 
 ### Delete existing object
 
-Call the ]context's "delete" method](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506847-delete), then [its "save" method](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506866-save). 
+Call the [context's "delete" method](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506847-delete), then [its "save" method](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506866-save). 
 
 ```swift
 // Assume that you have a reference to an existing "student" object 
