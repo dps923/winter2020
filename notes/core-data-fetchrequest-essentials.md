@@ -13,7 +13,7 @@ This document introduces you to the essential knowledge needed to understand and
 
 From the [Apple documentation](https://developer.apple.com/documentation/coredata/nsfetchrequest), a fetch request is a "description of search criteria used to retrieve data from a persistent store."
 
-Continuing, and adapted from the documentation, an instance of NSFetchRequest collects the criteria needed to select and optionally to sort [entity objects] in a persistent store. 
+Continuing, and adapted from the documentation, an instance of `NSFetchRequest` collects the criteria needed to select and optionally to sort [entity objects] in a persistent store. 
 
 It frequently also contains:
 * A predicate that specifies which properties to filter by and the constraints on selection. If you don’t specify a predicate, then all instances of the specified entity are selected.
@@ -64,18 +64,18 @@ The `results` variable is an array with zero or more `Person` objects.
 
 ### Predicates
 
-From above, a predicate specifies which properties to filter by and the constraints on selection. The predicate is an object that includes a *predicate string* and typically some *arguments*. 
+From above, a predicate specifies which properties to filter by, and the constraints on selection. The predicate is an object that includes a *predicate string* and typically some *arguments*. 
 
 The predicate can be simple; for example:
 * age less than 25
 * age less than the current value of a variable 
-* company equals the current value of a variable 
+* company name equals the current value of a variable 
 
 The predicate can also be complex:
 * AND and OR conditions 
 * runtime determination of the property to filter on (in addition to the property's value)
 
-For example:
+Here are a few simple examples:
 
 ```swift
 // Filter the results
@@ -90,9 +90,7 @@ fetchRequest.predicate = NSPredicate(format: "age < %@", argumentArray: [age])
 
 Our experience (in this course) is that there is no single authoritative comprehensive source that will explain and show examples of all possible predicate strings. 
 
-(more to come)
-
-Links that we'll refer to in class:
+Therefore, there are some online resources, from Apple and others, that will enable you to learn more. Here are some links that we'll refer to in class:
 
 [Creating predicates](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Predicates/Articles/pCreating.html#//apple_ref/doc/uid/TP40001793)
 
@@ -104,9 +102,9 @@ Links that we'll refer to in class:
 
 ### Sort descriptors
 
-(more to come)
+A fetch request can have - if desired - one or more sort descriptors. (More than one? For example, think about a sort by last name, then by first name.)
 
-A fetch request can have - if desired - one or more sort descriptors. (More than one? For example, think about a sort by last name then by first name). 
+The `sortDescriptors` property is an optional array of sort descriptor objects. Each sort descriptor object names a "key" to sort on (the data property name), and a true/false value for "ascending". The typical syntax style is to use the `NSSortDescriptor` initializer inline in the statement. 
 
 For example:
 

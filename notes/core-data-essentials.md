@@ -46,6 +46,8 @@ m.ds_save()
 
 ### Modify existing object, then save
 
+Call the [context's "save" method](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506866-save) (which is surfaced in the data model manager's `ds_save()` method).
+
 ```swift
 // Assume that "student" object already exists
 student.name = "Peter"
@@ -56,7 +58,15 @@ m.ds_save()
 
 ### Delete existing object
 
-TBA
+Call the ]context's "delete" method](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506847-delete), then [its "save" method](https://developer.apple.com/documentation/coredata/nsmanagedobjectcontext/1506866-save). 
+
+```swift
+// Assume that you have a reference to an existing "student" object 
+m.ds_context.delete(student)
+m.ds_save()
+```
+
+<br>
 
 ### Count all items in an entity collection
 
@@ -100,6 +110,8 @@ do {
 }
 ```
 
+<br>
+
 ### Fetch some from an entity collection 
 
 Similar to above, but with a predicate. 
@@ -122,21 +134,22 @@ do {
 
 ### Fetch one specifically-requested object from an entity collection
 
-We use a *fetch request* object. Similar to above, with a predicate, but we're looking for exactly one object (a match), or `nil` (not found). TBA - array? 
+We use a *fetch request* object. Similar to above, we use a predicate, but we're looking for exactly one object. 
 
-TBA
+Therefore, look at the results array. If it has zero objects, then the object was "not found". 
 
-### Fetch for use in a `UITableViewController`
+If it has one object, then the object was "found", and you can use it. 
 
-The table view controller must adopt the xxx protocol. Then, we create a *fetched results controller* (frc). One of the properties of the frc is a *fetch request*, which is configured to meet the needs of the table view (and would be very similar to the "fetch all" or "fetch some" tasks above). 
-etc.
-
-TBA
+If it has more than one object, and you were expecting only one (or none), then study the data model and then modify the predicate to improve the fetch results. 
 
 <br>
 
-### Common predicates
+### Fetch for use in a `UITableViewController`
 
-We will have a separate document with this info.
+The table view controller must adopt the `NSFetchedResultsControllerDelegate` protocol. 
+
+Then, we create a *fetched results controller* (frc). One of the properties of the frc is a *fetch request*, which is configured to meet the needs of the table view (and would be very similar to the "fetch all" or "fetch some" tasks above). 
+
+Code the controller load and table build methods to use the frc properties and methods. 
 
 <br>

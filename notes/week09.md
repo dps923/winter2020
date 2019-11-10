@@ -31,7 +31,7 @@ We will cover these - discuss, show-and-tell, diagram, etc. - in the Wednesday c
 
 <br>
 
-### Tentative topic plan 
+### Topic plan 
 
 Learn via the code examples.
 
@@ -39,20 +39,19 @@ A [version 2](https://github.com/dps923/fall2019/tree/master/Templates_and_solut
 
 [Fetch request essentials](core-data-fetchrequest-essentials).
 
-(coming soon...) Fetched results controller essentials. 
+[Fetched results controller essentials](core-data-frc-essentials). 
 
 [Syntax comparisons among data store technologies](core-data-syntax-compare).
 
 [Core Data essentials summary](core-data-essentials). 
-
-(more to come)
 
 <br>
 
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* W09a1LoadV1
+* W09a1LoadV1 (programmatic load of some objects)
+* W09a2LoadV2 (load from a JSON file in the app bundle)
 * TemplateCDv2 (in the templates and solutions folder)
 
 <br>
