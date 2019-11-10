@@ -22,11 +22,10 @@ Also enables navigation to a list of objects, and selection of one of those navi
 
 ###  W09a2LoadV2
 
-> Draft version - it will be updated.  
-> This version will help you get started with the idea.  
-
 Shows how to load a Core Data store with JSON starter data.  
 
 Look at the store initializer. It shows how to read a JSON file from the bundle, and load its contents into a Core Data store. 
 
-The "list" table view controller has a fetched results controller (frc) with all the goodness to display the data using "sections". 
+There are two "list" table view controllers.  
+`ListFetchRequestOnly` uses a *fetch request* to get the data.  
+`ListFRCSections` uses a *fetched results controller* (frc) to get the data. Notice the use of "section" info.  
