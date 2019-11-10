@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D064E30B219AF0B5003344F3 /* ExampleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064E30A219AF0B5003344F3 /* ExampleList.swift */; };
+		D064E30B219AF0B5003344F3 /* ListFRCSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064E30A219AF0B5003344F3 /* ListFRCSections.swift */; };
 		D064E30D219AFB92003344F3 /* ExampleEditCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064E30C219AFB92003344F3 /* ExampleEditCD.swift */; };
 		D064E30F219AFE57003344F3 /* ExampleEditCD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D064E30E219AFE57003344F3 /* ExampleEditCD.storyboard */; };
 		D064E311219AFF79003344F3 /* ExampleAddEditCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D064E310219AFF79003344F3 /* ExampleAddEditCD.swift */; };
@@ -27,6 +27,9 @@
 		D09B8BEF2199E2A7005389E9 /* ExampleDetailCD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09B8BEE2199E2A7005389E9 /* ExampleDetailCD.storyboard */; };
 		D0B48C79219A0E6700D23E31 /* ExampleSceneBaseCD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0B48C78219A0E6700D23E31 /* ExampleSceneBaseCD.storyboard */; };
 		D0E6931E2375C39F00955A83 /* data-persons.json in Resources */ = {isa = PBXBuildFile; fileRef = D0E6931D2375C39F00955A83 /* data-persons.json */; };
+		D0E6932023783BE200955A83 /* ListFetchRequestOnly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6931F23783BE200955A83 /* ListFetchRequestOnly.swift */; };
+		D0E6932223783F7800955A83 /* PersonScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6932123783F7800955A83 /* PersonScene.swift */; };
+		D0E693242378433E00955A83 /* LaunchScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E693232378433E00955A83 /* LaunchScene.swift */; };
 		D0E9F8B8237081F30098F453 /* WebApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9F8B7237081F30098F453 /* WebApiRequest.swift */; };
 		D0EE17692196206500404E29 /* ExampleAddCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE17602196206400404E29 /* ExampleAddCD.swift */; };
 		D0EE176B2196206500404E29 /* ExampleDetailCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0EE17622196206500404E29 /* ExampleDetailCD.swift */; };
@@ -39,7 +42,7 @@
 
 /* Begin PBXFileReference section */
 		D03D4D44219B096600113DB1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D064E30A219AF0B5003344F3 /* ExampleList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleList.swift; sourceTree = "<group>"; };
+		D064E30A219AF0B5003344F3 /* ListFRCSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListFRCSections.swift; sourceTree = "<group>"; };
 		D064E30C219AFB92003344F3 /* ExampleEditCD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleEditCD.swift; sourceTree = "<group>"; };
 		D064E30E219AFE57003344F3 /* ExampleEditCD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleEditCD.storyboard; sourceTree = "<group>"; };
 		D064E310219AFF79003344F3 /* ExampleAddEditCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddEditCD.swift; sourceTree = "<group>"; };
@@ -61,6 +64,9 @@
 		D09B8BEE2199E2A7005389E9 /* ExampleDetailCD.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExampleDetailCD.storyboard; sourceTree = "<group>"; };
 		D0B48C78219A0E6700D23E31 /* ExampleSceneBaseCD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExampleSceneBaseCD.storyboard; sourceTree = "<group>"; };
 		D0E6931D2375C39F00955A83 /* data-persons.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "data-persons.json"; sourceTree = "<group>"; };
+		D0E6931F23783BE200955A83 /* ListFetchRequestOnly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListFetchRequestOnly.swift; sourceTree = "<group>"; };
+		D0E6932123783F7800955A83 /* PersonScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonScene.swift; sourceTree = "<group>"; };
+		D0E693232378433E00955A83 /* LaunchScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScene.swift; sourceTree = "<group>"; };
 		D0E9F8B7237081F30098F453 /* WebApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebApiRequest.swift; sourceTree = "<group>"; };
 		D0EE17602196206400404E29 /* ExampleAddCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleAddCD.swift; sourceTree = "<group>"; };
 		D0EE17622196206500404E29 /* ExampleDetailCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDetailCD.swift; sourceTree = "<group>"; };
@@ -105,7 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				D07B35112194DD83006DF53D /* AppDelegate.swift */,
-				D064E30A219AF0B5003344F3 /* ExampleList.swift */,
+				D0E693232378433E00955A83 /* LaunchScene.swift */,
+				D0E6931F23783BE200955A83 /* ListFetchRequestOnly.swift */,
+				D064E30A219AF0B5003344F3 /* ListFRCSections.swift */,
+				D0E6932123783F7800955A83 /* PersonScene.swift */,
 				D07B351D2194DD84006DF53D /* LaunchScreen.storyboard */,
 				D07B35152194DD83006DF53D /* Main.storyboard */,
 				D07B351B2194DD84006DF53D /* Assets.xcassets */,
@@ -242,11 +251,14 @@
 				D064E30D219AFB92003344F3 /* ExampleEditCD.swift in Sources */,
 				D07B352C2194DEB8006DF53D /* CDStack.swift in Sources */,
 				D07B351A2194DD83006DF53D /* AppData.xcdatamodeld in Sources */,
+				D0E693242378433E00955A83 /* LaunchScene.swift in Sources */,
+				D0E6932023783BE200955A83 /* ListFetchRequestOnly.swift in Sources */,
 				D0E9F8B8237081F30098F453 /* WebApiRequest.swift in Sources */,
 				D0EE177A2196351000404E29 /* ExampleListBaseCD.swift in Sources */,
-				D064E30B219AF0B5003344F3 /* ExampleList.swift in Sources */,
+				D064E30B219AF0B5003344F3 /* ListFRCSections.swift in Sources */,
 				D0EE176F2196206500404E29 /* ExampleSceneBaseCD.swift in Sources */,
 				D0EE17692196206500404E29 /* ExampleAddCD.swift in Sources */,
+				D0E6932223783F7800955A83 /* PersonScene.swift in Sources */,
 				D07B352F2194DEB8006DF53D /* DataModelManager+Example.swift in Sources */,
 				D07B352E2194DEB8006DF53D /* DataModelClasses.swift in Sources */,
 			);

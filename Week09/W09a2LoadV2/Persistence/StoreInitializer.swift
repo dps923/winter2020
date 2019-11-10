@@ -64,11 +64,13 @@ class StoreInitializer {
         
         // Attempt to decode the data into a "Country" object
         do {
+            // The incoming JSON data is an array of objects
+            // Therefore, notice how it is declared in the following "decode" function call
             let result = try decoder.decode([PersonIncoming].self, from: personData)
             // Publish the result
             persons = result
             
-            // Load the Core Data store
+            // Load the Core Data store (the "save" is done in the CDStack code)
             for p in persons {
                 let newPerson = Person(context: context)
                 newPerson.id = Int32(p.id)

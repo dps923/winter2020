@@ -24,7 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav = window!.rootViewController as! UINavigationController
         
         // Get a reference to the actual view controller
-        let vc = nav.topViewController as! ExampleList
+        let vc = nav.topViewController as! LaunchScene
+        
+        //let vc = nav.topViewController as! ListFRCSections
+        //let vc = nav.topViewController as! ListFetchRequestOnly
         
         // Pass the model object to the controller
         vc.m = m
