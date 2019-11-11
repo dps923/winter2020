@@ -1,6 +1,6 @@
 ###  This is README.md in the template project
 
-Version 2 of the template, on November 4, 2019. 
+Version 2 of the template, on November 8, 2019. 
 
 Compared to version 1, some new features are included:
 * The web API request class is included, in the persistence folder 

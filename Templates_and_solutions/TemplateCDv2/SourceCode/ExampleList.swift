@@ -101,12 +101,23 @@ class ExampleList: ListBaseCD {
         return self.frc.sections?.count ?? 0
     }
     
+    // What is the section title?
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        // Get a reference to the section object in the frc
+        // And make sure there is a section name
+        if let s = self.frc.sections?[section], s.name.count > 0 {
+            return "Your custom section prompt \(s.name)"
+        }
+        return nil
+    }
+
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.frc.sections?[section].numberOfObjects ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "default", for: indexPath)
         
         let item = frc.object(at: indexPath) 
         cell.textLabel!.text = item.name

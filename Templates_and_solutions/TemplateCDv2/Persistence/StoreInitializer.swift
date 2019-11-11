@@ -9,6 +9,7 @@ class StoreInitializer {
     
     class func addStarterData(context: NSManagedObjectContext) {
         
+        /*
         guard let entity = NSEntityDescription.entity(forEntityName: "Example", in: context) else {
             fatalError("Can't create entity named Example")
         }
@@ -22,6 +23,7 @@ class StoreInitializer {
         let obj2 = Example(entity: entity, insertInto: context)
         obj2.name = randomString(randomInteger(between: 5, and: 15))
         obj2.quantity = Int32(randomInteger(between: 10, and: 500))
+        */
         
         // Alternative, looping object creation...
         /*
@@ -44,7 +46,7 @@ class StoreInitializer {
         
         // Local variables
         var countryData: Data!
-        var countries: Country!
+        var countries = [Country]()
         
         // Attempt to read and decode
         do {
@@ -57,12 +59,13 @@ class StoreInitializer {
         // Create and configure a JSON decoder
         let decoder = JSONDecoder()
         // Set the date decoding strategy, full or fractional seconds
-        decoder.dateDecodingStrategy = .iso8601
+        //decoder.dateDecodingStrategy = .iso8601
         //decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
         
-        // Attempt to decode the data into a "Country" object
+        // Assume that the source JSON is an array of country objects
+        // Attempt to decode the data into a "Country" array
         do {
-            let result = try decoder.decode(Country.self, from: countryData)
+            let result = try decoder.decode([Country].self, from: countryData)
             // Publish the result
             countries = result
             // Diagnostic
