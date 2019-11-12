@@ -127,6 +127,18 @@ let hasJump = fox.contains("jumped over")
 
 <br>
 
+#### Replace part of a string
+
+Use the `replacingOccurrences()` method on the original string, which returns a new string:
+
+```swift
+let fox = "The quick brown fox jumped over the lazy dog."
+let goat = fox.replacingOccurrences(of: "brown fox", with: "grey goat")
+// goat is a new String instance
+```
+
+<br>
+
 #### References
 
 The [Swift Substring structure](https://developer.apple.com/documentation/swift/substring) has much functionality. Look at the reference documentation for more. 
