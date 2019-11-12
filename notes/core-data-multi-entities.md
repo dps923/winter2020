@@ -20,15 +20,15 @@ A company has a collection of employees. And, it has a collection of products.
 
 When it starts, it shows the logical root data, the list of companies. It enables a disclosure (drill-down) workflow scene. 
 
-<img src="media/multi-company-list.png" class="border1" alt="Company list" />&nbsp;&nbsp;<img src="media/multi-company-scene.png" class="border1" alt="Company scene" />
+<img src="/media/multi-company-list.png" class="border1" alt="Company list" />&nbsp;&nbsp;<img src="/media/multi-company-scene.png" class="border1" alt="Company scene" />
 
 For each company, the scene offers a disclosure workflow to either employees or products. Here's the employees pair of scenes. 
 
-<img src="media/multi-employee-list.png" class="border1" alt="Employee list" />&nbsp;&nbsp;<img src="media/multi-employee-scene.png" class="border1" alt="Employee scene" />
+<img src="/media/multi-employee-list.png" class="border1" alt="Employee list" />&nbsp;&nbsp;<img src="/media/multi-employee-scene.png" class="border1" alt="Employee scene" />
 
 Here's the products pair of scenes.
 
-<img src="media/multi-product-list.png" class="border1" alt="Product list" />&nbsp;&nbsp;<img src="media/multi-Product-scene.png" class="border1" alt="Product scene" />
+<img src="/media/multi-product-list.png" class="border1" alt="Product list" />&nbsp;&nbsp;<img src="/media/multi-Product-scene.png" class="border1" alt="Product scene" />
 
 
 
@@ -43,6 +43,10 @@ In the model editor:
 
 Property values
 * collection, object 
+
+Click/tap to open full-size in a new tab/window.
+
+<a href="/media/multi-core-data-model.png" target="_blank"><img src="/media/multi-core-data-model.png" alt="Data model" /></a>
 
 <br>
 
