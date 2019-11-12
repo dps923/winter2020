@@ -87,7 +87,7 @@ What about its collection of employees?
 let employees = c.employees
 // The type of employees will be NSSet
 // This is the base class for sets, and is very generic
-// For example, it doesn't let us do this...
+// For example, it does not let us do this...
 let emp = employees[0]
 let emp = employees.first
 // The following idea will also fail; it won't find "name"
@@ -100,7 +100,7 @@ In that form, it isn't very useful to us. Let's transform it into something we c
 let employees = c.employees as Set<Employee>
 ```
 
-Now we can do some tasks with this typed set, but it still isn't useful to us. We recommend that it be transformed into a sorted array:
+Now we can do some tasks with this typed set, but it still isn't very useful to us. We recommend that it be transformed into a sorted array:
 
 ```swift
 let employees = c.employees?.sortedArray(using: [NSSortDescriptor(key: "name", ascending: true)]) as? [Employee]
