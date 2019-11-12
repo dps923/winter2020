@@ -34,7 +34,7 @@ We will cover these - discuss, show-and-tell, diagram, etc. - in the Wednesday c
 
 Learn via the code examples.
 
-Multi-entity data model...
+[Multi-entity data model](core-data-multi-entities) notes.
 
 Location services introduction...
 
