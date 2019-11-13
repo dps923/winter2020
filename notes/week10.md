@@ -38,7 +38,7 @@ Learn via the code examples.
 
 [Table view editing](core-data-tableview-editing) notes. 
 
-Location services introduction...
+[Location services introduction](location-intro)
 
 (more to come)
 

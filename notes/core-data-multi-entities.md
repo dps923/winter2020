@@ -110,8 +110,49 @@ Do you see what happened? The set has a `sortedArray()` method, and we transform
 
 <br>
 
+#### Functions
+
+In addition to the generated properties (above), an entity class will also have generated functions for the related entity. 
+
+For example, a `Company` that has a one-to-many relationship with `Employee` will have the following functions available. Guess what they do? Sweet. 
+
+```swift
+// Add one
+@objc(addEmployeesObject:)
+@NSManaged public func addToEmployees(_ value: Employee)
+
+// Remove one
+@objc(removeEmployeesObject:)
+@NSManaged public func removeFromEmployees(_ value: Employee)
+
+// Add one or more in a single request
+@objc(addEmployees:)
+@NSManaged public func addToEmployees(_ value: NSSet)
+
+// Remove one or more in a single request
+@objc(removeEmployees:)
+@NSManaged public func removeFromEmployees(_ value: NSSet)
+```
+
+<br>
+
 ### Learning resources and references
 
-(more to come)
+[Core Data](https://developer.apple.com/documentation/coredata) topic introductory document. 
+
+[Modeling Data](https://developer.apple.com/documentation/coredata/modeling_data) document. 
+
+[Configuring Relationships](https://developer.apple.com/documentation/coredata/modeling_data/configuring_relationships) document. 
+
+[Generating Code](https://developer.apple.com/documentation/coredata/modeling_data/generating_code) document.  
+> Note:  
+> The default is to generate code, but we do not see the generated source code files in the project navigator.  
+> If [we decide](https://developer.apple.com/documentation/coredata/modeling_data/generating_code#3039135) to generate code, Xcode *will* add source code files to our project, which you can then edit.  
+> Totally optional - not necessary for simple scenarios.  
+
+<br>
+
+Older / archive:  
+[Creating Managed Object Relationships](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/HowManagedObjectsarerelated.html#//apple_ref/doc/uid/TP40001075-CH17-SW1) document. 
 
 <br>
