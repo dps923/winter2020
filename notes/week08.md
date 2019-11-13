@@ -102,6 +102,24 @@ Work on the programming assignment, and get help from a classmate or the profess
 ### Summary
 
 Here's a list of topics that we learned something about this week:
-1. (to be posted)
+1. Simple data model, few updates? It's OK to persist data as plist or JSON. 
+1. Complex data model? Related data entities? Large amounts of data? Core Data technology is the answer. 
+1. Core Data is like a database (in that it persists data, acts as an engine or interface to the data, supports querying, etc.). 
+1. However, it is not a database like MongoDB or MySQL. It is closer conceptually to language-embedded technologies (like [LINQ](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/) or [mongoose](https://mongoosejs.com)). 
+1. A working definition is that Core Data is *an object design, management, and persistence framework*. 
+1. In an app, the presence of a *Core Data "stack"* enables the app to use Core Data technology. 
+1. A Core Data *model editor* is used to define entities and their attributes, and relationships among entities. 
+1. An awesome feature of the model editor is that it generates Swift classes for the defined entities. 
+1. Arguably, the *most important* object in a Core Data app is the *managed object context* (also just known as the *context*). It is a work area for objects that are in memory. 
+1. The context supports typical operations like fetch (from the persistent store), add new (programmatically), edit existing, and delete item. 
+1. It also supports "save changes", which persists the state of the context to storage. 
+1. From the *fetch* perspective, a *fetch request* is an object that works with an entity collection. We can configure results filtering (using a predicate) and ordering (using a sort descriptor). 
+1. A *fetched results controller* is a purpose-built object, designed to work with a table view controller. More about that next week. 
+1. An app with Core Data can be built from scratch, but you would typically never do that. You would use a project template. 
+1. The Xcode-provided templates that use Core Data have a stack that works, but is not suitable for well-designed and architected app. 
+1. Most developers use a template, and this course offers `TemplateCDv1` (and `2` etc.) templates. Use a template as a base for any new app. 
+1. Useful features include the surfacing of the context in the data model manager, and a save task. 
+1. It also includes a *fetched results controller* factory, which enables the developer to easily and quickly define one of these objects. 
+1. You should be able to learn at least five new coding tasks and strategies by studying the code examples. 
 
 <br>
