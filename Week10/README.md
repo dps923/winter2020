@@ -29,3 +29,14 @@ Accompanies the [table view editing](https://dps923.ca/notes/core-data-tableview
 Use that document to guide you through the code that enables table view editing.  
 
 <br>
+
+### W10a3Location
+
+Shows two capabilities:
+1. Location services, to get and use a GPS coordinate set   
+2. Reverse geocoding, to get and use the address for a GPS coordinate set
+
+Run this on the simulator, and it will report a preconfigured location.  
+Run this on a device, and it will report your actual location. 
+
+<br>
