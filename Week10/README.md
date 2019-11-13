@@ -22,3 +22,10 @@ The data model has three entities:
 A company has a collection of employees. And, it has a collection of products. 
 
 <br>
+
+### W10a2TVEdit
+
+Accompanies the [table view editing](https://dps923.ca/notes/core-data-tableview-editing) document.  
+Use that document to guide you through the code that enables table view editing.  
+
+<br>
