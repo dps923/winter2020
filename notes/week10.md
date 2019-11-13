@@ -36,6 +36,8 @@ Learn via the code examples.
 
 [Multi-entity data model](core-data-multi-entities) notes.
 
+[Table view editing](core-data-tableview-editing) notes. 
+
 Location services introduction...
 
 (more to come)
