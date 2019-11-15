@@ -28,23 +28,40 @@ Grade value: 18% of your final course grade
 
 ### Overview and purpose
 
-The app will... (TBA). 
+We need an app that will enable you to capture and store information about the food you eat during the day. 
 
-Tentative:
-* Your own idea, or
-* The idea in this document 
+It is important for everyone to have good nutrition habits. Diet and nutrition issues are too easy for people to ignore and dismiss as unimportant, but good food brings health, both in body and in mind. Modern society and culture have increased interest in food and health, so an app like this could be useful.
 
-Here are the point-form specifications (which will be expanded on in the sections that follow). 
+In general, the app features include:
+* Can capture info about food items consumed
+* The food item name or identification can be entered by you, or provided by a public web service 
+* Your additional notes/text can be added 
+* The new item will have its location info stored (where, when, and so on) 
+* Optionally, a photo of the food/meal can be taken 
 
-It's a multi-scene app:
-* Typical variety of scenes
-* Including the recent new-topic coverage 
+Here are some sample screen capture images...
 
-Also, the app: 
-* Has a navigation interface
-* And a data model, implemented using best practices 
-* Uses Core Data technologies 
-* And is deployed to an iOS device 
+The "first launch" scene; as an empty list, and with some items:
+
+<img class="border1" src="images/a4-first-launch.png" alt="List, empty"><img class="border1" src="images/a4-item-list-3-items.png" alt="List, with items">
+
+Add item scenes:
+
+<img class="border1" src="images/a4-item-add-first-time-permission.png" alt="Location permission"><img class="border1" src="images/a4-item-add-scene.png" alt="Input fields">
+
+Add a photo scenes:
+
+<img class="border1" src="images/a4-item-add-scene-photo.png" alt="Get/take photo"><img class="border1" src="images/a4-item-add-scene-before-save.png" alt="New item, ready to save">
+
+Search for an item, setup, and list of possibles:
+
+<img class="border1" src="images/a4-item-add-search-step1.png" alt="Enter search terms"><img class="border1" src="images/a4-item-add-search-step2-list.png" alt="List of possibilities">
+
+After selecting an item on the list, before saving, and then the result after configuring a photo:
+
+<img class="border1" src="images/a4-item-add-search-step3-before-save.png" alt="Before save"><img class="border1" src="images/a4-item-info-scene.png" alt="Item info scene">
+
+<br>
 
 > DPS923 students will have a few additional specifications. 
 
@@ -93,9 +110,11 @@ DO NOT continue until you have successfully tested these typical responses. If t
 
 ### Getting started, iOS app
 
-Create a new iOS app, using the latest version of the Core Data project template. The name of the app should be "**AbcAbcAbc**".  
+Use the most recent version of the Core Data project template as the base for your project. 
 
-Follow best practices about project creation. Ask if you are unsure. 
+At this point, the app will load and run correctly, and enable you to create and delete "example" entity objects. These objects are persisted in a Core Data store. All the base / infrastructure programming bits are provided in the template. 
+
+Build and run (and test) frequently. Do these tasks incrementally, so that you build upon success and do not leave problems behind. 
 
 <br>
 
