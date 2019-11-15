@@ -21,9 +21,37 @@ To use location services at all, your app must request authorization from the us
 
 <br>
 
+#### Location info - the CLLocation class
+
+A `CLLocationManager` instance will get location info, and hold the results in an array, that it passes to a delegate method:
+
+```swift
+func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+```
+
+Inside that method, the `locations` local variable is that array of results. As you can see, its type is an array of [`CLLocation` objects](https://developer.apple.com/documentation/corelocation/cllocation). From the documentation, 
+
+> a "`CLLocation` object contains the geographical location and altitude of a device, along with values indicating the accuracy of those measurements and when they were collected. In iOS, a location object also contains course information—that is, the speed and heading in which the device was moving."
+
+Each `CLLocation` object has these interesting properties:
+* `coordinate`... 
+  * `coordinate.latitude`
+  * `coordinate.longitude`
+* `altitude`
+* `course` (heading, direction)
+* `speed` (of the device when last measured)
+* `timestamp` 
+
+With some thought, you can surely see how the data would be useful in many apps. 
+<br>
+
 ### Implementation
 
 Open the code example as you study this section. 
+
+<img src="/media/location-app-example.png" class="border1" alt="Code example" />
+
+<br>
 
 First, the controller that uses location services must conform to the `CLLocationManagerDelegate` protocol. 
 
@@ -43,9 +71,31 @@ How you use the data is up to you. The code example does a *reverse geocoding* t
 
 <br>
 
+#### Testing the code example app on the simulator 
+
+For best results, run the app on a device. When that's not possible or convenient, the simulator will report a small number of locations to the `CLLocationManager` instance. They are set on the simulator app's Debug > Location menu. 
+
+One of the menu's choices is "Custom Location...". Use a browser and search engine to get the latitude and longitude of a city (place) that you are interested in with this kind of search term:
+
+```text
+barrie ontario lat long
+```
+
+Configure the dialog with the values:
+
+![Custom location](/media/location-custom-simulator.png)
+
+<br>
+
 ### Learning resources and references
 
 [Core Location](https://developer.apple.com/documentation/corelocation) document. 
+
+[CLLocationManager](https://developer.apple.com/documentation/corelocation/cllocationmanager) reference. 
+
+[CLLocation](https://developer.apple.com/documentation/corelocation/cllocation) reference.
+
+[CLPlacemark](https://developer.apple.com/documentation/corelocation/clplacemark) reference. 
 
 [Adding Location Services to Your App](https://developer.apple.com/documentation/corelocation/adding_location_services_to_your_app) document. 
 
