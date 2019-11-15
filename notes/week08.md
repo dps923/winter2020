@@ -117,7 +117,7 @@ Here's a list of topics that we learned something about this week:
 1. A *fetched results controller* is a purpose-built object, designed to work with a table view controller. More about that next week. 
 1. An app with Core Data can be built from scratch, but you would typically never do that. You would use a project template. 
 1. The Xcode-provided templates that use Core Data have a stack that works, but is not suitable for well-designed and architected app. 
-1. Most developers use a template, and this course offers `TemplateCDv1` (and `2` etc.) templates. Use a template as a base for any new app. 
+1. Most developers use a template, and this course offers `TemplateCDv1` (and `...v2` etc.) templates. Use a template as a base for any new app. 
 1. Useful features include the surfacing of the context in the data model manager, and a save task. 
 1. It also includes a *fetched results controller* factory, which enables the developer to easily and quickly define one of these objects. 
 1. You should be able to learn at least five new coding tasks and strategies by studying the code examples. 
