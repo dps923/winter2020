@@ -30,13 +30,12 @@ Grade value: 18% of your final course grade
 
 The app will be of your own idea and design. This document will help you plan and implement it, while ensuring that its scope and challenge level are comparable to the professor's standard project. 
 
-If you decide to do your own idea, then give your professor a brief (one page?) plan of what your app will do, *and* a sketch of the app's scenes and data sources/stores. The plan must be given to, discussed with, and agreed to by the professor no later than Friday, November 22, 2019, at 3:00pm. 
+If you decide to do your own idea, then give your professor a brief (one page) plan of what your app will do, *and* a sketch of the app's scenes and data sources/stores. The plan must be given to, discussed with, and agreed to by the professor no later than Friday, November 22, 2019, at 3:00pm. 
 
 Here are the things that your app must do:
 
-* Implement the topics covered, and the app design approach, and the problem-solving techniques, and the best-practice guidance, that were taught in this course. 
 * Run on (deployed to) an iPhone device, and intended for an iPhone form factor. 
-* Support a navigation interface of some kind. 
+* Support a navigation interface where appropriate. 
 * Use Core Data as a persistent store. 
 * Have a multi-entity model (3 or more entities), some of them related. 
 * Enables the app user to work with the data, for all kinds of operations (fetch, add new, edit existing, delete). 
@@ -44,6 +43,7 @@ Here are the things that your app must do:
 * Interact with one or more web APIs, one of which supports more than GET tasks (i.e. must support POST and PUT). 
 * Use a basic fundamental level of location services, and use location data in a meaningful form (e.g. on a map). 
 * Use the device camera to capture and save images. 
+* Implement the topics covered, and the app design approach, and the problem-solving techniques, and the best-practice guidance, that were taught in this course. 
 * Avoid the use of non-Apple third-party libraries and frameworks. 
 
 It's possible that your app will do other things, and that's OK. 
@@ -61,6 +61,10 @@ Use the most recent version of the Core Data project template as the base for yo
 At this point, the app will load and run correctly, and enable you to create and delete "example" entity objects. These objects are persisted in a Core Data store. All the base / infrastructure programming bits are provided in the template. 
 
 Build and run (and test) frequently. Do these tasks incrementally, so that you build upon success and do not leave problems behind. 
+
+<br>
+
+#### Documenting your app's features or highlights 
 
 As you do the work and complete a feature, or otherwise want to highlight something that you're happy with, briefly document its name, description, location in the source code file(s). The document format can be text, Microsoft Word, or web. Submit that document with your project. The professor will use the document as a marking helper. 
 

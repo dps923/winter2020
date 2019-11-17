@@ -76,6 +76,62 @@ DPS923 students must implement the following additional functionality:
 
 <br>
 
+### Getting started
+
+Use the most recent version of the `TemplateCD...`, and create a project, probably named `FoodDiary`. 
+
+Create a Core Data model. There will be three (3) entities:
+* Meal (will have a to-many relationship with FoodConsumed)
+* FoodConsumed (to-one with Meal)
+* SavedFood
+
+![Core Data model](media/a4-core-data-model.png)
+
+<br>
+
+#### Build the navigation workflow 
+
+The idea here is to build the four-scene workflow, using statically-generated data, before we get the web API involved. It will enable faster progress, and easier testing, and improved confidence. 
+
+Edit the project to display Meal objects:
+* Change the ExampleList controller name to MealList (Refactor > Rename)
+* Edit the code to make it display Meal objects
+* Edit the code to enable adds to the list
+  * You can use the random string and integer functions in the store initializer 
+  * We recommend that the "add" code also adds a few food consumed items to the meal; this will make future work more testable 
+* Edit the code to enable deletes from the list
+
+At this point, your meal list may look something like this: 
+
+<img class="border1" src="media/a4-prototype-meal-list.png" alt="List">
+
+Next, add a meal scene:
+* The easiest way is to create a new Swift file
+* Then copy from the appropriate file in the Templates folder and then edit the code
+* Then do the work to add, configure, and code the scene and segue 
+
+At this point, your meal scene may look something like this: 
+
+<img class="border1" src="media/a4-prototype-meal-scene.png" alt="Scene">
+
+Next, add a food consumed list:
+* The easiest way is to create a new Swift file
+* Then copy the code from (maybe) MealList and then edit the code (or from the appropriate file in the Templates folder)
+* Then do the work to add, configure, and code the scene and segue
+
+At this point, your food consumed list may look something like this: 
+
+<img class="border1" src="media/a4-prototype-foodconsumed-list.png" alt="List">
+
+Finally, add a food consumed scene:
+* Similar to the other "scene" task above 
+
+At this point, your food consumed scene may look something like this: 
+
+<img class="border1" src="media/a4-prototype-foodconsumed-scene.png" alt="Scene">
+
+<br>
+
 ### Testing your work
 
 Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. And, use the Xcode debugger to help. 
