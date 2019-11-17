@@ -85,7 +85,7 @@ Create a Core Data model. There will be three (3) entities:
 * FoodConsumed (to-one with Meal)
 * SavedFood
 
-![Core Data model](media/a4-core-data-model.png)
+![Core Data model](images/a4-core-data-model.png)
 
 <br>
 
@@ -103,7 +103,7 @@ Edit the project to display Meal objects:
 
 At this point, your meal list may look something like this: 
 
-<img class="border1" src="media/a4-prototype-meal-list.png" alt="List">
+<img class="border1" src="images/a4-prototype-meal-list.png" alt="List">
 
 Next, add a meal scene:
 * The easiest way is to create a new Swift file
@@ -112,7 +112,7 @@ Next, add a meal scene:
 
 At this point, your meal scene may look something like this: 
 
-<img class="border1" src="media/a4-prototype-meal-scene.png" alt="Scene">
+<img class="border1" src="images/a4-prototype-meal-scene.png" alt="Scene">
 
 Next, add a food consumed list:
 * The easiest way is to create a new Swift file
@@ -121,14 +121,14 @@ Next, add a food consumed list:
 
 At this point, your food consumed list may look something like this: 
 
-<img class="border1" src="media/a4-prototype-foodconsumed-list.png" alt="List">
+<img class="border1" src="images/a4-prototype-foodconsumed-list.png" alt="List">
 
 Finally, add a food consumed scene:
 * Similar to the other "scene" task above 
 
 At this point, your food consumed scene may look something like this: 
 
-<img class="border1" src="media/a4-prototype-foodconsumed-scene.png" alt="Scene">
+<img class="border1" src="images/a4-prototype-foodconsumed-scene.png" alt="Scene">
 
 <br>
 
