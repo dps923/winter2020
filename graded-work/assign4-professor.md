@@ -41,6 +41,9 @@ In general, the app features include:
 
 Here are some sample screen capture images...
 
+> These images will be replaced.  
+> A new version of the API has caused some changes.
+
 The "first launch" scene; as an empty list, and with some items:
 
 <img class="border1" src="images/a4-first-launch.png" alt="List, empty"><img class="border1" src="images/a4-item-list-3-items.png" alt="List, with items">
@@ -129,6 +132,145 @@ Finally, add a food consumed scene:
 At this point, your food consumed scene may look something like this: 
 
 <img class="border1" src="images/a4-prototype-foodconsumed-scene.png" alt="Scene">
+
+<br>
+
+### Meal add workflow
+
+Above, you used the built-in template method to add a new meal (and a few food consumed items) programmatically. In this section, we will code the actual workflow. 
+
+Adding a meal will be done incrementally:
+* The "add item" pattern will be implemented 
+* The first goal is to add a new meal object 
+  * It will enable the storage of a photo
+  * And the current location coordinates 
+* Then we will add the ability to display the meal's list of food consumed items, which will start off empty 
+* Then we will add the ability to search then select an item from the web API, then save it
+* Finally, the ability to segue to the meal scene (that was created above) will be configured 
+
+<br>
+
+#### Add pattern, to add a new meal object
+
+Break the connection between the meal list scene's "add" button and the method that handles the code. 
+
+Add a controller for the "add new" meal task. You can create it from scratch, or you can use some code from an appropriate file in the Templates folder. 
+
+In the `save(_:)` method, if you wish, you can add a few food consumed items programmatically. That will enable testing, and you can remove the code later/soon. 
+
+Do the rest of the work to add, configure, and code a scene and segue (from the meal list controller). 
+
+At this point, your food consumed scene may look something like this: 
+
+<img class="border1" src="images/a4-prototype-meal-add-setup.png" alt="Add setup">
+
+And the result will be added to the list (which you can drill down into and see food consumed items, if you programmatically added them as suggested above). 
+
+<img class="border1" src="images/a4-prototype-meal-add-result.png" alt="Add result">
+
+<br>
+
+#### What's next?
+
+What's next? During the "add meal" task, we want the user to interactively add "food consumed" items. We will use a web API to help with this task.
+
+<br>
+
+### Web API introduction
+
+The United States Department of Agriculture has a web API named "FoodData Central". Visit the [web site](https://fdc.nal.usda.gov/index.html), and learn something about the service. 
+
+This is a BIG data source. Thousands of food and nutrient items. 
+
+To use the web API, you must have an "API Key". This is a string. It must be sent with every request to the web API. Follow the "Get an API Key" link in the middle of the page. You can use a College or personal email address. It will display the API key, and also send it to your email address. 
+
+<br>
+
+#### Interact with the web API
+
+Now, interact with the web API. How? Use Postman.
+
+As you will read (follow the "API GUIDE" link), it offers two endpoints:
+* Food Search - enter search terms like food name, brand, and so on, and it will return a collection of results 
+  * This endpoint must use the POST method
+* Food Details - using a unique food identifier (from the food search results above), it will return very detailed ingredient and nutrient information about that food 
+  * This endpoint must use the GET method
+
+The following is an example of the "Food Search". In Postman, configure:
+* A POST request
+* URL is https://api.nal.usda.gov/fdc/v1/search?api_key=YOUR_API_KEY
+* Content type header is JSON
+* Entity body looks something like the following
+
+```json
+{
+    "generalSearchInput": "peas fresh",
+    "requireAllWords": true,
+    "brandOwner": "monte",
+    "includeDataTypes": {
+        "Branded": true
+    }
+}
+```
+
+On November 17, 2019, at 3:40pm, this request returned two results. Notice a few things:
+* `generalSearchInput` is a collection of words that you want to search for. The search is case-insensitive, and word order doesn't matter - it will find results with these words anywhere in the food's description.
+* We want to include the `brandOwner` key, with something or nothing in the value. That will help limit the results when appropriate. 
+* Also include the `includedDataTypes` key-and-value for this Assignment 4. 
+
+Notice the results include a `fdcId` key, and its value is a six-digit integer. That's the unique food identifier we need for the next query. 
+
+The following is an example of the "Food Search". In Postman, configure:
+* A GET request
+* URL is https://api.nal.usda.gov/fdc/v1/356446?api_key=YOUR_API_KEY
+* Accept header is JSON
+
+On November 17, 2019, at 3:45pm, this request returned a detailed result. Notice a few things:
+* Ingredient and nutrient info is very detailed 
+* It essentially has all the data required on a product label (Ingredients and Nutrition Facts). 
+
+Experiment on your own. The documentation is good. 
+
+<br>
+
+#### Design and define structs for the web API results
+
+Design and define structs for the web API results. 
+
+For the Food Search result, you are really interested in the `foods` array of items. Each food will definitely have a `fdcId` property. It will likely have a `description` property, but in general, maybe you should define most of the properties (other than `fdcId`) as optional. You can code a subset of properties that interest you and you think will be useful (e.g. `ingredients`). It is NOT necessary to code them all. 
+
+For the Food Details result, it has a number of properties that may be useful to us:
+* description
+* ingredients
+* serving size
+* fdcId
+* brandedFoodCategory
+
+It also has two collections:
+* The `foodNutrients` collection is probably too much for our needs in Assignment 4 
+* The `labelNutrients` collection is what we want to use - it has the macronutrient (and related) values that will enable us to do some arithmetic
+
+<br>
+
+### Add pattern, food consumed item
+
+Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food consumed item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food consumed items; that list will enable new items to be added to it, and those new items will be helped by a "select list" of results from a web API call. 
+
+<br>
+
+### Improvements 
+
+Sections in the meal list (by date)  
+Selecting the meal's date in the add scene  
+Map usage  
+(more to come)
+
+<br>
+
+### DPS923 additional functionality
+
+DPS923 students must implement the following additional functionality:
+* TBA
 
 <br>
 

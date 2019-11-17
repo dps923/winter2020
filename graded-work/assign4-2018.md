@@ -388,7 +388,7 @@ For this project, we will work with the United States Department of Agriculture 
 Visit this page to learn about its features:  
 [https://ndb.nal.usda.gov/ndb/api/doc](https://ndb.nal.usda.gov/ndb/api/doc)  
 
-To use the web API, you have an "API key". This is a string. It must be sent with every request to the web API. Visit this page to request an "API key":  
+To use the web API, you must have an "API key". This is a string. It must be sent with every request to the web API. Visit this page to request an "API key":  
 [https://ndb.nal.usda.gov/ndb/api/doc](https://ndb.nal.usda.gov/ndb/api/doc)  
 Near the middle of the page, there is a "Gaining Access" section. Follow its instructions. You can use a College or personal email address. It will send the "API key" to your email address. 
 
