@@ -122,6 +122,10 @@ Next, add a food consumed list:
 * Then copy the code from (maybe) MealList and then edit the code (or from the appropriate file in the Templates folder)
 * Then do the work to add, configure, and code the scene and segue
 
+> Tip:  
+> The data source for this food list should be a fetched results controller (frc).  
+> Later, we'll be adding items to the list, and the frc will enable this task. 
+
 At this point, your food consumed list may look something like this: 
 
 <img class="border1" src="images/a4-prototype-foodconsumed-list.png" alt="List">
@@ -233,9 +237,14 @@ Experiment on your own. The documentation is good.
 
 <br>
 
-#### Design and define structs for the web API results
+#### Design and define structs for the web API interactions
 
-Design and define structs for the web API results. 
+Design and define structs for the web API POST request, and for both kinds of results. 
+
+Use the JSON above to guide your design for the struct used in the Food Search entity body. 
+
+> Tip:  
+> <mark>Document this</mark>  
 
 For the Food Search result, you are really interested in the `foods` array of items. Each food will definitely have a `fdcId` property. It will likely have a `description` property, but in general, maybe you should define most of the properties (other than `fdcId`) as optional. You can code a subset of properties that interest you and you think will be useful (e.g. `ingredients`). It is NOT necessary to code them all. 
 
@@ -254,15 +263,67 @@ It also has two collections:
 
 ### Add pattern, food consumed item
 
-Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food consumed item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food consumed items; that list will enable new items to be added to it, and those new items will be helped by a "select list" of results from a web API call. 
+Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food items (in that meal); that list will enable new items to be added to it, and those new items will be helped by a "select list" of results from a web API call. 
+
+Wait - we already have done a food list. Do we have to make another? Well, we have a choice - we can make another (and it will be almost the same as the other food list), or we can re-use the food list, and modify it to enable the "add" functionality. 
+
+To prepare for either choice, create a new standard view controller for the food item "add new" pattern. Most of its code can be copied from the add meal controller and then edited, or you can write it from scratch. 
+
+It needs a `Meal` property (to hold a passed-in meal object), because we must set the relation between an existing meal and the food items we are adding. 
+
+> We'll do this in two phases.  
+> Phase 1, we'll hand-type the food consumed item details.  
+> Phase 2, we'll get the data from the web API. 
+
+Placeholder images:
+
+Food item list before searching:
+
+<img class="border1" src="images/a4-prototype-food-search-1-start.png" alt="Search 1">
+
+Enter food description and brand owner:
+
+<img class="border1" src="images/a4-prototype-food-search-2-setup.png" alt="Search 2">
+
+After "Search" button tapped, a list appears:
+
+<img class="border1" src="images/a4-prototype-food-search-3-list.png" alt="Search 3">
+
+Selecting an item from the list fills in the "Add Food Item" fields:
+
+<img class="border1" src="images/a4-prototype-food-search-4-result.png" alt="Search 4">
+
+Tapping "Save" adds the item to the list:
+
+<img class="border1" src="images/a4-prototype-food-search-5-end.png" alt="Search 5">
+
+Here's a brief video, for Safari users only:
+
+<img src="images/a4-prototype-food-search.mov" class="width250" alt="View this in the Safari browser" />
+
+( more to come )
+
+FoodSearchList  
+Table view controller  
+Data comes from a web API request  
+
+These techniques will be taught:
+* select list 
+* segue guard
+* header on a table, to provide how-to instructions
+* URL tactic (replace) for this app
+* map
+
+( more to come )
 
 <br>
 
 ### Improvements 
 
 Sections in the meal list (by date)  
-Selecting the meal's date in the add scene  
+Selecting the meal's date in the add scene (picker)  
 Map usage  
+Appearance  
 (more to come)
 
 <br>
