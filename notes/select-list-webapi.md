@@ -9,6 +9,10 @@ In this document, you will learn how to use a table view controller as a "select
 
 This is a modal scene, and therefore will use the well-understood "task" pattern (same as for add, edit, detail). 
 
+Here's a brief video demonstration, for Safari browser users:
+
+<img src="/media/item-select-demo.mov" class="width250" alt="View this in the Safari browser" />
+
 <br>
 
 ### Major section
@@ -96,7 +100,7 @@ override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?
 
 Here's what happens now when "Search" is tapped when the food item name text field is empty:
 
-![Empty search](images/a4-item-add-search-empty.png)
+![Empty search](/media/item-add-search-empty.png)
 
 <br>
 

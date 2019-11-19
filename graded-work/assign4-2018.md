@@ -514,7 +514,7 @@ override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?
 
 Here's what happens now when "Search" is tapped when the food item name text field is empty:
 
-![Empty search](/media/item-add-search-empty.png)
+![Empty search](images/a4-item-add-search-empty.png)
 
 <br>
 
