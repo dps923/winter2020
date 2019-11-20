@@ -33,11 +33,11 @@ We need an app that will enable you to capture and store information about the f
 It is important for everyone to have good nutrition habits. Diet and nutrition issues are too easy for people to ignore and dismiss as unimportant, but good food brings health, both in body and in mind. Modern society and culture have increased interest in food and health, so an app like this could be useful.
 
 In general, the app features include:
-* Can capture info about food items consumed
+* Can capture info about a meal, the food items consumed
 * The food item name or identification can be entered by you, or provided by a public web service 
 * Your additional notes/text can be added 
 * The new item will have its location info stored (where, when, and so on) 
-* Optionally, a photo of the food/meal can be taken 
+* Optionally, a photo of the meal can be taken 
 
 Here are some sample screen capture images...
 
@@ -88,6 +88,8 @@ Create a Core Data model. There will be three (3) entities:
 * FoodConsumed (to-one with Meal)
 * SavedFood
 
+As an example, it could look something like the following:
+
 ![Core Data model](images/a4-core-data-model.png)
 
 <br>
@@ -124,7 +126,7 @@ Next, add a food consumed list:
 
 > Tip:  
 > The data source for this food list should be a fetched results controller (frc).  
-> Later, we'll be adding items to the list, and the frc will enable this task. 
+> Later, we'll be adding items to the list, and the frc will easily enable the list update task. 
 
 At this point, your food consumed list may look something like this: 
 
@@ -186,7 +188,7 @@ The United States Department of Agriculture has a web API named "FoodData Centra
 
 This is a BIG data source. Thousands of food and nutrient items. 
 
-To use the web API, you must have an "API Key". This is a string. It must be sent with every request to the web API. Follow the "Get an API Key" link in the middle of the page. You can use a College or personal email address. It will display the API key, and also send it to your email address. 
+To use the web API, you must have an "API Key". This is a string. It must be sent with every request to the web API. Follow the "Get an API Key" link in the middle of the page. You can use a College or personal email address. It will display your API key, and also send it to your email address. 
 
 <br>
 
@@ -244,7 +246,8 @@ Design and define structs for the web API POST request, and for both kinds of re
 Use the JSON above to guide your design for the struct used in the Food Search entity body. 
 
 > Tip:  
-> <mark>Document this</mark>  
+> In class, the professor will help with this task.  
+> <mark>To be documented</mark>  
 
 For the Food Search result, you are really interested in the `foods` array of items. Each food will definitely have a `fdcId` property. It will likely have a `description` property, but in general, maybe you should define most of the properties (other than `fdcId`) as optional. You can code a subset of properties that interest you and you think will be useful (e.g. `ingredients`). It is NOT necessary to code them all. 
 
@@ -307,7 +310,7 @@ FoodSearchList
 Table view controller  
 Data comes from a web API request  
 
-These techniques will be taught:
+These techniques will be taught or documented:
 * select list 
 * segue guard
 * header on a table, to provide how-to instructions
