@@ -28,7 +28,7 @@ At a minimum, the code will look similar to this:
 
 ```swift
 // Assume that "locationMap" is the outlet name
-// to the map view on the storyboard scene
+// for the map view on the storyboard scene
 
 // Prepare the map's visible region
 let region = MKCoordinateRegion.init(center: self.locationMap.userLocation.coordinate, latitudinalMeters: 2000, longitudinalMeters: 2000)
@@ -45,5 +45,36 @@ This is the preferred approach, using a full-scene map, displayed modally from a
 
 <img class="border1" src="/media/location-scene-full.png" alt="Map full">
 
+Open the `W11a4MapTask` code example, and refer to it as this section is presented. 
+
+First, as a "task" scene and controller, it's embedded in a nav controller, and presented modally. At a minimum, it must have a button (in the nav bar) that will enable it to be dismissed. It includes a map view, with an outlet connection to the controller. As above, check (mark) its "Shows > User Location" checkbox. The controller must be the map view's delegate (which you can set on the storyboard or in code). 
+
+The presenter must conform to a protocol, typical of all the "task" scenes. The presenter must have a way to show (segue to) the map scene, and therefore must have code in the `prepare(for: sender:) method, and possibly pass data. 
+
+> Pro tip:  
+> Also implement the `shouldPerformSegue(identifier: sender:)` method, and [check for network connectivity](https://medium.com/@rwbutler/nwpathmonitor-the-new-reachability-de101a5a8835). If no network, prevent the segue.  
+> And maybe check elsewhere (`viewDidLoad()`?) for the network, and if not active, disable the UI that presents the map scene. 
+
+In the controller - which (remember) must conform to the `MKMapViewDelegate` protocol - a method named `mapView(mapView:  didUpdate:)` will listen for the user location to be settled. That's the method in which we write code. 
+
+What code? Center the map around the user location, or the center point for it and all passed-in annotations (if present). Also if present, show the map annotations. 
+
+<br>
+
+#### Map annotations
+
+By default, the techniques in this document will cause a blue dot to be drawn in the center of the map view. The blue dot is the user's location, which is independently acquired by the map. In other words, it doesn't require its own location services coding. 
+
+What if you want other markings on the map?
+
+Map annotations are the answer. The technique presented in the code example app will draw a red pin (or marker) on the map. Each of these is an object that conforms to the `MKAnnotation` protocol. As a result, we must write a fully-functional class to represent these objects. In the code example, see the `MapAnnotation` class for details. 
+
+The code example is configured to accept an array of zero or more map annotations into the map scene and controller. If present, the map annotations will be drawn. 
+
+<br>
+
+#### Is there more?
+
+Is there more functionality? Yes, too much for a one-term introductory course in iOS programming. Now that you have some fundamental knowledge and skills, you can build on them in the future. 
 
 <br>

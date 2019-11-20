@@ -35,14 +35,18 @@ We will cover these - discuss, show-and-tell, diagram, etc. - in the Wednesday c
 
 Learn via the code examples.
 
-(to be posted) Table view as a select list 
+[Introduction to mapping services](location-map-essentials). 
+
+Table view as a select list. 
 
 <br>
 
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* W11a1... (to be posted)
+* W11a1Select
+* W11a3Map
+* W11a4MapTask
 
 <br>
 
