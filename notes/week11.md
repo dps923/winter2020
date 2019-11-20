@@ -37,7 +37,7 @@ Learn via the code examples.
 
 [Introduction to mapping services](location-map-essentials). 
 
-Table view as a select list. 
+[Using a table view as a select list](select-list-webapi).
 
 <br>
 

@@ -55,9 +55,22 @@ The presenter must conform to a protocol, typical of all the "task" scenes. The 
 > Also implement the `shouldPerformSegue(identifier: sender:)` method, and [check for network connectivity](https://medium.com/@rwbutler/nwpathmonitor-the-new-reachability-de101a5a8835). If no network, prevent the segue.  
 > And maybe check elsewhere (`viewDidLoad()`?) for the network, and if not active, disable the UI that presents the map scene. 
 
-In the controller - which (remember) must conform to the `MKMapViewDelegate` protocol - a method named `mapView(mapView:  didUpdate:)` will listen for the user location to be settled. That's the method in which we write code. 
+In the controller - which (remember) must conform to the `MKMapViewDelegate` protocol - a method named `mapView(mapView:didUpdate:)` will listen for the user location to be settled. That's the method in which we write code. 
 
 What code? Center the map around the user location, or the center point for it and all passed-in annotations (if present). Also if present, show the map annotations. 
+
+<br>
+
+#### Your own center point for the map
+
+The logic changes somewhat when you want your own center point for the map, instead of the current user location. 
+
+For example, assume that you want the center point to be a coordinate that is fetched from a data storage location (e.g. web API or Core Data). 
+
+In this situation, you do not care about the delegate method `mapView(mapView:didUpdate:`. Instead, you must do something like this: 
+* Define a variable to hold the coordinate 
+* Add code to `viewDidLoad()` that updates the map with the passed-in coordinate (the code will be similar to what's in the delegate method)
+* In the presenter controller, get the coordinate data, and pass it in when the segue is handled 
 
 <br>
 
@@ -78,3 +91,17 @@ The code example is configured to accept an array of zero or more map annotation
 Is there more functionality? Yes, too much for a one-term introductory course in iOS programming. Now that you have some fundamental knowledge and skills, you can build on them in the future. 
 
 <br>
+
+### Reference info
+
+Apple document, [MapKit](https://developer.apple.com/documentation/mapkit). 
+
+Apple document, archived, [Location and Maps Programming Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009497).
+
+Apple document, [MKMapView](https://developer.apple.com/documentation/mapkit/mkmapview).
+
+Apple document, [MapKit Annotations](https://developer.apple.com/documentation/mapkit/mapkit_annotations).
+
+Apple document, [Annotating a Map with Custom Data](https://developer.apple.com/documentation/mapkit/mapkit_annotations/annotating_a_map_with_custom_data). 
+
+
