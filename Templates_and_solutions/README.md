@@ -14,6 +14,17 @@ This is the 2018 version of the Apple UIKit Catalog, which is a sample app. It w
 
 <br>
 
+### TemplateCDv3 - Core Data project template
+
+Version 3 of the template, on November 20, 2019.
+
+Compared to version 2, some new features are included: 
+* Image fetching and handling 
+* Map task template 
+* Select list templates 
+
+<br>
+
 ### TemplateCDv2 - Core Data project template
 
 Version 2, published on November 4, 2019. 
