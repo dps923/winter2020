@@ -176,6 +176,12 @@ And the result will be added to the list (which you can drill down into and see 
 
 <br>
 
+#### Checkpoint
+
+Make sure that you can add a meal, before continuing. 
+
+<br>
+
 #### What's next?
 
 What's next? During the "add meal" task, we want the user to interactively add "food consumed" items. We will use a web API to help with this task.
@@ -270,6 +276,14 @@ It has two embedded data structures:
 
 <br>
 
+#### Test the API in your app, checkpoint
+
+If you wish, adapt one of your controllers temporarily, by adding code that will do each kind of requests (food search, and food details). It's important to know that the structs are correct, and that encoding (for the POST request) and decoding (for the GET request) are working correctly. 
+
+This will not be throw-away work, because you can keep and re-use the code in the controllers that actually interact with the web API. 
+
+<br>
+
 ### Add pattern, food consumed item
 
 Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food items (in that meal); that list will enable new items to be added to it, and those new items can be helped by a "select list" of results from a web API call. 
@@ -294,21 +308,23 @@ Enter food description and brand owner. The idea is that a user can hand-enter t
 
 <img class="border1" src="images/a4-prototype-food-search-2-setup.png" alt="Search 2">
 
-After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](select-list-webapi) that you learned in class during Week 11 of the course. 
+After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](select-list-webapi) that you learned in class during [Week 11](/notes/week11) of the course. (Yes, it's supported by code examples etc.)
 
 <img class="border1" src="images/a4-prototype-food-search-3-list.png" alt="Search 3">
 
-Selecting an item from the list fills in the "Add Food Item" fields: <mark>continue</mark>
+Selecting an item from the list fills in the "Add Food Item" fields: 
 
 <img class="border1" src="images/a4-prototype-food-search-4-result.png" alt="Search 4">
 
-Tapping "Save" adds the item to the list:
+Tapping "Save" adds the item to the list. 
 
 <img class="border1" src="images/a4-prototype-food-search-5-end.png" alt="Search 5">
 
 Here's a brief video, for Safari users only:
 
 <img src="images/a4-prototype-food-search.mov" class="width250" alt="View this in the Safari browser" />
+
+<br>
 
 ( more to come )
 
