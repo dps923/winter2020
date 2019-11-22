@@ -79,7 +79,7 @@ You can use the typical workflow plan in the professor's [standard project](assi
 ### DPS923 additional functionality
 
 DPS923 students must implement the following additional functionality:
-* TBA
+* To be negotiated
 
 <br>
 
@@ -87,8 +87,9 @@ DPS923 students must implement the following additional functionality:
 
 Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. And, use the Xcode debugger to help. 
 
-When the app is complete, create screen captures. Here's what each scene will show:
-1. TBA
+When the app is complete, create screen captures. Use a naming convention for the image names. 
+
+Also, a request: Each screen capture could possibly be large. If you open the png file in the Preview app, there is a feature on the Tools menu named Adjust Size. Change its width to 400 pixels (and it will automatically adjust the height). Then save, and it will reduce the size, sometimes dramatically.
 
 <br>
 
@@ -112,7 +113,7 @@ Follow these instructions to submit your work, before the due date and time:
 2. At the same level, create a new folder named "MyCode".
 
 3. From the project folder(s), copy these source code files to the "MyCode" folder:  
-**xxxTBA.swift**  
+**( all your controllers )**  
 **DataModelClasses.swift**  
 **DataModelManager.swift**  
 **Main.storyboard**  
@@ -123,7 +124,7 @@ For each of these files, change the file name extension to "txt".
 5. Select the top-level folders:  
 (project)  
 MyCode  
-Right-click, and choose **Compress 2 Items**, which creates a zip file (make sure the zip file is fairly small, around 2MB or less).  
+Right-click, and choose **Compress 2 Items**, which creates a zip file. The zip file may be sizeable, with all of the screen captures.   
 
 6. Login to Blackboard/My.Seneca, and in this course's Assignments area, look for the upload link, and submit your work there.  
 

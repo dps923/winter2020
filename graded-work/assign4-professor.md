@@ -85,6 +85,10 @@ Each entity must have the attributes it needs to implement the specifications. Y
 
 ![Core Data model](images/a4-core-data-model.png)
 
+The "photo" attribute will be a "Binary Data" type, configured for "Allows External Storage". To and from Swift, a photo is a `Data` type, so you'll have to marshal it back-and-forth to an image when you display it (or capture it with a camera). 
+
+> More on this soon.
+
 <br>
 
 #### Build the navigation workflow 
@@ -339,6 +343,9 @@ To reach this point, you have the two major "flows" of the app completed (displa
 
 Here's a list of tasks that must be done:
 
+* In the meal list scene and controller...
+  * Show a thumbnail of the meal photo (or a placeholder) in the table view 
+
 * In the meal add scene and controller...
   * Add (save) a timestamp
   * Use location services to get the latitude, longitude, and (reverse geocode) string 
@@ -351,8 +358,10 @@ Here's a list of tasks that must be done:
 
 * In the food item add scene and controller...
   * Save the Food Central unique identifier
-  * Save these macronutrient values: calories, sodium, carbohydrates, fat, protein 
   * Enable the user to specify the number of grams consumed, in a safe manner; allow only these gram numbers: 25, 50, 125, 250, 500 
+  * Save these macronutrient values: calories, sodium, carbohydrates, fat, protein 
+  
+    For the last point, the arithmetic must be correct - what's that mean? Well, for example let's assume that a food item had 15 carbohydrates (carbs) per serving size of 50 grams. Next, assume that the user selected 250 grams consumed. Therefore, the macronutrient value for carbs will be (250 / 50) x 15 total. 
 
 * In the food item viewer scene and controller...
   * Display, in a pleasant and pleasing manner, information about the food item 
