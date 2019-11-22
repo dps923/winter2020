@@ -227,6 +227,7 @@ The following is an example of the "Food Search". In Postman, configure:
 
 On November 17, 2019, at 3:40pm, this request returned two results. Notice a few things:
 * `generalSearchInput` is a collection of words that you want to search for. The search is case-insensitive, and word order doesn't matter - it will find results with these words anywhere in the food's description.
+* Yes, we want to send `requireAllWords`, set to `true`. 
 * We want to include the `brandOwner` key, with something or nothing in the value. That will help limit the results when appropriate. 
 * Also include the `includedDataTypes` key-and-value for this Assignment 4. 
 
@@ -255,7 +256,7 @@ Design and define structs for the web API POST request, and for both kinds of re
 
 Use the JSON above to guide your design for the struct used in the Food Search entity body. 
 
-If needed, use the [Web API and data structures](webapi-data-structures) document to help with this task and the ones that follow. 
+If needed, use the [Web API and data structures](/notes/webapi-data-structures) document to help with this task and the ones that follow. 
 
 **Food Search, receive (response)**
 
