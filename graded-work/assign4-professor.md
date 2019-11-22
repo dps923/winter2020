@@ -142,7 +142,7 @@ At this point, you should have the four-scene *data-viewing workflow*, using sta
 
 ### Meal add workflow
 
-Above, you used the built-in template method to add a new meal (and a few food consumed items) programmatically. In this section, we will code the actual workflow. 
+Above, you used the built-in template method to add a new meal (and a few food consumed items) programmatically. In this section, we will code the actual "add item" workflows. 
 
 Adding a meal will be done incrementally:
 * The "add item" pattern will be implemented 
@@ -150,6 +150,7 @@ Adding a meal will be done incrementally:
   * It will enable the storage of a photo
   * And the current location coordinates 
 * Then we will add the ability to display the meal's list of food consumed items, which will start off empty 
+* The "add item" pattern will enable the addition of a food item to the meal 
 * Then we will add the ability to search then select an item from the web API, then save it
 * Finally, the ability to segue to the meal scene (that was created above) will be configured 
 
@@ -157,7 +158,7 @@ Adding a meal will be done incrementally:
 
 #### Add pattern, to add a new meal object
 
-Break the connection between the meal list scene's "add" button and the method that handles the code. 
+Break the connection between the meal list scene's "add" button and the method that handles the programmatic add task. 
 
 Add a controller for the "add new" meal task. You can create it from scratch, or you can use some code from an appropriate file in the Templates folder. 
 
@@ -248,6 +249,8 @@ Use the JSON above to guide your design for the struct used in the Food Search e
 > In class, the professor will help with this task.  
 > <mark>To be documented</mark>  
 
+Use the [Web API and data structures](webapi-data-structures) document to help with this task. 
+
 For the Food Search result, you are really interested in the `foods` array of items. Each food will definitely have a `fdcId` property. It will likely have a `description` property, but in general, maybe you should define most of the properties (other than `fdcId`) as optional. You can code a subset of properties that interest you and you think will be useful (e.g. `ingredients`). It is NOT necessary to code them all. 
 
 For the Food Details result, it has a number of properties that may be useful to us:
@@ -265,7 +268,7 @@ It also has two collections:
 
 ### Add pattern, food consumed item
 
-Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food items (in that meal); that list will enable new items to be added to it, and those new items will be helped by a "select list" of results from a web API call. 
+Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food items (in that meal); that list will enable new items to be added to it, and those new items can be helped by a "select list" of results from a web API call. 
 
 Wait - we already have done a food list. Do we have to make another? Well, we have a choice - we can make another (and it will be almost the same as the other food list), or we can re-use the food list, and modify it to enable the "add" functionality. 
 
