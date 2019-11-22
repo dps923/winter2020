@@ -226,10 +226,12 @@ On November 17, 2019, at 3:40pm, this request returned two results. Notice a few
 
 Notice the results include a `fdcId` key, and its value is a six-digit integer. That's the unique food identifier we need for the next query. 
 
-The following is an example of the "Food Search". In Postman, configure:
+The following is an example of the "Food Details". In Postman, configure:
 * A GET request
 * URL is https://api.nal.usda.gov/fdc/v1/356446?api_key=YOUR_API_KEY
 * Accept header is JSON
+
+Notice the URL - the six-digit integer replaces the static word "search" that you saw before. 
 
 On November 17, 2019, at 3:45pm, this request returned a detailed result. Notice a few things:
 * Ingredient and nutrient info is very detailed 
@@ -243,26 +245,28 @@ Experiment on your own. The documentation is good.
 
 Design and define structs for the web API POST request, and for both kinds of results. 
 
+**Food Search, send (request)**
+
 Use the JSON above to guide your design for the struct used in the Food Search entity body. 
 
-> Tip:  
-> In class, the professor will help with this task.  
-> <mark>To be documented</mark>  
+If needed, use the [Web API and data structures](webapi-data-structures) document to help with this task and the ones that follow. 
 
-Use the [Web API and data structures](webapi-data-structures) document to help with this task. 
+**Food Search, receive (response)**
 
-For the Food Search result, you are really interested in the `foods` array of items. Each food will definitely have a `fdcId` property. It will likely have a `description` property, but in general, maybe you should define most of the properties (other than `fdcId`) as optional. You can code a subset of properties that interest you and you think will be useful (e.g. `ingredients`). It is NOT necessary to code them all. 
+For the Food Search result, you are really interested in the `foods` array of items. Each food will definitely have a `fdcId` property. It will likely have a `description` property, but in general, maybe you should define most of the properties (other than `fdcId`) as optional. It is NOT necessary to code them all. 
 
-For the Food Details result, it has a number of properties that may be useful to us:
+**Food Details, receive (response)**
+
+For the Food Details result, it has a number of properties that may be useful to us and of interest to you:
 * description
 * ingredients
 * serving size
 * fdcId
 * brandedFoodCategory
 
-It also has two collections:
-* The `foodNutrients` collection is probably too much for our needs in Assignment 4 
-* The `labelNutrients` collection is what we want to use - it has the macronutrient (and related) values that will enable us to do some arithmetic
+It has two embedded data structures:
+* The `foodNutrients` collection is probably too much for our needs in Assignment 4 (so you can ignore it if you wish)
+* The `labelNutrients` object is what we want to use - it has the macronutrient (and related) values that will enable us to do some arithmetic
 
 <br>
 

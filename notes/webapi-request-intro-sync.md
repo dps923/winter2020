@@ -115,6 +115,8 @@ count | number |
 version | string | 
 data | array of course objects | 
 
+> More content is in [this document](webapi-data-structures). 
+
 <br>
 
 #### Test your work 
