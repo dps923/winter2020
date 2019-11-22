@@ -309,7 +309,7 @@ Enter food description and brand owner. The idea is that a user can hand-enter t
 
 <img class="border1" src="images/a4-prototype-food-search-2-setup.png" alt="Search 2">
 
-After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](select-list-webapi) that you learned in class during [Week 11](/notes/week11) of the course. (Yes, it's supported by code examples etc.)
+After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](/notes/select-list-webapi) that you learned in class during [Week 11](/notes/week11) of the course. (Yes, it's supported by code examples etc.)
 
 <img class="border1" src="images/a4-prototype-food-search-3-list.png" alt="Search 3">
 
