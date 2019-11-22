@@ -72,13 +72,6 @@ After selecting an item on the list, before saving, and then the result after co
 
 <br>
 
-### DPS923 additional functionality
-
-DPS923 students must implement the following additional functionality:
-* TBA
-
-<br>
-
 ### Getting started
 
 Use the most recent version of the `TemplateCD...`, and create a project, probably named `FoodDiary`. 
@@ -88,7 +81,7 @@ Create a Core Data model. There will be three (3) entities:
 * FoodConsumed (to-one with Meal)
 * SavedFood
 
-As an example, it could look something like the following:
+Each entity must have the attributes it needs to implement the specifications. You may have to revise your data model as you work on the assignment. As an example, it could end up looking something like the following:
 
 ![Core Data model](images/a4-core-data-model.png)
 
@@ -96,13 +89,13 @@ As an example, it could look something like the following:
 
 #### Build the navigation workflow 
 
-The idea here is to build the four-scene workflow, using statically-generated data, before we get the web API involved. It will enable faster progress, and easier testing, and improved confidence. 
+The idea here is to build the four-scene *data-viewing workflow*, using statically-generated data, before we get add tasks and the web API involved. It will enable faster progress, easier testing, and improved confidence. 
 
 Edit the project to display Meal objects:
 * Change the ExampleList controller name to MealList (Refactor > Rename)
 * Edit the code to make it display Meal objects
 * Edit the code to enable adds to the list
-  * You can use the random string and integer functions in the store initializer 
+  * You can continue to use the random string and integer functions in the store initializer 
   * We recommend that the "add" code also adds a few food consumed items to the meal; this will make future work more testable 
 * Edit the code to enable deletes from the list
 
@@ -125,7 +118,7 @@ Next, add a food consumed list:
 * Then do the work to add, configure, and code the scene and segue
 
 > Tip:  
-> The data source for this food list should be a fetched results controller (frc).  
+> The data source for this food list must be a fetched results controller (frc).  
 > Later, we'll be adding items to the list, and the frc will easily enable the list update task. 
 
 At this point, your food consumed list may look something like this: 
@@ -138,6 +131,12 @@ Finally, add a food consumed scene:
 At this point, your food consumed scene may look something like this: 
 
 <img class="border1" src="images/a4-prototype-foodconsumed-scene.png" alt="Scene">
+
+<br>
+
+#### Checkpoint
+
+At this point, you should have the four-scene *data-viewing workflow*, using statically-generated data. 
 
 <br>
 
@@ -308,8 +307,8 @@ Here's a brief video, for Safari users only:
 
 FoodSearchList  
 Table view controller  
-Data comes from a web API request  
 
+Data comes from a web API request  
 These techniques will be taught or documented:
 * select list 
 * segue guard

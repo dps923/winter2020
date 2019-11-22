@@ -153,3 +153,9 @@ Then, we create a *fetched results controller* (frc). One of the properties of t
 Code the controller load and table build methods to use the frc properties and methods. 
 
 <br>
+
+### Working with related entities
+
+Please use the content in the document titled ["Core Data model with multiple entities"](core-data-multi-entities) for guidance. 
+
+<br>

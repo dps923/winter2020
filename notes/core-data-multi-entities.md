@@ -110,7 +110,39 @@ Do you see what happened? The set has a `sortedArray()` method, and we transform
 
 <br>
 
-#### Functions
+#### Adding a new object, and setting the relationship
+
+Assume that you have a reference to a `Company` object already; its variable name is `c`. 
+
+How do you add a new `Employee` or `Product`?
+1. Create the new object 
+2. Set its relationship
+
+The relationship can be configured from either direction. In this section, we will configure it from the perspective of the just-added new object. For example:
+
+```swift
+// As noted above, assume that you have a reference
+// "c" to an existing Company object...
+
+// Create and configure a new employee
+let peter = Employee(context: m.ds_context)
+peter.name = "Peter McIntyre"
+peter.age = 23
+// etc.
+
+// Now, set the relationship
+peter.company = c
+
+m.ds_save()
+```
+
+That's it. If it seems too easy, well, it is easy. 
+
+In the next section, we'll configure the relationship from the other perspective, using functions.
+
+<br>
+
+#### Functions, to set (or remove) the relationship
 
 In addition to the generated properties (above), an entity class will also have generated functions for the related entity. 
 
@@ -133,6 +165,30 @@ For example, a `Company` that has a one-to-many relationship with `Employee` wil
 @objc(removeEmployees:)
 @NSManaged public func removeFromEmployees(_ value: NSSet)
 ```
+
+How would you use these functions? Well, re-using some of the code from above:
+
+```swift
+// As noted above, assume that you have a reference
+// "c" to an existing Company object...
+
+// Create and configure a new employee
+let peter = Employee(context: m.ds_context)
+peter.name = "Peter McIntyre"
+peter.age = 23
+// etc.
+
+// Now, set the relationship
+c.addToEmployees(peter)
+
+// Alternatively, if you had just created several
+// new employee objects, e.g. "peter" and "jason"...
+c.addToEmployees(NSSet(array: [peter, jason]))
+
+m.ds_save()
+```
+
+Again, easy.
 
 <br>
 
