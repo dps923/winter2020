@@ -68,7 +68,7 @@ After selecting an item on the list, before saving, and then the result after co
 
 > DPS923 students will have a few additional specifications. 
 
-<mark>This document is being edited.<br>This notice will be removed when the edits are complete.</mark>
+<mark>This document is being edited.<br>This notice will be removed when the edits are complete.<br>Get started right away on this - don't wait for the updated sample screen captures.<br>The work to do (below) is complete (except for a few extra tasks for DPS923 students).</mark>
 
 <br>
 
@@ -293,23 +293,23 @@ Wait - we already have done a food list. Do we have to make another? Well, we ha
 
 To prepare for either choice, create a new standard view controller for the food item "add new" pattern. Most of its code can be copied from the add meal controller and then edited, or you can write it from scratch. 
 
-It needs a `Meal` property (to hold a passed-in meal object), because we must set the relation between an existing meal and the food items we are adding. 
+It needs a `Meal` property. When the controller loads, create a new meal object. Why? We must set the relation between an existing meal and the food items will add soon. However, please note that you must delete the meal object if the user taps the cancel button - you don't want to save partially-configured objects that are not desired. 
 
-> We'll do this in two phases.  
+> You can do this task in two phases.  
 > Phase 1, we'll hand-type the food consumed item details.  
 > Phase 2, we'll get the data from the web API. 
 
-Preview images:
+Here are some preview images to guide you:
 
 Food item list before searching. Notice the "add" button (`+`), which modally presents a scene with data entry fields.
 
 <img class="border1" src="images/a4-prototype-food-search-1-start.png" alt="Search 1">
 
-Enter food description and brand owner. The idea is that a user can hand-enter the info, or use the search feature. The food item name is required, but the brand owner is optional. If you do not know any brand owner values, leave that field empty, and then look at the results for ideas. Then run the search again, and include a brand owner value.  
+Enter food description and brand owner. The idea is that a user can hand-enter the info, or use the search feature. The food item name is required, but the brand owner is optional. If you do not know any brand owner values, leave that field empty, and then look at the results for ideas. Then run the search again, and include a brand owner value. Remember, when you segue to the search scene, you must pass in these two values (food item name, brand owner).   
 
 <img class="border1" src="images/a4-prototype-food-search-2-setup.png" alt="Search 2">
 
-After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](/notes/select-list-webapi) that you learned in class during [Week 11](/notes/week11) of the course. (Yes, it's supported by code examples etc.)
+After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](/notes/select-list-webapi) that you learned in class during [Week 11](/notes/week11) of the course. (Yes, it's supported by code examples etc.) For best results, add the web API request code to the controller's load method. 
 
 <img class="border1" src="images/a4-prototype-food-search-3-list.png" alt="Search 3">
 
@@ -327,37 +327,48 @@ Here's a brief video, for Safari users only:
 
 <br>
 
-( more to come )
+#### Checkpoint 
 
-FoodSearchList  
-Table view controller  
-
-Data comes from a web API request  
-These techniques will be taught or documented:
-* select list 
-* segue guard
-* header on a table, to provide how-to instructions
-* URL tactic (replace) for this app
-* map
-
-( more to come )
+At this point, the essential features of the "add meal" (and "add food items") tasks will be done. Make sure it works successfully, before moving on to the improvements and refinements. 
 
 <br>
 
-### Improvements 
+### Improvements to the user interface
 
-Sections in the meal list (by date)  
-Selecting the meal's date in the add scene (picker)  
-Map usage  
-Appearance  
-(more to come)
+To reach this point, you have the two major "flows" of the app completed (display meal and food items, and add meal and food items). However, during that work, we didn't pay much attention to the user interface and full functionality. In this section, we will improve and refine the app. 
+
+Here's a list of tasks that must be done:
+
+* In the meal add scene and controller...
+  * Add (save) a timestamp
+  * Use location services to get the latitude, longitude, and (reverse geocode) string 
+  * Use the camera to enable the user to take and save a photo of the meal 
+  * Configure a text view to enable the user to add notes
+
+* In the meal viewer scene and controller...
+  * Display - nicely - all data for that meal (including photo)
+  * Add a small-size map that shows where the meal happened; include a map annotation as the center point 
+
+* In the food item add scene and controller...
+  * Save the Food Central unique identifier
+  * Save these macronutrient values: calories, sodium, carbohydrates, fat, protein 
+  * Enable the user to specify the number of grams consumed, in a safe manner; allow only these gram numbers: 25, 50, 125, 250, 500 
+
+* In the food item viewer scene and controller...
+  * Display, in a pleasant and pleasing manner, information about the food item 
+  * Make sure that some of the meal info is on that scene (so the user/viewer knows the context)
 
 <br>
 
 ### DPS923 additional functionality
 
 DPS923 students must implement the following additional functionality:
-* TBA
+* Use/display sections in the meal list (by date)  
+* Allow the user to select the meal's date in the add scene (picker)  
+* Summing the macronutrients of all the food items in the meal   
+* Use a segue "guard", before attempting to search the web API 
+
+(This section will be completed soon.)
 
 <br>
 
@@ -365,8 +376,17 @@ DPS923 students must implement the following additional functionality:
 
 Test your work by running it on the simulator. Do this frequently and incrementally, after making any substantial changes. And, use the Xcode debugger to help. 
 
-When the app is complete, create screen captures. Here's what each scene will show:
-1. TBA
+When the app is complete, create screen captures, of each scene. Use a naming convention for the image names, something like this:  
+MealList  
+MealScene  
+FoodItemList  
+FoodItemScene  
+MealAdd  
+FoodItemAdd  
+FoodItemSearch  
+etc.  
+
+Also, a request: Each screen capture could possibly be large. If you open the png file in the Preview app, there is a feature on the Tools menu named Adjust Size. Change its width to 400 pixels (and it will automatically adjust the height). Then save, and it will reduce the size, sometimes dramatically. 
 
 <br>
 
@@ -388,18 +408,18 @@ Follow these instructions to submit your work, before the due date and time:
 2. At the same level, create a new folder named "MyCode".
 
 3. From the project folder(s), copy these source code files to the "MyCode" folder:  
-**TBA.swift**  
+**( all your controllers )**  
 **DataModelClasses.swift**  
 **DataModelManager.swift**  
 **Main.storyboard**  
 For each of these files, change the file name extension to "txt".
 
-4. From wherever, copy the screen captures into the MyCode folder. Rename them to (TBA). 
+4. From wherever, copy the screen captures into the MyCode folder. 
 
 5. Select the top-level folders:  
 (project)  
 MyCode  
-Right-click, and choose **Compress 2 Items**, which creates a zip file (make sure the zip file is fairly small, around 2MB or less).  
+Right-click, and choose **Compress 2 Items**, which creates a zip file. The zip file may be sizeable, with all of the screen captures.  
 
 6. Login to Blackboard/My.Seneca, and in this course's Assignments area, look for the upload link, and submit your work there.  
 
