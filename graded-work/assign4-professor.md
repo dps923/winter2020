@@ -284,21 +284,21 @@ It needs a `Meal` property (to hold a passed-in meal object), because we must se
 > Phase 1, we'll hand-type the food consumed item details.  
 > Phase 2, we'll get the data from the web API. 
 
-Placeholder images:
+Preview images:
 
-Food item list before searching:
+Food item list before searching. Notice the "add" button (`+`), which modally presents a scene with data entry fields.
 
 <img class="border1" src="images/a4-prototype-food-search-1-start.png" alt="Search 1">
 
-Enter food description and brand owner:
+Enter food description and brand owner. The idea is that a user can hand-enter the info, or use the search feature. The food item name is required, but the brand owner is optional. If you do not know any brand owner values, leave that field empty, and then look at the results for ideas. Then run the search again, and include a brand owner value.  
 
 <img class="border1" src="images/a4-prototype-food-search-2-setup.png" alt="Search 2">
 
-After "Search" button tapped, a list appears:
+After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](select-list-webapi) that you learned in class during Week 11 of the course. 
 
 <img class="border1" src="images/a4-prototype-food-search-3-list.png" alt="Search 3">
 
-Selecting an item from the list fills in the "Add Food Item" fields:
+Selecting an item from the list fills in the "Add Food Item" fields: <mark>continue</mark>
 
 <img class="border1" src="images/a4-prototype-food-search-4-result.png" alt="Search 4">
 
