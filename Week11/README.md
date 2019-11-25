@@ -39,3 +39,15 @@ Another feature is the use of *map annotations*.
 These appear as red pins on the map.  
 
 <br>
+
+### W11a5Camera
+
+This app saves photos in the Core Data store.  
+
+Look first in the Core Data model.  
+The Example entity has a new attribute, "photo".    
+Look at its data model inspector panel.  
+Notice that the attribute type is "Binary Data".  
+And, the "Allows External Storage" checkbox is checked / marked.  
+
+Then, we go back-and-forth between `UIImage` and `Data`. 
