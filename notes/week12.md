@@ -43,7 +43,11 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Friday plan
 
-Work on the programming assignment, and get help from a classmate or the professor if you need it. 
+In the first part of the timeslot, Test 4 will be written. It is worth 14%. It covers (again) Core Data topics from about week 9, and the new topics covered since then. 
+
+Here is more and general information about [the upcoming test](test-success-info). 
+
+Then, in the remaining time, work on the programming assignment, and get help from a classmate or the professor if you need it. 
 
 <br>
 
