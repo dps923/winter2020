@@ -39,6 +39,8 @@ Learn via the code examples.
 
 [Using a table view as a select list](select-list-webapi).
 
+[Core Data and photos](core-data-photos)
+
 <br>
 
 ### Code examples
@@ -47,6 +49,7 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 * W11a1Select
 * W11a3Map
 * W11a4MapTask
+* W11a5Camera
 
 <br>
 
