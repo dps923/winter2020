@@ -67,6 +67,6 @@ Here's a list of topics that we learned something about this week:
 1. Or, by using the Align tool. 
 1. Typically, configuring constraints is a multi-step task. 
 1. One of the final tasks done is to Resolve Auto Layout Issues. 
-1. The code examples offer several learning opportunities, so make sure they are carefully studied and executed. 
+1. Code examples are probably not as useful as a learning source, when compared to your own hands-on practice. 
 
 <br>
