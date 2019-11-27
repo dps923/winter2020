@@ -30,14 +30,15 @@ We will cover these - discuss, show-and-tell, diagram, etc. - in the Wednesday c
 
 Learn via the code examples.
 
-Introduction to layout for iOS apps. 
+[Introduction to layout](layout-fundamentals) for iOS apps. 
 
 <br>
 
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* W12a1...
+* Week 12?  
+None so far - we'll create an app in class, and post it later 
 
 <br>
 

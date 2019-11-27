@@ -39,7 +39,7 @@ Learn via the code examples.
 
 [Using a table view as a select list](select-list-webapi).
 
-[Core Data and photos](core-data-photos)
+[Core Data and photo](core-data-photos) storage.
 
 <br>
 
