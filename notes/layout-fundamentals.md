@@ -27,11 +27,11 @@ Since iOS development began in 2008, developers were (and still are) required to
 
 As developers, we need to know a few things about screen sizes. First, the screen origin is the upper-left corner - that's 0 x and 0 y. 
 
-While other sources (here, here) are more complete, the essential need-to-know is that the screen size for a few iPhone models in portrait orientation are shown below:
+While other sources ([here](https://developer.apple.com/library/archive/documentation/DeviceInformation/Reference/iOSDeviceCompatibility/Displays/Displays.html), [here](https://kapeli.com/cheat_sheets/iOS_Design.docset/Contents/Resources/Documents/index)) are more complete, the essential need-to-know is that the screen size for a few iPhone models in portrait orientation are shown below:
 
 Model | Diagonal size<br>(marketing/product info) | Points size | Pixel resolution | PPI density 
 --- | --- | --- | --- | ---
-7 or 8 | 4.7 inch | 320 points horizontal<br>568 points vertical | Don't care | Don't care
+7 or 8 | 4.7 inch | 320 points horizontal<br>x<br>568 points vertical | Don't care | Don't care
 7 Plus<br>or 8 Plus | 5.5 inch | 414 x 736 | " | "
 X or XS | 5.8 inch | 375 x 812 | " | "
 XR | 6.1 inch | 414 x 896 | " | "

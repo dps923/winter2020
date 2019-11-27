@@ -57,4 +57,7 @@ Then, in the remaining time, work on the programming assignment, and get help fr
 Here's a list of topics that we learned something about this week:
 1. (to be posted)
 
+1. The code examples offer several learning opportunities, so make sure they are carefully studied and executed. 
+
+
 <br>
