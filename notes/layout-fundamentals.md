@@ -43,6 +43,16 @@ The following sections cover two specific layout tasks. To be an effective iOS d
 
 <br>
 
+#### Other screen info and guides 
+
+On typical (e.g. iPhone 8 and larger) screens, there is a default left and right margin of 20 points. 
+
+On smaller screens, the margin is 16 points. This fact alone will help reveal the benefits of using these layout techniques, because the margin used will match the device. 
+
+When working with the storyboard, on the Edit > Canvas menu, you can choose to show a number of visual helpers. Check a few of them out, as they will help as you learn and practice these layout techniques. 
+
+<br>
+
 ### Side-by-side views
 
 The following will be demonstrated by the professor, in class. The idea is that you will be able to do the same on your own. 

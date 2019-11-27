@@ -55,9 +55,18 @@ Then, in the remaining time, work on the programming assignment, and get help fr
 ### Summary
 
 Here's a list of topics that we learned something about this week:
-1. (to be posted)
-
+1. The task of user interface layout is guided by the Auto Layout features in Xcode and Interface Builder. 
+1. For the apps that we do in our academic course, scenes other than table views are well-suited to using Auto Layout. 
+1. After configuration (placement, constraints), it dynamically sizes and positions the view hierarchy (i.e. all visible elements). 
+1. Required knowledge includes screen sizes, orientations, and margins. 
+1. You must be prepared to explain the kinds of internal or external changes in a device's usage that can affect the user interface layout. 
+1. A "constraint" is an object that represents a relationship between two views - these are the objects that we're most interested in. 
+1. There's a statement syntax, and a visual represenation, and either or both can be used. 
+1. When using Auto Layout in Xcode and Interface Builder, constraints can be configured with a control-drag action. 
+1. Or, by using the Add New Constraints ("pin") tool. 
+1. Or, by using the Align tool. 
+1. Typically, configuring constraints is a multi-step task. 
+1. One of the final tasks done is to Resolve Auto Layout Issues. 
 1. The code examples offer several learning opportunities, so make sure they are carefully studied and executed. 
-
 
 <br>
