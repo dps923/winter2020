@@ -5,6 +5,14 @@
 
 @import "{{ site.theme }}";
 
+body {
+  color: black;
+}
+
+h1, h2, h3, h4 {
+  color: black;
+}
+
 .wrapper {
   width:900px;
 }
