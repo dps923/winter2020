@@ -86,6 +86,8 @@ let age = 25
 fetchRequest.predicate = NSPredicate(format: "age < %@", argumentArray: [age])
 ```
 
+The `%@` symbol represents an *object* that will be provided in the *argument* array. The data type of the object can be anything that inherits from object, including an `Int`, a `String`, or even a more complex object (e.g. `NSManagedObject`). 
+
 <br>
 
 Our experience (in this course) is that there is no single authoritative comprehensive source that will explain and show examples of all possible predicate strings. 

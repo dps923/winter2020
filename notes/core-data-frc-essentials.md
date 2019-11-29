@@ -88,6 +88,29 @@ let item = frc.object(at: indexPath)
 
 <br>
 
+#### Filtering the results 
+
+Notice that the frc factory enables us to configure a predicate. The design matches the [`NSPredicate` initializer] design, where we must provide:
+* A predicate string
+* An optional *array* of arguments 
+
+For example, as you saw in the [Core Data fetch request essentials](core-data-fetchrequest-essentials#predicates) document, a predicate can look like this:
+
+```swift
+let age = 25
+fetchRequest.predicate = NSPredicate(format: "age < %@", argumentArray: [age])
+```
+
+If you have more than one argument, it could look like this: 
+
+```swift
+let age = 25
+let lastName = "McIntyre"
+fetchRequest.predicate = NSPredicate(format: "age < %@ AND lastName = %@", argumentArray: [age, lastName])
+```
+
+<br>
+
 #### Using section info
 
 In the frc factory method, the last argument is `andSectionNameKeyPath`. It can be `nil` (i.e. no section info), or its value can be set to the name of an entity property (e.g. "province"). 

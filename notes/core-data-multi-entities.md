@@ -192,6 +192,53 @@ Again, easy.
 
 <br>
 
+#### Fetch requests
+
+The [Core Data fetch request essentials](core-data-fetchrequest-essentials) document introduced fetch requests, and since then you have used them on their own or as part of a fetched results controller (frc). 
+
+In multi-entity related scenarios, is there anything different or new? Yes, but it builds on what you know. There are two situations to learn something about.
+
+First, assume that you have fetched one or more objects (e.g. a `Company`). Then, for one of those objects, you want the collection of related objects (e.g. a collection of `Employee`). Does the fetch request configuration change? *No.* The only thing that changes is that Core Data will behave in an efficient way (performance, processor time, memory usage). How? By delaying the fetching of the related objects (in the collection) until they're actually needed. The programmer or user doesn't see this happen, as it's automatic. The benefit is that the programmer sees lower memory usage and better performance, and the user sees good response time and the data when it is actually needed. 
+
+Next, consider this scenario: 
+* There is a scene, a list of `Company` objects 
+* It has a segue to an info scene, that displays detailed information about a selected/specific `Company` 
+* This info scene has a segue to another list, of `Employee` objects in that `Company` 
+
+What is the *data source* for that `Employee` list scene? 
+
+**One alternative** is that we could pass the collection from the company info scene. For example, if `item` was the `Company` object in the info scene controller, we pass `item.employees`, or pass in the full `item`, and then pull out the employees collection in the employee list scene.
+
+In that situation, the `Employee` list scene would use the collection (as an array) to create the list. This works OK in a display-only scenario, because the data on the list will not change. 
+
+The **other alternative** is to use a fetched results controller to manage the data for the `Employee` list scene. That's a good idea if the data on the list will change (add, delete, edit). 
+
+In this scenario, you want the frc's fetch request to get the *employees* for a specific *company*. What do you do? First, pass the `Company` object from the company info scene to the employee list scene. The, create and configure an frc. 
+
+What's the predicate? Well, you want to ask for all the employees where the employee's "company" property matches a specific company. You already know how to do this if you're string matching, so just do the same for this kind of matching. 
+
+In pseudocode, in the employee list controller, it looks like this:
+
+```
+// Assume "c" is the "company" object that was passed in
+// The fetch request with predicate is... 
+
+// Fetch all employee objects
+// where the "company" property
+// matches the passed-in "c" object
+```
+
+In actual code, it's going to look something like this:
+
+```swift
+// Assume "item" is a "Company" object...
+frc = m.ds_frcForEntityNamed("Employee", withPredicateFormat: "company == %@", predicateObject: [item], sortDescriptors: [NSSortDescriptor(key: "lastName", ascending: true), NSSortDescriptor(key: "firstName", ascending: true)], andSectionNameKeyPath: nil)
+```
+
+Ah, interesting. 
+
+<br>
+
 ### Learning resources and references
 
 [Core Data](https://developer.apple.com/documentation/coredata) topic introductory document. 

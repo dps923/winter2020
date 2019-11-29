@@ -94,7 +94,7 @@ The "photo" attribute will be a "Binary Data" type, configured for "Allows Exter
 
 #### Build the navigation workflow 
 
-The idea here is to build the four-scene *data-viewing workflow*, using statically-generated data, before we get add tasks and the web API involved. It will enable faster progress, easier testing, and improved confidence. 
+The idea here is to build the four-scene *data-viewing workflow*, using statically-generated data, before we get the "add" tasks and the web API involved. It will enable faster progress, easier testing, and improved confidence. 
 
 Edit the project to display Meal objects:
 * Change the ExampleList controller name to MealList (Refactor > Rename)
