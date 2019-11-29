@@ -125,7 +125,7 @@ Next, add a food consumed list:
 > Tip:  
 > The data source for this food list must be a fetched results controller (frc).  
 > Later, we'll be adding items to the list, and the frc will easily enable the list update task.  
-> [Here's a reminder](notes/core-data-multi-entities#fetch-requests) about the way to think about building this frc. 
+> [Here's a reminder](/notes/core-data-multi-entities#fetch-requests) about the way to think about building this frc. 
 
 At this point, your food consumed list may look something like this: 
 
