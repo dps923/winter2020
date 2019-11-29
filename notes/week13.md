@@ -26,6 +26,7 @@ No new topics will be covered this week.
 Work on the programming assignment, and get help from a classmate or the professor if you need it. 
 
 > Make sure that you submit your work by the due date and time.  
-> Your work *cannot* be late (if it is, its grade will be zero). 
+> Your work *cannot* be late (if it is, its grade will be zero).  
+> > Due **today!** at 11:00pm ET  
 
 <br>

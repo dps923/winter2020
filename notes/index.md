@@ -13,7 +13,7 @@ New notes are at the top.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 13**<br>&bull; Wed Dec 4<br>&bull; Fri Dec 6 | Work on the assignment| [Assign 4](/graded-work/assign4), 18%<br>(Fri Dec 6)
+**[Week 13](week13)**<br>[&bull; Wed Dec 4<br>&bull; Fri Dec 6](week13) | Work on the assignment| [Assign 4](/graded-work/assign4), 18%<br>(Fri Dec 6)
 **[Week 12](week12)**<br>[&bull; Wed Nov 27<br>&bull; Fri Nov 29](week12) | Introduction to layout | Test 4, 14%<br>(Fri Nov 29)| 
 **[Week 11](week11)**<br>[&bull; Wed Nov 20<br>&bull; Fri Nov 22](week11) | Mapping services introduction<br>Item selection technique | | 
 **[Week 10](week10)**<br>[&bull; Wed Nov 13<br>&bull; Fri Nov 15](week10) | Multi-entity data model<br>Location services introduction | Test 3, 14%<br>(Fri Nov 15) | 

@@ -87,7 +87,8 @@ Each entity must have the attributes it needs to implement the specifications. Y
 
 The "photo" attribute will be a "Binary Data" type, configured for "Allows External Storage". To and from Swift, a photo is a `Data` type, so you'll have to marshal it back-and-forth to an image when you display it (or capture it with a camera). 
 
-> More on this soon.
+> This was a Week 11 topic:  
+> [Core Data and photos](https://dps923.ca/notes/core-data-photos)
 
 <br>
 
