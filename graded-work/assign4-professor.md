@@ -172,7 +172,7 @@ In the `save(_:)` method, if you wish, you can add a few food consumed items pro
 
 Do the rest of the work to add, configure, and code a scene and segue (from the meal list controller). 
 
-At this point, your food consumed scene may look something like this: 
+At this point, your add meal scene may look something like this: 
 
 <img class="border1" src="images/a4-prototype-meal-add-setup.png" alt="Add setup">
 
