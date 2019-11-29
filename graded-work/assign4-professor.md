@@ -87,8 +87,8 @@ Each entity must have the attributes it needs to implement the specifications. Y
 
 The "photo" attribute will be a "Binary Data" type, configured for "Allows External Storage". To and from Swift, a photo is a `Data` type, so you'll have to marshal it back-and-forth to an image when you display it (or capture it with a camera). 
 
-> This was a Week 11 topic:  
-> [Core Data and photos](https://dps923.ca/notes/core-data-photos)
+> This was a Week 11 document that discussed this topic:  
+> [Core Data and photos](/notes/core-data-photos)
 
 <br>
 
@@ -124,7 +124,8 @@ Next, add a food consumed list:
 
 > Tip:  
 > The data source for this food list must be a fetched results controller (frc).  
-> Later, we'll be adding items to the list, and the frc will easily enable the list update task. 
+> Later, we'll be adding items to the list, and the frc will easily enable the list update task.  
+> [Here's a reminder](notes/core-data-multi-entities#fetch-requests) about the way to think about building this frc. 
 
 At this point, your food consumed list may look something like this: 
 
