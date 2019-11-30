@@ -94,7 +94,7 @@ The "photo" attribute will be a "Binary Data" type, configured for "Allows Exter
 
 #### Build the navigation workflow 
 
-The idea here is to build the four-scene *data-viewing workflow*, using statically-generated data, before we get the "add" tasks and the web API involved. It will enable faster progress, easier testing, and improved confidence. 
+The idea in this section is to build the four-scene *data-viewing workflow*, using programmatically-generated data, before we get the "add" tasks and the web API involved. It will enable faster progress, easier testing, and improved confidence. 
 
 Edit the project to display Meal objects:
 * Change the ExampleList controller name to MealList (Refactor > Rename)
@@ -198,7 +198,7 @@ What's next? During the "add meal" task, we want the user to interactively add "
 
 The United States Department of Agriculture has a web API named "FoodData Central". Visit the [web site](https://fdc.nal.usda.gov/index.html), and learn something about the service. 
 
-This is a BIG data source. Thousands of food and nutrient items. 
+This is a BIG data source. It has thousands of food and nutrient items. 
 
 To use the web API, you must have an "API Key". This is a string. It must be sent with every request to the web API. Follow the "Get an API Key" link in the middle of the page. You can use a College or personal email address. It will display your API key, and also send it to your email address. 
 
@@ -209,16 +209,18 @@ To use the web API, you must have an "API Key". This is a string. It must be sen
 Now, interact with the web API. How? Use Postman.
 
 As you will read (follow the "API GUIDE" link), it offers two endpoints:
-* Food Search - enter search terms like food name, brand, and so on, and it will return a collection of results 
+
+* *Food Search* - enter search terms like food name, brand, and so on, and it will return a collection of results 
   * This endpoint must use the POST method
-* Food Details - using a unique food identifier (from the food search results above), it will return very detailed ingredient and nutrient information about that food 
+
+* *Food Details* - using a unique food identifier (from the food search results above), it will return very detailed ingredient and nutrient information about that food 
   * This endpoint must use the GET method
 
 The following is an example of the "Food Search". In Postman, configure:
 * A POST request
 * URL is https://api.nal.usda.gov/fdc/v1/search?api_key=YOUR_API_KEY
 * Content type header is JSON
-* Entity body looks something like the following
+* Entity body looks something like the following:
 
 ```json
 {
@@ -233,9 +235,9 @@ The following is an example of the "Food Search". In Postman, configure:
 
 On November 17, 2019, at 3:40pm, this request returned two results. Notice a few things:
 * `generalSearchInput` is a collection of words that you want to search for. The search is case-insensitive, and word order doesn't matter - it will find results with these words anywhere in the food's description.
-* Yes, we want to send `requireAllWords`, set to `true`. 
+* Yes, we want to send `requireAllWords`, set to `true`, for *all* requests . 
 * We want to include the `brandOwner` key, with something or nothing in the value. That will help limit the results when appropriate. 
-* Also include the `includedDataTypes` key-and-value for this Assignment 4. 
+* Also include the `includedDataTypes` key-and-value for *all* requests. 
 
 Notice the results include a `fdcId` key, and its value is a six-digit integer. That's the unique food identifier we need for the next query. 
 
@@ -250,7 +252,7 @@ On November 17, 2019, at 3:45pm, this request returned a detailed result. Notice
 * Ingredient and nutrient info is very detailed 
 * It essentially has all the data required on a product label (Ingredients and Nutrition Facts). 
 
-Experiment on your own. The documentation is good. 
+Experiment on your own. The documentation is useful. 
 
 <br>
 
@@ -276,10 +278,11 @@ For the Food Details result, it has a number of properties that may be useful to
 * serving size
 * fdcId
 * brandedFoodCategory
+* labelNutrients (discussed next)
 
 It has two embedded data structures:
 * The `foodNutrients` collection is probably too much for our needs in Assignment 4 (so you can ignore it if you wish)
-* The `labelNutrients` object is what we want to use - it has the macronutrient (and related) values that will enable us to do some arithmetic
+* The `labelNutrients` object is what we *want to use* - it has the macronutrient (and related) values that will enable us to do some arithmetic
 
 <br>
 
@@ -293,29 +296,29 @@ This will not be throw-away work, because you can keep and re-use the code in th
 
 ### Add pattern, food consumed item
 
-Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food items (in that meal); that list will enable new items to be added to it, and those new items can be helped by a "select list" of results from a web API call. 
+Now, we will replace the programmatically-generated food consumed items, for a meal, with the ability for the user to search for a food item. Therefore, we will modify the "add meal" scene. It will navigate to a list of food items (in that meal). That list will enable new items to be added to it, and those new items can be helped by a "select list" of results from a web API call. 
 
 Wait - we already have done a food list. Do we have to make another? Well, we have a choice - we can make another (and it will be almost the same as the other food list), or we can re-use the food list, and modify it to enable the "add" functionality. 
 
 To prepare for either choice, create a new standard view controller for the food item "add new" pattern. Most of its code can be copied from the add meal controller and then edited, or you can write it from scratch. 
 
-It needs a `Meal` property. When the controller loads, create a new meal object. Why? We must set the relation between an existing meal and the food items will add soon. However, please note that you must delete the meal object if the user taps the cancel button - you don't want to save partially-configured objects that are not desired. 
+It needs a `Meal` property. When the controller loads, create a new meal object. Why? We must set the relation between an existing meal and the food items that we will add soon. However, please note that you must delete the meal object if the user taps the cancel button - you don't want to save partially-configured objects that are not desired. 
 
 > You can do this task in two phases.  
-> Phase 1, we'll hand-type the food consumed item details.  
-> Phase 2, we'll get the data from the web API. 
+> Phase 1, hand-type the food consumed item details.  
+> Phase 2, get the data from the web API. 
 
 Here are some preview images to guide you:
 
-Food item list before searching. Notice the "add" button (`+`), which modally presents a scene with data entry fields.
+The following is the food item list scene. Notice the "add" button (`+`). It will modally present a scene with data entry fields.
 
 <img class="border1" src="images/a4-prototype-food-search-1-start.png" alt="Search 1">
 
-Enter food description and brand owner. The idea is that a user can hand-enter the info, or use the search feature. The food item name is required, but the brand owner is optional. If you do not know any brand owner values, leave that field empty, and then look at the results for ideas. Then run the search again, and include a brand owner value. Remember, when you segue to the search scene, you must pass in these two values (food item name, brand owner).   
+The following is a food item add scene. Enter the food description and brand owner. The idea is that a user can hand-enter the info, or use the search feature. The food item name is required, but the brand owner is optional. If you do not know any brand owner values, leave that field empty, and then look at the results for ideas. Then cancel out of the search, and run it again, and include a brand owner value. Remember, when you segue to the search scene, you must pass in these two values (food item name, brand owner).   
 
 <img class="border1" src="images/a4-prototype-food-search-2-setup.png" alt="Search 2">
 
-After "Search" button tapped, a list appears. This implements the new-to-you ["select list" pattern](/notes/select-list-webapi) that you learned in class during [Week 11](/notes/week11) of the course. (Yes, it's supported by code examples etc.) For best results, add the web API request code to the controller's load method. 
+After "Search" button tapped, a list scene appears. It implements the new-to-you ["select list" pattern](/notes/select-list-webapi) that you learned in class during [Week 11](/notes/week11) of the course. (Yes, it's supported by a code example etc.) For best results, add the web API request code to the controller's load method. 
 
 <img class="border1" src="images/a4-prototype-food-search-3-list.png" alt="Search 3">
 
@@ -323,7 +326,7 @@ Selecting an item from the list fills in the "Add Food Item" fields:
 
 <img class="border1" src="images/a4-prototype-food-search-4-result.png" alt="Search 4">
 
-Tapping "Save" adds the item to the list. 
+Tapping "Save" adds the item to the food item list for the meal. 
 
 <img class="border1" src="images/a4-prototype-food-search-5-end.png" alt="Search 5">
 
