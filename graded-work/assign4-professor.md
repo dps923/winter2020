@@ -41,28 +41,25 @@ In general, the app features include:
 
 Here are some sample screen capture images...
 
-> These images will be replaced.  
-> A new version of the API has caused some changes.
-
 The "first launch" scene, which is a list of meals, and an info scene about a tapped/selected meal:
 
-<img class="border1" src="images/a4-meal-list.png" alt="Meal list">&nbsp;<img class="border1" src="images/a4-meal-info-scene.png" alt="Meal info">
+<img class="border1" src="images/a4-meal-list.png" alt="Meal list"><img class="border1" src="images/a4-meal-info-scene.png" alt="Meal info">
 
-Add meal scenes:
+Add meal scenes, with keyboard visible during editing, and then after "Done editing notes":
 
-<img class="border1" src="images/a4-meal-add-in-progress.png" alt="Add meal in progress">&nbsp;<img class="border1" src="images/a4-meal-add-done-info.png" alt="Add meal done info">
+<img class="border1" src="images/a4-meal-add-in-progress.png" alt="Add meal in progress"><img class="border1" src="images/a4-meal-add-done-info.png" alt="Add meal done info">
 
-Add food item(s) to a meal:
+Tap the "Food item list" button to view the meal's food item list, and after that, tap the "+" (add) button:
 
-(image coming soon)
+<img class="border1" src="images/a4-food-list.png" alt="Food item list">
 
 Search for a food item, setup, and list of possibles:
 
-(image coming soon)
+<img class="border1" src="images/a4-food-search-setup.png" alt="Food item add"><img class="border1" src="images/a4-food-search-list-before.png" alt="Food search list">
 
-After selecting an item on the list, before saving:
+After selecting an item on the list, before and after saving:
 
-(image coming soon)
+<img class="border1" src="images/a4-food-search-result.png" alt="Food item selected"><img class="border1" src="images/a4-food-search-list-after.png" alt="Food list after">
 
 <br>
 
