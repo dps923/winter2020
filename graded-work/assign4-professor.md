@@ -39,7 +39,7 @@ In general, the app features include:
 * The new item will have its location info stored (where, when, and so on) 
 * Optionally, a photo of the meal can be taken 
 
-Here are some sample screen capture images...
+Here are some sample screen capture images... *your scenes may look different*. 
 
 The "first launch" scene, which is a list of meals, and an info scene about a tapped/selected meal:
 
@@ -60,6 +60,10 @@ Search for a food item, setup, and list of possibles:
 After selecting an item on the list, before and after saving:
 
 <img class="border1" src="images/a4-food-search-result.png" alt="Food item selected"><img class="border1" src="images/a4-food-search-list-after.png" alt="Food list after">
+
+If you view the list of food items in a meal, and then drill down to a food item, this is what you'll see:
+
+<img class="border1" src="images/a4-food-item-list.png" alt="Food item list"><img class="border1" src="images/a4-food-item-info-scene.png" alt="Food item info">
 
 <br>
 
@@ -372,16 +376,79 @@ Here's a list of tasks that must be done:
 ### DPS923 additional functionality
 
 DPS923 students must implement the following additional functionality:
-* Use/display sections in the meal list (by date)  
-* Allow the user to select the meal's date in the add scene (picker)  
-* Summing the macronutrients of all the food items in the meal   
-* Use a segue "guard", before attempting to search the web API 
+1. Use/display sections in the meal list (by date)  
+1. Allow the user to select the meal's date in the add scene (use a date picker)  
+1. Sum the macronutrients of all the food items in the meal   
+1. Use a segue "guard", before attempting to search the web API 
+
+<br>
+
+#### Display *sections* in the meal list (by date)  
+
+Modify the meal list controller so that it displays *section headers* (titles). 
+
+<img class="border1" src="images/a4-meal-list-with-sections.png" alt="Meal list with sections">
+
+The `Meal` entity includes a `date` attribute, which is a value that has time info in it (hours, minutes, seconds). We *cannot* use the `date` attribute for the section header, because it will create a separate section header for each `Meal` object. 
+
+Therefore, we want just the year, month, date parts. Therefore, think about and code a date formatter that will generate a date in the format that you like. 
+
+To implement this, we will create a Swift extension, which will add a new *read-only computed property* to the `Meal` entity class. Wow. 
+
+Add the following to the *bottom* of the data model classes source code file, or add a new source code file named `Meal+SectionInfo.swift`. 
+
+```swift
+extension Meal {
+    @objc var sectionDate: String {
+        get {
+            // Create a date formatter object (e.g. "df")
+            // Set its format to something you like
+            return df.string(from: self.date!)
+        }
+    }
+}
+```
+
+Next, modify the code that creates the fetched results controller. It must sort by the `date` attribute. And the section name key path must be this new property, `sectionDate`. 
+
+<br>
+
+#### Select the meal's date in the add scene (use a date picker)  
+Add a date picker to the meal add scene. Its initial value will be the current date-and-time. 
+
+<br>
+
+#### Sum the macronutrients of all the food items in the meal   
 
 This is an example of the meal info scene, showing the sum of all food item macronutrients:
 
 <img class="border1" src="images/a4-meal-info-scene-detailed.png" alt="Meal scene">
 
-(This section will be completed soon.)
+<br>
+
+#### Use a segue "guard"
+
+The `NWPathMonitor` class enables us to check for network connectivity. [Read something about it here](https://www.hackingwithswift.com/example-code/networking/how-to-check-for-internet-connectivity-using-nwpathmonitor) (and look elsewhere if you want to). 
+
+To simplify this task, monitor only the "wifi" network. (You do not have to fully consider all network types.)
+
+This code can be placed inside a segue "guard" method that you will add to the controller that presents the list of web API search results. A sample implementation could look like this:
+
+```swift
+override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+
+    if identifier == "toFoodSearch" {
+
+        // Validate data...
+
+        // Validate network connectivity
+
+        // If all is good, return true
+        // Otherwise, return false
+    }
+    return true
+}
+```
 
 <br>
 
