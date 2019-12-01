@@ -44,31 +44,29 @@ Here are some sample screen capture images...
 > These images will be replaced.  
 > A new version of the API has caused some changes.
 
-The "first launch" scene; as an empty list, and with some items:
+The "first launch" scene, which is a list of meals, and an info scene about a tapped/selected meal:
 
-<img class="border1" src="images/a4-first-launch.png" alt="List, empty"><img class="border1" src="images/a4-item-list-3-items.png" alt="List, with items">
+<img class="border1" src="images/a4-meal-list.png" alt="Meal list">&nbsp;<img class="border1" src="images/a4-meal-info-scene.png" alt="Meal info">
 
-Add item scenes:
+Add meal scenes:
 
-<img class="border1" src="images/a4-item-add-first-time-permission.png" alt="Location permission"><img class="border1" src="images/a4-item-add-scene.png" alt="Input fields">
+<img class="border1" src="images/a4-meal-add-in-progress.png" alt="Add meal in progress">&nbsp;<img class="border1" src="images/a4-meal-add-done-info.png" alt="Add meal done info">
 
-Add a photo scenes:
+Add food item(s) to a meal:
 
-<img class="border1" src="images/a4-item-add-scene-photo.png" alt="Get/take photo"><img class="border1" src="images/a4-item-add-scene-before-save.png" alt="New item, ready to save">
+(image coming soon)
 
-Search for an item, setup, and list of possibles:
+Search for a food item, setup, and list of possibles:
 
-<img class="border1" src="images/a4-item-add-search-step1.png" alt="Enter search terms"><img class="border1" src="images/a4-item-add-search-step2-list.png" alt="List of possibilities">
+(image coming soon)
 
-After selecting an item on the list, before saving, and then the result after configuring a photo:
+After selecting an item on the list, before saving:
 
-<img class="border1" src="images/a4-item-add-search-step3-before-save.png" alt="Before save"><img class="border1" src="images/a4-item-info-scene.png" alt="Item info scene">
+(image coming soon)
 
 <br>
 
 > DPS923 students will have a few additional specifications. 
-
-<mark>This document is being edited.<br>This notice will be removed when the edits are complete.<br>Get started right away on this - don't wait for the updated sample screen captures.<br>The work to do (below) is complete (except for a few extra tasks for DPS923 students).</mark>
 
 <br>
 
