@@ -377,6 +377,10 @@ DPS923 students must implement the following additional functionality:
 * Summing the macronutrients of all the food items in the meal   
 * Use a segue "guard", before attempting to search the web API 
 
+This is an example of the meal info scene, showing the sum of all food item macronutrients:
+
+<img class="border1" src="images/a4-meal-info-scene-detailed.png" alt="Meal scene">
+
 (This section will be completed soon.)
 
 <br>
