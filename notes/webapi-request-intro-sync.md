@@ -137,6 +137,9 @@ Separate each course with a comma, and then begin creating more "course" objects
 
 Then, to test, and assuming that the name of your "package" object is "package", add a `print(package)` statement, and then run the app. The contents of the "package" object should display in the debug console area of Xcode. 
 
+> You can also use a `dump(package)` statement.  
+> For objects (and collections), the `dump` command often does a better job. 
+
 After a successful test, comment out these two lines of code, so that they are inactive. 
 
 <br>
