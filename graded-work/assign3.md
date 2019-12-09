@@ -105,7 +105,7 @@ Generate and save between 50 and 100 rows of data.
 
 Return to the restdb.io app. Create a new database. You can use this database for Assignment 3, and maybe Assignment 4. 
 
-We suggest that you choose a "Name" that combines your name initials and the course code. (The "Create New Database" task will then add a four-character suffix to the) For example, your professor's name initials are "PAM", so the database was named `pamdps923-de33`. 
+We suggest that you choose a "Name" that combines *your name initials* and *the course code*. The "Create New Database" task will then add a four-character suffix to the database name. For example, your professor's name initials are "PAM", so the database was named `pamdps923-de33`. 
 
 After creation, click its name on the left side of the list, and the database manager screen appears. Enable "Developer Mode", by clicking on the gear icon in the upper-right area of the screen.
 
@@ -246,9 +246,9 @@ The values for the two text fields must be gathered from the keyboard, as there 
 > Then, the user will tap the "return" (or equivalent) keyboard key to get rid of the keyboard.  
 > Yes, you have seen and done that technique before. 
 
-The value for the "weightKg" is a floating-point number, within a range. Add a user interface (UI) control that enables that value to be entered safely. 
+The value for the "weightKg" is a floating-point number, within a range. Choose a user interface (UI) control that enables that value to be entered safely. 
 
-The value for the "rating" is an integer, within a range. Add a UI control that enables that value to be entered safely. 
+The value for the "rating" is an integer, within a range. Choose a UI control that enables that value to be entered safely. 
 
 The value for the "breedId" is a short string. Above, you used some supplied text to generate the Mockaroo data. Here, we want a bit more helpful information for each breed identifier - we want its name too. 
 
@@ -307,7 +307,7 @@ What data will we allow to be edited? At a minimum, how about these properties:
 
 If you want to add other editable properties (e.g. cat name, weight), go ahead and do so. 
 
-Now, in the data model classes source code, write another class that includes ony the editable properties, AND the `_id` property (which is a `String`). (When we send a PUT request to a web API, we *must* send the identifier in the body of the request.)
+Now, in the data model classes source code, write another class that includes only the editable properties, AND the `_id` property (which is a `String`). (When we send a PUT request to a web API, we *must* send the identifier in the body of the request.)
 
 > It is completely normal to write a custom class for each kind of interaction with a web API.  
 > Therefore, do not hesitate to write custom classes. 
@@ -487,20 +487,20 @@ let photoFetch = URLSession.shared.dataTask(with: URL(string: cat.photoUrl)!, co
 In the closure function, continue only if "data" has been returned. Then, display the image, and save the image data to the photo cache. 
 
 ```swift
-        // Remember, we're inside a closure function
-        // So we must access the main thread to update the UI
-        DispatchQueue.main.async {
-            cell.imageView?.image = UIImage(data: imageData)
+// Remember, we're inside a closure function
+// So we must access the main thread to update the UI
+DispatchQueue.main.async {
+    cell.imageView?.image = UIImage(data: imageData)
             
-            // Wait - we're not done - add to photo cache
-            self.catPhotos[cat.photoUrl] = data
+    // Wait - we're not done - add to photo cache
+    self.catPhotos[cat.photoUrl] = data
 ```
 
 You should improve the quality of this code by adding one more check *before* attempting to process the data. We should check and ensure that the `Content-Type` header begins with the characters `image/` (which would cover JPG, PNG, etc.). 
 
 ```swift
-    // Continue only if the response is an image
-    guard let mimeType = response?.mimeType, mimeType.starts(with: "image/") else { return }
+// Continue only if the response is an image
+guard let mimeType = response?.mimeType, mimeType.starts(with: "image/") else { return }
 ```
 
 Test your work - add some diagnostic `print()` statements, and/or use the debugger, to see what happens with each cell that gets created in the table view cell building code, when you run the app (on the simulator or on a device).
