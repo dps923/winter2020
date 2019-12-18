@@ -130,7 +130,7 @@ Writing code for UI objects is a two-step procedure:
 
 <br>
 
-##### Add outlets and actions
+#### Add outlets and actions
 
 As you have learned, a storyboard is a resource file that holds the user interface objects, as configured by the Interface Builder editor.  
 
@@ -138,7 +138,7 @@ To get programmatic access to the user interface objects, we <span style="color
 
 <br>
  
-##### Making connections
+#### Making connections
 
 For the new/beginner iOS app programmer, this next procedure can seem different from other platforms, and challenging to understand. We'll take you through, step-by-step.  
 
@@ -252,7 +252,7 @@ At this point in time, the app should work. However, we can make it work better.
 
 Recently, you learned that a text field's resignFirstResponder() function will dismiss the keyboard. You saw us use that in a button-handling function. Well, in this app, we do not have a button.  
 
-Instead, we will use the delegation pattern to handle the on-screen keyboard's "return" or "Done" button tap. In effect, the text field is *delegating*> the responsibility of handling that event, to some new code that we write.  
+Instead, we will use the delegation pattern to handle the on-screen keyboard's "return" or "Done" button tap. In effect, the text field is *delegating* the responsibility of handling that event, to some new code that we write.  
 
 <br>
 
