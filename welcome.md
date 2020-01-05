@@ -1,6 +1,6 @@
 ## Welcome
 
-Welcome to DPS923 and MAP523, a cross-listed course in the School of ICT. This post has information that helps you get started in the course.
+Welcome to DPS923 and MAP523, a cross-listed course in the School of SDDS. This post has information that helps you get started in the course.
 
 <br>
 
@@ -88,7 +88,7 @@ Class/sessions are important. This is _not_ a distance education (online) course
 
 ### What do we expect from you?
 
-Before a Wednesday class, we expect you to prepare for the class. This means:
+Before a Thursday class, we expect you to prepare for the class. This means:
 
 * Read and study the class notes page
 * Read and study the linked documents
@@ -96,26 +96,26 @@ Before a Wednesday class, we expect you to prepare for the class. This means:
 
 In other words, do not come into the classroom expecting somehow to soak up knowledge like a sponge. You need to prepare before class, so that you understand the topics and their context.
 
-In the Wednesday class, we expect you to be an engaged and actively-learning participant. This means:
+In the Thursday class, we expect you to be an engaged and actively-learning participant. This means:
 
 * Listening effectively
 * Asking and answering questions
 * Writing notes
 * Doing the in-class exercises and activities
 
-Before the Friday class, we expect you to prepare for the class. This means:
+Before the Monday class, we expect you to prepare for the class. This means:
 
 * Read and study the current assignment
 * Practice its contents, and/or get started on its contents
 
-In the Friday computer-lab-room class, we expect you to be an engaged and actively-learning participant. This means:
+In the Monday computer-lab-room class, we expect you to be an engaged and actively-learning participant. This means:
 
 * Being prepared to split your time between new topic learning, and working hands-on with the topic or the current assignment
 * Asking and answering questions
 * Writing notes
 * Working on the current assignment
 
-Also, during some Friday classes, there will be a test. The questions are based on the new topics that week, and on topics recently covered in the past.
+Also, during some Monday classes, there will be a test. The questions are based on the new topics that week, and on topics recently covered in the past.
 
 <br>
 

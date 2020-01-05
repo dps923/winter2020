@@ -5,7 +5,7 @@ layout: default
 
 ## Course standards
 
-The information below is intended for students in the courses that Peter McIntyre teaches. It is your responsibility to read, understand, and follow them.
+The information below is intended for students in this course. It is your responsibility to read, understand, and follow them.
 
 <br>
 
