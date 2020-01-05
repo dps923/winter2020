@@ -9,18 +9,7 @@ The theme for this week is to learn and experience a number of user interaction 
 
 <br>
 
-### Wednesday plan
-
-Discussions, and demonstrations.  
-Three segments:
-5:10pm - topics  
-5:40pm - 5-minute break  
-5:45pm - topics  
-6:15pm - 5-minute break  
-6:20pm - topics  
-6:50pm - done  
-
-During the breaks, please get up and move around. It's important for your health, and for mental performance. 
+### Thursday plan
 
 Here's a link to the [interaction essentials notes](interaction-essentials).
 
@@ -36,11 +25,11 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 <br>
 
-### Friday plan
+### Monday plan
 
-To start the session, we will briefly cover the leftover topic from Wednesday, [UI object table view](https://dps923.ca/notes/interaction-essentials#ui-object---table-view). 
+To start the session, we will briefly cover the leftover topic from Thursday, [UI object table view](https://dps923.ca/notes/interaction-essentials#ui-object---table-view). 
 
-Then, we discuss a new topic in the [first programming assignment](/graded-work/assign1) - requesting data from a web API. The [topic notes are linked here](webapi-request-intro-sync). 
+Then, we discuss a new topic in the first programming assignment - requesting data from a web API. The [topic notes are linked here](webapi-request-intro-sync). 
 
 We will also get a gentle [introduction to debugging](debug-intro). 
 

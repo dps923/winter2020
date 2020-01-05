@@ -9,18 +9,7 @@ The theme for this week is to continue with interaction topics, which keep build
 
 <br>
 
-### Wednesday plan
-
-Discussions, and demonstrations.  
-Three segments:
-5:10pm - topics  
-5:40pm - 5-minute break  
-5:45pm - topics  
-6:15pm - 5-minute break  
-6:20pm - topics  
-6:50pm - done  
-
-During the breaks, please get up and move around. It's important for your health, and for mental performance. 
+### Thursday plan
 
 Plan for this week:
 * Alert and Action Sheet 
@@ -46,9 +35,9 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 <br>
 
-### Friday plan
+### Monday plan
 
-Finish the photo library and camera topic we started on Wednesday. 
+Finish the photo library and camera topic we started on Thursday. 
 
 Then, work on the programming assignment, and get help from a classmate or the professor if you need it. 
 

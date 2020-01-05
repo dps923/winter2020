@@ -9,7 +9,7 @@ The theme for this week is to get comfortable with the iOS programming environem
 
 <br>
 
-### Wednesday plan
+### Plan for this week
 
 We plan to do the following:
 
