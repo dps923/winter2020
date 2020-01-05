@@ -15,7 +15,7 @@ The information below is the *course outline addendum* for the course.
 
 ### Faculty
 
-For the Winter 2020 term, Professor Peter McIntyre teaches the DPS923 and MAP523 course. 
+For the Winter 2020 term, Professor Rania Arbash teaches the DPS923 and MAP523 course. 
 
 Info | Details
 --- | ---

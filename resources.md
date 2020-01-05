@@ -11,7 +11,7 @@ This page has information about and links to learning resources that you will us
 
 ### Developer tools
 
-You *must* use a Mac that runs a recent version of macOS. Any kind, laptop, iMac, or Mac mini. The College has lots of Macs, and the School of ICT has a dedicated Mac lab, room A2534. 
+You *must* use a Mac that runs a recent version of macOS. Any kind, laptop, iMac, or Mac mini. The College has lots of Macs, and the School of SDDS has a dedicated Mac lab, room A2534. 
 
 * [Xcode](https://developer.apple.com/xcode/) (we will probably use version 9) 
 

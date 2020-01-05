@@ -102,7 +102,7 @@ In the middle area of the view, there will be five user interface objects:
 * slider - UISlider  
 * text field - UITextField  
 
-**Add a segmented control:** The top segmented control will display two segments, for two School of ICT academic programs, CPA and BSD. The initially-selected segment will be YOUR program of study. You can do this configuration in the utility area's Attributes Inspector.  
+**Add a segmented control:** The top segmented control will display two segments, for two School of SDDS academic programs, CPA and BSD. The initially-selected segment will be YOUR program of study. You can do this configuration in the utility area's Attributes Inspector.  
 
 **Add another segmented control:**  The other segmented control will display five segments, for the academic program levels, 4 through 8. The initially-selected segment will be YOUR level of enrolment.  
 

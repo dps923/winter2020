@@ -49,7 +49,7 @@ A few other points:
 
 We are part way through the course, and your professor hopes that you've enjoyed it so far. This section of the notes has advice on how to improve your performance in the course, get the most out of it, and earn the highest grade that you can.
 
-The following advice is for every student in the course. It will also work for other courses in our School of ICT (now SDDS) software development programs. Here's the advice:
+The following advice is for every student in the course. It will also work for other courses in our School of SDDS (formerly ICT) software development programs. Here's the advice:
 
 <br>
 
