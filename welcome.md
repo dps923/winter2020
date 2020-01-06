@@ -42,8 +42,6 @@ If you are not prepared to use a Mac, then *drop the course*.
 
 The School of SDDS has a Mac computer-lab, in A2534. The room availability during the week is constrained, and we will work out a protocol that will enable you to use the room during other classes.
 
-The College has Macs elsewhere, located in the open lab. However, their readiness and suitability for our course work is delayed and yet to be determined. Nonetheless, at a minimum, you can use those Macs to improve your macOS and Unix skills.
-
 It will be helpful - but not required - for you to have your own iOS device (iPhone, iPad). The School of SDDS has a number of iPhone and iPad devices as well, and you can borrow one of those, at no cost (as long as you return it empty and in good working condition), during the course's lifetime.
 
 <br>

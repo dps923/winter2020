@@ -5,6 +5,9 @@ layout: default
 
 ## DPS923 MAP523 Week 3 Notes
 
+> Thursday, January 16 - classroom lecture
+> Monday, January 20 - hands-on in the computer-lab  
+
 The theme for this week is to continue with interaction topics, which keep building upon your recent knowledge and experience. 
 
 <br>
@@ -66,6 +69,5 @@ Here's a list of topics that we learned something about this week:
 1. This controller also requires a delegate to respond to messages (pick/use photo, cancel) 
 1. Must have permission from the user; this is configured in `info.plist` settings 
 1. On the storyboard, a `UIImageView` UI object is used to display an image or photo 
-
 
 <br>

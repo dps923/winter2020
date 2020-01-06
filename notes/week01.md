@@ -5,7 +5,12 @@ layout: default
 
 ## DPS923 MAP523 Week 1 Notes
 
+> Monday, January 6 - hands-on in the computer-lab
+
 The theme for this week is to get comfortable with the iOS programming environemnt. 
+
+> We will do what we can in the Monday class.  
+> The remaining content can be covered in the Thursday class. 
 
 <br>
 

@@ -5,11 +5,18 @@ layout: default
 
 ## DPS923 MAP523 Week 2 Notes
 
+> Thursday, January 9 - classroom lecture
+> Monday, January 13 - hands-on in the computer-lab  
+
 The theme for this week is to learn and experience a number of user interaction capabilities and techniques. Along the way, you will work with more/new UI objects, and the lifecycle of an iOS app.  
 
 <br>
 
 ### Thursday plan
+
+Continue getting comfortable with the iOS developer environemnt and tools. 
+
+To start the session, we will probably briefly cover the leftover topic(s) from Monday, [UI object table view](https://dps923.ca/notes/interaction-essentials#ui-object---table-view) (and any other leftover topic(s)). 
 
 Here's a link to the [interaction essentials notes](interaction-essentials).
 
@@ -27,15 +34,13 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Monday plan
 
-To start the session, we will briefly cover the leftover topic from Thursday, [UI object table view](https://dps923.ca/notes/interaction-essentials#ui-object---table-view). 
-
 Then, we discuss a new topic in the first programming assignment - requesting data from a web API. The [topic notes are linked here](webapi-request-intro-sync). 
 
 We will also get a gentle [introduction to debugging](debug-intro). 
 
 Then, your professor will discuss the grading expectations for the programming assignment. 
 
-There will be time available to work on the programming assignment, but probably not enough to complete it. 
+There will be time available to work on the programming assignment, but not enough to complete it. 
 
 <br>
 
