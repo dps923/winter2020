@@ -15,7 +15,7 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-<mark>TBA - Jan XX, 2020, at 11:00pm ET  
+Monday, January 27, 2020, at 11:00pm ET  
 Grade value: 8% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
