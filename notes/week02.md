@@ -5,7 +5,7 @@ layout: default
 
 ## DPS923 MAP523 Week 2 Notes
 
-> Thursday, January 9 - classroom lecture
+> Thursday, January 9 - classroom lecture  
 > Monday, January 13 - hands-on in the computer-lab  
 
 The theme for this week is to learn and experience a number of user interaction capabilities and techniques. Along the way, you will work with more/new UI objects, and the lifecycle of an iOS app.  

@@ -15,7 +15,7 @@ All tests in this course are hand-written, in pen or pencil. Answer styles will 
 
 No references or resources are permitted - "closed book, open brain". Device usage is not permitted. 
 
-Tests are done during the Friday sessions, in the computer-lab room, at the beginning of the timeslot at 3:20pm. 
+Tests are done during the Monday sessions, in the computer-lab room, at the beginning of the timeslot. 
 
 The duration of each test will vary, between 40 and 60 minutes. Generally, about 4 minutes per question is allotted, which seems to work out OK. And, you will have some choice - you will be able to answer any "x" of "y" questions.
 
@@ -74,7 +74,7 @@ Review the course content. Every week. How?
 
 Schedule a regular time to do this work. You have an appointment calendar on your computer or phone - use it. 
 
-When? Whatever works for your schedule, but it may be useful to do this activity on Monday, Tuesday or Wednesday, because you will recall techniques and best practices that will be useful as you work on the next assignment. (The professor has drop-in help times on Wednesday and Friday afternoons.) Also, it will help you "study" for the periodic Friday test.
+When? Whatever works for your schedule, to ensure that you can recall techniques and best practices that will be useful as you work on the next assignment. Also, it will help you "study" for the periodic Monday test.
 
 Review the material in sequence. Two sequences could work: New-to-old, or old-to-new. In other words, you could start with the most recent material, and work backwards, day by day, to the oldest material. Alternatively, you could start with the oldest material, and work forwards to the current material.
 

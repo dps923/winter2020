@@ -5,7 +5,7 @@ layout: default
 
 ## DPS923 MAP523 Week 3 Notes
 
-> Thursday, January 16 - classroom lecture
+> Thursday, January 16 - classroom lecture  
 > Monday, January 20 - hands-on in the computer-lab  
 
 The theme for this week is to continue with interaction topics, which keep building upon your recent knowledge and experience. 
