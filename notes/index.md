@@ -21,7 +21,7 @@ Week number<br>and date | Topic theme and coverage | Graded work, mark value
 **Week 8 (Thu)**<br>&bull; Thu Feb 20 | Test 2 is on Thu Feb 20 | Test 2, 12%<br>(Thu Feb 20) | 
 **Week 7**<br>&bull; Thu Feb 13 | Web API interaction patterns<br>(Mon Feb 17 is the Family Day holiday) | | 
 **Week 6**<br>&bull; Thu Feb 6<br>&bull; Mon Feb 10 | Using the network intro |  Assign 2, 10%<br>(date TBA) | 
-**Week 5**<br>&bull; Thu Jan 30<br>&bull; Mon Feb 3 | Storage introduction<br>Substantial app assembly<br>Table view patterns (add, detail) | | 
+**[Week 5](week05)**<br>[&bull; Thu Jan 30<br>&bull; Mon Feb 3](week05) | Storage introduction<br>Substantial app assembly<br>Table view patterns (add, detail) | | 
 **[Week 4](week04)**<br>[&bull; Thu Jan 23<br>&bull; Mon Jan 27](week04) | Apple Developer and deploy to device<br>App design, data model, multi-view<br>Navigation-style app intro | [Assign 1](/graded-work/assign1), 8%<br>(due Mon Jan 27)<br><br>Test 1, 10%<br>(Mon Jan 27) | 
 **[Week 3](week03)**<br>[&bull; Thu Jan 16<br>&bull; Mon Jan 20](week03) | Alert and Action Sheet<br>Camera and Photo Library intro<br>2D graphics and touch intro | | 
 **[Week 2](week02)**<br>[&bull; Thu Jan 9<br>&bull; Mon Jan 13](week02) | Interaction essentials<br>Delegate and data source; table view | |

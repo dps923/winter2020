@@ -5,6 +5,9 @@ layout: default
 
 ## DPS923 MAP523 Week 5 Notes
 
+> Thursday, January 30 - classroom lecture  
+> Monday, February 3 - hands-on in the computer-lab
+
 Last week, we introduced the foundations of a typical substantial iOS app, including the ability to work with multiple scenes, the navigation interface, and using a data model. 
 
 This week, we begin in-depth coverage, and introduce another foundation topic, storage (persistence). 
@@ -13,18 +16,7 @@ FYI, a number of new and useful documents have been published in the [Topics](/t
 
 <br>
 
-### Wednesday plan
-
-Discussions, and demonstrations.  
-Three segments:
-5:10pm - topics  
-5:40pm - 5-minute break  
-5:45pm - topics  
-6:15pm - 5-minute break  
-6:20pm - topics  
-6:50pm - done  
-
-During the breaks, please get up and move around. It's important for your health, and for mental performance. 
+### Thursday plan
 
 Plan for this week:
 * Storage (persistence) introduction
@@ -46,12 +38,13 @@ Covered in class, and much the same information about the [table view add item](
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* Navigation intro
-* Data model intro 
+* File system storage, simple text file
+* File system storage, JSON, load from app bundle 
+* Multi-scene app, nav interface, table view, etc. 
 
 <br>
 
-### Friday plan
+### Monday plan
 
 Come to class prepared to deploy an app to an iOS device, and demonstrate that to the professor. 
 
