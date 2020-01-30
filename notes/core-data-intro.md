@@ -46,7 +46,7 @@ Here's the editor in graph view:
 
 ### How do I get started?
 
-Use a **project template**. In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/fall2019/tree/master/Templates_and_solutions) folder, 
+Use a **project template**. In the course's GitHub repository, in the [Templates_and_solutions](https://github.com/dps923/winter2020/tree/master/Templates_and_solutions) folder, 
 you will see a project named **TemplateCDv1**.
 
 Make a copy of that, and you will have all you need to start working on a new project.

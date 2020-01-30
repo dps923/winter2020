@@ -148,7 +148,7 @@ After a successful test, comment out these two lines of code, so that they are i
 
 At this early point in the course, a full treatment of this topic is beyond our short-term goals. Therefore, your professor has written and provided a function that you can add (copy-paste) to your table view controller code. 
 
-Get it from [the course's code example repo](https://github.com/dps923/fall2019/tree/master/Week02). 
+Get it from [the course's code example repo](https://github.com/dps923/winter2020/tree/master/Week02). 
 
 To use it, you must have the following in your code:
 
