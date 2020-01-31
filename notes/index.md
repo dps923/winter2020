@@ -20,7 +20,7 @@ Week number<br>and date | Topic theme and coverage | Graded work, mark value
 **Study week**<br>Feb 24 to<br>Feb 28 | No classes this week<br>Recommended... individual study,<br>review topics, work on assignment | | 
 **Week 8 (Thu)**<br>&bull; Thu Feb 20 | Test 2 is on Thu Feb 20 | Test 2, 12%<br>(Thu Feb 20) | 
 **Week 7**<br>&bull; Thu Feb 13 | Web API interaction patterns<br>(Mon Feb 17 is the Family Day holiday) | | 
-**[Week 6](week06)**<br>[&bull; Thu Feb 6<br>&bull; Mon Feb 10](week06) | Using the network intro |  Assign 2, 10%<br>(date TBA) | 
+**[Week 6](week06)**<br>[&bull; Thu Feb 6<br>&bull; Mon Feb 10](week06) | Using the network intro |  [Assign 2](/graded-work/assign2), 10%<br>(Mon Feb 10) | 
 **[Week 5](week05)**<br>[&bull; Thu Jan 30<br>&bull; Mon Feb 3](week05) | Storage introduction<br>Substantial app assembly<br>Table view patterns (add, detail) | | 
 **[Week 4](week04)**<br>[&bull; Thu Jan 23<br>&bull; Mon Jan 27](week04) | Apple Developer and deploy to device<br>App design, data model, multi-view<br>Navigation-style app intro | [Assign 1](/graded-work/assign1), 8%<br>(due Mon Jan 27)<br><br>Test 1, 10%<br>(Mon Jan 27) | 
 **[Week 3](week03)**<br>[&bull; Thu Jan 16<br>&bull; Mon Jan 20](week03) | Alert and Action Sheet<br>Camera and Photo Library intro<br>2D graphics and touch intro | | 
@@ -37,7 +37,7 @@ All assignments are due at 11:00pm ET. (That's the evening/nighttime.)
 Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Monday, January 20 | Monday, January 27
-Assign 2 | Monday, January 27 | Monday, February 10
+[Assign 2](/graded-work/assign2) | Monday, January 27 | Monday, February 10
 Assign 3 | Monday, February 10 | Monday, March 2
 Assign 4 | Monday, March 9 | Monday, April 6
 
