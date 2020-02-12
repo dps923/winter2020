@@ -16,6 +16,8 @@ Test 2 is NEXT Thursday, February 20.
 
 ### Thursday plan
 
+*Thursday, February 13*
+
 Plan for this week:
 * Swift generics
 * Web API request factory class 
@@ -39,6 +41,8 @@ The course's GitHub repo has code examples for many topics and techniques. You c
 
 ### Monday plan
 
+*Monday, February 17*
+
 Monday, February 17, 2020 is the Family Day holiday here in Ontario. The College will be closed, and there are no classes. 
 
 <br>
@@ -46,27 +50,27 @@ Monday, February 17, 2020 is the Family Day holiday here in Ontario. The College
 ### Summary
 
 Here's a list of topics that we learned something about this week:
-1. The `Data(contentsOf:)` initializer is *blocking*, and it's for fetch (HTTP GET) only, so it should NEVER be used in a real app 
-1. The URL Loading System is the name of the collection of techniques and code assets that provide access to resources identified by URLs 
-1. Loading is an async task, done on a background thread 
-1. *The* key component is an `URLSession` object, a "container" which coordinates network tasks 
-1. Each task is a `URLSessionDataTask`, which represents the lifetime of ONE specific network task 
-1. A data task can be configured to send OR receive
-1. It expects and works with in-memory data structures 
-1. The data structures are always defined by data model classes 
-1. The data task - for fetch (HTTP GET) - needs a URL at a minimum 
-1. The data task initializer needs a URL and a closure function (that will execute when the data task completes)
-1. Upon completion, the data task calls the closure function, with values for three parameters (data, response, error) 
-1. Inside the closure function, we must do three tasks...
-1. The first task is to check for an error 
-1. The second task is to ensure that the response is what we expect 
-1. The third task is to unpack the data
-1. Assuming success, the unpacked data is saved (copied or assigned) to an in-memory object (and then used in whatever way you want)
-1. Often, we will update the user interface (UI)
-1. To update the UI, we must get a reference to the main thread, because the data task is running on a background thread 
-1. After the statement that creates and configures a data task, the task does not execute - instead, we must add a statement that executes the task 
-1. If we want to *send* data to the web API, we must modify our approach 
-1. We use a `URLRequest` object, and configure it with all four things that it needs (URL, method, headers, body) 
-1. Other minor changes are needed to prepare the data to be sent and handle the response 
+1. Swift has generics, which enable code to handle objects that are based in different types 
+1. We will use generics to define the data shape that will be returned by a web API request factory class method 
+1. Swift generics use a familiar coding style seen in other languages, e.g. `<T>` and `T` as type placeholders (depending on the usage context)
+1. The size of the code base in an app with a dozen or more web API requests can grow unless we use a factory, which is a code-saving technique 
+1. Our first factory is the `WebApiRequest` class, which does as its name suggests 
+1. It is used (created, configured, executed) by callers, which are methods (one or likely more) in the data model manager (in our recommended architecture) 
+1. The design of the factory is as generic and reusable as possible 
+1. For a single-use request, the request code can be written in the controller 
+1. For complex scenarios and those with reusable or repeatable requests, the data model manager now takes over - from last week's simple web API request code examples - the job of communicating with the web API (and making response data available somehow)
+1. Manager properties are typically used to make the data model available 
+1. Manager methods are used to execute requests 
+1. Each request defines its own instance of the factory class, with custom configuration (e.g. path/segment, response data type expected)
+1. The configuration of a factory class instance for a POST request - when compared to what we must do for a GET request - requires more configuration (set the HTTP method, and prepare/encode the entity body data to be sent with the request)
+1. In this new design, URL Loading System requests are *still* asynchronous, which is challenging, and implemented with two design-and-coding actions
+1. In the factory class, the generic code simply calls a closure function (that gets passed in)
+1. In the data model manager class, the function call includes the closure function (completion handler code) 
+1. We still need a way to tell the caller when the web API request completes - we use a *notification* 
+1. Notifications are design patterns for broadcasting info and subscribing to broadcasts 
+1. There is one broadcaster, and zero or more subscribers 
+1. The "message" that's posted by a broadcaster can be custom and unique, when compared to other broadcasts 
+1. The broadcaster posts a notification after completing a piece of work 
+1. At the subscriber end, one of its startup tasks includes a statement that subscribes to a specific / custom / unique broadcast, and specifying a closure function to execute if/when the notification comes in 
 
 <br>
