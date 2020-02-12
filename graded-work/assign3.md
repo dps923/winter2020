@@ -205,9 +205,9 @@ In the data model classes source code, write a class that describes the shape of
 
 When storing the Mockaroo-generated date-and-time value as a string, the database saves fractional seconds. As a result, the default built-in Swift `.iso8601` date decoding strategy will not work. 
 
-The solution is to add - to the data model classes source code file - the "extension" to the DateFormatter class. You have seen this before, [in a Week 5 code example](https://github.com/dps923/fall2019/blob/master/Week05/W05a3StoreData/W05a3StoreData/DataModelClasses.swift#L62). 
+The solution is to add - to the data model classes source code file - the "extension" to the DateFormatter class. You have seen this before, [in a Week 5 code example](https://github.com/dps923/winter2020/blob/master/Week05/W05a3StoreData/W05a3StoreData/DataModelClasses.swift#L62). 
 
-You have also seen how to use the extension before, [in the same code example](https://github.com/dps923/fall2019/blob/master/Week05/W05a3StoreData/W05a3StoreData/DataModelManager.swift#L88), in the request-handling closure function. 
+You have also seen how to use the extension before, [in the same code example](https://github.com/dps923/winter2020/blob/master/Week05/W05a3StoreData/W05a3StoreData/DataModelManager.swift#L88), in the request-handling closure function. 
 
 To support the app's first controller - the list - the data model manager class will need a method that fetches all cats. 
 
@@ -217,7 +217,7 @@ To support the app's first controller - the list - the data model manager class 
 
 You may have done these tasks during the "Getting started" section above, but if not, here are a few comments and reminders. 
 
-Use the techniques you learned in weeks 6 and 7 (seen in the [W07a1NewFetch code example](https://github.com/dps923/fall2019/tree/master/Week07/W07a1NewFetch) among others) to configure the cat list controller.  
+Use the techniques you learned in weeks 6 and 7 (seen in the [W07a1NewFetch code example](https://github.com/dps923/winter2020/tree/master/Week07/W07a1NewFetch) among others) to configure the cat list controller.  
 
 Pass on the selected object to the drill-down (workflow) cat scene. In other words, it is not necessary to make then call a "get one" method in the data model manager. 
 
@@ -285,7 +285,7 @@ This functionality will be initiated by the drill-down (workflow) scene. Similar
 
 > Have you seen this "edit" technique before?  
 > Maybe yes, if you *studied and reproduced* the code examples.  
-> The week 5 ["nav add" code example](https://github.com/dps923/fall2019/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductEdit controller](https://github.com/dps923/fall2019/blob/master/Week05/W05a6NavAdd/Classes/ProductEdit.swift)).  
+> The week 5 ["nav add" code example](https://github.com/dps923/winter2020/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductEdit controller](https://github.com/dps923/winter2020/blob/master/Week05/W05a6NavAdd/Classes/ProductEdit.swift)).  
 
 We must follow a similar general procedure [that was done for the "add new" task](/notes/table-view-add-item#design-and-coding-task-overview). 
 
@@ -520,7 +520,7 @@ In this section, you will implement a "detail" scene. Similar to an "add new" sc
 
 > Have you seen this "detail" technique before?  
 > Maybe yes, if you *studied and reproduced* the code examples.  
-> The week 5 ["nav add" code example](https://github.com/dps923/fall2019/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductDetail controller](https://github.com/dps923/fall2019/blob/master/Week05/W05a6NavAdd/Classes/ProductDetail.swift)).  
+> The week 5 ["nav add" code example](https://github.com/dps923/winter2020/tree/master/Week05/W05a6NavAdd) includes a typical implementation (in the [ProductDetail controller](https://github.com/dps923/winter2020/blob/master/Week05/W05a6NavAdd/Classes/ProductDetail.swift)).  
 
 Here is a short video clip (which you can view in the Safari browser) that shows this user interaction:
 
