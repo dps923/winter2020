@@ -16,7 +16,7 @@ All assignments are due on Mondays.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**[Week 8 (Mon)](week08)**<br>[&bull; Mon Mar 2](week08) | Core Data persistence, introduction<br>(in the Monday computer-lab session) | Assign 3, 14%<br>(Mon Mar 2) | 
+**[Week 8 (Mon)](week08)**<br>[&bull; Mon Mar 2](week08) | Core Data persistence, introduction<br>(in the Monday computer-lab session) | [Assign 3](/graded-work/assign3), 14%<br>(Mon Mar 2) | 
 **Study week**<br>Feb 24 to<br>Feb 28 | No classes this week<br>Recommended... individual study,<br>review topics, work on assignment | | 
 **[Week 8 (Thu)](week08)**<br>[&bull; Thu Feb 20](week08) | Test 2 is on Thu Feb 20 | Test 2, 12%<br>(Thu Feb 20) | 
 **[Week 7](week07)**<br>[&bull; Thu Feb 13](week07) | Web API interaction patterns<br>(Mon Feb 17 is the Family Day holiday) | | 
@@ -38,7 +38,7 @@ Assign # | Released | Due date
 --- | --- | ---
 [Assign 1](/graded-work/assign1) | Monday, January 20 | Monday, January 27
 [Assign 2](/graded-work/assign2) | Monday, January 27 | Monday, February 10
-Assign 3 | Monday, February 10 | Monday, March 2
+[Assign 3](/graded-work/assign3) | Monday, February 10 | Monday, March 2
 Assign 4 | Monday, March 9 | Monday, April 6
 
 <br>

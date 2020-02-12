@@ -102,7 +102,7 @@ Generate and save between 50 and 100 rows of data.
 
 Return to the restdb.io app. Create a new database. You can use this database for Assignment 3, and maybe Assignment 4. 
 
-We suggest that you choose a "Name" that combines *your name initials* and *the course code*. The "Create New Database" task will then add a four-character suffix to the database name. For example, your professor's name initials are "PAM", so the database was named `pamdps923-de33`. 
+We suggest that you choose a "Name" that combines *your name initials* and *the course code*. The "Create New Database" task will then add a four-character suffix to the database name. For example, your professor's name initials are "RA", so the database was named `radps923-de33`. 
 
 After creation, click its name on the left side of the list, and the database manager screen appears. Enable "Developer Mode", by clicking on the gear icon in the upper-right area of the screen.
 
