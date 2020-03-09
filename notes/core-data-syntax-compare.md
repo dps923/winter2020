@@ -7,7 +7,7 @@ layout: default
 
 Students in this course are new to Core Data technologies. However, all students have some knowledge of and experience with other data store technologies. This document attempts to compare some syntax forms among technologies. 
 
-Assume a "Person" entity for all examples. (The plural form is used with MongoDB and SQL.)
+Assume a "Person" entity for all examples. (The plural form is used with MongoDB via Mongoose and SQL.)
 
 <br>
 
@@ -25,7 +25,7 @@ do {
 }
 ```
 
-MongoDB  
+MongoDB via Mongoose  
 ```js
 let results = db.people.find()
 ```
@@ -57,7 +57,7 @@ do {
 }
 ```
 
-MongoDB  
+MongoDB via Mongoose  
 ```js
 let results = db.people.find(
   { age: { $lt: 25 } }
@@ -84,7 +84,7 @@ peter.age = 23
 m.ds_save()
 ```
 
-MongoDB  
+MongoDB via Mongoose  
 ```js
 var result = db.people.insertOne(
   { name: "Peter", age: 23 }
@@ -109,7 +109,7 @@ peter.age = 23
 m.ds_save()
 ```
 
-MongoDB  
+MongoDB via Mongoose  
 ```js
 let result = db.people.updateOne(
   { _id = "5dc1aa2dfc13ae7900000007" },
