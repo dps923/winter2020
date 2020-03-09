@@ -15,7 +15,7 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Friday, December 6, 2019, at 11:00pm ET  
+Monday, April 6, 2020, at 11:00pm ET  
 Grade value: 18% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
@@ -232,7 +232,7 @@ The following is an example of the "Food Search". In Postman, configure:
 }
 ```
 
-On November 17, 2019, at 3:40pm, this request returned two results. Notice a few things:
+On March 9, 2020, at 8:05am, this request returned one result. Notice a few things:
 * `generalSearchInput` is a collection of words that you want to search for. The search is case-insensitive, and word order doesn't matter - it will find results with these words anywhere in the food's description.
 * Yes, we want to send `requireAllWords`, set to `true`, for *all* requests . 
 * We want to include the `brandOwner` key, with something or nothing in the value. That will help limit the results when appropriate. 
@@ -242,12 +242,12 @@ Notice the results include a `fdcId` key, and its value is a six-digit integer. 
 
 The following is an example of the "Food Details". In Postman, configure:
 * A GET request
-* URL is https://api.nal.usda.gov/fdc/v1/356446?api_key=YOUR_API_KEY
+* URL is https://api.nal.usda.gov/fdc/v1/468658?api_key=YOUR_API_KEY
 * Accept header is JSON
 
 Notice the URL - the six-digit integer replaces the static word "search" that you saw before. 
 
-On November 17, 2019, at 3:45pm, this request returned a detailed result. Notice a few things:
+On March 9, 2020, at 8:10am, this request returned a detailed result. Notice a few things:
 * Ingredient and nutrient info is very detailed 
 * It essentially has all the data required on a product label (Ingredients and Nutrition Facts). 
 
