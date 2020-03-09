@@ -18,7 +18,7 @@ More work with Core Data this week and next.
 
 We will cover these - discuss, show-and-tell, diagram, etc. - in the Thursday class. While some brief notes are included below, be prepared to [take your own notes](/standards#taking-notes-in-class). 
 
-A [version 2](https://github.com/dps923/fall2019/tree/master/Templates_and_solutions) of the project template. 
+A [version 2](https://github.com/dps923/winter2020/tree/master/Templates_and_solutions) of the project template. 
 
 [Fetch request essentials](core-data-fetchrequest-essentials).
 
