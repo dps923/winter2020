@@ -14,6 +14,16 @@ This is the 2018 version of the Apple UIKit Catalog, which is a sample app. It w
 
 <br>
 
+### TemplateCDv2 - Core Data project template
+
+Version 2, published on March 5, 2020. 
+
+Compared to version 1, some new features are included:
+* The web API request class is included, in the persistence folder 
+* The store initializer includes code examples for fetching from a web API or a JSON file
+
+<br>
+
 ### TemplateCDv1 - Core Data project template
 
 Use this project template for an app that will use Core Data technologies.  
