@@ -16,6 +16,8 @@ All assignments are due on Mondays.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
+**Week 10**<br>&bull; Thu Mar 6<br>&bull; Mon Mar 16 | Multi-entity data model<br>Location services introduction | | 
+**[Week 9](week09)**<br>[&bull; Thu Mar 5<br>&bull; Mon Mar 9](week08) | Data service operations (fetch etc.) | | 
 **[Week 8 (Mon)](week08)**<br>[&bull; Mon Mar 2](week08) | Core Data persistence, introduction<br>(in the Monday computer-lab session) | [Assign 3](/graded-work/assign3), 14%<br>(Mon Mar 2) | 
 **Study week**<br>Feb 24 to<br>Feb 28 | No classes this week<br>Recommended... individual study,<br>review topics, work on assignment | | 
 **[Week 8 (Thu)](week08)**<br>[&bull; Thu Feb 20](week08) | Test 2 is on Thu Feb 20 | Test 2, 12%<br>(Thu Feb 20) | 
