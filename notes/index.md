@@ -5,6 +5,10 @@ layout: default
 
 ## Notes
 
+<div style="background-color: lightyellow; border: 1px solid black; padding: 0.5em;">
+<p><b>Notice</b><br>The course delivery and its dates and times have been affected by the worldwide novel coronavirus crisis. The content on this website may change, so please refresh your viewer when consuming or reviewing content.</p>
+</div>
+
 The table below has links to the daily class notes for the Winter 2020 term.  New notes are at the top.
 
 > Our "week" consists of a Thursday lecture, and a Monday computer-lab. 
@@ -16,7 +20,12 @@ All assignments are due on Mondays.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**[Week 10](week10)**<br>[&bull; Thu Mar 6<br>&bull; Mon Mar 16](week10) | Multi-entity data model<br>Location services introduction | Test 3, 14%<br>(Mon Mar 16) | 
+**[Week 13](week13)**<br>[&bull; Thu Apr 9<br>&bull; Mon Apr 13](week13) | App building topics | [Assign 4](/graded-work/assign4), 14%<br>(Mon Apr 13) | 
+**[Week 12](week12)**<br>[&bull; Thu Apr 2<br>&bull; Mon Apr 6](week12) | App building topics | Test 4, 14%<br>(Mon Apr 6) | 
+**[Week 11](week11)**<br>[&bull; Thu Mar 26<br>&bull; Mon Mar 30](week11) | Mapping services introduction | | 
+**[Week 10 (Mon)](week10)**<br>[&bull; Mon Mar 23](week10) | Multi-entity data model<br>Location services introduction | Test 3, 14%<br>(Mon Mar 23) | 
+**Pause**<br>Mar 16 to<br>Mar 20 | (no in-class sessions) | |
+**[Week 10 (Thu)](week10)**<br>[&bull; Thu Mar 6](week10) | Multi-entity data model<br>Location services introduction | | 
 **[Week 9](week09)**<br>[&bull; Thu Mar 5<br>&bull; Mon Mar 9](week09) | Data service operations (fetch etc.) | | 
 **[Week 8 (Mon)](week08)**<br>[&bull; Mon Mar 2](week08) | Core Data persistence, introduction<br>(in the Monday computer-lab session) | [Assign 3](/graded-work/assign3), 14%<br>(Mon Mar 2) | 
 **Study week**<br>Feb 24 to<br>Feb 28 | No classes this week<br>Recommended... individual study,<br>review topics, work on assignment | | 

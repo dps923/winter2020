@@ -15,7 +15,7 @@ While you are doing the work, if a *specific task* is not clear, or it seems to 
 
 ### Due Date
 
-Monday, April 6, 2020, at 11:00pm ET  
+Monday, April 13, 2020, at 11:00pm ET  
 Grade value: 18% of your final course grade
 
 *If you wish to submit the assignment before the due date and time, you can do that.*
@@ -30,7 +30,7 @@ Grade value: 18% of your final course grade
 
 The app will be of your own idea and design. This document will help you plan and implement it, while ensuring that its scope and challenge level are comparable to the professor's standard project. 
 
-If you decide to do your own idea, then give your professor a brief (one page) plan of what your app will do, *and* a sketch of the app's scenes and data sources/stores. The plan must be given to, discussed with, and agreed to by the professor no later than Thursday, March 20, 2020, at 3:00pm. 
+If you decide to do your own idea, then give your professor a brief (one page) plan of what your app will do, *and* a sketch of the app's scenes and data sources/stores. The plan must be given to, discussed with, and agreed to by the professor no later than Thursday, March 26, 2020, at 3:00pm. 
 
 Here are the things that your app must do:
 
@@ -50,7 +50,7 @@ It's possible that your app will do other things, and that's OK.
 
 > DPS923 students will have a few additional specifications. 
 
-Deviations to this list must be discussed with and agreed to by the professor no later than Thursday, March 20, 2020, at 3:00pm. 
+Deviations to this list must be discussed with and agreed to by the professor no later than Thursday, March 26, 2020, at 3:00pm. 
 
 <br>
 
@@ -103,8 +103,6 @@ When you are ready to submit your work, you will copy some of the code in your p
 <br>
 
 ### Submitting your work
-
-<mark>Include the feature/highlights document</mark>
 
 Follow these instructions to submit your work, before the due date and time:  
 
