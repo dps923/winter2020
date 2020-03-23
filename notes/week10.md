@@ -32,11 +32,18 @@ A reminder to learn via the code examples.
 
 *Monday, March 23 (after the pause)*
 
-In the first part of the timeslot, Test 3 will be written. It is worth 14%. It covers all topics covered since the last test. 
+We will cover these - discuss, show-and-tell, diagram, etc. - in the Monday class. While some brief notes are included below, be prepared to [take your own notes](/standards#taking-notes-in-class). 
 
-Here is more and general information about [the upcoming test](test-success-info). 
+> 
 
-Then, in the remaining time, work on the programming assignment, and get help from a classmate or the professor if you need it. 
+[Introduction to mapping services](location-map-essentials). 
+
+[Using a table view as a select list](select-list-webapi).
+
+[Core Data and photo](core-data-photos) storage.
+
+A reminder to learn via the code examples.
+
 
 <br>
 

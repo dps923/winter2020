@@ -15,7 +15,6 @@ On this page, you will find the DPS923 and MAP523 Weekly Schedule for the Winter
 
 > Our "week" consists of a Thursday lecture, and a Monday computer-lab. 
 
-Most tests are on Mondays (except for Test 2 on Thursday, February 20).  
 All assignments are due on Mondays.
 
 Please note that *the schedule may change*, and that it is your responsibility to know the current schedule.
@@ -37,8 +36,8 @@ Week 8 (Mon)<br>&bull; Mon Mar 2 | Core Data introduction<br>(in the Monday comp
 Week 9<br>&bull; Thu Mar 5<br>&bull; Mon Mar 9 | Data service operations (fetch etc.) | |
 Week 10<br>&bull; Thu Mar 12 | Multi-entity data model<br>Location services introduction | | 
 Pause<br>Mar 16 to 20 | No classes | | 
-Week 10<br>&bull; Mon Mar 23 | Multi-entity data model<br>Location services introduction | Test 3 | 14%
-Week 11<br>&bull; Thu Mar 26<br>&bull; Mon Mar 30 | Mapping services introduction | | 
+Week 10<br>&bull; Mon Mar 23 | Multi-entity data model<br>Location services introduction | | 
+Week 11<br>&bull; Thu Mar 26<br>&bull; Mon Mar 30 | Mapping services introduction | Test 3<br>on Thu Mar 26 | 14%
 Week 12<br>&bull; Thu Apr 2<br>&bull; Mon Apr 6 | App building topics<br>(Likely layout and constraints) | Test 4 | 14%
 Week 13<br>&bull; Thu Apr 9<br>&bull; Mon Apr 13 | App building topics | Assign 4 | 18% | 
 

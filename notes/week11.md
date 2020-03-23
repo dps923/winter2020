@@ -5,16 +5,18 @@ layout: default
 
 ## DPS923 MAP523 Week 11 Notes
 
-> Thursday, March 26 - online lecture  
-> Monday, March 30 - online help
+> Monday, March 23 - online lecture  
+> Thursday, March 26 - Test 3, and online help  
 
 A brief introduction to mapping services. And, more app-building topics.
 
 <br>
 
-### Thursday plan
+### Monday plan
 
-We will cover these - discuss, show-and-tell, diagram, etc. - in the Thursday class. While some brief notes are included below, be prepared to [take your own notes](/standards#taking-notes-in-class). 
+*Monday, March 23 (after the pause)*
+
+We will cover these - discuss, show-and-tell, diagram, etc. - in the Monday class. While some brief notes are included below, be prepared to [take your own notes](/standards#taking-notes-in-class). 
 
 [Introduction to mapping services](location-map-essentials). 
 
@@ -26,9 +28,13 @@ A reminder to learn via the code examples.
 
 <br>
 
-### Monday plan
+### Thursday plan
 
-Work on the programming assignment, and get help from a classmate or the professor if you need it. 
+On this day, Test 3 will be written. It is worth 14%. It covers all topics covered since the last test. 
+
+Here is more and general information about [the upcoming test](test-success-info). 
+
+Then, in the remaining time, work on the programming assignment, and get help from a classmate or the professor if you need it. 
 
 <br>
 
