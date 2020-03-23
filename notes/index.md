@@ -9,6 +9,8 @@ layout: default
 <p><b>Notice</b><br>The course delivery and its dates and times have been affected by the worldwide novel coronavirus crisis. The content on this website may change, so please refresh your viewer when consuming or reviewing content.</p>
 </div>
 
+<br>
+
 The table below has links to the daily class notes for the Winter 2020 term.  New notes are at the top.
 
 > Our "week" consists of a Thursday lecture, and a Monday computer-lab. 

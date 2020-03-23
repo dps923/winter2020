@@ -9,6 +9,8 @@ layout: default
 <p><b>Notice</b><br>The course delivery and its dates and times have been affected by the worldwide novel coronavirus crisis. The content on this website may change, so please refresh your viewer when consuming or reviewing content.</p>
 </div>
 
+<br>
+
 On this page, you will find the DPS923 and MAP523 Weekly Schedule for the Winter 2020 academic term.
 
 > Our "week" consists of a Thursday lecture, and a Monday computer-lab. 
@@ -33,8 +35,8 @@ Week 8 (Thu)<br>&bull; Thu Feb 20 | Test 2 is on Thu Feb 20 | Test 2 | 12%
 Study week<br>Feb 24 to 28 | Recommended... individual study,<br>thorough review of topics | |
 Week 8 (Mon)<br>&bull; Mon Mar 2 | Core Data introduction<br>(in the Monday computer-lab session) | Assign 3 | 14% | 
 Week 9<br>&bull; Thu Mar 5<br>&bull; Mon Mar 9 | Data service operations (fetch etc.) | |
-Week 10<br>&bull; Thu Mar 12 | Multi-entity data model<br>Location services introduction | Test 3 | 14%
-Pause<br>Mar 16 to 20 | No classes | Test 3 | 14%
+Week 10<br>&bull; Thu Mar 12 | Multi-entity data model<br>Location services introduction | | 
+Pause<br>Mar 16 to 20 | No classes | | 
 Week 10<br>&bull; Mon Mar 23 | Multi-entity data model<br>Location services introduction | Test 3 | 14%
 Week 11<br>&bull; Thu Mar 26<br>&bull; Mon Mar 30 | Mapping services introduction | | 
 Week 12<br>&bull; Thu Apr 2<br>&bull; Mon Apr 6 | App building topics<br>(Likely layout and constraints) | Test 4 | 14%

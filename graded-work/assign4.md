@@ -9,6 +9,8 @@ layout: default
 <p><b>Notice</b><br>The course delivery and its dates and times have been affected by the worldwide novel coronavirus crisis. The content on this website may change, so please refresh your viewer when consuming or reviewing content.</p>
 </div>
 
+<br>
+
 Assignment 4 enables you to work with Core Data technologies, location services, and mapping. 
 
 You can choose to do a project that meets the professor's specifications. 
