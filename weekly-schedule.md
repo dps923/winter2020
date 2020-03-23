@@ -13,7 +13,9 @@ layout: default
 
 On this page, you will find the DPS923 and MAP523 Weekly Schedule for the Winter 2020 academic term.
 
-> Our "week" consists of a Thursday lecture, and a Monday computer-lab. 
+> From Week 1 through to Week 9...  
+> Our "week" consisted of a Thursday lecture, and a Monday computer-lab.  
+> Then from Week 11 on, our "week" was Monday and Thursday.
 
 All assignments are due on Mondays.
 
@@ -36,9 +38,9 @@ Week 8 (Mon)<br>&bull; Mon Mar 2 | Core Data introduction<br>(in the Monday comp
 Week 9<br>&bull; Thu Mar 5<br>&bull; Mon Mar 9 | Data service operations (fetch etc.) | |
 Week 10<br>&bull; Thu Mar 12 | Multi-entity data model<br>Location services introduction | | 
 Pause<br>Mar 16 to 20 | No classes | | 
-Week 10<br>&bull; Mon Mar 23 | Multi-entity data model<br>Location services introduction | | 
-Week 11<br>&bull; Thu Mar 26<br>&bull; Mon Mar 30 | Mapping services introduction | Test 3<br>on Thu Mar 26 | 14%
-Week 12<br>&bull; Thu Apr 2<br>&bull; Mon Apr 6 | App building topics<br>(Likely layout and constraints) | Test 4 | 14%
-Week 13<br>&bull; Thu Apr 9<br>&bull; Mon Apr 13 | App building topics | Assign 4 | 18% | 
+Week 11<br>&bull; Mon Mar 23<br>&bull; Thu Mar 26 | Mapping services introduction | Test 3<br>on Thu Mar 26 | 14%
+Week 12<br>&bull; Mon Mar 30<br>&bull; Thu Apr 2 | Layout and constraints | | 
+Week 13<br>&bull; Mon Apr 6<br>&bull; Thu Apr 9 | Assignment help | Test 4<br>on Thu Apr 9 | 14% | 
+Final week<br>&bull; Mon Apr 13 | | Assign 4 | 18% | 
 
 <br>

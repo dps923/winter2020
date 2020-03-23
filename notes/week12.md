@@ -5,14 +5,16 @@ layout: default
 
 ## DPS923 MAP523 Week 12 Notes
 
-> Thursday, April 2 - online lecture  
-> Monday, April 6 - online help
+> Monday, March 30 - online lecture  
+> Thursday, April 2 - online help  
 
 A brief overview of layout for iOS apps.
 
 <br>
 
-### Thursday plan
+### Monday plan
+
+*Monday, March 30*
 
 We will cover these - discuss, show-and-tell, diagram, etc. - in the Thursday class. While some brief notes are included below, be prepared to [take your own notes](/standards#taking-notes-in-class). 
 
@@ -22,7 +24,9 @@ A reminder to learn via the code examples.
 
 <br>
 
-### Monday plan
+### Thursday plan
+
+*Thursday, April 2* 
 
 In the first part of the timeslot, Test 4 will be written. It is worth 14%. It covers (again) Core Data topics from about week 9, and the new topics covered since then. 
 
@@ -35,8 +39,7 @@ Then, in the remaining time, work on the programming assignment, and get help fr
 ### Code examples
 
 The course's GitHub repo has code examples for many topics and techniques. You can download a zip of the code repo, or clone it. 
-* Week 12?  
-None so far - we may create an app in class, and post it later 
+* W12a1Layout
 
 <br>
 

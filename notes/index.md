@@ -13,20 +13,22 @@ layout: default
 
 The table below has links to the daily class notes for the Winter 2020 term.  New notes are at the top.
 
-> Our "week" consists of a Thursday lecture, and a Monday computer-lab. 
+> From Week 1 through to Week 9...  
+> Our "week" consisted of a Thursday lecture, and a Monday computer-lab.  
+> Then from Week 11 on, our "week" was Monday and Thursday.
 
-Most tests are on Mondays (except for Test 2 on Thursday, February 20).  
 All assignments are due on Mondays.
 
 <br>
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**Week 13**<br>&bull; Mon Apr 6<br>&bull; Thu Apr 9 | App building topics | [Assign 4](/graded-work/assign4), 14%<br>(Mon Apr 13) | 
-**[Week 12](week12)**<br>[&bull; Mon Mar 30<br>&bull; Thu Apr 2](week12) | App building topics | Test 4, 14%<br>(Thu Apr 2) | 
+**Final Week**<br>&bull; Mon Apr 13 | | [Assign 4](/graded-work/assign4), 14%<br>(Mon Apr 13) | 
+**[Week 13](week13)**<br>[&bull; Mon Apr 6<br>&bull; Thu Apr 9](week13) | Help / assistance | Test 4, 14%<br>(Thu Apr 9) | 
+**[Week 12](week12)**<br>[&bull; Mon Mar 30<br>&bull; Thu Apr 2](week12) | Layout | | 
 **[Week 11](week11)**<br>[&bull; Mon Mar 23<br>&bull; Thu Mar 26](week11) | Mapping services introduction | Test 3, 14%<br>(Thu Mar 26)| 
 **Pause**<br>Mar 16 to<br>Mar 20 | (no in-class sessions) | |
-**[Week 10 (Thu)](week10)**<br>[&bull; Thu Mar 6](week10) | Multi-entity data model<br>Location services introduction | | 
+**[Week 10](week10)**<br>[&bull; Thu Mar 13](week10) | Multi-entity data model<br>Location services introduction | | 
 **[Week 9](week09)**<br>[&bull; Thu Mar 5<br>&bull; Mon Mar 9](week09) | Data service operations (fetch etc.) | | 
 **[Week 8 (Mon)](week08)**<br>[&bull; Mon Mar 2](week08) | Core Data persistence, introduction<br>(in the Monday computer-lab session) | [Assign 3](/graded-work/assign3), 14%<br>(Mon Mar 2) | 
 **Study week**<br>Feb 24 to<br>Feb 28 | No classes this week<br>Recommended... individual study,<br>review topics, work on assignment | | 
@@ -51,6 +53,6 @@ Assign # | Released | Due date
 [Assign 1](/graded-work/assign1) | Monday, January 20 | Monday, January 27
 [Assign 2](/graded-work/assign2) | Monday, January 27 | Monday, February 10
 [Assign 3](/graded-work/assign3) | Monday, February 10 | Monday, March 2
-Assign 4 | Monday, March 9 | Monday, April 6
+[Assign 4](/graded-work/assign4) | Monday, March 23 | Monday, April 13
 
 <br>

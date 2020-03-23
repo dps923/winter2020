@@ -6,7 +6,6 @@ layout: default
 ## DPS923 MAP523 Week 10 Notes
 
 > Thursday, March 12 - classroom lecture  
-> Monday, March 16 - online
 
 More work with Core Data this week. And, a brief introduction to location services. 
 
@@ -25,25 +24,6 @@ We will cover these - discuss, show-and-tell, diagram, etc. - in the Thursday cl
 [Location services introduction](location-intro)
 
 A reminder to learn via the code examples.
-
-<br>
-
-### Monday plan
-
-*Monday, March 23 (after the pause)*
-
-We will cover these - discuss, show-and-tell, diagram, etc. - in the Monday class. While some brief notes are included below, be prepared to [take your own notes](/standards#taking-notes-in-class). 
-
-> 
-
-[Introduction to mapping services](location-map-essentials). 
-
-[Using a table view as a select list](select-list-webapi).
-
-[Core Data and photo](core-data-photos) storage.
-
-A reminder to learn via the code examples.
-
 
 <br>
 
