@@ -22,10 +22,10 @@ All assignments are due on Mondays.
 
 Week number<br>and date | Topic theme and coverage | Graded work, mark value
 --- | --- | ---
-**[Week 13](week13)**<br>[&bull; Thu Apr 9<br>&bull; Mon Apr 13](week13) | App building topics | [Assign 4](/graded-work/assign4), 14%<br>(Mon Apr 13) | 
+**Week 13**<br>&bull; Thu Apr 9<br>&bull; Mon Apr 13 | App building topics | [Assign 4](/graded-work/assign4), 14%<br>(Mon Apr 13) | 
 **[Week 12](week12)**<br>[&bull; Thu Apr 2<br>&bull; Mon Apr 6](week12) | App building topics | Test 4, 14%<br>(Mon Apr 6) | 
 **[Week 11](week11)**<br>[&bull; Thu Mar 26<br>&bull; Mon Mar 30](week11) | Mapping services introduction | | 
-**[Week 10 (Mon)](week10)**<br>[&bull; Mon Mar 23](week10) | Multi-entity data model<br>Location services introduction | Test 3, 14%<br>(Mon Mar 23) | 
+**[Week 10 (Mon)](week10)**<br>[&bull; Mon Mar 23](week10) | Multi-entity data model<br>Location services introduction | Test 3, 14%<br>(Thu Mar 26) | 
 **Pause**<br>Mar 16 to<br>Mar 20 | (no in-class sessions) | |
 **[Week 10 (Thu)](week10)**<br>[&bull; Thu Mar 6](week10) | Multi-entity data model<br>Location services introduction | | 
 **[Week 9](week09)**<br>[&bull; Thu Mar 5<br>&bull; Mon Mar 9](week09) | Data service operations (fetch etc.) | | 
