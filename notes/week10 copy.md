@@ -6,7 +6,7 @@ layout: default
 ## DPS923 MAP523 Week 10 Notes
 
 > Thursday, March 12 - classroom lecture  
-> Monday, March 16 - online
+> Monday, March 16 - hands-on in the computer-lab
 
 More work with Core Data this week. And, a brief introduction to location services. 
 
@@ -30,7 +30,7 @@ A reminder to learn via the code examples.
 
 ### Monday plan
 
-*Monday, March 23 (after the pause)*
+*Monday, March 16*
 
 In the first part of the timeslot, Test 3 will be written. It is worth 14%. It covers all topics covered since the last test. 
 
