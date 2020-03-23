@@ -30,6 +30,8 @@ A reminder to learn via the code examples.
 
 ### Thursday plan
 
+*Thursday, March 26*
+
 On this day, Test 3 will be written. It is worth 14%. It covers all topics covered since the last test. 
 
 Here is more and general information about [the upcoming test](test-success-info). 
